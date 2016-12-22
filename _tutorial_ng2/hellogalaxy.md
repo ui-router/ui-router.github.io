@@ -31,7 +31,7 @@ shows each transition visually, and provides transition details when hovered and
 
 UI-Router states form a tree, starting from a single root state.
 The root state is implicit and has no name.
-The top-level application states (such as `about` and `people` are children of the implicit root state.
+The top-level application states (such as `about` and `people`) are children of the implicit root state.
 
 The "Hello Solar System" app had four top-level states, while the 
 "Hello Galaxy" app has three top-level states and one nested state.
