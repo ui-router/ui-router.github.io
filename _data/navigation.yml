@@ -79,3 +79,5 @@ resources:
     children:
       - title: "Sample App"
         url: /resources/sampleapp
+      - title: "NG1/ES6/Webpack2.x/Material/azyloading demo"
+        url: /resources/lazyloadingmaterial
