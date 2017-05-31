@@ -6,7 +6,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ng1Controller | angular-ui-router</title>
+	<title>Ng1Controller | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/ng1.html">ng1</a>
@@ -123,7 +123,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
         <h3>ui<wbr>Can<wbr>Exit</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">ui<wbr>Can<wbr>Exit<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/transition.html#hookresult" class="tsd-signature-type">HookResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">ui<wbr>Can<wbr>Exit<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/transition.html#hookresult" class="tsd-signature-type">HookResult</a></li>
 						<li class="tsd-header">
 							<p> This callback is called when the view&#39;s state is about to be exited. </p>
 						</li>
@@ -146,7 +146,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 								</ul>
 								<p>Called with:</p>
 								<ul>
-									<li>This callback is injected in the new Transition&#39;s context</li>
+									<li>The new Transition</li>
 								</ul>
 								<p>Relevant return Values:</p>
 								<ul>
@@ -164,23 +164,33 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
     <span class="hljs-keyword">this</span>.originalData = angular.copy(<span class="hljs-keyword">this</span>.data);
 
     <span class="hljs-keyword">this</span>.uiCanExit = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-      <span class="hljs-keyword">if</span> (!angular.equals(<span class="hljs-keyword">this</span>.data, <span class="hljs-keyword">this</span>.originalData) {
+      <span class="hljs-keyword">if</span> (!angular.equals(<span class="hljs-keyword">this</span>.data, <span class="hljs-keyword">this</span>.originalData)) {
         <span class="hljs-comment">// Note: This could also return a Promise and request async</span>
         <span class="hljs-comment">// confirmation using something like ui-bootstrap $modal</span>
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">window</span>.confirm(<span class="hljs-string">"Data has changed.  Exit anyway and lose changes?"</span>);
       }
     }
   }
+}
 </code></pre>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>the new Transition that is about to exit the component&#39;s state</p>
+									</div>
+								</li>
+							</ul>
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <a href="../modules/transition.html#hookresult" class="tsd-signature-type">HookResult</a></h4>
-								: <p>a value, or a promise for a value.</p>
+								: <p>a HookResult, or a promise for a HookResult</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/interface.ts#L618">ui-router/src/interface.ts:618</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/interface.ts#L711">angularjs/src/interface.ts:711</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -241,7 +251,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/interface.ts#L570">ui-router/src/interface.ts:570</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/interface.ts#L663">angularjs/src/interface.ts:663</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -252,7 +262,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -270,12 +280,18 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 						<a href="../modules/ng1.html">ng1</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-								<a href="../modules/ng1._______ui_router_core_src_router_.html">"../../ui-<wbr>router-<wbr>core/src/router"</a>
+								<a href="../modules/ng1._______core_src_router_.html">"../../core/src/router"</a>
+							</li>
+							<li class=" tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported">
+								<a href="../modules/ng1._______core_src_state_stateregistry_.html">"../../core/src/state/state<wbr>Registry"</a>
 							</li>
 						</ul>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
@@ -291,6 +307,9 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -311,13 +330,10 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -361,6 +377,9 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="ng1.uiviewscrollprovider.html" class="tsd-kind-icon">UIView<wbr>Scroll<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="ng1._ng1statedeclaration.html" class="tsd-kind-icon">_<wbr>Ng1<wbr>State<wbr>Declaration</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="../modules/ng1.html#id" class="tsd-kind-icon">id</a>

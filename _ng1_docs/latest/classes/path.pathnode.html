@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PathNode | angular-ui-router</title>
+	<title>PathNode | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/path.html">path</a>
@@ -82,12 +82,6 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A node in a <a href="../interfaces/transition.treechanges.html">TreeChanges</a> path</p>
-					</div>
-					<p>For a <a href="../interfaces/transition.treechanges.html">TreeChanges</a> path, this class holds the stateful information for a single node in the path.
-						Each PathNode corresponds to a state being entered, exited, or retained.
-					The stateful information includes parameter values and resolve data.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -122,10 +116,10 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="path.pathnode.html#applyrawparams" class="tsd-kind-icon">apply<wbr>Raw<wbr>Params</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="path.pathnode.html#diff" class="tsd-kind-icon">diff</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="path.pathnode.html#equals" class="tsd-kind-icon">equals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="path.pathnode.html#parameter" class="tsd-kind-icon">parameter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="path.pathnode.html#clone" class="tsd-kind-icon">clone</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="path.pathnode.html#matching" class="tsd-kind-icon">matching</a></li>
 							</ul>
 						</section>
 					</div>
@@ -139,11 +133,11 @@ redirect_from: /docs/latest/classes/path.pathnode.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Path<wbr>Node<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Path<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></li>
 						<li class="tsd-header">
 							<p> Creates a copy of a PathNode </p>
 						</li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Path<wbr>Node<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="state.state-1.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Path<wbr>Node<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></li>
 						<li class="tsd-header">
 							<p> Creates a new (empty) PathNode for a State </p>
 						</li>
@@ -158,7 +152,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></h5>
+									<h5>node <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -167,7 +161,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L27">ui-router-core/src/path/node.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L29">core/src/path/pathNode.ts:29</a></li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -179,7 +173,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state <a href="state.state-1.html" class="tsd-signature-type">State</a></h5>
+									<h5>state <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -188,7 +182,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L30">ui-router-core/src/path/node.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L32">core/src/path/pathNode.ts:32</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -214,7 +208,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L21">ui-router-core/src/path/node.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L23">core/src/path/pathNode.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +238,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L23">ui-router-core/src/path/node.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L25">core/src/path/pathNode.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -266,7 +260,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L25">ui-router-core/src/path/node.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L27">core/src/path/pathNode.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -275,7 +269,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					<!--
         <h3>state</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="state.state-1.html" class="tsd-signature-type">State</a>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a>    <div class="tsd-header">
 							<p> The state being entered, exited, or retained </p>
 						</div>
 					</div>
@@ -288,7 +282,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L19">ui-router-core/src/path/node.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L21">core/src/path/pathNode.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -310,7 +304,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L27">ui-router-core/src/path/node.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L29">core/src/path/pathNode.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +341,58 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L51">ui-router-core/src/path/node.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L53">core/src/path/pathNode.ts:53</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="diff" class="tsd-anchor"></a>
+					<!--
+        <h3>diff</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">diff<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a>, paramsFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">GetParamsFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="params.param.html" class="tsd-signature-type">Param</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+						<li class="tsd-header">
+							<p> Finds Params with different parameter values on another PathNode. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds Params with different parameter values on another PathNode.</p>
+								</div>
+								<p>Given another node (of the same state), finds the parameter values which differ.
+								Returns the <a href="params.param.html">Param</a> (schema objects) whose parameter values differ.</p>
+								<p>Given another node for a different state, returns <code>false</code></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>The node to compare to</p>
+									</div>
+								</li>
+								<li>
+									<h5>paramsFn: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">GetParamsFn</span></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>A function that returns which parameters should be compared.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="params.param.html" class="tsd-signature-type">Param</a><span class="tsd-signature-symbol">[]</span>
+									<span class="tsd-signature-symbol"> | </span>
+									<span class="tsd-signature-type">false</span>
+								</h4>
+								: <p>The <a href="params.param.html">Param</a>s which differ, or null if the two nodes are for different states</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L85">core/src/path/pathNode.ts:85</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -358,7 +403,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
         <h3>equals</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a>, keys<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">equals<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a>, paramsFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">GetParamsFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -370,7 +415,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 									<h5>node <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a></h5>
 								</li>
 								<li>
-									<h5>keys: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;this.paramSchema.map(p &#x3D;&gt; p.id)</span></h5>
+									<h5>paramsFn: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">GetParamsFn</span></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -381,7 +426,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L66">ui-router-core/src/path/node.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L68">core/src/path/pathNode.ts:68</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -416,7 +461,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L58">ui-router-core/src/path/node.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L60">core/src/path/pathNode.ts:60</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -451,59 +496,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L73">ui-router-core/src/path/node.ts:73</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
-					<a name="matching" class="tsd-anchor"></a>
-					<!--
-        <h3><span class="tsd-flag ts-flagStatic">Static</span> matching</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">matching<span class="tsd-signature-symbol">(</span>pathA<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span>, pathB<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span>, ignoreDynamicParams<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></li>
-						<li class="tsd-header">
-							<p> Returns a new path which is a subpath of the first path which matched the second path. </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a new path which is a subpath of the first path which matched the second path.</p>
-								</div>
-								<p>The new path starts from root and contains any nodes that match the nodes in the second path.
-								Nodes are compared using their state property and parameter values.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>pathA <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>the first path</p>
-									</div>
-								</li>
-								<li>
-									<h5>pathB <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>the second path</p>
-									</div>
-								</li>
-								<li>
-									<h5>ignoreDynamicParams: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>don&#39;t compare dynamic parameter values</p>
-									</div>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></h4>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/path/node.ts#L87">ui-router-core/src/path/node.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/path/pathNode.ts#L93">core/src/path/pathNode.ts:93</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -514,7 +507,7 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -535,6 +528,9 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -548,6 +544,9 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -567,22 +566,16 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
 					<li class="current tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="path.pathfactory.html" class="tsd-kind-icon">Path<wbr>Factory</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
@@ -610,6 +603,9 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 								<a href="path.pathnode.html#applyrawparams" class="tsd-kind-icon">apply<wbr>Raw<wbr>Params</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="path.pathnode.html#diff" class="tsd-kind-icon">diff</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="path.pathnode.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
@@ -618,13 +614,13 @@ redirect_from: /docs/latest/classes/path.pathnode.html
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
 								<a href="path.pathnode.html#clone" class="tsd-kind-icon">clone</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
-								<a href="path.pathnode.html#matching" class="tsd-kind-icon">matching</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="path.pathutils.html" class="tsd-kind-icon">Path<wbr>Utils</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

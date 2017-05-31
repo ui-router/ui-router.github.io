@@ -1,0 +1,1303 @@
+---
+redirect_from: /docs/1.0.0/modules/hooks.html
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>hooks | @uirouter/angularjs</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/uirouter.css">
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/reset.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<!--
+                            <div class="tsd-select" id="tsd-filter-visibility">
+                                <span class="tsd-select-label">All</span>
+                                <ul class="tsd-select-list">
+                                    <li data-value="public">Public</li>
+                                    <li data-value="protected">Public/Protected</li>
+                                    <li data-value="private" class="selected">All</li>
+                                </ul>
+                            </div>
+
+                            <input type="checkbox" id="tsd-filter-inherited" checked />
+                            <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
+							<!--
+                                <input type="checkbox" id="tsd-filter-only-exported" />
+                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            -->
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/angularjs</a>
+				</li>
+				<li>
+					<a href="hooks.html">hooks</a>
+				</li>
+			</ul>
+			<h1>Module hooks</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#onenterhook" class="tsd-kind-icon">on<wbr>Enter<wbr>Hook</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#onexithook" class="tsd-kind-icon">on<wbr>Exit<wbr>Hook</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#onretainhook" class="tsd-kind-icon">on<wbr>Retain<wbr>Hook</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#addcoreresolvables" class="tsd-kind-icon">add<wbr>Core<wbr>Resolvables</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#eagerresolvepath" class="tsd-kind-icon">eager<wbr>Resolve<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#ignoredhook" class="tsd-kind-icon">ignored<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#invalidtransitionhook" class="tsd-kind-icon">invalid<wbr>Transition<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#lazyloadstate" class="tsd-kind-icon">lazy<wbr>Load<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#lazyresolvestate" class="tsd-kind-icon">lazy<wbr>Resolve<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#loadenteringviews" class="tsd-kind-icon">load<wbr>Entering<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#redirecttohook" class="tsd-kind-icon">redirect<wbr>ToHook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeraddcoreresolvables" class="tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registereagerresolvepath" class="tsd-kind-icon">register<wbr>Eager<wbr>Resolve<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerignoredtransitionhook" class="tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerinvalidtransitionhook" class="tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerlazyloadhook" class="tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerlazyresolvestate" class="tsd-kind-icon">register<wbr>Lazy<wbr>Resolve<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerloadenteringviews" class="tsd-kind-icon">register<wbr>Load<wbr>Entering<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeronenterhook" class="tsd-kind-icon">register<wbr>OnEnter<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeronexithook" class="tsd-kind-icon">register<wbr>OnExit<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeronretainhook" class="tsd-kind-icon">register<wbr>OnRetain<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerupdateurl" class="tsd-kind-icon">register<wbr>Update<wbr>Url</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="onenterhook" class="tsd-anchor"></a>
+					<!--
+        <h3>on<wbr>Enter<wbr>Hook</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Enter<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/transition.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a><span class="tsd-signature-symbol"> =&nbsp;makeEnterExitRetainHook(&#x27;onEnter&#x27;)</span>    <div class="tsd-header">
+							<p> The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onEnter </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onEnter</p>
+							</div>
+							<p>When the state is being entered, the state&#39;s .onEnter function is invoked.</p>
+							<p>Registered using <code>transitionService.onEnter({ entering: (state) =&gt; !!state.onEnter }, onEnterHook);</code></p>
+							<p>See: <a href="../interfaces/transition.ihookregistry.html#onenter">IHookRegistry.onEnter</a></p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L60">core/src/hooks/onEnterExitRetain.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="onexithook" class="tsd-anchor"></a>
+					<!--
+        <h3>on<wbr>Exit<wbr>Hook</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Exit<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/transition.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a><span class="tsd-signature-symbol"> =&nbsp;makeEnterExitRetainHook(&#x27;onExit&#x27;)</span>    <div class="tsd-header">
+							<p> The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onExit </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onExit</p>
+							</div>
+							<p>When the state is being exited, the state&#39;s .onExit function is invoked.</p>
+							<p>Registered using <code>transitionService.onExit({ exiting: (state) =&gt; !!state.onExit }, onExitHook);</code></p>
+							<p>See: <a href="../interfaces/transition.ihookregistry.html#onexit">IHookRegistry.onExit</a></p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L34">core/src/hooks/onEnterExitRetain.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="onretainhook" class="tsd-anchor"></a>
+					<!--
+        <h3>on<wbr>Retain<wbr>Hook</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Retain<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/transition.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a><span class="tsd-signature-symbol"> =&nbsp;makeEnterExitRetainHook(&#x27;onRetain&#x27;)</span>    <div class="tsd-header">
+							<p> The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onRetain </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a> for onRetain</p>
+							</div>
+							<p>When the state was already entered, and is not being exited or re-entered, the state&#39;s .onRetain function is invoked.</p>
+							<p>Registered using <code>transitionService.onRetain({ retained: (state) =&gt; !!state.onRetain }, onRetainHook);</code></p>
+							<p>See: <a href="../interfaces/transition.ihookregistry.html#onretain">IHookRegistry.onRetain</a></p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L47">core/src/hooks/onEnterExitRetain.ts:47</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="activateviews" class="tsd-anchor"></a>
+					<!--
+        <h3>activate<wbr>Views</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">activate<wbr>Views<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which activates the new views when a transition is successful. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which activates the new views when a transition is successful.</p>
+								</div>
+								<p>Registered using <code>transitionService.onSuccess({}, activateViews);</code></p>
+								<p>After a transition is complete, this hook deactivates the old views from the previous state,
+								and activates the new views from the destination state.</p>
+								<p>See <a href="../classes/view.viewservice.html">ViewService</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L39">core/src/hooks/views.ts:39</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="addcoreresolvables" class="tsd-anchor"></a>
+					<!--
+        <h3>add<wbr>Core<wbr>Resolvables</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Core<wbr>Resolvables<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/coreResolvables.ts#L6">core/src/hooks/coreResolvables.ts:6</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="eagerresolvepath" class="tsd-anchor"></a>
+					<!--
+        <h3>eager<wbr>Resolve<wbr>Path</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">eager<wbr>Resolve<wbr>Path<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which resolves all EAGER Resolvables in the To Path </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which resolves all EAGER Resolvables in the To Path</p>
+								</div>
+								<p>Registered using <code>transitionService.onStart({}, eagerResolvePath);</code></p>
+								<p>When a Transition starts, this hook resolves all the EAGER Resolvables, which the transition then waits for.</p>
+								<p>See <a href="../interfaces/state.statedeclaration.html#resolve">StateDeclaration.resolve</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L20">core/src/hooks/resolve.ts:20</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="ignoredhook" class="tsd-anchor"></a>
+					<!--
+        <h3>ignored<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">ignored<wbr>Hook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that skips a transition if it should be ignored </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that skips a transition if it should be ignored</p>
+								</div>
+								<p>This hook is invoked at the end of the onBefore phase.</p>
+								<p>If the transition should be ignored (because no parameter or states changed)
+								then the transition is ignored and not processed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/ignoredTransition.ts#L16">core/src/hooks/ignoredTransition.ts:16</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="invalidtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>invalid<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that rejects the Transition if it is invalid </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that rejects the Transition if it is invalid</p>
+								</div>
+								<p>This hook is invoked at the end of the onBefore phase.
+									If the transition is invalid (for example, param values do not validate)
+								then the transition is rejected.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/invalidTransition.ts#L13">core/src/hooks/invalidTransition.ts:13</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="lazyloadhook" class="tsd-anchor"></a>
+					<!--
+        <h3>lazy<wbr>Load<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Load<wbr>Hook<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that performs lazy loading </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that performs lazy loading</p>
+								</div>
+								<p>When entering a state &quot;abc&quot; which has a <code>lazyLoad</code> function defined:</p>
+								<ul>
+									<li>Invoke the <code>lazyLoad</code> function (unless it is already in process)<ul>
+											<li>Flag the hook function as &quot;in process&quot;</li>
+											<li>The function should return a promise (that resolves when lazy loading is complete)</li>
+										</ul>
+									</li>
+									<li>Wait for the promise to settle<ul>
+											<li>If the promise resolves to a <a href="../interfaces/state.lazyloadresult.html">LazyLoadResult</a>, then register those states</li>
+											<li>Flag the hook function as &quot;not in process&quot;</li>
+										</ul>
+									</li>
+									<li>If the hook was successful<ul>
+											<li>Remove the <code>lazyLoad</code> function from the state declaration</li>
+										</ul>
+									</li>
+									<li>If all the hooks were successful<ul>
+											<li>Retry the transition (by returning a TargetState)</li>
+										</ul>
+									</li>
+								</ul>
+								<pre><code>.state(<span class="hljs-string">'abc'</span>, {
+  component: <span class="hljs-string">'fooComponent'</span>,
+  lazyLoad: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.<span class="hljs-keyword">import</span>(<span class="hljs-string">'./fooComponent'</span>)
+  });
+</code></pre><p>See <a href="../interfaces/state.statedeclaration.html#lazyload">StateDeclaration.lazyLoad</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L33">core/src/hooks/lazyLoad.ts:33</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="lazyloadstate" class="tsd-anchor"></a>
+					<!--
+        <h3>lazy<wbr>Load<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Load<wbr>State<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/state.lazyloadresult.html" class="tsd-signature-type">LazyLoadResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> Invokes a state&#39;s lazy load function </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a state&#39;s lazy load function</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>a Transition context</p>
+									</div>
+								</li>
+								<li>
+									<h5>state <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>the state to lazy load</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/state.lazyloadresult.html" class="tsd-signature-type">LazyLoadResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								: <p>A promise for the lazy load result</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L80">core/src/hooks/lazyLoad.ts:80</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="lazyresolvestate" class="tsd-anchor"></a>
+					<!--
+        <h3>lazy<wbr>Resolve<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Resolve<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path</p>
+								</div>
+								<p>Registered using <code>transitionService.onEnter({ entering: () =&gt; true }, lazyResolveState);</code></p>
+								<p>When a State is being entered, this hook resolves all the Resolvables for this state, which the transition then waits for.</p>
+								<p>See <a href="../interfaces/state.statedeclaration.html#resolve">StateDeclaration.resolve</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+								<li>
+									<h5>state <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L37">core/src/hooks/resolve.ts:37</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="loadenteringviews" class="tsd-anchor"></a>
+					<!--
+        <h3>load<wbr>Entering<wbr>Views</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Entering<wbr>Views<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which waits for the views to load </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which waits for the views to load</p>
+								</div>
+								<p>Registered using <code>transitionService.onStart({}, loadEnteringViews);</code></p>
+								<p>Allows the views to do async work in <a href="../interfaces/view.viewconfig.html#load">ViewConfig.load</a> before the transition continues.
+								In angular 1, this includes loading the templates.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L19">core/src/hooks/views.ts:19</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="redirecttohook" class="tsd-anchor"></a>
+					<!--
+        <h3>redirect<wbr>ToHook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">redirect<wbr>ToHook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that redirects to a different state or params </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that redirects to a different state or params</p>
+								</div>
+								<p>Registered using <code>transitionService.onStart({ to: (state) =&gt; !!state.redirectTo }, redirectHook);</code></p>
+								<p>See <a href="../interfaces/state.statedeclaration.html#redirectto">StateDeclaration.redirectTo</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a>
+									<span class="tsd-signature-symbol"> | </span>
+									<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span>
+								</h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/redirectTo.ts#L16">core/src/hooks/redirectTo.ts:16</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeractivateviews" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Activate<wbr>Views</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Activate<wbr>Views<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L52">core/src/hooks/views.ts:52</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeraddcoreresolvables" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Add<wbr>Core<wbr>Resolvables</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/coreResolvables.ts#L17">core/src/hooks/coreResolvables.ts:17</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registereagerresolvepath" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Eager<wbr>Resolve<wbr>Path</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Eager<wbr>Resolve<wbr>Path<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L25">core/src/hooks/resolve.ts:25</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerignoredtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Ignored<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/ignoredTransition.ts#L34">core/src/hooks/ignoredTransition.ts:34</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerinvalidtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Invalid<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/invalidTransition.ts#L19">core/src/hooks/invalidTransition.ts:19</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerlazyloadhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Lazy<wbr>Load<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L69">core/src/hooks/lazyLoad.ts:69</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerlazyresolvestate" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Lazy<wbr>Resolve<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Lazy<wbr>Resolve<wbr>State<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L43">core/src/hooks/resolve.ts:43</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerloadenteringviews" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Load<wbr>Entering<wbr>Views</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Load<wbr>Entering<wbr>Views<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L26">core/src/hooks/views.ts:26</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeronenterhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>OnEnter<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>OnEnter<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L61">core/src/hooks/onEnterExitRetain.ts:61</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeronexithook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>OnExit<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>OnExit<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L35">core/src/hooks/onEnterExitRetain.ts:35</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeronretainhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>OnRetain<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>OnRetain<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L48">core/src/hooks/onEnterExitRetain.ts:48</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerredirecttohook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Redirect<wbr>ToHook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Redirect<wbr>ToHook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/redirectTo.ts#L36">core/src/hooks/redirectTo.ts:36</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerupdateglobalstate" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Update<wbr>Global<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/updateGlobals.ts#L39">core/src/hooks/updateGlobals.ts:39</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerupdateurl" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Update<wbr>Url</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Update<wbr>Url<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/url.ts#L30">core/src/hooks/url.ts:30</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="updateglobalstate" class="tsd-anchor"></a>
+					<!--
+        <h3>update<wbr>Global<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Global<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates global UI-Router state </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates global UI-Router state</p>
+								</div>
+								<p>Registered using <code>transitionService.onBefore({}, updateGlobalState);</code></p>
+								<p>Before a <a href="../classes/transition.transition-1.html">Transition</a> starts, updates the global value of &quot;the current transition&quot; ([[Globals.transition]]).
+									After a successful <a href="../classes/transition.transition-1.html">Transition</a>, updates the global values of &quot;the current state&quot;
+								([[Globals.current]] and [[Globals.$current]]) and &quot;the current param values&quot; ([[Globals.params]]).</p>
+								<p>See also the deprecated properties:
+								<a href="../classes/state.stateservice.html#transition">StateService.transition</a>, <a href="../classes/state.stateservice.html#current">StateService.current</a>, <a href="../classes/state.stateservice.html#params">StateService.params</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/updateGlobals.ts#L19">core/src/hooks/updateGlobals.ts:19</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="updateurl" class="tsd-anchor"></a>
+					<!--
+        <h3>update<wbr>Url</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Url<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates the URL after a successful transition </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates the URL after a successful transition</p>
+								</div>
+								<p>Registered using <code>transitionService.onSuccess({}, updateUrl);</code></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transition <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/url.ts#L13">core/src/hooks/url.ts:13</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Public API</span>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="core.html">core</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="directives.html">directives</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="injectables.html">injectables</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="ng1.html">ng1</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="resolve.html">resolve</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="transition.html">transition</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="view.html">view</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internal UI-<wbr><wbr>Router API</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common.html">common</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_hof.html">common_<wbr>hof</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_predicates.html">common_<wbr>predicates</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="vanilla.html">vanilla</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#onenterhook" class="tsd-kind-icon">on<wbr>Enter<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#onexithook" class="tsd-kind-icon">on<wbr>Exit<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#onretainhook" class="tsd-kind-icon">on<wbr>Retain<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#addcoreresolvables" class="tsd-kind-icon">add<wbr>Core<wbr>Resolvables</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#eagerresolvepath" class="tsd-kind-icon">eager<wbr>Resolve<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#ignoredhook" class="tsd-kind-icon">ignored<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#invalidtransitionhook" class="tsd-kind-icon">invalid<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#lazyloadstate" class="tsd-kind-icon">lazy<wbr>Load<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#lazyresolvestate" class="tsd-kind-icon">lazy<wbr>Resolve<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#loadenteringviews" class="tsd-kind-icon">load<wbr>Entering<wbr>Views</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#redirecttohook" class="tsd-kind-icon">redirect<wbr>ToHook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeraddcoreresolvables" class="tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registereagerresolvepath" class="tsd-kind-icon">register<wbr>Eager<wbr>Resolve<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerignoredtransitionhook" class="tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerinvalidtransitionhook" class="tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerlazyloadhook" class="tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerlazyresolvestate" class="tsd-kind-icon">register<wbr>Lazy<wbr>Resolve<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerloadenteringviews" class="tsd-kind-icon">register<wbr>Load<wbr>Entering<wbr>Views</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeronenterhook" class="tsd-kind-icon">register<wbr>OnEnter<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeronexithook" class="tsd-kind-icon">register<wbr>OnExit<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeronretainhook" class="tsd-kind-icon">register<wbr>OnRetain<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerupdateurl" class="tsd-kind-icon">register<wbr>Update<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

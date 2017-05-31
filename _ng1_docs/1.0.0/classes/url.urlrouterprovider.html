@@ -1,0 +1,637 @@
+---
+redirect_from: /docs/1.0.0/classes/url.urlrouterprovider.html
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UrlRouterProvider | @uirouter/angularjs</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/uirouter.css">
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/reset.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<!--
+                            <div class="tsd-select" id="tsd-filter-visibility">
+                                <span class="tsd-select-label">All</span>
+                                <ul class="tsd-select-list">
+                                    <li data-value="public">Public</li>
+                                    <li data-value="protected">Public/Protected</li>
+                                    <li data-value="private" class="selected">All</li>
+                                </ul>
+                            </div>
+
+                            <input type="checkbox" id="tsd-filter-inherited" checked />
+                            <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
+							<!--
+                                <input type="checkbox" id="tsd-filter-only-exported" />
+                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            -->
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/angularjs</a>
+				</li>
+				<li>
+					<a href="../modules/url.html">url</a>
+				</li>
+				<li>
+					<a href="url.urlrouterprovider.html">UrlRouterProvider</a>
+				</li>
+			</ul>
+			<h1>Class UrlRouterProvider</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Manages rules for client-side URL</p>
+					</div>
+					<h3 id="deprecation-warning-">Deprecation warning:</h3>
+					<p>This class is now considered to be an internal API
+						Use the <a href="url.urlservice.html">UrlService</a> instead.
+					For configuring URL rules, use the <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a> which can be found as <a href="url.urlservice.html#rules">UrlService.rules</a>.</p>
+					<p>This class manages the router rules for what to do when the URL changes.</p>
+					<p>This provider remains for backwards compatibility.</p>
+					<dl class="tsd-comment-tags">
+						<dt>deprecated</dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">UrlRouterProvider</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouterprovider.html#deferintercept" class="tsd-kind-icon">defer<wbr>Intercept</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouterprovider.html#otherwise" class="tsd-kind-icon">otherwise</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouterprovider.html#rule" class="tsd-kind-icon">rule</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouterprovider.html#when" class="tsd-kind-icon">when</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="url.urlrouterprovider.html#injectablehandler" class="tsd-kind-icon">injectable<wbr>Handler</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="deferintercept" class="tsd-anchor"></a>
+					<!--
+        <h3>defer<wbr>Intercept</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">defer<wbr>Intercept<span class="tsd-signature-symbol">(</span>defer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> Disables monitoring of the URL. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disables monitoring of the URL.</p>
+								</div>
+								<p>Call this method before UI-Router has bootstrapped.
+								It will stop UI-Router from performing the initial url sync.</p>
+								<p>This can be useful to perform some asynchronous initialization before the router starts.
+								Once the initialization is complete, call <a href="url.urlrouter.html#listen">listen</a> to tell UI-Router to start watching and synchronizing the URL.</p>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router'</span>]);
+
+app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
+  <span class="hljs-comment">// Prevent $urlRouter from automatically intercepting URL changes;</span>
+  $urlRouterProvider.deferIntercept();
+})
+
+app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">MyService, $urlRouter, $http</span>) </span>{
+  $http.get(<span class="hljs-string">"/stuff"</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resp</span>) </span>{
+    MyService.doStuff(resp.data);
+    $urlRouter.listen();
+    $urlRouter.sync();
+  });
+});
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>defer: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">boolean</span></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>Indicates whether to defer location change interception.
+										Passing no parameter is equivalent to <code>true</code>.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L208">angularjs/src/urlRouterProvider.ts:208</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="otherwise" class="tsd-anchor"></a>
+					<!--
+        <h3>otherwise</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">otherwise<span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/url.rawng1rulefunction.html" class="tsd-signature-type">RawNg1RuleFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlrouterprovider.html" class="tsd-signature-type">UrlRouterProvider</a></li>
+						<li class="tsd-header">
+							<p> Defines the path or behavior to use when no url can be matched. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Defines the path or behavior to use when no url can be matched.</p>
+								</div>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+
+app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
+  <span class="hljs-comment">// if the path doesn't match any of the urls you configured</span>
+  <span class="hljs-comment">// otherwise will take care of routing the user to the</span>
+  <span class="hljs-comment">// specified url</span>
+  $urlRouterProvider.otherwise(<span class="hljs-string">'/index'</span>);
+
+  <span class="hljs-comment">// Example of using function rule as param</span>
+  $urlRouterProvider.otherwise(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$injector, $location</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'/a/valid/url'</span>;
+  });
+});
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rule <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/url.rawng1rulefunction.html" class="tsd-signature-type">RawNg1RuleFunction</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>The url path you want to redirect to or a function rule that returns the url path or performs a <code>$state.go()</code>.
+										The function version is passed two params: <code>$injector</code> and <code>$location</code> services, and should return a url string.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="url.urlrouterprovider.html" class="tsd-signature-type">UrlRouterProvider</a></h4>
+								: <p><code>$urlRouterProvider</code> - <code>$urlRouterProvider</code> instance</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L112">angularjs/src/urlRouterProvider.ts:112</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="rule" class="tsd-anchor"></a>
+					<!--
+        <h3>rule</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">rule<span class="tsd-signature-symbol">(</span>ruleFn<span class="tsd-signature-symbol">: </span><a href="../interfaces/url.rawng1rulefunction.html" class="tsd-signature-type">RawNg1RuleFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlrouterprovider.html" class="tsd-signature-type">UrlRouterProvider</a></li>
+						<li class="tsd-header">
+							<p> Registers a url handler function. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a url handler function.</p>
+								</div>
+								<p>Registers a low level url handler (a <code>rule</code>).
+								A rule detects specific URL patterns and returns a redirect, or performs some action.</p>
+								<p>If a rule returns a string, the URL is replaced with the string, and all rules are fired again.</p>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+
+app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
+  <span class="hljs-comment">// Here's an example of how you might allow case insensitive urls</span>
+  $urlRouterProvider.rule(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$injector, $location</span>) </span>{
+    <span class="hljs-keyword">var</span> path = $location.path(),
+        normalized = path.toLowerCase();
+
+    <span class="hljs-keyword">if</span> (path !== normalized) {
+      <span class="hljs-keyword">return</span> normalized;
+    }
+  });
+});
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ruleFn <a href="../interfaces/url.rawng1rulefunction.html" class="tsd-signature-type">RawNg1RuleFunction</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>Handler function that takes <code>$injector</code> and <code>$location</code> services as arguments.
+										You can use them to detect a url and return a different url as a string.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="url.urlrouterprovider.html" class="tsd-signature-type">UrlRouterProvider</a></h4>
+								: <p><a href="url.urlrouterprovider.html">UrlRouterProvider</a> (<code>this</code>)</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L75">angularjs/src/urlRouterProvider.ts:75</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="when" class="tsd-anchor"></a>
+					<!--
+        <h3>when</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">when<span class="tsd-signature-symbol">(</span>what<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-header">
+							<p> Registers a handler for a given url matching. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a handler for a given url matching.</p>
+								</div>
+								<p>If the handler is a string, it is
+									treated as a redirect, and is interpolated according to the syntax of match
+								(i.e. like <code>String.replace()</code> for <code>RegExp</code>, or like a <code>UrlMatcher</code> pattern otherwise).</p>
+								<p>If the handler is a function, it is injectable.
+									It gets invoked if <code>$location</code> matches.
+								You have the option of inject the match object as <code>$match</code>.</p>
+								<p>The handler can return</p>
+								<ul>
+									<li><strong>falsy</strong> to indicate that the rule didn&#39;t match after all, then <code>$urlRouter</code>
+									will continue trying to find another one that matches.</li>
+									<li><strong>string</strong> which is treated as a redirect and passed to <code>$location.url()</code></li>
+									<li><strong>void</strong> or any <strong>truthy</strong> value tells <code>$urlRouter</code> that the url was handled.</li>
+								</ul>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+
+app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
+  $urlRouterProvider.when($state.url, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$match, $stateParams</span>) </span>{
+    <span class="hljs-keyword">if</span> ($state.$current.navigable !== state ||
+        !equalForKeys($match, $stateParams) {
+     $state.transitionTo(state, $match, <span class="hljs-literal">false</span>);
+    }
+  });
+});
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>what <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>A pattern string to match, compiled as a <a href="url.urlmatcher.html">UrlMatcher</a>.</p>
+									</div>
+								</li>
+								<li>
+									<h5>handler <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>The path (or function that returns a path) that you want to redirect your user to.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L164">angularjs/src/urlRouterProvider.ts:164</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="injectablehandler" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagStatic">Static</span> injectable<wbr>Handler</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">injectable<wbr>Handler<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>router <span class="tsd-signature-type">UIRouter</span></h5>
+								</li>
+								<li>
+									<h5>handler <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L173">angularjs/src/urlRouterProvider.ts:173</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Public API</span>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/directives.html">directives</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/injectables.html">injectables</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/ng1.html">ng1</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/resolve.html">resolve</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/transition.html">transition</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internal UI-<wbr><wbr>Router API</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common.html">common</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_hof.html">common_<wbr>hof</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_predicates.html">common_<wbr>predicates</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.baseurlrule.html" class="tsd-kind-icon">Base<wbr>Url<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="url.urlmatcher.html" class="tsd-kind-icon">Url<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.urlmatcherfactory.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.urlrouter.html" class="tsd-kind-icon">Url<wbr>Router</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.urlrouterprovider.html" class="tsd-kind-icon">Url<wbr>Router<wbr>Provider</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlrouterprovider.html#deferintercept" class="tsd-kind-icon">defer<wbr>Intercept</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlrouterprovider.html#otherwise" class="tsd-kind-icon">otherwise</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlrouterprovider.html#rule" class="tsd-kind-icon">rule</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlrouterprovider.html#when" class="tsd-kind-icon">when</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="url.urlrouterprovider.html#injectablehandler" class="tsd-kind-icon">injectable<wbr>Handler</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.urlrulefactory.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="url.urlservice.html" class="tsd-kind-icon">Url<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.matchresult.html" class="tsd-kind-icon">Match<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.rawng1rulefunction.html" class="tsd-kind-icon">Raw<wbr>Ng1<wbr>Rule<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.regexprule.html" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.staterule.html" class="tsd-kind-icon">State<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlparts.html" class="tsd-kind-icon">Url<wbr>Parts</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlrule.html" class="tsd-kind-icon">Url<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Handler<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlrulematchfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Match<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlrulesapi.html" class="tsd-kind-icon">Url<wbr>Rules<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/url.urlsyncapi.html" class="tsd-kind-icon">Url<wbr>Sync<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/url.html#urlruletype" class="tsd-kind-icon">Url<wbr>Rule<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

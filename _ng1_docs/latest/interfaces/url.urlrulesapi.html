@@ -6,7 +6,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UrlRulesApi | angular-ui-router</title>
+	<title>UrlRulesApi | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/url.html">url</a>
@@ -111,6 +111,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.urlrulesapi.html#initial" class="tsd-kind-icon">initial</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.urlrulesapi.html#otherwise" class="tsd-kind-icon">otherwise</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.urlrulesapi.html#removerule" class="tsd-kind-icon">remove<wbr>Rule</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.urlrulesapi.html#rule" class="tsd-kind-icon">rule</a></li>
@@ -125,6 +126,73 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="initial" class="tsd-anchor"></a>
+					<!--
+        <h3>initial</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">initial<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> Defines the initial state, path, or behavior to use when the app starts. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Defines the initial state, path, or behavior to use when the app starts.</p>
+								</div>
+								<p>This rule defines the initial/starting state for the application.</p>
+								<p>This rule is triggered the first time the URL is checked (when the app initially loads).
+								The rule is triggered only when the url matches either <code>&quot;&quot;</code> or <code>&quot;/&quot;</code>.</p>
+								<p>Note: The rule is intended to be used when the root of the application is directly linked to.
+									When the URL is <em>not</em> <code>&quot;&quot;</code> or <code>&quot;/&quot;</code> and doesn&#39;t match other rules, the <a href="url.urlrulesapi.html#otherwise">otherwise</a> rule is triggered.
+								This allows 404-like behavior when an unknown URL is deep-linked.</p>
+								<h4 id="example-">Example:</h4>
+								<p>Start app at <code>home</code> state.</p>
+								<pre><code class="lang-js">.initial({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> });
+</code></pre>
+								<h4 id="example-">Example:</h4>
+								<p>Start app at <code>/home</code> (by url)</p>
+								<pre><code class="lang-js">.initial(<span class="hljs-string">'/home'</span>);
+</code></pre>
+								<h4 id="example-">Example:</h4>
+								<p>When no other url rule matches, go to <code>home</code> state</p>
+								<pre><code class="lang-js">.initial(<span class="hljs-function">(<span class="hljs-params">url, router</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'initial state'</span>);
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> };
+})
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>handler <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>The initial state or url path, or a function which returns the state or url path (or performs custom logic).</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>priority<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L390">core/src/url/interface.ts:390</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="otherwise" class="tsd-anchor"></a>
 					<!--
         <h3>otherwise</h3>
@@ -132,36 +200,46 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
 						<li class="tsd-signature tsd-kind-icon">otherwise<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-header">
-							<p> Defines the path or behavior to use when no url can be matched. </p>
+							<p> Defines the state, url, or behavior to use when no other rule matches the URL. </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Defines the path or behavior to use when no url can be matched.</p>
+									<p>Defines the state, url, or behavior to use when no other rule matches the URL.</p>
 								</div>
+								<p>This rule is matched when <em>no other rule</em> matches.
+								It is generally used to handle unknown URLs (similar to &quot;404&quot; behavior, but on the client side).</p>
 								<ul>
-									<li>If a string, it is treated as a url redirect</li>
+									<li>If <code>handler</code> a string, it is treated as a url redirect</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, redirect to <code>/index</code></p>
 								<pre><code class="lang-js">.otherwise(<span class="hljs-string">'/index'</span>);
 </code></pre>
 								<ul>
-									<li>If a function, the function receives the current url (<a href="url.urlparts.html">UrlParts</a>) and the <a href="../classes/core.uirouter.html">UIRouter</a> object.
-									If the function returns a string, the url is redirected to the return value.</li>
+									<li>If <code>handler</code> is an object with a <code>state</code> property, the state is activated.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
-								<p>When no other url rule matches, redirect to <code>/index</code></p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-string">'/index'</span>);
+								<p>When no other url rule matches, redirect to <code>home</code> and provide a <code>dashboard</code> parameter value.</p>
+								<pre><code class="lang-js">.otherwise({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span>, <span class="hljs-attr">params</span>: { <span class="hljs-attr">dashboard</span>: <span class="hljs-string">'default'</span> } });
+</code></pre>
+								<ul>
+									<li>If <code>handler</code> is a function, the function receives the current url (<a href="url.urlparts.html">UrlParts</a>) and the <a href="../classes/core.uirouter.html">UIRouter</a> object.
+									The function can perform actions, and/or return a value.</li>
+								</ul>
+								<h4 id="example-">Example:</h4>
+								<p>When no other url rule matches, manually trigger a transition to the <code>home</code> state</p>
+								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">urlParts, router</span>) =&gt;</span> {
+  router.stateService.go(<span class="hljs-string">'home'</span>);
+});
 </code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, go to <code>home</code> state</p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">url, router</span>) =&gt;</span> {
-  router.stateService.go(<span class="hljs-string">'home'</span>);
-  <span class="hljs-keyword">return</span>;
-}
+								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">urlParts, router</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> };
+});
 </code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -179,7 +257,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L341">ui-router-core/src/url/interface.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L353">core/src/url/interface.ts:353</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -217,7 +295,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L366">ui-router-core/src/url/interface.ts:366</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L415">core/src/url/interface.ts:415</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -256,7 +334,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L359">ui-router-core/src/url/interface.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L408">core/src/url/interface.ts:408</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -286,7 +364,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L348">ui-router-core/src/url/interface.ts:348</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L397">core/src/url/interface.ts:397</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -373,7 +451,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L247">ui-router-core/src/url/interface.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L247">core/src/url/interface.ts:247</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -430,6 +508,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 								<p>When the URL is <code>/foo/123</code> the rule will redirect to <code>/bar/123</code>.</p>
 								<pre><code class="lang-js">.when(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">"^/foo/(.*)$"</span>), match =&gt; <span class="hljs-string">"/bar/"</span> + match[<span class="hljs-number">1</span>]);
 </code></pre>
+								<p>Note: the <code>handler</code> may also invoke arbitrary code, such as <code>$state.go()</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -460,12 +539,11 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <a href="url.urlrule.html" class="tsd-signature-type">UrlRule</a></h4>
 								: <p>the registered <a href="url.urlrule.html">UrlRule</a></p>
-								<p>Note: the <code>handler</code> may also invoke arbitrary code, such as <code>$state.go()</code></p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L308">ui-router-core/src/url/interface.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L308">core/src/url/interface.ts:308</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -476,7 +554,7 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -497,6 +575,9 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -510,6 +591,9 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -530,13 +614,10 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -605,6 +686,9 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 						<a href="url.urlrulesapi.html" class="tsd-kind-icon">Url<wbr>Rules<wbr>Api</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="url.urlrulesapi.html#initial" class="tsd-kind-icon">initial</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="url.urlrulesapi.html#otherwise" class="tsd-kind-icon">otherwise</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -634,6 +718,9 @@ redirect_from: /docs/latest/interfaces/url.urlrulesapi.html
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
 					</li>
 				</ul>
 			</nav>

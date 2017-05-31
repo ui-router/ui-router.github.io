@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransitionService | angular-ui-router</title>
+	<title>TransitionService | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/transition.html">transition</a>
@@ -151,7 +151,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L161">ui-router-core/src/transition/transitionService.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L165">core/src/transition/transitionService.ts:165</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +200,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L224">ui-router-core/src/transition/transitionService.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L229">core/src/transition/transitionService.ts:229</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -236,7 +236,7 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/core.disposable.html">Disposable</a>.<a href="../interfaces/core.disposable.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L205">ui-router-core/src/transition/transitionService.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L212">core/src/transition/transitionService.ts:212</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -317,9 +317,8 @@ $transitions.onBefore(criteria, <span class="hljs-function"><span class="hljs-ke
 										<p>This example cancels a transition to a state which requires authentication, if the user is not currently authenticated.</p>
 										<p>This example assumes a state tree where all states which require authentication are children of a parent <code>&#39;requireauth&#39;</code> state.
 										This example assumes <code>MyAuthService</code> synchronously returns a boolean from <code>isAuthenticated()</code>.</p>
-									</dd>
-									<dt>example</dt>
-									<dd><pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
+										<h4 id="example-">Example:</h4>
+										<pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
 $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-string">'requireauth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> myAuthService = trans.injector().get(<span class="hljs-string">'MyAuthService'</span>);
   <span class="hljs-comment">// If isAuthenticated returns false, the transition is cancelled.</span>
@@ -349,7 +348,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onbefore">onBefore</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L132">ui-router-core/src/transition/transitionService.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L136">core/src/transition/transitionService.ts:136</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -408,7 +407,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L130">ui-router-core/src/transition/transitionService.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L134">core/src/transition/transitionService.ts:134</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -495,7 +494,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onenter">onEnter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L140">ui-router-core/src/transition/transitionService.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L144">core/src/transition/transitionService.ts:144</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -529,11 +528,9 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>A transition &quot;errors&quot; if it was started, but failed to complete (for any reason).
 								A <em>non-exhaustive list</em> of reasons a transition can error:</p>
 								<ul>
-									<li>A transition was cancelled because a new transition started while it was still running</li>
+									<li>A transition was cancelled because a new transition started while it was still running (<code>Transition superseded</code>)</li>
 									<li>A transition was cancelled by a Transition Hook returning false</li>
 									<li>A transition was redirected by a Transition Hook returning a <a href="state.targetstate.html">TargetState</a></li>
-									<li>A transition was invalid because the target state/parameters are not valid</li>
-									<li>A transition was ignored because the target state/parameters are exactly the current state/parameters</li>
 									<li>A Transition Hook or resolve function threw an error</li>
 									<li>A Transition Hook returned a rejected promise</li>
 									<li>A resolve function returned a rejected promise</li>
@@ -564,7 +561,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onerror">onError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L146">ui-router-core/src/transition/transitionService.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L150">core/src/transition/transitionService.ts:150</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -627,7 +624,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onexit">onExit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L136">ui-router-core/src/transition/transitionService.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L140">core/src/transition/transitionService.ts:140</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -682,7 +679,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onfinish">onFinish</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L142">ui-router-core/src/transition/transitionService.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L146">core/src/transition/transitionService.ts:146</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -705,11 +702,10 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 									<p>Registers a <a href="../interfaces/transition.transitionstatehookfn.html">TransitionStateHookFn</a>, called when a specific state is retained/kept.</p>
 								</div>
 								<p>Registers a lifecycle hook, which is invoked (during a transition) for
-								a specific state that was previously active and is not being entered nor exited.</p>
-								<p>Since this hook is invoked when a transition is when the state is kept, it means the transition
-									is coming <em>from</em> a substate of the kept state <em>to</em> a substate of the kept state.
-									This hook can be used to perform actions when the user moves from one substate to another, such as
-								between steps in a wizard.</p>
+								a specific state that was previously active will remain active (is not being entered nor exited).</p>
+								<p>This hook is invoked when a state is &quot;retained&quot; or &quot;kept&quot;.
+									It means the transition is coming <em>from</em> a substate of the retained state <em>to</em> a substate of the retained state.
+								This hook can be used to perform actions when the user moves from one substate to another, such as between steps in a wizard.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 									<code>onRetain</code> hooks generally specify <code>{ retained: &#39;somestate&#39; }</code>.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
@@ -745,7 +741,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onretain">onRetain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L138">ui-router-core/src/transition/transitionService.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L142">core/src/transition/transitionService.ts:142</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -794,9 +790,8 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 									<li><code>MyAuthService.authenticate()</code> presents a login dialog, and returns a promise which is resolved
 									or rejected, whether or not the login attempt was successful.</li>
 								</ul>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
 $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-string">'auth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> $state = trans.router.stateService;
   <span class="hljs-keyword">var</span> MyAuthService = trans.injector().get(<span class="hljs-string">'MyAuthService'</span>);
@@ -816,8 +811,6 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
   }
 });
 </code></pre>
-									</dd>
-								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -839,7 +832,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onstart">onStart</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L134">ui-router-core/src/transition/transitionService.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L138">core/src/transition/transitionService.ts:138</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -893,7 +886,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onsuccess">onSuccess</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionService.ts#L144">ui-router-core/src/transition/transitionService.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionService.ts#L148">core/src/transition/transitionService.ts:148</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -904,7 +897,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -925,6 +918,9 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -938,6 +934,9 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -958,13 +957,10 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>

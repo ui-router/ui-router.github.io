@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Rejection | angular-ui-router</title>
+	<title>Rejection | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/transition.html">transition</a>
@@ -101,6 +101,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#_id" class="tsd-kind-icon">$id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#detail" class="tsd-kind-icon">detail</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#message" class="tsd-kind-icon">message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#redirected" class="tsd-kind-icon">redirected</a></li>
@@ -116,7 +117,8 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#errored" class="tsd-kind-icon">errored</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#ignored" class="tsd-kind-icon">ignored</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#invalid" class="tsd-kind-icon">invalid</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#istransitionrejectionpromise" class="tsd-kind-icon">is<wbr>Transition<wbr>Rejection<wbr>Promise</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#isrejectionpromise" class="tsd-kind-icon">is<wbr>Rejection<wbr>Promise</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#normalize" class="tsd-kind-icon">normalize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#redirected-1" class="tsd-kind-icon">redirected</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="transition.rejection.html#superseded" class="tsd-kind-icon">superseded</a></li>
 							</ul>
@@ -154,7 +156,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L17">ui-router-core/src/transition/rejectFactory.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L21">core/src/transition/rejectFactory.ts:21</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -162,6 +164,20 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_id" class="tsd-anchor"></a>
+					<!--
+        <h3>$id</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">$id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;id++</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L17">core/src/transition/rejectFactory.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="detail" class="tsd-anchor"></a>
 					<!--
@@ -172,7 +188,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L16">ui-router-core/src/transition/rejectFactory.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L20">core/src/transition/rejectFactory.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +202,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L15">ui-router-core/src/transition/rejectFactory.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L19">core/src/transition/rejectFactory.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +216,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L17">ui-router-core/src/transition/rejectFactory.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L21">core/src/transition/rejectFactory.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +230,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L14">ui-router-core/src/transition/rejectFactory.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L18">core/src/transition/rejectFactory.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,17 +243,17 @@ redirect_from: /docs/latest/classes/transition.rejection.html
         <h3>to<wbr>Promise</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Promise<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Promise<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L32">ui-router-core/src/transition/rejectFactory.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L37">core/src/transition/rejectFactory.ts:37</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -258,7 +274,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L25">ui-router-core/src/transition/rejectFactory.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L29">core/src/transition/rejectFactory.ts:29</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -271,14 +287,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">aborted<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to aborted transition </p>
+							<p> Returns a Rejection due to aborted transition </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to aborted transition</p>
+									<p>Returns a Rejection due to aborted transition</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -293,7 +309,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L69">ui-router-core/src/transition/rejectFactory.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L74">core/src/transition/rejectFactory.ts:74</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -306,14 +322,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">errored<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to aborted transition </p>
+							<p> Returns a Rejection due to aborted transition </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to aborted transition</p>
+									<p>Returns a Rejection due to aborted transition</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -328,7 +344,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L76">ui-router-core/src/transition/rejectFactory.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L80">core/src/transition/rejectFactory.ts:80</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -341,14 +357,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">ignored<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to ignored transition </p>
+							<p> Returns a Rejection due to ignored transition </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to ignored transition</p>
+									<p>Returns a Rejection due to ignored transition</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -363,7 +379,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L63">ui-router-core/src/transition/rejectFactory.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L68">core/src/transition/rejectFactory.ts:68</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -376,14 +392,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">invalid<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to invalid transition </p>
+							<p> Returns a Rejection due to invalid transition </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to invalid transition</p>
+									<p>Returns a Rejection due to invalid transition</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -398,18 +414,18 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L57">ui-router-core/src/transition/rejectFactory.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L62">core/src/transition/rejectFactory.ts:62</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="istransitionrejectionpromise" class="tsd-anchor"></a>
+					<a name="isrejectionpromise" class="tsd-anchor"></a>
 					<!--
-        <h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Transition<wbr>Rejection<wbr>Promise</h3>
+        <h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Rejection<wbr>Promise</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Transition<wbr>Rejection<wbr>Promise<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Rejection<wbr>Promise<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 						<li class="tsd-header">
 							<p> Returns true if the obj is a rejected promise created from the <code>asPromise</code> factory </p>
 						</li>
@@ -433,7 +449,46 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L37">ui-router-core/src/transition/rejectFactory.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L42">core/src/transition/rejectFactory.ts:42</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="normalize" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagStatic">Static</span> normalize</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">normalize<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
+						<li class="tsd-header">
+							<p> Returns a Rejection </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a Rejection</p>
+								</div>
+								<p>Normalizes a value as a Rejection.
+									If the value is already a Rejection, returns it.
+								Otherwise, wraps and returns the value as a Rejection (Rejection type: ERROR).</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detail: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="transition.rejection.html" class="tsd-signature-type">Rejection</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></h4>
+								: <p><code>detail</code> if it is already a <code>Rejection</code>, else returns an ERROR Rejection.</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L94">core/src/transition/rejectFactory.ts:94</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -446,14 +501,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">redirected<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to redirected transition </p>
+							<p> Returns a Rejection due to redirected transition </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to redirected transition</p>
+									<p>Returns a Rejection due to redirected transition</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -468,7 +523,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L52">ui-router-core/src/transition/rejectFactory.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L57">core/src/transition/rejectFactory.ts:57</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -481,14 +536,14 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
 						<li class="tsd-signature tsd-kind-icon">superseded<span class="tsd-signature-symbol">(</span>detail<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.rejection.html" class="tsd-signature-type">Rejection</a></li>
 						<li class="tsd-header">
-							<p> Returns a TransitionRejection due to transition superseded </p>
+							<p> Returns a Rejection due to transition superseded </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns a TransitionRejection due to transition superseded</p>
+									<p>Returns a Rejection due to transition superseded</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -506,7 +561,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/rejectFactory.ts#L42">ui-router-core/src/transition/rejectFactory.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/rejectFactory.ts#L47">core/src/transition/rejectFactory.ts:47</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -517,7 +572,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -538,6 +593,9 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -551,6 +609,9 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -571,13 +632,10 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -605,6 +663,9 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="transition.rejection.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="transition.rejection.html#_id" class="tsd-kind-icon">$id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="transition.rejection.html#detail" class="tsd-kind-icon">detail</a>
@@ -637,7 +698,10 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 								<a href="transition.rejection.html#invalid" class="tsd-kind-icon">invalid</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="transition.rejection.html#istransitionrejectionpromise" class="tsd-kind-icon">is<wbr>Transition<wbr>Rejection<wbr>Promise</a>
+								<a href="transition.rejection.html#isrejectionpromise" class="tsd-kind-icon">is<wbr>Rejection<wbr>Promise</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="transition.rejection.html#normalize" class="tsd-kind-icon">normalize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="transition.rejection.html#redirected-1" class="tsd-kind-icon">redirected</a>

@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UrlRouter | angular-ui-router</title>
+	<title>UrlRouter | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/url.html">url</a>
@@ -85,6 +85,10 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 					<div class="lead">
 						<p>Updates URL and responds to URL changes</p>
 					</div>
+					<h3 id="deprecation-warning-">Deprecation warning:</h3>
+					<p>This class is now considered to be an internal API
+						Use the <a href="url.urlservice.html">UrlService</a> instead.
+					For configuring URL rules, use the <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a> which can be found as <a href="url.urlservice.html#rules">UrlService.rules</a>.</p>
 					<p>This class updates the URL when the state changes.
 					It also responds to changes in the URL.</p>
 				</div>
@@ -120,7 +124,9 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#deferintercept" class="tsd-kind-icon">defer<wbr>Intercept</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="url.urlrouter.html#ensuresorted" class="tsd-kind-icon">ensure<wbr>Sorted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#href" class="tsd-kind-icon">href</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#initial" class="tsd-kind-icon">initial</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#listen" class="tsd-kind-icon">listen</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#match" class="tsd-kind-icon">match</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlrouter.html#otherwise" class="tsd-kind-icon">otherwise</a></li>
@@ -157,7 +163,7 @@ redirect_from: /docs/latest/classes/url.urlrouter.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L59">ui-router-core/src/url/urlRouter.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L62">core/src/url/urlRouter.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +215,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlsyncapi.html">UrlSyncApi</a>.<a href="../interfaces/url.urlsyncapi.html#deferintercept">deferIntercept</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L279">ui-router-core/src/url/urlRouter.ts:279</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L301">core/src/url/urlRouter.ts:301</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -232,7 +238,28 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L78">ui-router-core/src/url/urlRouter.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L82">core/src/url/urlRouter.ts:82</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
+					<a name="ensuresorted" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagPrivate">Private</span> ensure<wbr>Sorted</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Sorted<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L94">core/src/url/urlRouter.ts:94</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -297,7 +324,40 @@ $bob = $urlRouter.href(matcher, params);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L205">ui-router-core/src/url/urlRouter.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L216">core/src/url/urlRouter.ts:216</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="initial" class="tsd-anchor"></a>
+					<!--
+        <h3>initial</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">initial<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>handler <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L283">core/src/url/urlRouter.ts:283</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -346,7 +406,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlsyncapi.html">UrlSyncApi</a>.<a href="../interfaces/url.urlsyncapi.html#listen">listen</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L147">ui-router-core/src/url/urlRouter.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L158">core/src/url/urlRouter.ts:158</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -383,7 +443,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L94">ui-router-core/src/url/urlRouter.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L103">core/src/url/urlRouter.ts:103</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -396,36 +456,46 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
 						<li class="tsd-signature tsd-kind-icon">otherwise<span class="tsd-signature-symbol">(</span>handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/url.urlrulehandlerfn.html" class="tsd-signature-type">UrlRuleHandlerFn</a><span class="tsd-signature-symbol"> | </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/state.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 						<li class="tsd-header">
-							<p> Defines the path or behavior to use when no url can be matched. </p>
+							<p> Defines the state, url, or behavior to use when no other rule matches the URL. </p>
 						</li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Defines the path or behavior to use when no url can be matched.</p>
+									<p>Defines the state, url, or behavior to use when no other rule matches the URL.</p>
 								</div>
+								<p>This rule is matched when <em>no other rule</em> matches.
+								It is generally used to handle unknown URLs (similar to &quot;404&quot; behavior, but on the client side).</p>
 								<ul>
-									<li>If a string, it is treated as a url redirect</li>
+									<li>If <code>handler</code> a string, it is treated as a url redirect</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, redirect to <code>/index</code></p>
 								<pre><code class="lang-js">.otherwise(<span class="hljs-string">'/index'</span>);
 </code></pre>
 								<ul>
-									<li>If a function, the function receives the current url (<a href="../interfaces/url.urlparts.html">UrlParts</a>) and the <a href="core.uirouter.html">UIRouter</a> object.
-									If the function returns a string, the url is redirected to the return value.</li>
+									<li>If <code>handler</code> is an object with a <code>state</code> property, the state is activated.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
-								<p>When no other url rule matches, redirect to <code>/index</code></p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-string">'/index'</span>);
+								<p>When no other url rule matches, redirect to <code>home</code> and provide a <code>dashboard</code> parameter value.</p>
+								<pre><code class="lang-js">.otherwise({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span>, <span class="hljs-attr">params</span>: { <span class="hljs-attr">dashboard</span>: <span class="hljs-string">'default'</span> } });
+</code></pre>
+								<ul>
+									<li>If <code>handler</code> is a function, the function receives the current url (<a href="../interfaces/url.urlparts.html">UrlParts</a>) and the <a href="core.uirouter.html">UIRouter</a> object.
+									The function can perform actions, and/or return a value.</li>
+								</ul>
+								<h4 id="example-">Example:</h4>
+								<p>When no other url rule matches, manually trigger a transition to the <code>home</code> state</p>
+								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">urlParts, router</span>) =&gt;</span> {
+  router.stateService.go(<span class="hljs-string">'home'</span>);
+});
 </code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, go to <code>home</code> state</p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">url, router</span>) =&gt;</span> {
-  router.stateService.go(<span class="hljs-string">'home'</span>);
-  <span class="hljs-keyword">return</span>;
-}
+								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">urlParts, router</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> };
+});
 </code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,7 +511,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a>.<a href="../interfaces/url.urlrulesapi.html#otherwise">otherwise</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L260">ui-router-core/src/url/urlRouter.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L275">core/src/url/urlRouter.ts:275</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -492,7 +562,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L181">ui-router-core/src/url/urlRouter.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L192">core/src/url/urlRouter.ts:192</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -525,7 +595,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L251">ui-router-core/src/url/urlRouter.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L264">core/src/url/urlRouter.ts:264</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -567,7 +637,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a>.<a href="../interfaces/url.urlrulesapi.html#rule">rule</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L241">ui-router-core/src/url/urlRouter.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L252">core/src/url/urlRouter.ts:252</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -598,7 +668,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a>.<a href="../interfaces/url.urlrulesapi.html#rules">rules</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L257">ui-router-core/src/url/urlRouter.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L269">core/src/url/urlRouter.ts:269</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -654,7 +724,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L85">ui-router-core/src/url/urlRouter.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L89">core/src/url/urlRouter.ts:89</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -703,7 +773,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlsyncapi.html">UrlSyncApi</a>.<a href="../interfaces/url.urlsyncapi.html#sync">sync</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L124">ui-router-core/src/url/urlRouter.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L135">core/src/url/urlRouter.ts:135</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -738,7 +808,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L160">ui-router-core/src/url/urlRouter.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L171">core/src/url/urlRouter.ts:171</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -782,7 +852,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/urlRouter.ts#L271">ui-router-core/src/url/urlRouter.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/urlRouter.ts#L293">core/src/url/urlRouter.ts:293</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -793,7 +863,7 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -814,6 +884,9 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -827,6 +900,9 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -847,13 +923,10 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -882,8 +955,14 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlrouter.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
+								<a href="url.urlrouter.html#ensuresorted" class="tsd-kind-icon">ensure<wbr>Sorted</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlrouter.html#href" class="tsd-kind-icon">href</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlrouter.html#initial" class="tsd-kind-icon">initial</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlrouter.html#listen" class="tsd-kind-icon">listen</a>
@@ -978,6 +1057,9 @@ $http.get(<span class="hljs-string">'/states.json'</span>).then(<span class="hlj
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
 					</li>
 				</ul>
 			</nav>

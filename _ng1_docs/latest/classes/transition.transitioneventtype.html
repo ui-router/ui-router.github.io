@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransitionEventType | angular-ui-router</title>
+	<title>TransitionEventType | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/transition.html">transition</a>
@@ -119,8 +119,8 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#hookorder" class="tsd-kind-icon">hook<wbr>Order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#hookphase" class="tsd-kind-icon">hook<wbr>Phase</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#rejectifsuperseded" class="tsd-kind-icon">reject<wbr>IfSuperseded</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#reversesort" class="tsd-kind-icon">reverse<wbr>Sort</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="transition.transitioneventtype.html#synchronous" class="tsd-kind-icon">synchronous</a></li>
 							</ul>
 						</section>
 					</div>
@@ -134,7 +134,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Transition<wbr>Event<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookPhase<span class="tsd-signature-symbol">: </span><a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a>, hookOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, criteriaMatchPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathType</span>, reverseSort<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, getResultHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#getresulthandler" class="tsd-signature-type">GetResultHandler</a>, getErrorHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#geterrorhandler" class="tsd-signature-type">GetErrorHandler</a>, rejectIfSuperseded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.transitioneventtype.html" class="tsd-signature-type">TransitionEventType</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Transition<wbr>Event<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookPhase<span class="tsd-signature-symbol">: </span><a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a>, hookOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, criteriaMatchPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathType</span>, reverseSort<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, getResultHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#getresulthandler" class="tsd-signature-type">GetResultHandler</a>, getErrorHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#geterrorhandler" class="tsd-signature-type">GetErrorHandler</a>, synchronous<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.transitioneventtype.html" class="tsd-signature-type">TransitionEventType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -162,7 +162,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 									<h5>getErrorHandler: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <a href="../modules/transition.html#geterrorhandler" class="tsd-signature-type">GetErrorHandler</a><span class="tsd-signature-symbol"> =&nbsp;TransitionHook.REJECT_ERROR</span></h5>
 								</li>
 								<li>
-									<h5>rejectIfSuperseded: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<h5>synchronous: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -171,7 +171,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L10">ui-router-core/src/transition/transitionEventType.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L10">core/src/transition/transitionEventType.ts:10</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -189,7 +189,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L15">ui-router-core/src/transition/transitionEventType.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L15">core/src/transition/transitionEventType.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -203,7 +203,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L18">ui-router-core/src/transition/transitionEventType.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L18">core/src/transition/transitionEventType.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +217,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L17">ui-router-core/src/transition/transitionEventType.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L17">core/src/transition/transitionEventType.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +231,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L14">ui-router-core/src/transition/transitionEventType.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L14">core/src/transition/transitionEventType.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -245,7 +245,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L13">ui-router-core/src/transition/transitionEventType.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L13">core/src/transition/transitionEventType.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,21 +259,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L12">ui-router-core/src/transition/transitionEventType.ts:12</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
-					<a name="rejectifsuperseded" class="tsd-anchor"></a>
-					<!--
-        <h3>reject<wbr>IfSuperseded</h3>
-    -->
-					<div class="tsd-signature tsd-kind-icon">reject<wbr>IfSuperseded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<div class="tsd-declaration">
-					</div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L19">ui-router-core/src/transition/transitionEventType.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L12">core/src/transition/transitionEventType.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -287,7 +273,21 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/transition/transitionEventType.ts#L16">ui-router-core/src/transition/transitionEventType.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L16">core/src/transition/transitionEventType.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="synchronous" class="tsd-anchor"></a>
+					<!--
+        <h3>synchronous</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">synchronous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transitionEventType.ts#L19">core/src/transition/transitionEventType.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +297,7 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -318,6 +318,9 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -331,6 +334,9 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -351,13 +357,10 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -411,10 +414,10 @@ redirect_from: /docs/latest/classes/transition.transitioneventtype.html
 								<a href="transition.transitioneventtype.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="transition.transitioneventtype.html#rejectifsuperseded" class="tsd-kind-icon">reject<wbr>IfSuperseded</a>
+								<a href="transition.transitioneventtype.html#reversesort" class="tsd-kind-icon">reverse<wbr>Sort</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
-								<a href="transition.transitioneventtype.html#reversesort" class="tsd-kind-icon">reverse<wbr>Sort</a>
+								<a href="transition.transitioneventtype.html#synchronous" class="tsd-kind-icon">synchronous</a>
 							</li>
 						</ul>
 					</li>

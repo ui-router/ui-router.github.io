@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StateQueueManager | angular-ui-router</title>
+	<title>StateQueueManager | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/state.html">state</a>
@@ -115,6 +115,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="state.statequeuemanager.html#_urlrouter" class="tsd-kind-icon">$url<wbr>Router</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="state.statequeuemanager.html#builder" class="tsd-kind-icon">builder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="state.statequeuemanager.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="state.statequeuemanager.html#matcher" class="tsd-kind-icon">matcher</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="state.statequeuemanager.html#queue" class="tsd-kind-icon">queue</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="state.statequeuemanager.html#states" class="tsd-kind-icon">states</a></li>
 							</ul>
@@ -139,14 +140,14 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>State<wbr>Queue<wbr>Manager<span class="tsd-signature-symbol">(</span>$registry<span class="tsd-signature-symbol">: </span><a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a>, $urlRouter<span class="tsd-signature-symbol">: </span><a href="url.urlrouter.html" class="tsd-signature-type">UrlRouter</a>, states<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, builder<span class="tsd-signature-symbol">: </span><a href="state.statebuilder.html" class="tsd-signature-type">StateBuilder</a>, listeners<span class="tsd-signature-symbol">: </span><a href="../modules/state.html#stateregistrylistener" class="tsd-signature-type">StateRegistryListener</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state.statequeuemanager.html" class="tsd-signature-type">StateQueueManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>State<wbr>Queue<wbr>Manager<span class="tsd-signature-symbol">(</span>$registry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StateRegistry</span>, $urlRouter<span class="tsd-signature-symbol">: </span><a href="url.urlrouter.html" class="tsd-signature-type">UrlRouter</a>, states<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, builder<span class="tsd-signature-symbol">: </span><a href="state.statebuilder.html" class="tsd-signature-type">StateBuilder</a>, listeners<span class="tsd-signature-symbol">: </span><a href="../modules/state.html#stateregistrylistener" class="tsd-signature-type">StateRegistryListener</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state.statequeuemanager.html" class="tsd-signature-type">StateQueueManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>$registry <a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a></h5>
+									<h5>$registry <span class="tsd-signature-type">StateRegistry</span></h5>
 								</li>
 								<li>
 									<h5>$urlRouter <a href="url.urlrouter.html" class="tsd-signature-type">UrlRouter</a></h5>
@@ -155,7 +156,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 									<h5>states <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.state-1.html" class="tsd-signature-type">State</a></h5>
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h5>
 										</li>
 									</ul>
 								</li>
@@ -172,7 +173,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L13">ui-router-core/src/state/stateQueueManager.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L16">core/src/state/stateQueueManager.ts:16</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -185,12 +186,12 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					<!--
         <h3><span class="tsd-flag ts-flagPrivate">Private</span> $registry</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">$registry<span class="tsd-signature-symbol">:</span> <a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a></div>
+					<div class="tsd-signature tsd-kind-icon">$registry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StateRegistry</span></div>
 					<div class="tsd-declaration">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L16">ui-router-core/src/state/stateQueueManager.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L19">core/src/state/stateQueueManager.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,7 +205,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L17">ui-router-core/src/state/stateQueueManager.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L20">core/src/state/stateQueueManager.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +219,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L19">ui-router-core/src/state/stateQueueManager.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L22">core/src/state/stateQueueManager.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +233,21 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L20">ui-router-core/src/state/stateQueueManager.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L23">core/src/state/stateQueueManager.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="matcher" class="tsd-anchor"></a>
+					<!--
+        <h3>matcher</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">matcher<span class="tsd-signature-symbol">:</span> <a href="state.statematcher.html" class="tsd-signature-type">StateMatcher</a></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L16">core/src/state/stateQueueManager.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,12 +256,12 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					<!--
         <h3>queue</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">queue<span class="tsd-signature-symbol">:</span> <a href="state.state-1.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">queue<span class="tsd-signature-symbol">:</span> <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">[]</span></div>
 					<div class="tsd-declaration">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L13">ui-router-core/src/state/stateQueueManager.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L15">core/src/state/stateQueueManager.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -262,13 +277,13 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.state-1.html" class="tsd-signature-type">State</a></h5>
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h5>
 							</li>
 						</ul>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L18">ui-router-core/src/state/stateQueueManager.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L21">core/src/state/stateQueueManager.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,14 +296,14 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
         <h3>attach<wbr>Route</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">attach<wbr>Route<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="state.state-1.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attach<wbr>Route<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>state <a href="state.state-1.html" class="tsd-signature-type">State</a></h5>
+									<h5>state <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -297,7 +312,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L100">ui-router-core/src/state/stateQueueManager.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L102">core/src/state/stateQueueManager.ts:102</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -320,7 +335,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L25">ui-router-core/src/state/stateQueueManager.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L29">core/src/state/stateQueueManager.ts:29</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -339,14 +354,14 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-index-signature">
-										<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.state-1.html" class="tsd-signature-type">State</a></h5>
+										<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h5>
 									</li>
 								</ul>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L49">ui-router-core/src/state/stateQueueManager.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L48">core/src/state/stateQueueManager.ts:48</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -357,23 +372,23 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
         <h3>register</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>stateDecl<span class="tsd-signature-symbol">: </span><a href="../modules/state.html#_statedeclaration" class="tsd-signature-type">_StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
+									<h5>stateDecl <a href="../modules/state.html#_statedeclaration" class="tsd-signature-type">_StateDeclaration</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+								<h4 class="tsd-returns-title">Returns <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/state/stateQueueManager.ts#L29">ui-router-core/src/state/stateQueueManager.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/stateQueueManager.ts#L33">core/src/state/stateQueueManager.ts:33</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -384,7 +399,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -405,6 +420,9 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class="current tsd-kind-external-module">
@@ -418,6 +436,9 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -438,26 +459,23 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="state.state-1.html" class="tsd-kind-icon">State</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
 						<a href="state.statebuilder.html" class="tsd-kind-icon">State<wbr>Builder</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
 						<a href="state.statematcher.html" class="tsd-kind-icon">State<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="state.stateobject.html" class="tsd-kind-icon">State<wbr>Object</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -478,6 +496,9 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
 								<a href="state.statequeuemanager.html#listeners" class="tsd-kind-icon">listeners</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="state.statequeuemanager.html#matcher" class="tsd-kind-icon">matcher</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
 								<a href="state.statequeuemanager.html#queue" class="tsd-kind-icon">queue</a>
@@ -513,7 +534,7 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="../interfaces/state.builders.html" class="tsd-kind-icon">Builders</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/state.hrefoptions.html" class="tsd-kind-icon">Href<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
@@ -548,6 +569,9 @@ redirect_from: /docs/latest/classes/state.statequeuemanager.html
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/state.html#stateregistrylistener" class="tsd-kind-icon">State<wbr>Registry<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#_statedeclaration" class="tsd-kind-icon">_<wbr>State<wbr>Declaration</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="../modules/state.html#databuilder" class="tsd-kind-icon">data<wbr>Builder</a>

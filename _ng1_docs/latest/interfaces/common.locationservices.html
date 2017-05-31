@@ -6,7 +6,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LocationServices | angular-ui-router</title>
+	<title>LocationServices | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/common.html">common</a>
@@ -96,7 +96,11 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
+					<li><a href="../classes/vanilla.baselocationservices.html" class="tsd-signature-type">BaseLocationServices</a></li>
+					<li><a href="../classes/vanilla.hashlocationservice.html" class="tsd-signature-type">HashLocationService</a></li>
+					<li><a href="../classes/vanilla.memorylocationservice.html" class="tsd-signature-type">MemoryLocationService</a></li>
 					<li><a href="../classes/ng1.ng1locationservices.html" class="tsd-signature-type">Ng1LocationServices</a></li>
+					<li><a href="../classes/vanilla.pushstatelocationservice.html" class="tsd-signature-type">PushStateLocationService</a></li>
 					<li><a href="../classes/url.urlservice.html" class="tsd-signature-type">UrlService</a></li>
 				</ul>
 			</section>
@@ -151,7 +155,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.disposable.html">Disposable</a>.<a href="core.disposable.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/interface.ts#L123">ui-router-core/src/interface.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/interface.ts#L123">core/src/interface.ts:123</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -182,7 +186,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L105">ui-router-core/src/common/coreservices.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L130">core/src/common/coreservices.ts:130</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -224,7 +228,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L118">ui-router-core/src/common/coreservices.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L143">core/src/common/coreservices.ts:143</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -255,7 +259,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L87">ui-router-core/src/common/coreservices.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L112">core/src/common/coreservices.ts:112</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -291,7 +295,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L96">ui-router-core/src/common/coreservices.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L121">core/src/common/coreservices.ts:121</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -317,7 +321,16 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 								<div class="lead">
 									<p>Gets the current url string</p>
 								</div>
-								<h4 id="example-">Example:</h4>
+								<p>The URL is normalized using the internal <a href="common.locationservices.html#path">path</a>/<a href="common.locationservices.html#search">search</a>/<a href="common.locationservices.html#hash">hash</a> values.</p>
+								<p>For example, the URL may be stored in the hash ([[HashLocationServices]]) or
+								have a base HREF prepended ([[PushStateLocationServices]]).</p>
+								<p>The raw URL in the browser might be:</p>
+								<pre><code><span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/mysite.com/somepath</span><span class="hljs-regexp">/index.html#/internal</span><span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span>
+</code></pre><p>or</p>
+								<pre><code>http:<span class="hljs-regexp">//my</span>site.com<span class="hljs-regexp">/basepath/i</span>nternal<span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span>
+</code></pre><p>then this method returns:</p>
+								<pre><code>/<span class="hljs-keyword">internal</span>/path/<span class="hljs-number">123</span>?param1=foo<span class="hljs-meta">#anchor</span>
+</code></pre><h4 id="example-">Example:</h4>
 								<pre><code class="lang-js">locationServices.url(); <span class="hljs-comment">// "/some/path?query=value#anchor"</span>
 </code></pre>
 							</div>
@@ -328,7 +341,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L61">ui-router-core/src/common/coreservices.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L84">core/src/common/coreservices.ts:84</a></li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -346,7 +359,9 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 								<li>
 									<h5>newurl <span class="tsd-signature-type">string</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>The new value for the URL</p>
+										<p>The new value for the URL.
+											This url should reflect only the new internal <a href="common.locationservices.html#path">path</a>, <a href="common.locationservices.html#search">search</a>, and <a href="common.locationservices.html#hash">hash</a> values.
+										It should not include the protocol, site, port, or base path of an absolute HREF.</p>
 									</div>
 								</li>
 								<li>
@@ -369,7 +384,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/common/coreservices.ts#L78">ui-router-core/src/common/coreservices.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/coreservices.ts#L103">core/src/common/coreservices.ts:103</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -380,7 +395,7 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -401,6 +416,9 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -414,6 +432,9 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -434,13 +455,10 @@ redirect_from: /docs/latest/interfaces/common.locationservices.html
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>

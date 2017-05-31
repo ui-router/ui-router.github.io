@@ -6,7 +6,7 @@ redirect_from: /docs/latest/modules/directives.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>directives | angular-ui-router</title>
+	<title>directives | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/modules/directives.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/modules/directives.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="directives.html">directives</a>
@@ -123,8 +123,9 @@ redirect_from: /docs/latest/modules/directives.html
 							<h3 id="linked-state">Linked State</h3>
 							<p>The attribute value of the <code>ui-sref</code> is the name of the state to link to.</p>
 							<h4 id="example-">Example:</h4>
-							<p>This will activate the <code>home</code> state when the link is clicked.
-							<a ui-sref="home">Home</a></p>
+							<p>This will activate the <code>home</code> state when the link is clicked.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
 							<h3 id="relative-links">Relative Links</h3>
 							<p>You can also use relative state paths within <code>ui-sref</code>, just like a relative path passed to <code>$state.go()</code> (<a href="../classes/state.stateservice.html#go">StateService.go</a>).
 								You just need to be aware that the path is relative to the state that <em>created</em> the link.
@@ -134,7 +135,7 @@ redirect_from: /docs/latest/modules/directives.html
 							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child1"</span>&gt;</span>child 1 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child2"</span>&gt;</span>child 2 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
-							<p>This link activates the parent class.</p>
+							<p>This link activates the parent state.</p>
 							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"^"</span>&gt;</span>Return<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
 							<h3 id="hrefs">hrefs</h3>
@@ -162,6 +163,12 @@ redirect_from: /docs/latest/modules/directives.html
 							Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.</p>
 							<h4 id="example-">Example:</h4>
 							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="other-dom-events">Other DOM Events</h3>
+							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
+							providing an <code>events</code> array in the <code>ui-sref-opts</code> attribute.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
 </code></pre>
 							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
 							<p>This directive can be used in conjunction with <a href="directives.html#uisrefactive">uiSrefActive</a> to highlight the active link.</p>
@@ -214,7 +221,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/directives/stateDirectives.ts#L220">ui-router/src/directives/stateDirectives.ts:220</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L257">angularjs/src/directives/stateDirectives.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -295,7 +302,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/directives/stateDirectives.ts#L481">ui-router/src/directives/stateDirectives.ts:481</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L522">angularjs/src/directives/stateDirectives.ts:522</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -324,7 +331,7 @@ redirect_from: /docs/latest/modules/directives.html
 							<h4 id="example-">Example:</h4>
 							<p>Create a list of links.</p>
 							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"link.state"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 </code></pre>
 							<h3 id="relative-links">Relative Links</h3>
@@ -352,6 +359,12 @@ redirect_from: /docs/latest/modules/directives.html
 							<h4 id="example-">Example:</h4>
 							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"returnto.state"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 </code></pre>
+							<h3 id="other-dom-events">Other DOM Events</h3>
+							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
+							providing an <code>events</code> array in the <code>ui-state-opts</code> attribute.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
+</code></pre>
 							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
 							<p>This directive can be used in conjunction with <a href="directives.html#uisrefactive">uiSrefActive</a> to highlight the active link.</p>
 							<h3 id="notes">Notes</h3>
@@ -371,7 +384,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/directives/stateDirectives.ts#L345">ui-router/src/directives/stateDirectives.ts:345</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L389">angularjs/src/directives/stateDirectives.ts:389</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -491,7 +504,7 @@ $stateProvider.state("home", {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/directives/viewDirective.ts#L159">ui-router/src/directives/viewDirective.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/viewDirective.ts#L159">angularjs/src/directives/viewDirective.ts:159</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -501,7 +514,7 @@ $stateProvider.state("home", {
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -522,6 +535,9 @@ $stateProvider.state("home", {
 						<a href="ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -535,6 +551,9 @@ $stateProvider.state("home", {
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -555,13 +574,10 @@ $stateProvider.state("home", {
 						<a href="hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="view.html">view</a>
+						<a href="vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>

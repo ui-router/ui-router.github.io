@@ -6,7 +6,7 @@ redirect_from: /docs/latest/interfaces/url.urlmatcherconfig.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UrlMatcherConfig | angular-ui-router</title>
+	<title>UrlMatcherConfig | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/interfaces/url.urlmatcherconfig.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/interfaces/url.urlmatcherconfig.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/url.html">url</a>
@@ -134,6 +134,10 @@ redirect_from: /docs/latest/interfaces/url.urlmatcherconfig.html
 								<div class="lead">
 									<p>Defines whether URL matching should be case sensitive (the default behavior), or not.</p>
 								</div>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-comment">// Allow case insensitive url matches</span>
+urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -147,15 +151,11 @@ redirect_from: /docs/latest/interfaces/url.urlmatcherconfig.html
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 								: <p>the current value of caseInsensitive</p>
-								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Allow case insensitive url matches</span>
-urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
-</code></pre>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L61">ui-router-core/src/url/interface.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L61">core/src/url/interface.ts:61</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -177,6 +177,10 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
 								<div class="lead">
 									<p>Sets the default behavior when generating or matching URLs with default parameter values.</p>
 								</div>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-comment">// Remove default parameter values from the url</span>
+urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -202,15 +206,11 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
 									<span class="tsd-signature-type">false</span>
 								</h4>
 								: <p>the current value of defaultSquashPolicy</p>
-								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Remove default parameter values from the url</span>
-urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
-</code></pre>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L94">ui-router-core/src/url/interface.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L94">core/src/url/interface.ts:94</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -232,6 +232,10 @@ urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
 								<div class="lead">
 									<p>Defines whether URLs should match trailing slashes, or not (the default behavior).</p>
 								</div>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-comment">// Allow optional trailing slashes</span>
+urlService.config.strictMode(<span class="hljs-literal">false</span>);
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -245,15 +249,11 @@ urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 								: <p>the current value of strictMode</p>
-								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Allow optional trailing slashes</span>
-urlService.config.strictMode(<span class="hljs-literal">false</span>);
-</code></pre>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L75">ui-router-core/src/url/interface.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L75">core/src/url/interface.ts:75</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -276,6 +276,17 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 									<p>Creates and registers a custom <a href="params.paramtypedefinition.html">ParamTypeDefinition</a> object</p>
 								</div>
 								<p>A custom parameter type can be used to generate URLs with typed parameters or custom encoding/decoding.</p>
+								<h4 id="note-register-custom-types-before-using-them-in-a-state-definition-">Note: Register custom types <em>before using them</em> in a state definition.</h4>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-comment">// Encode object parameter as JSON string</span>
+urlService.config.type(<span class="hljs-string">'myjson'</span>, {
+  <span class="hljs-attr">encode</span>: <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> <span class="hljs-built_in">JSON</span>.stringify(obj),
+  <span class="hljs-attr">decode</span>: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">JSON</span>.parse(str),
+  <span class="hljs-attr">is</span>: <span class="hljs-function">(<span class="hljs-params">val</span>) =&gt;</span> <span class="hljs-keyword">typeof</span>(val) === <span class="hljs-string">'object'</span>,
+  <span class="hljs-attr">pattern</span>: <span class="hljs-regexp">/[^/]+/</span>,
+  <span class="hljs-attr">equals</span>: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> _.isEqual(a, b),
+});
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -295,22 +306,11 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h4>
 								: <p>if only the <code>name</code> parameter was specified: the currently registered <a href="../classes/params.paramtype.html">ParamType</a> object, or undefined</p>
-								<h4 id="note-register-custom-types-before-using-them-in-a-state-definition-">Note: Register custom types <em>before using them</em> in a state definition.</h4>
-								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Encode object parameter as JSON string</span>
-urlService.config.type(<span class="hljs-string">'myjson'</span>, {
-  <span class="hljs-attr">encode</span>: <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> <span class="hljs-built_in">JSON</span>.stringify(obj),
-  <span class="hljs-attr">decode</span>: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">JSON</span>.parse(str),
-  <span class="hljs-attr">is</span>: <span class="hljs-function">(<span class="hljs-params">val</span>) =&gt;</span> <span class="hljs-keyword">typeof</span>(val) === <span class="hljs-string">'object'</span>,
-  <span class="hljs-attr">pattern</span>: <span class="hljs-regexp">/[^/]+/</span>,
-  <span class="hljs-attr">equals</span>: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> _.isEqual(a, b),
-});
-</code></pre>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/url/interface.ts#L120">ui-router-core/src/url/interface.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/url/interface.ts#L120">core/src/url/interface.ts:120</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -321,7 +321,7 @@ urlService.config.type(<span class="hljs-string">'myjson'</span>, {
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -342,6 +342,9 @@ urlService.config.type(<span class="hljs-string">'myjson'</span>, {
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -355,6 +358,9 @@ urlService.config.type(<span class="hljs-string">'myjson'</span>, {
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -375,13 +381,10 @@ urlService.config.type(<span class="hljs-string">'myjson'</span>, {
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -473,6 +476,9 @@ urlService.config.type(<span class="hljs-string">'myjson'</span>, {
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
 					</li>
 				</ul>
 			</nav>

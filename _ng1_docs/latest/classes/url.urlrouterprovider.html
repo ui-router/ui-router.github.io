@@ -6,7 +6,7 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UrlRouterProvider | angular-ui-router</title>
+	<title>UrlRouterProvider | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="../modules/url.html">url</a>
@@ -85,7 +85,10 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 					<div class="lead">
 						<p>Manages rules for client-side URL</p>
 					</div>
-					<h3 id="deprecation-warning-use-a-href-url-urlservice-html-urlservice-a-instead">Deprecation warning Use <a href="url.urlservice.html">UrlService</a> instead</h3>
+					<h3 id="deprecation-warning-">Deprecation warning:</h3>
+					<p>This class is now considered to be an internal API
+						Use the <a href="url.urlservice.html">UrlService</a> instead.
+					For configuring URL rules, use the <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a> which can be found as <a href="url.urlservice.html#rules">UrlService.rules</a>.</p>
 					<p>This class manages the router rules for what to do when the URL changes.</p>
 					<p>This provider remains for backwards compatibility.</p>
 					<dl class="tsd-comment-tags">
@@ -175,7 +178,7 @@ app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/urlRouterProvider.ts#L205">ui-router/src/urlRouterProvider.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L208">angularjs/src/urlRouterProvider.ts:208</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -230,7 +233,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/urlRouterProvider.ts#L109">ui-router/src/urlRouterProvider.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L112">angularjs/src/urlRouterProvider.ts:112</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -288,7 +291,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/urlRouterProvider.ts#L72">ui-router/src/urlRouterProvider.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L75">angularjs/src/urlRouterProvider.ts:75</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -357,7 +360,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/urlRouterProvider.ts#L161">ui-router/src/urlRouterProvider.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L164">angularjs/src/urlRouterProvider.ts:164</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -387,7 +390,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/53c7da8/src/urlRouterProvider.ts#L170">ui-router/src/urlRouterProvider.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/urlRouterProvider.ts#L173">angularjs/src/urlRouterProvider.ts:173</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -398,7 +401,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -419,6 +422,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -432,6 +438,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -452,13 +461,10 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -553,6 +559,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
 					</li>
 				</ul>
 			</nav>

@@ -1,0 +1,669 @@
+---
+redirect_from: /docs/1.0.0/modules/directives.html
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>directives | @uirouter/angularjs</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/uirouter.css">
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/reset.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<!--
+                            <div class="tsd-select" id="tsd-filter-visibility">
+                                <span class="tsd-select-label">All</span>
+                                <ul class="tsd-select-list">
+                                    <li data-value="public">Public</li>
+                                    <li data-value="protected">Public/Protected</li>
+                                    <li data-value="private" class="selected">All</li>
+                                </ul>
+                            </div>
+
+                            <input type="checkbox" id="tsd-filter-inherited" checked />
+                            <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
+							<!--
+                                <input type="checkbox" id="tsd-filter-only-exported" />
+                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            -->
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/angularjs</a>
+				</li>
+				<li>
+					<a href="directives.html">directives</a>
+				</li>
+			</ul>
+			<h1>Module directives</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<h1 id="angular-1-directives">Angular 1 Directives</h1>
+					</div>
+					<p>These are the directives included in UI-Router for Angular 1.
+					These directives are used in templates to create viewports and link/navigate to states.</p>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uisref" class="tsd-kind-icon">ui<wbr>Sref</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uisrefactive" class="tsd-kind-icon">ui<wbr>Sref<wbr>Active</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uistate" class="tsd-kind-icon">ui<wbr>State</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="directives.html#uiview" class="tsd-kind-icon">ui<wbr>View</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="uisref" class="tsd-anchor"></a>
+					<!--
+        <h3>ui<wbr>Sref</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">ui<wbr>Sref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
+							<p> <code>ui-sref</code>: A directive for linking to a state </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p><code>ui-sref</code>: A directive for linking to a state</p>
+							</div>
+							<p>A directive which links to a state (and optionally, parameters).
+							When clicked, this directive activates the linked state with the supplied parameter values.</p>
+							<h3 id="linked-state">Linked State</h3>
+							<p>The attribute value of the <code>ui-sref</code> is the name of the state to link to.</p>
+							<h4 id="example-">Example:</h4>
+							<p>This will activate the <code>home</code> state when the link is clicked.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="relative-links">Relative Links</h3>
+							<p>You can also use relative state paths within <code>ui-sref</code>, just like a relative path passed to <code>$state.go()</code> (<a href="../classes/state.stateservice.html#go">StateService.go</a>).
+								You just need to be aware that the path is relative to the state that <em>created</em> the link.
+							This allows a state to create a relative <code>ui-sref</code> which always targets the same destination.</p>
+							<h4 id="example-">Example:</h4>
+							<p>Both these links are relative to the parent state, even when a child state is currently active.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child1"</span>&gt;</span>child 1 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child2"</span>&gt;</span>child 2 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<p>This link activates the parent state.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"^"</span>&gt;</span>Return<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="hrefs">hrefs</h3>
+							<p>If the linked state has a URL, the directive will automatically generate and
+							update the <code>href</code> attribute (using the <a href="../classes/state.stateservice.html#href">StateService.href</a>  method).</p>
+							<h4 id="example-">Example:</h4>
+							<p>Assuming the <code>users</code> state has a url of <code>/users/</code></p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/"</span>&gt;</span>Users<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="parameter-values">Parameter Values</h3>
+							<p>In addition to the state name, a <code>ui-sref</code> can include parameter values which are applied when activating the state.
+								Param values can be provided in the <code>ui-sref</code> value after the state name, enclosed by parentheses.
+							The content inside the parentheses is an expression, evaluated to the parameter values.</p>
+							<h4 id="example-">Example:</h4>
+							<p>This example renders a list of links to users.
+							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users.detail({ userId: user.id })"</span>&gt;</span>{{ user.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+							<p>Note:
+							The parameter values expression is <code>$watch</code>ed for updates.</p>
+							<h3 id="transition-options">Transition Options</h3>
+							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-sref-opts</code> attribute.
+							Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="other-dom-events">Other DOM Events</h3>
+							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
+							providing an <code>events</code> array in the <code>ui-sref-opts</code> attribute.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
+</code></pre>
+							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
+							<p>This directive can be used in conjunction with <a href="directives.html#uisrefactive">uiSrefActive</a> to highlight the active link.</p>
+							<h3 id="examples">Examples</h3>
+							<p>If you have the following template:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{page: 2}"</span>&gt;</span>Next page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"contact in contacts"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts.detail({ id: contact.id })"</span>&gt;</span>{{ contact.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+							<p>Then (assuming the current state is <code>contacts</code>) the rendered html including hrefs would be:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/about"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/contacts?page=2"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{page: 2}"</span>&gt;</span>Next page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"contact in contacts"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/contacts/1"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts.detail({ id: contact.id })"</span>&gt;</span>Joe<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"contact in contacts"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/contacts/2"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts.detail({ id: contact.id })"</span>&gt;</span>Alice<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"contact in contacts"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/contacts/3"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts.detail({ id: contact.id })"</span>&gt;</span>Bob<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{reload: true}"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="notes">Notes</h3>
+							<ul>
+								<li>You can use <code>ui-sref</code> to change <strong>only the parameter values</strong> by omitting the state name and parentheses.<h4 id="example-">Example:</h4>
+								Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</li>
+							</ul>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<ul>
+								<li><p>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.</p>
+								</li>
+								<li><p>Unlike the parameter values expression, the state name is not <code>$watch</code>ed (for performance reasons).
+									If you need to dynamically update the state being linked to, use the fully dynamic <a href="directives.html#uistate">uiState</a> directive.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L257">angularjs/src/directives/stateDirectives.ts:257</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="uisrefactive" class="tsd-anchor"></a>
+					<!--
+        <h3>ui<wbr>Sref<wbr>Active</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">ui<wbr>Sref<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
+							<p> <code>ui-sref-active</code> and <code>ui-sref-active-eq</code>: A directive that adds a CSS class when a <code>ui-sref</code> is active </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p><code>ui-sref-active</code> and <code>ui-sref-active-eq</code>: A directive that adds a CSS class when a <code>ui-sref</code> is active</p>
+							</div>
+							<p>A directive working alongside <a href="directives.html#uisref">uiSref</a> and <a href="directives.html#uistate">uiState</a> to add classes to an element when the
+							related directive&#39;s state is active (and remove them when it is inactive).</p>
+							<p>The primary use-case is to highlight the active link in navigation menus,
+							distinguishing it from the inactive menu items.</p>
+							<h3 id="linking-to-a-ui-sref-or-ui-state-">Linking to a <code>ui-sref</code> or <code>ui-state</code></h3>
+							<p><code>ui-sref-active</code> can live on the same element as <code>ui-sref</code>/<code>ui-state</code>, or it can be on a parent element.
+							If a <code>ui-sref-active</code> is a parent to more than one <code>ui-sref</code>/<code>ui-state</code>, it will apply the CSS class when <strong>any of the links are active</strong>.</p>
+							<h3 id="matching">Matching</h3>
+							<p>The <code>ui-sref-active</code> directive applies the CSS class when the <code>ui-sref</code>/<code>ui-state</code>&#39;s target state <strong>or any child state is active</strong>.
+							This is a &quot;fuzzy match&quot; which uses <a href="../classes/state.stateservice.html#includes">StateService.includes</a>.</p>
+							<p>The <code>ui-sref-active-eq</code> directive applies the CSS class when the <code>ui-sref</code>/<code>ui-state</code>&#39;s target state is directly active (not when child states are active).
+							This is an &quot;exact match&quot; which uses <a href="../classes/state.stateservice.html#is">StateService.is</a>.</p>
+							<h3 id="parameter-values">Parameter values</h3>
+							<p>If the <code>ui-sref</code>/<code>ui-state</code> includes parameter values, the current parameter values must match the link&#39;s values for the link to be highlighted.
+							This allows a list of links to the same state with different parameters to be rendered, and the correct one highlighted.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"user.details({ userId: user.id })"</span>&gt;</span>{{ user.lastName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+							<h3 id="examples">Examples</h3>
+							<p>Given the following template:</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+							<p>When the app state is <code>app.user</code> (or any child state),
+								and contains the state parameter &quot;user&quot; with value &quot;bilbobaggins&quot;,
+							the resulting HTML will appear as (note the &#39;active&#39; class):</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item active"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/bilbobaggins"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+							<h3 id="glob-mode">Glob mode</h3>
+							<p>It is possible to pass <code>ui-sref-active</code> an expression that evaluates to an object.
+								The objects keys represent active class names and values represent the respective state names/globs.
+								<code>ui-sref-active</code> will match if the current active state <strong>includes</strong> any of
+							the specified state names/globs, even the abstract ones.</p>
+							<h4 id="example-">Example:</h4>
+							<p>Given the following template, with &quot;admin&quot; being an abstract state:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': 'admin.**'}"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"admin.roles"</span>&gt;</span>Roles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+							<p>When the current state is &quot;admin.roles&quot; the &quot;active&quot; class will be applied to both the <div> and <a> elements.
+							It is important to note that the state names/globs passed to <code>ui-sref-active</code> override any state provided by a linked <code>ui-sref</code>.</p>
+							<h3 id="notes-">Notes:</h3>
+							<ul>
+								<li><p>The class name is interpolated <strong>once</strong> during the directives link time (any further changes to the
+									interpolated value are ignored).</p>
+								</li>
+								<li><p>Multiple classes may be specified in a space-separated format: <code>ui-sref-active=&#39;class1 class2 class3&#39;</code></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L522">angularjs/src/directives/stateDirectives.ts:522</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="uistate" class="tsd-anchor"></a>
+					<!--
+        <h3>ui<wbr>State</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">ui<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
+							<p> <code>ui-state</code>: A fully dynamic directive for linking to a state </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p><code>ui-state</code>: A fully dynamic directive for linking to a state</p>
+							</div>
+							<p>A directive which links to a state (and optionally, parameters).
+							When clicked, this directive activates the linked state with the supplied parameter values.</p>
+							<p><strong>This directive is very similar to <a href="directives.html#uisref">uiSref</a>, but it <code>$observe</code>s and <code>$watch</code>es/evaluates all its inputs.</strong></p>
+							<p>A directive which links to a state (and optionally, parameters).
+							When clicked, this directive activates the linked state with the supplied parameter values.</p>
+							<h3 id="linked-state">Linked State</h3>
+							<p>The attribute value of <code>ui-state</code> is an expression which is <code>$watch</code>ed and evaluated as the state to link to.
+							<strong>This is in contrast with <code>ui-sref</code>, which takes a state name as a string literal.</strong></p>
+							<h4 id="example-">Example:</h4>
+							<p>Create a list of links.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+							<h3 id="relative-links">Relative Links</h3>
+							<p>If the expression evaluates to a relative path, it is processed like <a href="directives.html#uisref">uiSref</a>.
+								You just need to be aware that the path is relative to the state that <em>created</em> the link.
+							This allows a state to create relative <code>ui-state</code> which always targets the same destination.</p>
+							<h3 id="hrefs">hrefs</h3>
+							<p>If the linked state has a URL, the directive will automatically generate and
+							update the <code>href</code> attribute (using the <a href="../classes/state.stateservice.html#href">StateService.href</a>  method).</p>
+							<h3 id="parameter-values">Parameter Values</h3>
+							<p>In addition to the state name expression, a <code>ui-state</code> can include parameter values which are applied when activating the state.
+								Param values should be provided using the <code>ui-state-params</code> attribute.
+							The <code>ui-state-params</code> attribute value is <code>$watch</code>ed and evaluated as an expression.</p>
+							<h4 id="example-">Example:</h4>
+							<p>This example renders a list of links with param values.
+							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"link.params"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+							<h3 id="transition-options">Transition Options</h3>
+							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-state-opts</code> attribute.
+								Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.
+							The value of the <code>ui-state-opts</code> is <code>$watch</code>ed and evaluated as an expression.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"returnto.state"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<h3 id="other-dom-events">Other DOM Events</h3>
+							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
+							providing an <code>events</code> array in the <code>ui-state-opts</code> attribute.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
+</code></pre>
+							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
+							<p>This directive can be used in conjunction with <a href="directives.html#uisrefactive">uiSrefActive</a> to highlight the active link.</p>
+							<h3 id="notes">Notes</h3>
+							<ul>
+								<li>You can use <code>ui-params</code> to change <strong>only the parameter values</strong> by omitting the state name and supplying only <code>ui-state-params</code>.
+								However, it might be simpler to use <a href="directives.html#uisref">uiSref</a> parameter-only links.</li>
+							</ul>
+							<h4 id="example-">Example:</h4>
+							<p>Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">""</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+							<ul>
+								<li>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.
+								```</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/stateDirectives.ts#L389">angularjs/src/directives/stateDirectives.ts:389</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="uiview" class="tsd-anchor"></a>
+					<!--
+        <h3>ui<wbr>View</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">ui<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
+							<p> <code>ui-view</code>: A viewport directive which is filled in by a view from the active state. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p><code>ui-view</code>: A viewport directive which is filled in by a view from the active state.</p>
+							</div>
+							<h3 id="attributes">Attributes</h3>
+							<ul>
+								<li><p><code>name</code>: (Optional) A view name.
+										The name should be unique amongst the other views in the same state.
+										You can have views of the same name that live in different states.
+									The ui-view can be targeted in a View using the name (<a href="../interfaces/ng1.ng1statedeclaration.html#views">Ng1StateDeclaration.views</a>).</p>
+								</li>
+								<li><p><code>autoscroll</code>: an expression. When it evaluates to true, the <code>ui-view</code> will be scrolled into view when it is activated.
+									Uses <a href="injectables.html#_uiviewscroll">$uiViewScroll</a> to do the scrolling.</p>
+								</li>
+								<li><p><code>onload</code>: Expression to evaluate whenever the view updates.</p>
+								</li>
+							</ul>
+							<h4 id="example-">Example:</h4>
+							<p>A view can be unnamed or named.</p>
+							<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Unnamed --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Named --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"viewName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Named (different style) --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ui-view</span>&gt;</span>
+</code></pre>
+							<p>You can only have one unnamed view within any template (or root html). If you are only using a
+							single view and it is unnamed then you can populate it like so:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+$stateProvider.state("home", {
+  template: "<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HELLO!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>"
+})
+</code></pre>
+							<p>The above is a convenient shortcut equivalent to specifying your view explicitly with the
+							<a href="../interfaces/ng1.ng1statedeclaration.html#views">Ng1StateDeclaration.views</a> config property, by name, in this case an empty name:</p>
+							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+  <span class="hljs-attr">views</span>: {
+    <span class="hljs-string">""</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
+    }
+  }
+})
+</code></pre>
+							<p>But typically you&#39;ll only use the views property if you name your view or have more than one view
+								in the same template. There&#39;s not really a compelling reason to name a view if its the only one,
+							but you could if you wanted, like so:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+  <span class="hljs-attr">views</span>: {
+    <span class="hljs-string">"main"</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
+    }
+  }
+})
+</code></pre>
+							<p>Really though, you&#39;ll use views to set up multiple views:</p>
+							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"chart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+  <span class="hljs-attr">views</span>: {
+    <span class="hljs-string">""</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
+    },
+    <span class="hljs-string">"chart"</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;chart_thing/&gt;"</span>
+    },
+    <span class="hljs-string">"data"</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;data_thing/&gt;"</span>
+    }
+  }
+})
+</code></pre>
+							<h4 id="examples-for-autoscroll-">Examples for <code>autoscroll</code>:</h4>
+							<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- If autoscroll present with no expression,
+     then scroll ui-view into view --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>/&gt;</span>
+
+<span class="hljs-comment">&lt;!-- If autoscroll present with valid expression,
+     then scroll ui-view into view if expression evaluates to true --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'true'</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'false'</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'scopeVariable'</span>/&gt;</span>
+</code></pre>
+							<p>Resolve data:</p>
+							<p>The resolved data from the state&#39;s <code>resolve</code> block is placed on the scope as <code>$resolve</code> (this
+							can be customized using <a href="../interfaces/ng1.ng1viewdeclaration.html#resolveas">Ng1ViewDeclaration.resolveAs</a>).  This can be then accessed from the template.</p>
+							<p>Note that when <code>controllerAs</code> is being used, <code>$resolve</code> is set on the controller instance <em>after</em> the
+								controller is instantiated.  The <code>$onInit()</code> hook can be used to perform initialization code which
+							depends on <code>$resolve</code> data.</p>
+							<h4 id="example-">Example:</h4>
+							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">'home'</span>, {
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;my-component user="$resolve.user"&gt;&lt;/my-component&gt;'</span>,
+  <span class="hljs-attr">resolve</span>: {
+    <span class="hljs-attr">user</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">UserService</span>) </span>{ <span class="hljs-keyword">return</span> UserService.fetchUser(); }
+  }
+});
+</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/directives/viewDirective.ts#L159">angularjs/src/directives/viewDirective.ts:159</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Public API</span>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="core.html">core</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="directives.html">directives</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="injectables.html">injectables</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="ng1.html">ng1</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="resolve.html">resolve</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="transition.html">transition</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="view.html">view</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internal UI-<wbr><wbr>Router API</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common.html">common</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_hof.html">common_<wbr>hof</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_predicates.html">common_<wbr>predicates</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="vanilla.html">vanilla</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="directives.html#uisref" class="tsd-kind-icon">ui<wbr>Sref</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="directives.html#uisrefactive" class="tsd-kind-icon">ui<wbr>Sref<wbr>Active</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="directives.html#uistate" class="tsd-kind-icon">ui<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="directives.html#uiview" class="tsd-kind-icon">ui<wbr>View</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

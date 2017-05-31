@@ -6,7 +6,7 @@ redirect_from: /docs/latest/modules/hooks.html
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>hooks | angular-ui-router</title>
+	<title>hooks | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -28,7 +28,7 @@ redirect_from: /docs/latest/modules/hooks.html
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">angular-ui-router</a>
+					<a href="../index.html" class="title">@uirouter/angularjs</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -64,7 +64,7 @@ redirect_from: /docs/latest/modules/hooks.html
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">angular-ui-router</a>
+					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
 					<a href="hooks.html">hooks</a>
@@ -97,14 +97,20 @@ redirect_from: /docs/latest/modules/hooks.html
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#addcoreresolvables" class="tsd-kind-icon">add<wbr>Core<wbr>Resolvables</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#eagerresolvepath" class="tsd-kind-icon">eager<wbr>Resolve<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#ignoredhook" class="tsd-kind-icon">ignored<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#invalidtransitionhook" class="tsd-kind-icon">invalid<wbr>Transition<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#lazyloadstate" class="tsd-kind-icon">lazy<wbr>Load<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#lazyresolvestate" class="tsd-kind-icon">lazy<wbr>Resolve<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#loadenteringviews" class="tsd-kind-icon">load<wbr>Entering<wbr>Views</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#redirecttohook" class="tsd-kind-icon">redirect<wbr>ToHook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeraddcoreresolvables" class="tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registereagerresolvepath" class="tsd-kind-icon">register<wbr>Eager<wbr>Resolve<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerignoredtransitionhook" class="tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerinvalidtransitionhook" class="tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerlazyloadhook" class="tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerlazyresolvestate" class="tsd-kind-icon">register<wbr>Lazy<wbr>Resolve<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerloadenteringviews" class="tsd-kind-icon">register<wbr>Load<wbr>Entering<wbr>Views</a></li>
@@ -112,7 +118,9 @@ redirect_from: /docs/latest/modules/hooks.html
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeronexithook" class="tsd-kind-icon">register<wbr>OnExit<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registeronretainhook" class="tsd-kind-icon">register<wbr>OnRetain<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="hooks.html#registerupdateurl" class="tsd-kind-icon">register<wbr>Update<wbr>Url</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="hooks.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a></li>
 							</ul>
 						</section>
@@ -142,7 +150,7 @@ redirect_from: /docs/latest/modules/hooks.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L57">ui-router-core/src/hooks/onEnterExitRetain.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L60">core/src/hooks/onEnterExitRetain.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +175,7 @@ redirect_from: /docs/latest/modules/hooks.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L31">ui-router-core/src/hooks/onEnterExitRetain.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L34">core/src/hooks/onEnterExitRetain.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +200,7 @@ redirect_from: /docs/latest/modules/hooks.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L44">ui-router-core/src/hooks/onEnterExitRetain.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L47">core/src/hooks/onEnterExitRetain.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +241,34 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/views.ts#L39">ui-router-core/src/hooks/views.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L39">core/src/hooks/views.ts:39</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="addcoreresolvables" class="tsd-anchor"></a>
+					<!--
+        <h3>add<wbr>Core<wbr>Resolvables</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Core<wbr>Resolvables<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/coreResolvables.ts#L6">core/src/hooks/coreResolvables.ts:6</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -271,7 +306,83 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/resolve.ts#L19">ui-router-core/src/hooks/resolve.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L20">core/src/hooks/resolve.ts:20</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="ignoredhook" class="tsd-anchor"></a>
+					<!--
+        <h3>ignored<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">ignored<wbr>Hook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that skips a transition if it should be ignored </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that skips a transition if it should be ignored</p>
+								</div>
+								<p>This hook is invoked at the end of the onBefore phase.</p>
+								<p>If the transition should be ignored (because no parameter or states changed)
+								then the transition is ignored and not processed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/ignoredTransition.ts#L16">core/src/hooks/ignoredTransition.ts:16</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="invalidtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>invalid<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">invalid<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that rejects the Transition if it is invalid </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that rejects the Transition if it is invalid</p>
+								</div>
+								<p>This hook is invoked at the end of the onBefore phase.
+									If the transition is invalid (for example, param values do not validate)
+								then the transition is rejected.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/invalidTransition.ts#L13">core/src/hooks/invalidTransition.ts:13</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -332,7 +443,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/lazyLoad.ts#L34">ui-router-core/src/hooks/lazyLoad.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L33">core/src/hooks/lazyLoad.ts:33</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -377,7 +488,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/lazyLoad.ts#L81">ui-router-core/src/hooks/lazyLoad.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L80">core/src/hooks/lazyLoad.ts:80</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -388,7 +499,7 @@ redirect_from: /docs/latest/modules/hooks.html
         <h3>lazy<wbr>Resolve<wbr>State</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Resolve<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../classes/state.state-1.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Resolve<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-header">
 							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which resolves all LAZY Resolvables for the state (and all its ancestors) in the To Path </p>
 						</li>
@@ -409,7 +520,7 @@ redirect_from: /docs/latest/modules/hooks.html
 									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
 								</li>
 								<li>
-									<h5>state <a href="../classes/state.state-1.html" class="tsd-signature-type">State</a></h5>
+									<h5>state <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -418,7 +529,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/resolve.ts#L36">ui-router-core/src/hooks/resolve.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L37">core/src/hooks/resolve.ts:37</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -456,7 +567,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/views.ts#L19">ui-router-core/src/hooks/views.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L19">core/src/hooks/views.ts:19</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -467,7 +578,7 @@ redirect_from: /docs/latest/modules/hooks.html
         <h3>redirect<wbr>ToHook</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">redirect<wbr>ToHook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a></li>
+						<li class="tsd-signature tsd-kind-icon">redirect<wbr>ToHook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-header">
 							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> that redirects to a different state or params </p>
 						</li>
@@ -488,15 +599,15 @@ redirect_from: /docs/latest/modules/hooks.html
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>
+								<h4 class="tsd-returns-title">Returns <a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a>
 									<span class="tsd-signature-symbol"> | </span>
-									<a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a>
+									<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span>
 								</h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/redirectTo.ts#L16">ui-router-core/src/hooks/redirectTo.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/redirectTo.ts#L16">core/src/hooks/redirectTo.ts:16</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -523,7 +634,34 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/views.ts#L52">ui-router-core/src/hooks/views.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L52">core/src/hooks/views.ts:52</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registeraddcoreresolvables" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Add<wbr>Core<wbr>Resolvables</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/coreResolvables.ts#L17">core/src/hooks/coreResolvables.ts:17</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -550,7 +688,61 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/resolve.ts#L24">ui-router-core/src/hooks/resolve.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L25">core/src/hooks/resolve.ts:25</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerignoredtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Ignored<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/ignoredTransition.ts#L34">core/src/hooks/ignoredTransition.ts:34</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerinvalidtransitionhook" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Invalid<wbr>Transition<wbr>Hook</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/invalidTransition.ts#L19">core/src/hooks/invalidTransition.ts:19</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -577,7 +769,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/lazyLoad.ts#L70">ui-router-core/src/hooks/lazyLoad.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/lazyLoad.ts#L69">core/src/hooks/lazyLoad.ts:69</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -604,7 +796,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/resolve.ts#L42">ui-router-core/src/hooks/resolve.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/resolve.ts#L43">core/src/hooks/resolve.ts:43</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -631,7 +823,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/views.ts#L26">ui-router-core/src/hooks/views.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/views.ts#L26">core/src/hooks/views.ts:26</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -658,7 +850,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L58">ui-router-core/src/hooks/onEnterExitRetain.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L61">core/src/hooks/onEnterExitRetain.ts:61</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -685,7 +877,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L32">ui-router-core/src/hooks/onEnterExitRetain.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L35">core/src/hooks/onEnterExitRetain.ts:35</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -712,7 +904,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/onEnterExitRetain.ts#L45">ui-router-core/src/hooks/onEnterExitRetain.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/onEnterExitRetain.ts#L48">core/src/hooks/onEnterExitRetain.ts:48</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -739,7 +931,34 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/redirectTo.ts#L36">ui-router-core/src/hooks/redirectTo.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/redirectTo.ts#L36">core/src/hooks/redirectTo.ts:36</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="registerupdateglobalstate" class="tsd-anchor"></a>
+					<!--
+        <h3>register<wbr>Update<wbr>Global<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State<span class="tsd-signature-symbol">(</span>transitionService<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transitionService <a href="../classes/transition.transitionservice.html" class="tsd-signature-type">TransitionService</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/updateGlobals.ts#L39">core/src/hooks/updateGlobals.ts:39</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -766,7 +985,48 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/url.ts#L30">ui-router-core/src/hooks/url.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/url.ts#L30">core/src/hooks/url.ts:30</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="updateglobalstate" class="tsd-anchor"></a>
+					<!--
+        <h3>update<wbr>Global<wbr>State</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Global<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates global UI-Router state </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> which updates global UI-Router state</p>
+								</div>
+								<p>Registered using <code>transitionService.onBefore({}, updateGlobalState);</code></p>
+								<p>Before a <a href="../classes/transition.transition-1.html">Transition</a> starts, updates the global value of &quot;the current transition&quot; ([[Globals.transition]]).
+									After a successful <a href="../classes/transition.transition-1.html">Transition</a>, updates the global values of &quot;the current state&quot;
+								([[Globals.current]] and [[Globals.$current]]) and &quot;the current param values&quot; ([[Globals.params]]).</p>
+								<p>See also the deprecated properties:
+								<a href="../classes/state.stateservice.html#transition">StateService.transition</a>, <a href="../classes/state.stateservice.html#current">StateService.current</a>, <a href="../classes/state.stateservice.html#params">StateService.params</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>trans <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/updateGlobals.ts#L19">core/src/hooks/updateGlobals.ts:19</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -802,7 +1062,7 @@ redirect_from: /docs/latest/modules/hooks.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/48c5af6/src/hooks/url.ts#L13">ui-router-core/src/hooks/url.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/hooks/url.ts#L13">core/src/hooks/url.ts:13</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -813,7 +1073,7 @@ redirect_from: /docs/latest/modules/hooks.html
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../index.html"><em>angular-<wbr>ui-<wbr>router</em></a>
+						<a href="../index.html"><em>@uirouter/angularjs</em></a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Public API</span>
@@ -834,6 +1094,9 @@ redirect_from: /docs/latest/modules/hooks.html
 						<a href="ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -847,6 +1110,9 @@ redirect_from: /docs/latest/modules/hooks.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -867,13 +1133,10 @@ redirect_from: /docs/latest/modules/hooks.html
 						<a href="hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="params.html">params</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="view.html">view</a>
+						<a href="vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
@@ -892,7 +1155,16 @@ redirect_from: /docs/latest/modules/hooks.html
 						<a href="hooks.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#addcoreresolvables" class="tsd-kind-icon">add<wbr>Core<wbr>Resolvables</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="hooks.html#eagerresolvepath" class="tsd-kind-icon">eager<wbr>Resolve<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#ignoredhook" class="tsd-kind-icon">ignored<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#invalidtransitionhook" class="tsd-kind-icon">invalid<wbr>Transition<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="hooks.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a>
@@ -913,7 +1185,16 @@ redirect_from: /docs/latest/modules/hooks.html
 						<a href="hooks.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registeraddcoreresolvables" class="tsd-kind-icon">register<wbr>Add<wbr>Core<wbr>Resolvables</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
 						<a href="hooks.html#registereagerresolvepath" class="tsd-kind-icon">register<wbr>Eager<wbr>Resolve<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerignoredtransitionhook" class="tsd-kind-icon">register<wbr>Ignored<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerinvalidtransitionhook" class="tsd-kind-icon">register<wbr>Invalid<wbr>Transition<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
 						<a href="hooks.html#registerlazyloadhook" class="tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook</a>
@@ -937,7 +1218,13 @@ redirect_from: /docs/latest/modules/hooks.html
 						<a href="hooks.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="hooks.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
 						<a href="hooks.html#registerupdateurl" class="tsd-kind-icon">register<wbr>Update<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="hooks.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="hooks.html#updateurl" class="tsd-kind-icon">update<wbr>Url</a>
