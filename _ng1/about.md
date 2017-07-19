@@ -33,8 +33,8 @@ Other examples:
   - Adding a specific version to your project: `npm install --save angular-ui-router@1.0.0-beta.1`
   
 - From <http://unpkg.com> via a `<script>` tag in your html: 
-  - Latest stable version: `<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js">`
-  - A specific version: `<script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js">`
+  - Latest stable version: `<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>`
+  - A specific version: `<script src="//unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>`
   
 - From bower: `bower install angular-ui-router#0.3.1`
 

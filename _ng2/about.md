@@ -26,8 +26,8 @@ Other examples:
 
 - Adding a specific version to your project: `npm install --save ui-router-ng2@1.0.0-beta.1`
 - From <http://unpkg.com> via a `<script>` tag in your html: 
-  - Latest stable version: `<script src="//unpkg.com/ui-router-ng2/_bundles/ui-router-ng2.js">`
-  - A specific version: `<script src="//unpkg.com/ui-router-ng2@1.0.0-beta.1/_bundles/ui-router-ng2.js">`
+  - Latest stable version: `<script src="//unpkg.com/ui-router-ng2/_bundles/ui-router-ng2.js"></script>`
+  - A specific version: `<script src="//unpkg.com/ui-router-ng2@1.0.0-beta.1/_bundles/ui-router-ng2.js"></script>`
 
 ## Tutorials
 
