@@ -80,9 +80,9 @@ Follow these steps to make your own copy of the Hello World app.
 
 Get the UI-Router for AngularJS code using your preferred mechanism:
 
-  - Using npm: `npm install --save angular-ui-router@next`
-  - Using bower: `bower install angular-ui-router@1.0.0-beta.3`
-  - Download directly from [npmcdn](https://unpkg.com/angular-ui-router@next/release/angular-ui-router.js)
+  - Using npm: `npm install --save @uirouter/angularjs`
+  - Using bower: `bower install angular-ui-router`
+  - Download directly from [npmcdn](https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.js)
 
 ## Add script tags
 
