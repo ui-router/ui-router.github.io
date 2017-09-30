@@ -31,6 +31,11 @@ Other examples:
 - Via command line
   - Adding a specific version to your project: `npm install --save @uirouter/angularjs@1.0.7`
   
+- From [http://jsdelivr.com](https://www.jsdelivr.com/package/npm/@uirouter/angularjs) via a `<script>` tag in your html:
+  - Latest stable version: `<script src="//cdn.jsdelivr.net/npm/@uirouter/angularjs/release/angular-ui-router.min.js"></script>`
+  - A specific version: `<script src="//cdn.jsdelivr.net/npm/@uirouter/angularjs@1.0.7/release/angular-ui-router.min.js"></script>`
+  - A legacy version: `<script src="//cdn.jsdelivr.net/npm/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>`
+  
 - From <http://unpkg.com> via a `<script>` tag in your html: 
   - Latest stable version: `<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>`
   - A specific version: `<script src="//unpkg.com/@uirouter/angularjs@1.0.7/release/angular-ui-router.min.js"></script>`
