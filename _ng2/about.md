@@ -25,6 +25,9 @@ npm install --save ui-router-ng2
 Other examples:
 
 - Adding a specific version to your project: `npm install --save ui-router-ng2@1.0.0-beta.1`
+- From [http://jsdelivr.com](https://www.jsdelivr.com/package/npm/ui-router-ng2) via a `<script>` tag in your html:
+  - Latest stable version: `<script src="//cdn.jsdelivr.net/npm/ui-router-ng2/_bundles/ui-router-ng2.js"></script>`
+  - A specific version: `<script src="//cdn.jsdelivr.net/npm/ui-router-ng2@1.0.0-beta.1/_bundles/ui-router-ng2.js"></script>`
 - From <http://unpkg.com> via a `<script>` tag in your html: 
   - Latest stable version: `<script src="//unpkg.com/ui-router-ng2/_bundles/ui-router-ng2.js"></script>`
   - A specific version: `<script src="//unpkg.com/ui-router-ng2@1.0.0-beta.1/_bundles/ui-router-ng2.js"></script>`
