@@ -19,15 +19,15 @@ UI-Router provides extremely flexible, state based routing to the Angular (2+) e
 The UI-Router package is distributed using [npm](https://www.npmjs.com/), the node package manager.
 
 ```
-npm install --save ui-router-ng2
+npm install --save @uirouter/angular
 ```
 
 Other examples:
 
-- Adding a specific version to your project: `npm install --save ui-router-ng2@1.0.0-beta.1`
+- Adding a specific version to your project: `npm install --save @uirouter/angular@1.0.0-beta.7`
 - From <http://unpkg.com> via a `<script>` tag in your html: 
-  - Latest stable version: `<script src="//unpkg.com/ui-router-ng2/_bundles/ui-router-ng2.js"></script>`
-  - A specific version: `<script src="//unpkg.com/ui-router-ng2@1.0.0-beta.1/_bundles/ui-router-ng2.js"></script>`
+  - Latest stable version: `<script src="//unpkg.com/@uirouter/angular/_bundles/ui-router-ng2.js"></script>`
+  - A specific version: `<script src="//unpkg.com/@uirouter/angular@1.0.0-beta.7/_bundles/ui-router-ng2.js"></script>`
 
 ## Tutorials
 
@@ -62,16 +62,18 @@ UI-Router for Angular (2+) depends on UI-Router Core, which can be found at <htt
 To get started:
 
 ```
-git clone https://github.com/ui-router/ng2 ui-router-ng2
-git clone https://github.com/ui-router/core ui-router-core
-cd ui-router-core
+mkdir uirouter
+cd uirouter
+git clone https://github.com/ui-router/angular
+git clone https://github.com/ui-router/core
+cd core
 npm install
 npm link
 npm run build
 
-cd ../ui-router-ng2
+cd ../angular
 npm install
-npm link ui-router-core
+npm link @uirouter/core
 npm run build
 ```
 
