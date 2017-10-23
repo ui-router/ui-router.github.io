@@ -93,7 +93,7 @@ Create a new script `helloworld.js` for the application code and add a script ta
 <head>
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
-  <script src="helloworld.js"</script>
+  <script src="helloworld.js"></script>
 </head>
 ```
 
