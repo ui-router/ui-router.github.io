@@ -82,6 +82,9 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>an intermediate interface.</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -124,7 +127,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ng1._ng1statedeclaration.html#resolve" class="tsd-kind-icon">resolve</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ng1._ng1statedeclaration.html#resolvepolicy" class="tsd-kind-icon">resolve<wbr>Policy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ng1._ng1statedeclaration.html#url" class="tsd-kind-icon">url</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="ng1._ng1statedeclaration.html#views" class="tsd-kind-icon">views</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="ng1._ng1statedeclaration.html#views" class="tsd-kind-icon">views</a></li>
 							</ul>
 						</section>
 					</div>
@@ -170,7 +173,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#__state">$$state</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L190">core/src/state/interface.ts:190</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L190">core/src/state/interface.ts:190</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -195,7 +198,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#abstract">abstract</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L155">core/src/state/interface.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L155">core/src/state/interface.ts:155</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +227,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#data">data</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L439">core/src/state/interface.ts:439</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L439">core/src/state/interface.ts:439</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -246,7 +249,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							The transition waits while the code is loading.</p>
 							<p>The function should load the code that is required to activate the state.
 								For example, it may load a component class, or some service code.
-							The function must retur a promise which resolves when loading is complete.</p>
+							The function must return a promise which resolves when loading is complete.</p>
 							<p>For example, this code lazy loads a service before the <code>abc</code> state is activated:</p>
 							<pre><code>.<span class="hljs-keyword">state</span>('abc', {
   lazyLoad: (transition, <span class="hljs-keyword">state</span>) =&gt; System.import('./abcService')
@@ -338,6 +341,9 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> lazyLoadResults;
 </code></pre>
+							<pre><code>    Optionally, <span class="hljs-keyword">if</span> <span class="hljs-keyword">the</span> promise resolves <span class="hljs-built_in">to</span> <span class="hljs-keyword">a</span> &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">"state.lazyloadresult.html"</span>&gt;LazyLoadResult&lt;/<span class="hljs-keyword">a</span>&gt;,
+    <span class="hljs-keyword">the</span> states will be registered <span class="hljs-keyword">with</span> <span class="hljs-keyword">the</span> &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">"../classes/state.stateregistry.html"</span>&gt;StateRegistry&lt;/<span class="hljs-keyword">a</span>&gt;.
+</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>param</dt>
 								<dd><p>the <a href="../classes/transition.transition-1.html">Transition</a> that is activating the future state</p>
@@ -346,9 +352,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 								<dd><p>the <a href="state.statedeclaration.html">StateDeclaration</a> that the <code>lazyLoad</code> function is declared on</p>
 								</dd>
 								<dt>returns</dt>
-								<dd><p>a Promise to load the states.
-										Optionally, if the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a>,
-									the states will be registered with the <a href="../classes/state.stateregistry.html">StateRegistry</a>.</p>
+								<dd><p>a Promise to load the states.</p>
 								</dd>
 							</dl>
 						</div>
@@ -382,7 +386,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#lazyload">lazyLoad</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L698">core/src/state/interface.ts:698</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L699">core/src/state/interface.ts:699</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -409,7 +413,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L147">core/src/state/interface.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L147">core/src/state/interface.ts:147</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -424,7 +428,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#onenter">onEnter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/interface.ts#L59">angularjs/src/interface.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/interface.ts#L59">angularjs/src/interface.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -439,7 +443,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#onexit">onExit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/interface.ts#L57">angularjs/src/interface.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/interface.ts#L57">angularjs/src/interface.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -454,7 +458,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#onretain">onRetain</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/1b34e08/src/interface.ts#L58">angularjs/src/interface.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/interface.ts#L58">angularjs/src/interface.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -499,7 +503,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#params">params</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L378">core/src/state/interface.ts:378</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L378">core/src/state/interface.ts:378</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -538,7 +542,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#parent">parent</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L181">core/src/state/interface.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L181">core/src/state/interface.ts:181</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -547,7 +551,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<!--
         <h3><span class="tsd-flag ts-flagOptional">Optional</span> redirect<wbr>To</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">redirect<wbr>To<span class="tsd-signature-symbol">:</span> <a href="../modules/state.html#redirecttoresult" class="tsd-signature-type">RedirectToResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">redirect<wbr>To<span class="tsd-signature-symbol">:</span> <a href="../modules/state.html#redirecttoresult" class="tsd-signature-type">RedirectToResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span>    <div class="tsd-header">
 							<p> Synchronously or asynchronously redirects Transitions to a different state/params </p>
 						</div>
 					</div>
@@ -623,7 +627,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#redirectto">redirectTo</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L506">core/src/state/interface.ts:506</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L506">core/src/state/interface.ts:506</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -645,7 +649,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#reloadonsearch">reloadOnSearch</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L703">core/src/state/interface.ts:703</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L704">core/src/state/interface.ts:704</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -654,7 +658,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<!--
         <h3><span class="tsd-flag ts-flagOptional">Optional</span> resolve</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/resolve.resolvable.html" class="tsd-signature-type">Resolvable</a><span class="tsd-signature-symbol"> | </span><a href="resolve.resolvableliteral.html" class="tsd-signature-type">ResolvableLiteral</a><span class="tsd-signature-symbol"> | </span><a href="resolve.providerlike.html" class="tsd-signature-type">ProviderLike</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Resolvable | ResolvableLiteral | ProviderLike)[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span>    <div class="tsd-header">
 							<p> Resolve - a mechanism to asynchronously fetch data, participating in the Transition lifecycle </p>
 						</div>
 					</div>
@@ -762,7 +766,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#resolve">resolve</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L312">core/src/state/interface.ts:312</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L312">core/src/state/interface.ts:312</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -792,7 +796,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#resolvepolicy">resolvePolicy</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L326">core/src/state/interface.ts:326</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L326">core/src/state/interface.ts:326</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -813,9 +817,7 @@ resolve: [
 							<p>A URL fragment (with optional parameters) which is used to match the browser location with this state.</p>
 							<p>This fragment will be appended to the parent state&#39;s URL in order to build up the overall URL for this state.
 							See <a href="../classes/url.urlmatcher.html">UrlMatcher</a> for details on acceptable patterns.</p>
-							<dl class="tsd-comment-tags">
-								<dt>examples</dt>
-								<dd><pre><code class="lang-js">
+							<pre><code class="lang-js">
 url: <span class="hljs-string">"/home"</span>
 <span class="hljs-comment">// Define a parameter named 'userid'</span>
 url: <span class="hljs-string">"/users/:userid"</span>
@@ -832,85 +834,31 @@ url: <span class="hljs-string">"/messages?{before:date}&amp;{after:date}"</span>
 <span class="hljs-comment">// Path and query parameters</span>
 url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span>
 </code></pre>
-								</dd>
+							<dl class="tsd-comment-tags">
+								<dt>examples</dt>
+								<dd></dd>
 							</dl>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#url">url</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L356">core/src/state/interface.ts:356</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L356">core/src/state/interface.ts:356</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="views" class="tsd-anchor"></a>
 					<!--
         <h3><span class="tsd-flag ts-flagOptional">Optional</span> views</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">views<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span>    <div class="tsd-header">
-							<p> Named views </p>
-						</div>
-					</div>
+					<div class="tsd-signature tsd-kind-icon">views<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<div class="tsd-declaration">
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Named views</p>
-							</div>
-							<p>An optional object which defines multiple views, or explicitly targets specific named ui-views.</p>
-							<ul>
-								<li>What is a view config</li>
-								<li>What is a ui-view</li>
-								<li>Shorthand controller/template</li>
-								<li><p>Incompatible with ^</p>
-									<p>Examples:</p>
-									<p>Targets three named ui-views in the parent state&#39;s template</p>
-								</li>
-							</ul>
-							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">views: {
-  <span class="hljs-attr">header</span>: {
-    <span class="hljs-attr">controller</span>: <span class="hljs-string">"headerCtrl"</span>,
-    <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"header.html"</span>
-  }, <span class="hljs-attr">body</span>: {
-    <span class="hljs-attr">controller</span>: <span class="hljs-string">"bodyCtrl"</span>,
-    <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"body.html"</span>
-  }, <span class="hljs-attr">footer</span>: {
-    <span class="hljs-attr">controller</span>: <span class="hljs-string">"footCtrl"</span>,
-    <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"footer.html"</span>
-  }
-}
-</code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="lang-js"><span class="hljs-comment">// Targets named ui-view="header" from ancestor state 'top''s template, and</span>
-<span class="hljs-comment">// named `ui-view="body" from parent state's template.</span>
-views: {
-  <span class="hljs-string">'header@top'</span>: {
-    <span class="hljs-attr">controller</span>: <span class="hljs-string">"msgHeaderCtrl"</span>,
-    <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"msgHeader.html"</span>
-  }, <span class="hljs-string">'body'</span>: {
-    <span class="hljs-attr">controller</span>: <span class="hljs-string">"messagesCtrl"</span>,
-    <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"messages.html"</span>
-  }
-}
-</code></pre>
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="state._viewdeclaration.html" class="tsd-signature-type">_ViewDeclaration</a></h5>
-							</li>
-						</ul>
 					</div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#views">views</a></p>
+						<p>Overwrites <a href="state.statedeclaration.html">StateDeclaration</a>.<a href="state.statedeclaration.html#views">views</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/state/interface.ts#L425">core/src/state/interface.ts:425</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/interface.ts#L60">angularjs/src/interface.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -955,9 +903,6 @@ views: {
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/state.html">state</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -989,6 +934,9 @@ views: {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
@@ -1074,7 +1022,7 @@ views: {
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="ng1._ng1statedeclaration.html#url" class="tsd-kind-icon">url</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 								<a href="ng1._ng1statedeclaration.html#views" class="tsd-kind-icon">views</a>
 							</li>
 						</ul>

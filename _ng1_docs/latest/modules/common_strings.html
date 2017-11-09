@@ -83,15 +83,24 @@ redirect_from: /docs/latest/modules/common_strings.html
 						<p>Functions that manipulate strings</p>
 					</div>
 					<p>Although these functions are exported, they are subject to change without notice.</p>
+					<dl class="tsd-comment-tags">
+						<dt>module</dt>
+						<dd><p>common_strings</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#hostregex" class="tsd-kind-icon">host<wbr>Regex</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#splitequal" class="tsd-kind-icon">split<wbr>Equal</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#splithash" class="tsd-kind-icon">split<wbr>Hash</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#splitquery" class="tsd-kind-icon">split<wbr>Query</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="common_strings.html#stringifypatternfn" class="tsd-kind-icon">stringify<wbr>Pattern<wbr>Fn</a></li>
 							</ul>
 						</section>
@@ -111,13 +120,71 @@ redirect_from: /docs/latest/modules/common_strings.html
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#splitondelim" class="tsd-kind-icon">split<wbr>OnDelim</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#stringify" class="tsd-kind-icon">stringify</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="common_strings.html#stringifypattern" class="tsd-kind-icon">stringify<wbr>Pattern</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#stripfile" class="tsd-kind-icon">strip<wbr>File</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="common_strings.html#trimhashval" class="tsd-kind-icon">trim<wbr>Hash<wbr>Val</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+					<a name="hostregex" class="tsd-anchor"></a>
+					<!--
+        <h3>host<wbr>Regex</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">host<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;new RegExp(&#x27;^(?:[a-z]+:)?//[^/]+/&#x27;)</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L121">core/src/common/strings.ts:121</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+					<a name="splitequal" class="tsd-anchor"></a>
+					<!--
+        <h3>split<wbr>Equal</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">split<wbr>Equal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;beforeAfterSubstr(&quot;&#x3D;&quot;)</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L125">core/src/common/strings.ts:125</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+					<a name="splithash" class="tsd-anchor"></a>
+					<!--
+        <h3>split<wbr>Hash</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">split<wbr>Hash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;beforeAfterSubstr(&quot;#&quot;)</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L123">core/src/common/strings.ts:123</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+					<a name="splitquery" class="tsd-anchor"></a>
+					<!--
+        <h3>split<wbr>Query</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">split<wbr>Query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> =&nbsp;beforeAfterSubstr(&quot;?&quot;)</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L124">core/src/common/strings.ts:124</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 					<a name="stringifypatternfn" class="tsd-anchor"></a>
 					<!--
@@ -151,7 +218,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L80">core/src/common/strings.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L80">core/src/common/strings.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -180,7 +247,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L54">core/src/common/strings.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L54">core/src/common/strings.ts:54</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -207,7 +274,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L50">core/src/common/strings.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L50">core/src/common/strings.ts:50</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -242,7 +309,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L114">core/src/common/strings.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L114">core/src/common/strings.ts:114</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -269,7 +336,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L75">core/src/common/strings.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L75">core/src/common/strings.ts:75</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -296,7 +363,7 @@ redirect_from: /docs/latest/modules/common_strings.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L63">core/src/common/strings.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L63">core/src/common/strings.ts:63</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -307,7 +374,7 @@ redirect_from: /docs/latest/modules/common_strings.html
         <h3>join<wbr>NeighborsR</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">join<wbr>NeighborsR<span class="tsd-signature-symbol">(</span>acc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">join<wbr>NeighborsR<span class="tsd-signature-symbol">(</span>acc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any[]</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any[]</span></li>
 						<li class="tsd-header">
 							<p> Reduce fn that joins neighboring strings </p>
 						</li>
@@ -328,19 +395,19 @@ arr.reduce(joinNeighborsR, []) <span class="hljs-comment">// ["foobar", 1, "bazq
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>acc <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>acc <span class="tsd-signature-type">any[]</span></h5>
 								</li>
 								<li>
 									<h5>x <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any[]</span></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L150">core/src/common/strings.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L157">core/src/common/strings.ts:157</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -367,7 +434,7 @@ arr.reduce(joinNeighborsR, []) <span class="hljs-comment">// ["foobar", 1, "bazq
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L44">core/src/common/strings.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L44">core/src/common/strings.ts:44</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -413,7 +480,7 @@ arr.reduce(joinNeighborsR, []) <span class="hljs-comment">// ["foobar", 1, "bazq
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L25">core/src/common/strings.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L25">core/src/common/strings.ts:25</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -459,7 +526,7 @@ arr.reduce(joinNeighborsR, []) <span class="hljs-comment">// ["foobar", 1, "bazq
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L39">core/src/common/strings.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L39">core/src/common/strings.ts:39</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -486,7 +553,7 @@ arr.reduce(joinNeighborsR, []) <span class="hljs-comment">// ["foobar", 1, "bazq
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L59">core/src/common/strings.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L59">core/src/common/strings.ts:59</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -526,7 +593,7 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L131">core/src/common/strings.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L138">core/src/common/strings.ts:138</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -553,7 +620,7 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L99">core/src/common/strings.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L99">core/src/common/strings.ts:99</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -580,7 +647,61 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/common/strings.ts#L81">core/src/common/strings.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L81">core/src/common/strings.ts:81</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="stripfile" class="tsd-anchor"></a>
+					<!--
+        <h3>strip<wbr>File</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">strip<wbr>File<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L122">core/src/common/strings.ts:122</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="trimhashval" class="tsd-anchor"></a>
+					<!--
+        <h3>trim<wbr>Hash<wbr>Val</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">trim<wbr>Hash<wbr>Val<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/common/strings.ts#L126">core/src/common/strings.ts:126</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -618,9 +739,6 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 						<a href="resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="state.html">state</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -654,12 +772,27 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 						<a href="path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#hostregex" class="tsd-kind-icon">host<wbr>Regex</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#splitequal" class="tsd-kind-icon">split<wbr>Equal</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#splithash" class="tsd-kind-icon">split<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#splitquery" class="tsd-kind-icon">split<wbr>Query</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="common_strings.html#stringifypatternfn" class="tsd-kind-icon">stringify<wbr>Pattern<wbr>Fn</a>
 					</li>
@@ -701,6 +834,12 @@ splitOnSlashes(<span class="hljs-string">"/foo/"</span>); <span class="hljs-comm
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="common_strings.html#stringifypattern" class="tsd-kind-icon">stringify<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#stripfile" class="tsd-kind-icon">strip<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="common_strings.html#trimhashval" class="tsd-kind-icon">trim<wbr>Hash<wbr>Val</a>
 					</li>
 				</ul>
 			</nav>

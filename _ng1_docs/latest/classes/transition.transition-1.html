@@ -131,6 +131,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="transition.transition-1.html#abort" class="tsd-kind-icon">abort</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="transition.transition-1.html#addresolvable" class="tsd-kind-icon">add<wbr>Resolvable</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="transition.transition-1.html#applyviewconfigs" class="tsd-kind-icon">apply<wbr>View<wbr>Configs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="transition.transition-1.html#createtransitionhookregfns" class="tsd-kind-icon">create<wbr>Transition<wbr>Hook<wbr>Reg<wbr>Fns</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="transition.transition-1.html#dynamic" class="tsd-kind-icon">dynamic</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="transition.transition-1.html#entering" class="tsd-kind-icon">entering</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="transition.transition-1.html#error" class="tsd-kind-icon">error</a></li>
@@ -175,7 +176,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Transition<span class="tsd-signature-symbol">(</span>fromPath<span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span>, targetState<span class="tsd-signature-symbol">: </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a>, router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.transition-1.html" class="tsd-signature-type">Transition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Transition<span class="tsd-signature-symbol">(</span>fromPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathNode[]</span>, targetState<span class="tsd-signature-symbol">: </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a>, router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.transition-1.html" class="tsd-signature-type">Transition</a></li>
 						<li class="tsd-header">
 							<p> Creates a new Transition object. </p>
 						</li>
@@ -187,15 +188,16 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 									<p>Creates a new Transition object.</p>
 								</div>
 								<p>If the target state is not valid, an error is thrown.</p>
+								<pre><code>   encapsulates the <span class="hljs-string">"from state"</span>.
+</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fromPath <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>fromPath <span class="tsd-signature-type">PathNode[]</span></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The path of <a href="path.pathnode.html">PathNode</a>s from which the transition is leaving.  The last node in the <code>fromPath</code>
-											encapsulates the &quot;from state&quot;.</p>
+											<p>The path of <a href="path.pathnode.html">PathNode</a>s from which the transition is leaving.  The last node in the <code>fromPath</code></p>
 										</div>
 									</div>
 								</li>
@@ -222,7 +224,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L130">core/src/transition/transition.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L129">core/src/transition/transition.ts:129</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -249,7 +251,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L55">core/src/transition/transition.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L54">core/src/transition/transition.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +275,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L72">core/src/transition/transition.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L71">core/src/transition/transition.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +298,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L62">core/src/transition/transition.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L61">core/src/transition/transition.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -321,7 +323,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L81">core/src/transition/transition.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L80">core/src/transition/transition.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +349,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L175">core/src/transition/transition.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L174">core/src/transition/transition.ts:174</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -371,7 +373,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L184">core/src/transition/transition.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L183">core/src/transition/transition.ts:183</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -402,7 +404,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L710">core/src/transition/transition.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L719">core/src/transition/transition.ts:719</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -455,7 +457,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L371">core/src/transition/transition.ts:371</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L381">core/src/transition/transition.ts:381</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -482,7 +484,28 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L165">core/src/transition/transition.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L164">core/src/transition/transition.ts:164</a></li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createtransitionhookregfns" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Transition<wbr>Hook<wbr>Reg<wbr>Fns</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Transition<wbr>Hook<wbr>Reg<wbr>Fns<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L120">core/src/transition/transition.ts:120</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -513,7 +536,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L597">core/src/transition/transition.ts:597</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L606">core/src/transition/transition.ts:606</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -524,7 +547,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
         <h3>entering</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">entering<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">entering<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StateDeclaration[]</span></li>
 						<li class="tsd-header">
 							<p> Gets the states being entered. </p>
 						</li>
@@ -537,13 +560,13 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 								</div>
 							</div>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StateDeclaration[]</span></h4>
 								: <p>an array of states that will be entered during this transition.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L447">core/src/transition/transition.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L457">core/src/transition/transition.ts:457</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -575,7 +598,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L725">core/src/transition/transition.ts:725</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L734">core/src/transition/transition.ts:734</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -586,7 +609,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
         <h3>exiting</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">exiting<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">exiting<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StateDeclaration[]</span></li>
 						<li class="tsd-header">
 							<p> Gets the states being exited. </p>
 						</li>
@@ -599,13 +622,13 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 								</div>
 							</div>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StateDeclaration[]</span></h4>
 								: <p>an array of states that will be exited during this transition.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L456">core/src/transition/transition.ts:456</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L466">core/src/transition/transition.ts:466</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -636,7 +659,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L195">core/src/transition/transition.ts:195</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L194">core/src/transition/transition.ts:194</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -647,7 +670,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
         <h3>get<wbr>Hooks</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Hooks<span class="tsd-signature-symbol">(</span>hookName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="transition.registeredhook.html" class="tsd-signature-type">RegisteredHook</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hooks<span class="tsd-signature-symbol">(</span>hookName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegisteredHook[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -660,13 +683,13 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="transition.registeredhook.html" class="tsd-signature-type">RegisteredHook</a><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegisteredHook[]</span></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#gethooks">getHooks</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L128">core/src/transition/transition.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L127">core/src/transition/transition.ts:127</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -677,7 +700,7 @@ redirect_from: /docs/latest/classes/transition.transition-1.html
         <h3>get<wbr>Resolve<wbr>Tokens</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Resolve<wbr>Tokens<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Resolve<wbr>Tokens<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any[]</span></li>
 						<li class="tsd-header">
 							<p> Gets all available resolve tokens (keys) </p>
 						</li>
@@ -717,13 +740,13 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any[]</span></h4>
 								: <p>an array of resolve tokens (keys)</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L350">core/src/transition/transition.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L360">core/src/transition/transition.ts:360</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -754,7 +777,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L609">core/src/transition/transition.ts:609</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L618">core/src/transition/transition.ts:618</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -835,7 +858,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L312">core/src/transition/transition.ts:312</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L322">core/src/transition/transition.ts:322</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -874,7 +897,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L225">core/src/transition/transition.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L224">core/src/transition/transition.ts:224</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -903,7 +926,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L692">core/src/transition/transition.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L701">core/src/transition/transition.ts:701</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -949,16 +972,14 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 								<h4 id="audit-log">Audit Log</h4>
 								<p>This example uses a service to log that a user has entered the admin section of an app.
 								This assumes that there are substates of the &quot;admin&quot; state, such as &quot;admin.users&quot;, &quot;admin.pages&quot;, etc.</p>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><pre><code>
+								<pre><code>
 <span class="hljs-variable">$transitions</span>.<span class="hljs-keyword">on</span>Enter({ entering: 'admin' }, function(transition, <span class="hljs-keyword">state</span>) {
   var AuditService = trans.injector().get('AuditService');
   AuditService.<span class="hljs-keyword">log</span>(<span class="hljs-string">"Entered "</span> + <span class="hljs-keyword">state</span>.name + <span class="hljs-string">" module while transitioning to "</span> + transition.<span class="hljs-keyword">to</span>().name);
 }
 </code></pre><h4 id="audit-log-inside-a-state-declaration-">Audit Log (inside a state declaration)</h4>
-										<p>The <code>onEnter</code> inside this state declaration is syntactic sugar for the previous Audit Log example.</p>
-										<pre><code>{
+								<p>The <code>onEnter</code> inside this state declaration is syntactic sugar for the previous Audit Log example.</p>
+								<pre><code>{
   name: 'admin',
   component: 'admin',
   <span class="hljs-keyword">on</span>Enter: function(<span class="hljs-variable">$transition</span>$, <span class="hljs-variable">$state</span>$) {
@@ -967,7 +988,9 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
   }
 }
 </code></pre><p>Note: A state declaration&#39;s <code>onEnter</code> function is injected for Angular 1 only.</p>
-									</dd>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -990,7 +1013,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onenter">onEnter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L109">core/src/transition/transition.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L108">core/src/transition/transition.ts:108</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1057,7 +1080,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onerror">onError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L115">core/src/transition/transition.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L114">core/src/transition/transition.ts:114</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1120,7 +1143,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onexit">onExit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L105">core/src/transition/transition.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L104">core/src/transition/transition.ts:104</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1175,7 +1198,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onfinish">onFinish</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L111">core/src/transition/transition.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L110">core/src/transition/transition.ts:110</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1237,7 +1260,7 @@ tokens.forEach(<span class="hljs-function"><span class="hljs-params">token</span
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onretain">onRetain</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L107">core/src/transition/transition.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L106">core/src/transition/transition.ts:106</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1328,7 +1351,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onstart">onStart</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L103">core/src/transition/transition.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L102">core/src/transition/transition.ts:102</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1382,7 +1405,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/transition.ihookregistry.html">IHookRegistry</a>.<a href="../interfaces/transition.ihookregistry.html#onsuccess">onSuccess</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L113">core/src/transition/transition.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L112">core/src/transition/transition.ts:112</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1412,7 +1435,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L438">core/src/transition/transition.ts:438</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L448">core/src/transition/transition.ts:448</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1460,7 +1483,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L428">core/src/transition/transition.ts:428</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L438">core/src/transition/transition.ts:438</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1485,16 +1508,22 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 								</div>
 								<p>Returns the parameter values for a transition as key/value pairs.
 								This object is immutable.</p>
-								<p>By default, returns the new parameter values (for the &quot;to state&quot;).
-								To return the previous parameter values,  supply <code>&#39;from&#39;</code> as the <code>pathname</code> argument.</p>
+								<p>By default, returns the new parameter values (for the &quot;to state&quot;).</p>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> toParams = transition.params();
+</code></pre>
+								<p>To return the previous parameter values,  supply <code>&#39;from&#39;</code> as the <code>pathname</code> argument.</p>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="lang-js"><span class="hljs-keyword">var</span> fromParams = transition.params(<span class="hljs-string">'from'</span>);
+</code></pre>
+								<p>  (<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>pathname: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">string</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>the name of the treeChanges path to get parameter values for:
-										(<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
+										<p>the name of the treeChanges path to get parameter values for:</p>
 									</div>
 								</li>
 							</ul>
@@ -1505,7 +1534,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L250">core/src/transition/transition.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L260">core/src/transition/transition.ts:260</a></li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1527,7 +1556,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L251">core/src/transition/transition.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L261">core/src/transition/transition.ts:261</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1565,7 +1594,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L516">core/src/transition/transition.ts:516</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L526">core/src/transition/transition.ts:526</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1604,7 +1633,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L398">core/src/transition/transition.ts:398</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L408">core/src/transition/transition.ts:408</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1615,7 +1644,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
         <h3>retained</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">retained<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">retained<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StateDeclaration[]</span></li>
 						<li class="tsd-header">
 							<p> Gets the states being retained. </p>
 						</li>
@@ -1626,16 +1655,16 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 								<div class="lead">
 									<p>Gets the states being retained.</p>
 								</div>
+								<p>   exited during this Transition</p>
 							</div>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></h4>
-								: <p>an array of states that are already entered from a previous Transition, that will not be
-								exited during this Transition</p>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">StateDeclaration[]</span></h4>
+								: <p>an array of states that are already entered from a previous Transition, that will not be</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L466">core/src/transition/transition.ts:466</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L476">core/src/transition/transition.ts:476</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1666,7 +1695,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L640">core/src/transition/transition.ts:640</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L649">core/src/transition/transition.ts:649</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1697,7 +1726,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L217">core/src/transition/transition.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L216">core/src/transition/transition.ts:216</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1728,7 +1757,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L206">core/src/transition/transition.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L205">core/src/transition/transition.ts:205</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1758,7 +1787,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L741">core/src/transition/transition.ts:741</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L755">core/src/transition/transition.ts:755</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1769,7 +1798,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
         <h3>tree<wbr>Changes</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">tree<wbr>Changes<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">tree<wbr>Changes<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathNode[]</span></li>
 						<li class="tsd-header">
 							<p> Return the transition&#39;s tree changes </p>
 						</li>
@@ -1785,24 +1814,24 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 								During a transition, states are entered and/or exited.</p>
 								<p>This function returns various branches (paths) which represent the changes to the
 								active state tree that are caused by the transition.</p>
+								<p>  (<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>pathname <span class="tsd-signature-type">string</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>The name of the tree changes path to get:
-										(<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
+										<p>The name of the tree changes path to get:</p>
 									</div>
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="path.pathnode.html" class="tsd-signature-type">PathNode</a><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PathNode[]</span></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L500">core/src/transition/transition.ts:500</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L510">core/src/transition/transition.ts:510</a></li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1812,7 +1841,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L501">core/src/transition/transition.ts:501</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L511">core/src/transition/transition.ts:511</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1842,7 +1871,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L700">core/src/transition/transition.ts:700</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L709">core/src/transition/transition.ts:709</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1853,7 +1882,7 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
         <h3>views</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">views<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, state<span class="tsd-signature-symbol">?: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/view.viewconfig.html" class="tsd-signature-type">ViewConfig</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">views<span class="tsd-signature-symbol">(</span>pathname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, state<span class="tsd-signature-symbol">?: </span><a href="state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ViewConfig[]</span></li>
 						<li class="tsd-header">
 							<p> Get the <a href="../interfaces/view.viewconfig.html">ViewConfig</a>s associated with this Transition </p>
 						</li>
@@ -1866,14 +1895,14 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 								</div>
 								<p>Each state can define one or more views (template/controller), which are encapsulated as <code>ViewConfig</code> objects.
 								This method fetches the <code>ViewConfigs</code> for a given path in the Transition (e.g., &quot;to&quot; or &quot;entering&quot;).</p>
+								<p>  (<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>pathname: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;entering&quot;</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>the name of the path to fetch views for:
-										(<code>&#39;to&#39;</code>, <code>&#39;from&#39;</code>, <code>&#39;entering&#39;</code>, <code>&#39;exiting&#39;</code>, <code>&#39;retained&#39;</code>)</p>
+										<p>the name of the path to fetch views for:</p>
 									</div>
 								</li>
 								<li>
@@ -1884,13 +1913,13 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 								</li>
 							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../interfaces/view.viewconfig.html" class="tsd-signature-type">ViewConfig</a><span class="tsd-signature-symbol">[]</span></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ViewConfig[]</span></h4>
 								: <p>a list of ViewConfig objects for the given path.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/0b1e9ed/src/transition/transition.ts#L482">core/src/transition/transition.ts:482</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/transition/transition.ts#L492">core/src/transition/transition.ts:492</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1928,9 +1957,6 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/state.html">state</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class="current tsd-kind-external-module">
@@ -1962,6 +1988,9 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
@@ -2022,6 +2051,9 @@ $transitions.onSuccess({ <span class="hljs-attr">to</span>: <span class="hljs-st
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="transition.transition-1.html#applyviewconfigs" class="tsd-kind-icon">apply<wbr>View<wbr>Configs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="transition.transition-1.html#createtransitionhookregfns" class="tsd-kind-icon">create<wbr>Transition<wbr>Hook<wbr>Reg<wbr>Fns</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="transition.transition-1.html#dynamic" class="tsd-kind-icon">dynamic</a>
