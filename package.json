@@ -21,12 +21,12 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.5",
+    "autoprefixer": "^7.2.3",
     "node-sass": "^4.4.2",
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "postcss-cli": "^2.5.1",
-    "uglify-js": "^2.6.1"
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.3.0",
+    "postcss-cli": "^4.1.1",
+    "uglify-js": "^3.2.2"
   },
   "scripts": {
     "scss": "node-sass --output-style compressed -o assets/css assets/_scss",
