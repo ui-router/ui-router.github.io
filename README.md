@@ -1,5 +1,7 @@
 ### [UI-Router web site](https://ui-router.github.io/) https://ui-router.github.io/
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ui-router/ui-router.github.io.svg)](https://greenkeeper.io/)
+
 This is the source code for the UI-Router web site.
 
 This is a [jekyll](https://jekyllrb.com) web site based on the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) template by [Michael Rose](https://twitter.com/@mmistakes)
