@@ -59,8 +59,8 @@
       var diff = compareDigit(a.shift(), b.shift());
       if (diff !== 0) return diff;
     }
-    if (a.length) return 1;
-    if (b.length) return -1;
+    if (a.length) return -1; // sort 1.0.0 before 1.0.0-suffix.0
+    if (b.length) return 1;
     return 0;
   };
 
