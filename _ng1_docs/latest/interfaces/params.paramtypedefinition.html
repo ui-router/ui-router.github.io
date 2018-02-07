@@ -109,7 +109,9 @@ fooId === <span class="hljs-number">123</span> <span class="hljs-comment">// tru
 					<p>This example encodes an array of integers as a dash-delimited string to be used in the URL.</p>
 					<p>If we call <code>$state.go(&#39;foo&#39;, { fooIds: [20, 30, 40] });</code>, the URL changes to <code>/foo/20-30-40</code>.
 					If we navigate to <code>/foo/1-2-3</code>, the <code>foo</code> state&#39;s onEnter logs <code>[1, 2, 3]</code>.</p>
-					<pre><code>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code>
 $urlMatcherFactoryProvider.type(<span class="hljs-string">'intarray'</span>, {
   <span class="hljs-comment">// Take an array of ints [1,2,3] and return a string "1-2-3"</span>
   encode: <span class="hljs-function">(<span class="hljs-params">array</span>) =&gt;</span> array.join(<span class="hljs-string">"-"</span>),
@@ -136,9 +138,11 @@ $stateProvider.state(<span class="hljs-string">'foo'</span>, {
   }
 });
 </code></pre><p>This example decodes an integer from the URL.
-						It uses the integer as an index to look up an item from a static list.
-					That item from the list is the decoded parameter value.</p>
-					<pre><code>
+								It uses the integer as an index to look up an item from a static list.
+							That item from the list is the decoded parameter value.</p>
+						</dd>
+						<dt>example</dt>
+						<dd><pre><code>
 <span class="hljs-keyword">var</span> <span class="hljs-keyword">list</span> = [<span class="hljs-string">'John'</span>, <span class="hljs-string">'Paul'</span>, <span class="hljs-string">'George'</span>, <span class="hljs-string">'Ringo'</span>];
 
 $urlMatcherFactoryProvider.type(<span class="hljs-string">'listItem'</span>, {
@@ -169,11 +173,7 @@ $stateProvider.state(<span class="hljs-string">'list'</span>, {
 <span class="hljs-comment">// Changes URL to '/list/3', logs "Ringo" to the console</span>
 $state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-string">"Ringo"</span> });
 </code></pre><p>See: <a href="url.urlconfigapi.html#type">UrlConfigApi.type</a></p>
-					<dl class="tsd-comment-tags">
-						<dt>example</dt>
-						<dd></dd>
-						<dt>example</dt>
-						<dd></dd>
+						</dd>
 					</dl>
 				</div>
 			</section>
@@ -240,7 +240,7 @@ $state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-str
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L616">core/src/params/interface.ts:616</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:537</li>
 						</ul>
 					</aside>
 				</section>
@@ -277,7 +277,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L604">core/src/params/interface.ts:604</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:525</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +308,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L563">core/src/params/interface.ts:563</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:484</li>
 						</ul>
 					</aside>
 				</section>
@@ -335,7 +335,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L577">core/src/params/interface.ts:577</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:498</li>
 						</ul>
 					</aside>
 				</section>
@@ -386,7 +386,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L533">core/src/params/interface.ts:533</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:602</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -440,7 +440,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L517">core/src/params/interface.ts:517</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:586</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -488,7 +488,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L547">core/src/params/interface.ts:547</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:616</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -521,9 +521,6 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<p>Note: This method is <em>not used to check if the URL matches</em>.
 									It&#39;s used to check if a <em>decoded value <em>is</em> this type</em>.
 								Use <a href="params.paramtypedefinition.html#pattern">pattern</a> to check the encoded value in the URL.</p>
-								<pre><code>   <span class="hljs-keyword">this</span> <span class="hljs-keyword">is</span> the name <span class="hljs-keyword">of</span> the parameter <span class="hljs-keyword">in</span> which `<span class="javascript">val</span>` <span class="hljs-keyword">is</span> stored. Can be used <span class="hljs-keyword">for</span>
-   meta-programming <span class="hljs-keyword">of</span> `<span class="javascript">ParamType</span>` objects.
-</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -536,7 +533,9 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<li>
 									<h5>key: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">string</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>If the type check is happening in the context of a specific <a href="../classes/url.urlmatcher.html">UrlMatcher</a>  object,</p>
+										<p>If the type check is happening in the context of a specific <a href="../classes/url.urlmatcher.html">UrlMatcher</a>  object,
+											this is the name of the parameter in which <code>val</code> is stored. Can be used for
+										meta-programming of <code>ParamType</code> objects.</p>
 									</div>
 								</li>
 							</ul>
@@ -547,7 +546,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/params/interface.ts#L497">core/src/params/interface.ts:497</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/params/interface.ts:566</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -585,16 +584,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/trace.html">trace</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -621,7 +611,16 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/view.html">view</a>
 					</li>
 				</ul>
 			</nav>

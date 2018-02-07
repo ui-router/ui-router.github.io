@@ -127,7 +127,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
         <h3>from<wbr>Component<wbr>Provider</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Component<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Component<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResolveContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-header">
 							<p> Creates a component&#39;s template by invoking an injectable provider function. </p>
 						</li>
@@ -151,7 +151,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 									<h5>params <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>context <a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a></h5>
+									<h5>context <span class="tsd-signature-type">ResolveContext</span></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -161,7 +161,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L119">angularjs/src/templateFactory.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L119">src/templateFactory.ts:119</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -172,7 +172,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
         <h3>from<wbr>Config</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Config<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/ng1.ng1viewdeclaration.html" class="tsd-signature-type">Ng1ViewDeclaration</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Config<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/ng1.ng1viewdeclaration.html" class="tsd-signature-type">Ng1ViewDeclaration</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResolveContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-header">
 							<p> Creates a template from a configuration object. </p>
 						</li>
@@ -183,16 +183,15 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 								<div class="lead">
 									<p>Creates a template from a configuration object.</p>
 								</div>
-								<p>The following properties are search in the specified order, and the first one
-								that is defined is used to create the template:</p>
-								<p>that string,or <code>null</code> if no template is configured.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>config <a href="../interfaces/ng1.ng1viewdeclaration.html" class="tsd-signature-type">Ng1ViewDeclaration</a></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>Configuration object for which to load a template.</p>
+										<p>Configuration object for which to load a template.
+											The following properties are search in the specified order, and the first one
+										that is defined is used to create the template:</p>
 									</div>
 								</li>
 								<li>
@@ -202,7 +201,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 									</div>
 								</li>
 								<li>
-									<h5>context <a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a></h5>
+									<h5>context <span class="tsd-signature-type">ResolveContext</span></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<p>The resolve context associated with the template&#39;s view</p>
 									</div>
@@ -210,12 +209,13 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 							</ul>
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								: <p>The template html as a string, or a promise for</p>
+								: <p>The template html as a string, or a promise for
+								that string,or <code>null</code> if no template is configured.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L45">angularjs/src/templateFactory.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L45">src/templateFactory.ts:45</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -226,7 +226,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
         <h3>from<wbr>Provider</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Provider<span class="tsd-signature-symbol">(</span>provider<span class="tsd-signature-symbol">: </span><a href="../modules/common.html#iinjectable" class="tsd-signature-type">IInjectable</a>, params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResolveContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-header">
 							<p> Creates a template by invoking an injectable provider function. </p>
 						</li>
@@ -237,7 +237,6 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 								<div class="lead">
 									<p>Creates a template by invoking an injectable provider function.</p>
 								</div>
-								<p>for that string.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -251,17 +250,18 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 									<h5>params <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>context <a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a></h5>
+									<h5>context <span class="tsd-signature-type">ResolveContext</span></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								: <p>The template html as a string, or a promise</p>
+								: <p>The template html as a string, or a promise
+								for that string.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L105">angularjs/src/templateFactory.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L105">src/templateFactory.ts:105</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -272,7 +272,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
         <h3>from<wbr>String</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>String<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span>, params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/params.rawparams.html" class="tsd-signature-type">RawParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>String<span class="tsd-signature-symbol">(</span>template<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span>, params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RawParams</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 						<li class="tsd-header">
 							<p> Creates a template from a string or a function returning a string. </p>
 						</li>
@@ -283,7 +283,6 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 								<div class="lead">
 									<p>Creates a template from a string or a function returning a string.</p>
 								</div>
-								<p>string.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -294,7 +293,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 									</div>
 								</li>
 								<li>
-									<h5>params: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../interfaces/params.rawparams.html" class="tsd-signature-type">RawParams</a></h5>
+									<h5>params: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">RawParams</span></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<p>Parameters to pass to the template function.</p>
 									</div>
@@ -302,12 +301,13 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 							</ul>
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-								: <p>The template html as a string, or a promise for that</p>
+								: <p>The template html as a string, or a promise for that
+								string.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L70">angularjs/src/templateFactory.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L70">src/templateFactory.ts:70</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -329,15 +329,14 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 								<div class="lead">
 									<p>Loads a template from the a URL via <code>$http</code> and <code>$templateCache</code>.</p>
 								</div>
-								<p>that returns a url.
-								for that string.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>url <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>url of the template to load, or a function</p>
+										<p>url of the template to load, or a function
+										that returns a url.</p>
 									</div>
 								</li>
 								<li>
@@ -349,12 +348,13 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 							</ul>
 							<div class="tsd-returns">
 								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-								: <p>The template html as a string, or a promise</p>
+								: <p>The template html as a string, or a promise
+								for that string.</p>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L83">angularjs/src/templateFactory.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L83">src/templateFactory.ts:83</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -365,7 +365,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
         <h3>make<wbr>Component<wbr>Template</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Component<wbr>Template<span class="tsd-signature-symbol">(</span>uiView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAugmentedJQuery</span>, context<span class="tsd-signature-symbol">: </span><a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a>, component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, bindings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Component<wbr>Template<span class="tsd-signature-symbol">(</span>uiView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAugmentedJQuery</span>, context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResolveContext</span>, component<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, bindings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 						<li class="tsd-header">
 							<p> Creates a template from a component&#39;s name </p>
 						</li>
@@ -390,7 +390,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 									</div>
 								</li>
 								<li>
-									<h5>context <a href="resolve.resolvecontext.html" class="tsd-signature-type">ResolveContext</a></h5>
+									<h5>context <span class="tsd-signature-type">ResolveContext</span></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<p>The ResolveContext (for binding outputs to callbacks returned from resolves)</p>
 									</div>
@@ -415,7 +415,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/65383ad/src/templateFactory.ts#L140">angularjs/src/templateFactory.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/templateFactory.ts#L140">src/templateFactory.ts:140</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -453,16 +453,7 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/trace.html">trace</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/url.html">url</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -489,7 +480,16 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="../modules/view.html">view</a>
 					</li>
 				</ul>
 			</nav>
@@ -539,6 +539,12 @@ redirect_from: /docs/latest/classes/view.templatefactory.html
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/view.viewservicepluginapi.html" class="tsd-kind-icon">View<wbr>Service<wbr>PluginAPI</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/view.viewsynclistener.html" class="tsd-kind-icon">View<wbr>Sync<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/view.viewtuple.html" class="tsd-kind-icon">View<wbr>Tuple</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/view.html#viewconfigfactory" class="tsd-kind-icon">View<wbr>Config<wbr>Factory</a>

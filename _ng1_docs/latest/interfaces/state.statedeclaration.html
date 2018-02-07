@@ -102,27 +102,26 @@ redirect_from: /docs/latest/interfaces/state.statedeclaration.html
 
 registry.register(foldersState);
 </code></pre>
-					<p>A state declaration may also be an ES6 class which implements the StateDeclaration interface</p>
+					<p>A state declaration may also be an ES6 class which implements the StateDeclaration interface
+					and has a <code>@State()</code> decorator</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-keyword">import</span> { FolderService } <span class="hljs-keyword">from</span> <span class="hljs-string">"../folder.service"</span>
-<span class="hljs-comment">// StateDeclaration class</span>
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoldersState</span> <span class="hljs-title">implements</span> <span class="hljs-title">StateDeclaration</span> </span>{
-  name: <span class="hljs-string">'folders'</span>,
-  <span class="hljs-attr">url</span>: <span class="hljs-string">'/folders'</span>,
-  <span class="hljs-attr">component</span>: FoldersComponent
-
-  allfolders(FolderService) {
-      <span class="hljs-keyword">return</span> FolderService.list();
-  },
-}
-
-registry.register(FoldersState);
-</code></pre>
-					<p>and has a <code>@State()</code> decorator
-					import { State } from &quot;@uirouter/core&quot;</p>
+					<p>```js
+						import { State } from &quot;@uirouter/core&quot;
+						import { FolderService } from &quot;../folder.service&quot;
+					// StateDeclaration class</p>
 					<dl class="tsd-comment-tags">
 						<dt>state()</dt>
-						<dd><p>  @Resolve({ deps: [ FolderService ] })</p>
+						<dd><p>export class FoldersState implements StateDeclaration {
+								name: &#39;folders&#39;,
+								url: &#39;/folders&#39;,
+							component: FoldersComponent</p>
+							<p>  @Resolve({ deps: [ FolderService ] })
+								allfolders(FolderService) {
+								return FolderService.list();
+								},
+							}</p>
+							<p>registry.register(FoldersState);
+							```</p>
 						</dd>
 					</dl>
 				</div>
@@ -132,11 +131,6 @@ registry.register(FoldersState);
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">StateDeclaration</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="ng1._ng1statedeclaration.html" class="tsd-signature-type">_Ng1StateDeclaration</a>
-							</li>
-						</ul>
 					</li>
 				</ul>
 			</section>
@@ -207,7 +201,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L190">core/src/state/interface.ts:190</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:190</li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +225,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L155">core/src/state/interface.ts:155</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:155</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +253,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L439">core/src/state/interface.ts:439</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:439</li>
 						</ul>
 					</aside>
 				</section>
@@ -373,9 +367,6 @@ registry.register(FoldersState);
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> lazyLoadResults;
 </code></pre>
-							<pre><code>    Optionally, <span class="hljs-keyword">if</span> <span class="hljs-keyword">the</span> promise resolves <span class="hljs-built_in">to</span> <span class="hljs-keyword">a</span> &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">"state.lazyloadresult.html"</span>&gt;LazyLoadResult&lt;/<span class="hljs-keyword">a</span>&gt;,
-    <span class="hljs-keyword">the</span> states will be registered <span class="hljs-keyword">with</span> <span class="hljs-keyword">the</span> &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">"../classes/state.stateregistry.html"</span>&gt;StateRegistry&lt;/<span class="hljs-keyword">a</span>&gt;.
-</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>param</dt>
 								<dd><p>the <a href="../classes/transition.transition-1.html">Transition</a> that is activating the future state</p>
@@ -384,7 +375,9 @@ registry.register(FoldersState);
 								<dd><p>the <a href="state.statedeclaration.html">StateDeclaration</a> that the <code>lazyLoad</code> function is declared on</p>
 								</dd>
 								<dt>returns</dt>
-								<dd><p>a Promise to load the states.</p>
+								<dd><p>a Promise to load the states.
+										Optionally, if the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a>,
+									the states will be registered with the <a href="../classes/state.stateregistry.html">StateRegistry</a>.</p>
 								</dd>
 							</dl>
 						</div>
@@ -417,7 +410,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L699">core/src/state/interface.ts:699</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:699</li>
 						</ul>
 					</aside>
 				</section>
@@ -443,7 +436,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L147">core/src/state/interface.ts:147</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:147</li>
 						</ul>
 					</aside>
 				</section>
@@ -478,7 +471,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L531">core/src/state/interface.ts:531</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:531</li>
 						</ul>
 					</aside>
 				</section>
@@ -513,7 +506,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L575">core/src/state/interface.ts:575</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:575</li>
 						</ul>
 					</aside>
 				</section>
@@ -548,7 +541,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L553">core/src/state/interface.ts:553</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:553</li>
 						</ul>
 					</aside>
 				</section>
@@ -592,7 +585,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L378">core/src/state/interface.ts:378</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:378</li>
 						</ul>
 					</aside>
 				</section>
@@ -630,7 +623,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L181">core/src/state/interface.ts:181</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:181</li>
 						</ul>
 					</aside>
 				</section>
@@ -714,7 +707,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L506">core/src/state/interface.ts:506</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:506</li>
 						</ul>
 					</aside>
 				</section>
@@ -735,7 +728,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L704">core/src/state/interface.ts:704</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:704</li>
 						</ul>
 					</aside>
 				</section>
@@ -828,7 +821,7 @@ registry.register(FoldersState);
 							The resolve then delegates to a service method, such as <code>UserService.list()</code>;</p>
 							<h4 id="special-injectable-tokens">Special injectable tokens</h4>
 							<ul>
-								<li><code>UIRouter</code>: The <a href="../classes/core.uirouter.html">UIRouter</a> instance which has references to all the UI-Router services.</li>
+								<li><code>UIRouter</code>: The <a href="ng1.__uirouter_core_lib_router_.uirouter.html">UIRouter</a> instance which has references to all the UI-Router services.</li>
 								<li><code>Transition</code>: The current <a href="../classes/transition.transition-1.html">Transition</a> object; information and API about the current transition, such as
 								&quot;to&quot; and &quot;from&quot; State Parameters and transition options.</li>
 								<li><code>&#39;$transition$&#39;</code>: A string alias for the <code>Transition</code> injectable</li>
@@ -851,7 +844,7 @@ resolve: [
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L312">core/src/state/interface.ts:312</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:312</li>
 						</ul>
 					</aside>
 				</section>
@@ -880,7 +873,7 @@ resolve: [
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L326">core/src/state/interface.ts:326</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:326</li>
 						</ul>
 					</aside>
 				</section>
@@ -901,7 +894,9 @@ resolve: [
 							<p>A URL fragment (with optional parameters) which is used to match the browser location with this state.</p>
 							<p>This fragment will be appended to the parent state&#39;s URL in order to build up the overall URL for this state.
 							See <a href="../classes/url.urlmatcher.html">UrlMatcher</a> for details on acceptable patterns.</p>
-							<pre><code class="lang-js">
+							<dl class="tsd-comment-tags">
+								<dt>examples</dt>
+								<dd><pre><code class="lang-js">
 url: <span class="hljs-string">"/home"</span>
 <span class="hljs-comment">// Define a parameter named 'userid'</span>
 url: <span class="hljs-string">"/users/:userid"</span>
@@ -918,15 +913,13 @@ url: <span class="hljs-string">"/messages?{before:date}&amp;{after:date}"</span>
 <span class="hljs-comment">// Path and query parameters</span>
 url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span>
 </code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>examples</dt>
-								<dd></dd>
+								</dd>
 							</dl>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L356">core/src/state/interface.ts:356</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:356</li>
 						</ul>
 					</aside>
 				</section>
@@ -968,9 +961,12 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
   }
 }
 </code></pre>
-							<pre><code class="lang-js"><span class="hljs-comment">// Targets named ui-view="header" from ancestor state 'top''s template, and</span>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><pre><code class="lang-js"><span class="hljs-comment">// Targets named ui-view="header" from ancestor state 'top''s template, and</span>
 <span class="hljs-comment">// named `ui-view="body" from parent state's template.</span>
 views: {
+  <span class="hljs-string">'header@top'</span>: {
     <span class="hljs-attr">controller</span>: <span class="hljs-string">"msgHeaderCtrl"</span>,
     <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"msgHeader.html"</span>
   }, <span class="hljs-string">'body'</span>: {
@@ -979,9 +975,6 @@ views: {
   }
 }
 </code></pre>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><p>  &#39;header@top&#39;: {</p>
 								</dd>
 							</dl>
 						</div>
@@ -996,7 +989,7 @@ views: {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/interface.ts#L425">core/src/state/interface.ts:425</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/interface.ts:425</li>
 						</ul>
 					</aside>
 				</section>
@@ -1033,16 +1026,7 @@ views: {
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/trace.html">trace</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -1069,7 +1053,16 @@ views: {
 						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/view.html">view</a>
 					</li>
 				</ul>
 			</nav>

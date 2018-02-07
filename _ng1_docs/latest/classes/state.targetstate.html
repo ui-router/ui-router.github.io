@@ -164,7 +164,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Target<wbr>State<span class="tsd-signature-symbol">(</span>_stateRegistry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StateRegistry</span>, _identifier<span class="tsd-signature-symbol">: </span><a href="../modules/state.html#stateorname" class="tsd-signature-type">StateOrName</a>, _params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/params.rawparams.html" class="tsd-signature-type">RawParams</a>, _options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/transition.transitionoptions.html" class="tsd-signature-type">TransitionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Target<wbr>State<span class="tsd-signature-symbol">(</span>_stateRegistry<span class="tsd-signature-symbol">: </span><a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a>, _identifier<span class="tsd-signature-symbol">: </span><a href="../modules/state.html#stateorname" class="tsd-signature-type">StateOrName</a>, _params<span class="tsd-signature-symbol">?: </span><a href="../interfaces/params.rawparams.html" class="tsd-signature-type">RawParams</a>, _options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/transition.transitionoptions.html" class="tsd-signature-type">TransitionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="state.targetstate.html" class="tsd-signature-type">TargetState</a></li>
 						<li class="tsd-header">
 							<p> The TargetState constructor </p>
 						</li>
@@ -177,12 +177,11 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 								</div>
 								<p>Note: Do not construct a <code>TargetState</code> manually.
 								To create a <code>TargetState</code>, use the <a href="state.stateservice.html#target">StateService.target</a> factory method.</p>
-								<p>   Either a fully-qualified state name, or the object used to define the state.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>_stateRegistry <span class="tsd-signature-type">StateRegistry</span></h5>
+									<h5>_stateRegistry <a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The StateRegistry to use to look up the _definition</p>
@@ -193,7 +192,8 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 									<h5>_identifier <a href="../modules/state.html#stateorname" class="tsd-signature-type">StateOrName</a></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>An identifier for a state.</p>
+											<p>An identifier for a state.
+											Either a fully-qualified state name, or the object used to define the state.</p>
 										</div>
 									</div>
 								</li>
@@ -220,7 +220,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L47">core/src/state/targetState.ts:47</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:51</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -238,7 +238,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L45">core/src/state/targetState.ts:45</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:45</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,19 +248,21 @@ redirect_from: /docs/latest/classes/state.targetstate.html
         <h3><span class="tsd-flag ts-flagPrivate">Private</span> _identifier</h3>
     -->
 					<div class="tsd-signature tsd-kind-icon">_identifier<span class="tsd-signature-symbol">:</span> <a href="../modules/state.html#stateorname" class="tsd-signature-type">StateOrName</a>    <div class="tsd-header">
-							<p> An identifier for a state. </p>
+							<p> An identifier for a state.
+							Either a fully-qualified state name, or the object used to define the state. </p>
 						</div>
 					</div>
 					<div class="tsd-declaration">
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>An identifier for a state.</p>
+								<p>An identifier for a state.
+								Either a fully-qualified state name, or the object used to define the state.</p>
 							</div>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L65">core/src/state/targetState.ts:65</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:69</li>
 						</ul>
 					</aside>
 				</section>
@@ -274,7 +276,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L47">core/src/state/targetState.ts:47</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:47</li>
 						</ul>
 					</aside>
 				</section>
@@ -288,7 +290,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L46">core/src/state/targetState.ts:46</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:46</li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +299,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 					<!--
         <h3><span class="tsd-flag ts-flagPrivate">Private</span> _state<wbr>Registry</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">_state<wbr>Registry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StateRegistry</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">_state<wbr>Registry<span class="tsd-signature-symbol">:</span> <a href="state.stateregistry.html" class="tsd-signature-type">StateRegistry</a>    <div class="tsd-header">
 							<p> The StateRegistry to use to look up the _definition </p>
 						</div>
 					</div>
@@ -310,7 +312,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L64">core/src/state/targetState.ts:64</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:68</li>
 						</ul>
 					</aside>
 				</section>
@@ -341,7 +343,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L91">core/src/state/targetState.ts:91</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:95</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -370,7 +372,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L116">core/src/state/targetState.ts:116</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:120</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -399,7 +401,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L106">core/src/state/targetState.ts:106</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:110</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -428,7 +430,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L81">core/src/state/targetState.ts:81</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:85</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -457,7 +459,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L76">core/src/state/targetState.ts:76</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:80</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -486,7 +488,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L101">core/src/state/targetState.ts:101</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:105</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -515,7 +517,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L86">core/src/state/targetState.ts:86</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:90</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -544,7 +546,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L96">core/src/state/targetState.ts:96</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:100</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -565,7 +567,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L128">core/src/state/targetState.ts:128</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:132</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -594,7 +596,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L111">core/src/state/targetState.ts:111</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:115</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -616,8 +618,6 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 								<div class="lead">
 									<p>Returns a copy of this TargetState, using the specified Transition Options.</p>
 								</div>
-								<pre><code>           When <span class="hljs-literal">true</span> <span class="hljs-keyword">the</span> options will be used instead <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> current options.
-</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -630,7 +630,8 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 								<li>
 									<h5>replace: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>When false (default) the new options will be merged with the current options.</p>
+										<p>When false (default) the new options will be merged with the current options.
+										When true the options will be used instead of the current options.</p>
 									</div>
 								</li>
 							</ul>
@@ -640,7 +641,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L165">core/src/state/targetState.ts:165</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:165</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -662,8 +663,6 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 								<div class="lead">
 									<p>Returns a copy of this TargetState, using the specified parameter values.</p>
 								</div>
-								<pre><code>           When <span class="hljs-literal">true</span> <span class="hljs-keyword">the</span> parameter values will be used instead <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> current values.
-</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -676,7 +675,8 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 								<li>
 									<h5>replace: <span class="tsd-flag ts-flagDefault value">Default value</span>&nbsp; <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 									:         <div class="tsd-comment tsd-typography">
-										<p>When false (default) the new parameter values will be merged with the current values.</p>
+										<p>When false (default) the new parameter values will be merged with the current values.
+										When true the parameter values will be used instead of the current values.</p>
 									</div>
 								</li>
 							</ul>
@@ -686,7 +686,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L153">core/src/state/targetState.ts:153</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:153</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -726,7 +726,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L142">core/src/state/targetState.ts:142</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:142</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -761,7 +761,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/state/targetState.ts#L133">core/src/state/targetState.ts:133</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/state/targetState.ts:50</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -799,16 +799,7 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/trace.html">trace</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -835,7 +826,16 @@ redirect_from: /docs/latest/classes/state.targetstate.html
 						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/view.html">view</a>
 					</li>
 				</ul>
 			</nav>

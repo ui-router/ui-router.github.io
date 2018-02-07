@@ -139,7 +139,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3>$injector</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">$injector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{/** Gets an object from DI based on a string token */get: name &#x3D;&gt; globals[name],/** Returns true if an object named &#x60;name&#x60; exists in global DI */has: (name) &#x3D;&gt; $injector.get(name) !&#x3D; null,/*** Injects a function** @param fn the function to inject* @param context the function&#x27;s &#x60;this&#x60; binding* @param locals An object with additional DI tokens and values, such as &#x60;{ someToken: { foo: 1 } }&#x60;*/invoke: (fn: IInjectable, context?, locals?) &#x3D;&gt; {let all &#x3D; extend({}, globals, locals || {});let params &#x3D; $injector.annotate(fn);let ensureExist &#x3D; assertPredicate((key: string) &#x3D;&gt; all.hasOwnProperty(key), key &#x3D;&gt; &#x60;DI can&#x27;t find injectable: &#x27;${key}&#x27;&#x60;);let args &#x3D; params.filter(ensureExist).map(x &#x3D;&gt; all[x]);if (isFunction(fn)) return fn.apply(context, args);else return (fn as any[]).slice(-1)[0].apply(context, args);},/*** Returns a function&#x27;s dependencies** Analyzes a function (or array) and returns an array of DI tokens that the function requires.* @return an array of &#x60;string&#x60;s*/annotate: (fn: IInjectable): any[] &#x3D;&gt; {if (!isInjectable(fn)) throw new Error(&#x60;Not an injectable function: ${fn}&#x60;);if (fn &amp;&amp; (fn as any).$inject) return (fn as any).$inject;if (isArray(fn)) return fn.slice(0, -1);let fnStr &#x3D; fn.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);let result &#x3D; fnStr.slice(fnStr.indexOf(&#x27;(&#x27;) + 1, fnStr.indexOf(&#x27;)&#x27;)).match(ARGUMENT_NAMES);return result || [];}} as $InjectorLike</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">$injector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{/** Gets an object from DI based on a string token */get: name &#x3D;&gt; globals[name],/** Returns true if an object named &#x60;name&#x60; exists in global DI */has: (name) &#x3D;&gt; $injector.get(name) !&#x3D; null,/*** Injects a function** @param fn the function to inject* @param context the function&#x27;s &#x60;this&#x60; binding* @param locals An object with additional DI tokens and values, such as &#x60;{ someToken: { foo: 1 } }&#x60;*/invoke: (fn: IInjectable, context?, locals?) &#x3D;&gt; {const all &#x3D; extend({}, globals, locals || {});const params &#x3D; $injector.annotate(fn);const ensureExist &#x3D; assertPredicate((key: string) &#x3D;&gt; all.hasOwnProperty(key), key &#x3D;&gt; &#x60;DI can&#x27;t find injectable: &#x27;${key}&#x27;&#x60;);const args &#x3D; params.filter(ensureExist).map(x &#x3D;&gt; all[x]);if (isFunction(fn)) return fn.apply(context, args);else return (fn as any[]).slice(-1)[0].apply(context, args);},/*** Returns a function&#x27;s dependencies** Analyzes a function (or array) and returns an array of DI tokens that the function requires.* @return an array of &#x60;string&#x60;s*/annotate: (fn: IInjectable): any[] &#x3D;&gt; {if (!isInjectable(fn)) throw new Error(&#x60;Not an injectable function: ${fn}&#x60;);if (fn &amp;&amp; (fn as any).$inject) return (fn as any).$inject;if (isArray(fn)) return fn.slice(0, -1);const fnStr &#x3D; fn.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);const result &#x3D; fnStr.slice(fnStr.indexOf(&#x27;(&#x27;) + 1, fnStr.indexOf(&#x27;)&#x27;)).match(ARGUMENT_NAMES);return result || [];},} as $InjectorLike</span>    <div class="tsd-header">
 							<p> A basic angular1-like injector api </p>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/injector.ts#L62">core/src/vanilla/injector.ts:62</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/injector.ts:62</li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +193,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3>$q</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/common._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> =&nbsp;{/** Normalizes a value as a promise */when: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; { reject(val); }),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {let deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }let chain &#x3D; Object.keys(promises).map(key &#x3D;&gt; promises[key].then(val &#x3D;&gt; ({key, val})));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then(values &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; { acc[tuple.key] &#x3D; tuple.val; return acc; }, {}));}}} as $QLike</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/common._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> =&nbsp;{/** Normalizes a value as a promise */when: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; { reject(val); }),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {const deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }const chain &#x3D; Object.keys(promises).map(key &#x3D;&gt; promises[key].then(val &#x3D;&gt; ({ key, val })));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then(values &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; { acc[tuple.key] &#x3D; tuple.val; return acc; }, {}));}},} as $QLike</span>    <div class="tsd-header">
 							<p> An angular1-like promise api </p>
 						</div>
 					</div>
@@ -214,7 +214,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/q.ts#L23">core/src/vanilla/q.ts:23</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/q.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +228,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/injector.ts#L13">core/src/vanilla/injector.ts:13</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/injector.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +242,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/injector.ts#L12">core/src/vanilla/injector.ts:12</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/injector.ts:12</li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +261,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/injector.ts#L11">core/src/vanilla/injector.ts:11</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/injector.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -286,14 +286,14 @@ redirect_from: /docs/latest/modules/vanilla.html
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>router <span class="tsd-signature-type">UIRouter</span></h5>
+												<h5>router <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 											</li>
 										</ul>
 										<div class="tsd-returns">
@@ -306,7 +306,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/plugins.ts#L26">core/src/vanilla/plugins.ts:26</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/plugins.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -315,7 +315,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3>memory<wbr>Location<wbr>Plugin</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">memory<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&quot;vanilla.memoryLocation&quot;, false, MemoryLocationService, MemoryLocationConfig)</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">memory<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.memoryLocation&#x27;, false, MemoryLocationService, MemoryLocationConfig)</span>    <div class="tsd-header">
 							<p> A <code>UIRouterPlugin</code> that gets/sets the current location from an in-memory object </p>
 						</div>
 					</div>
@@ -331,14 +331,14 @@ redirect_from: /docs/latest/modules/vanilla.html
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>router <span class="tsd-signature-type">UIRouter</span></h5>
+												<h5>router <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 											</li>
 										</ul>
 										<div class="tsd-returns">
@@ -351,7 +351,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/plugins.ts#L34">core/src/vanilla/plugins.ts:34</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/plugins.ts:34</li>
 						</ul>
 					</aside>
 				</section>
@@ -360,7 +360,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3>push<wbr>State<wbr>Location<wbr>Plugin</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">push<wbr>State<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&quot;vanilla.pushStateLocation&quot;, true, PushStateLocationService, BrowserLocationConfig)</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">push<wbr>State<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.pushStateLocation&#x27;, true, PushStateLocationService, BrowserLocationConfig)</span>    <div class="tsd-header">
 							<p> A <code>UIRouterPlugin</code> that gets/sets the current location using the browser&#39;s <code>location</code> and <code>history</code> apis </p>
 						</div>
 					</div>
@@ -376,14 +376,14 @@ redirect_from: /docs/latest/modules/vanilla.html
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.locationplugin.html" class="tsd-signature-type">LocationPlugin</a></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>router <span class="tsd-signature-type">UIRouter</span></h5>
+												<h5>router <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 											</li>
 										</ul>
 										<div class="tsd-returns">
@@ -396,7 +396,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/plugins.ts#L30">core/src/vanilla/plugins.ts:30</a></li>
+							<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/plugins.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -425,7 +425,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L33">core/src/vanilla/utils.ts:33</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:33</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -452,7 +452,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L22">core/src/vanilla/utils.ts:22</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:22</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -482,7 +482,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L11">core/src/vanilla/utils.ts:11</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:11</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -511,14 +511,14 @@ redirect_from: /docs/latest/modules/vanilla.html
 										<li class="tsd-parameter">
 											<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
 											<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal tsd-is-external tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/common.locationservices.html" class="tsd-signature-type">LocationServices</a></li>
+												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>uiRouter<span class="tsd-signature-symbol">?: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/common.locationservices.html" class="tsd-signature-type">LocationServices</a></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>router: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">UIRouter</span></h5>
+															<h5>uiRouter: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 														</li>
 													</ul>
 													<div class="tsd-returns">
@@ -527,7 +527,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 													<hr>
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L50">core/src/vanilla/utils.ts:50</a></li>
+															<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:50</li>
 														</ul>
 												</aside>        </li>
 											</ul>
@@ -540,14 +540,14 @@ redirect_from: /docs/latest/modules/vanilla.html
 										<li class="tsd-parameter">
 											<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
 											<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal tsd-is-external tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">UIRouter</span>, isHtml5<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/common.locationconfig.html" class="tsd-signature-type">LocationConfig</a></li>
+												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span>uiRouter<span class="tsd-signature-symbol">?: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a>, isHtml5<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/common.locationconfig.html" class="tsd-signature-type">LocationConfig</a></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5>router: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">UIRouter</span></h5>
+															<h5>uiRouter: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 														</li>
 														<li>
 															<h5>isHtml5: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">boolean</span></h5>
@@ -559,7 +559,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 													<hr>
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L51">core/src/vanilla/utils.ts:51</a></li>
+															<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:51</li>
 														</ul>
 												</aside>        </li>
 											</ul>
@@ -573,7 +573,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L47">core/src/vanilla/utils.ts:47</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:47</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -614,7 +614,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/utils.ts#L25">core/src/vanilla/utils.ts:25</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/utils.ts:25</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -625,14 +625,14 @@ redirect_from: /docs/latest/modules/vanilla.html
         <h3>services<wbr>Plugin</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">services<wbr>Plugin<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UIRouter</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.servicesplugin.html" class="tsd-signature-type">ServicesPlugin</a></li>
+						<li class="tsd-signature tsd-kind-icon">services<wbr>Plugin<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vanilla.servicesplugin.html" class="tsd-signature-type">ServicesPlugin</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>router <span class="tsd-signature-type">UIRouter</span></h5>
+									<h5>router <a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -641,7 +641,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/24da332/src/vanilla/plugins.ts#L18">core/src/vanilla/plugins.ts:18</a></li>
+									<li>Defined in .downstream_cache/@uirouter/core/src/vanilla/plugins.ts:18</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -679,16 +679,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 						<a href="resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="trace.html">trace</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="transition.html">transition</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
@@ -714,8 +705,17 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="state.html">state</a>
 					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="url.html">url</a>
+					</li>
 					<li class="current tsd-kind-external-module tsd-is-external">
 						<a href="vanilla.html">vanilla</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="view.html">view</a>
 					</li>
 				</ul>
 			</nav>
