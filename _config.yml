@@ -231,6 +231,9 @@ collections:
   guide:
     output: true
     permalink: /guide/:path
+  core_docs:
+    output: true
+    permalink: /core/docs/:path:output_ext
   ng1_docs:
     output: true
     permalink: /ng1/docs/:path:output_ext
@@ -309,6 +312,12 @@ defaults:
       layout: single
       sidebar:
         nav: "guide"
+  - scope:
+      path: ""
+      type: core_docs
+    values:
+      sitemap: true
+      layout: docs
   - scope:
       path: ""
       type: ng1_docs

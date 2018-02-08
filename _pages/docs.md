@@ -12,5 +12,6 @@ permalink: /docs/
   </div>
   <div><a href="/ng2/docs/latest"><img src="/images/logos/angular2.png"><div>Angular (2+)</div></a></div>
   <div><a href="/react/docs/latest"><img src="/images/logos/react.png"><div>React</div></a></div>
+  <div><a href="/core/docs/latest"><img src="/images/logos/ui-router.png"><div>Core</div></a></div>
 </div>
 
