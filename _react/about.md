@@ -10,6 +10,7 @@ permalink: /react/
 
 <center>
 <img src="/images/logos/react.png" width="150">
+<br /><img src="https://img.shields.io/npm/v/@uirouter/react.svg?label=@uirouter/react&maxAge=3600">
 <br /><iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=ui-router&repo=react&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe><iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=ui-router&repo=react&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </center>
 
@@ -39,10 +40,10 @@ The [UI-Router Sample App](/resources/sampleapp) is a non-trivial UI-Router appl
 
 UI-Router is written in [Typescript](typescriptlang.org).
 We generate [detailed API docs](/react/docs/latest) from the typescript code and comments.
- 
+
 ## Development
 
-To fix a UI-Router bug, or create an enhancement, follow these steps: 
+To fix a UI-Router bug, or create an enhancement, follow these steps:
 
 The Typescript source code for UI-Router for React can be found at <https://github.com/ui-router/react>
 The React code depends on on UI-Router Core, which is found at <https://github.com/ui-router/core>

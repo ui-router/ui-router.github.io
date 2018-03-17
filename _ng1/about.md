@@ -9,13 +9,14 @@ permalink: /ng1/
 
 <center>
 <img src="/images/logos/angular1.png">
+<br /><img src="https://img.shields.io/npm/v/@uirouter/angularjs.svg?label=@uirouter/angularjs&maxAge=3600">
 <br /><iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=angular-ui&repo=ui-router&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe><iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=angular-ui&repo=ui-router&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
 </center>
 
-## About 
+## About
 
 UI-Router is the defacto standard for routing in AngularJS.
-Influenced by the core angular router `$route` and the Ember Router, 
+Influenced by the core angular router `$route` and the Ember Router,
 UI-Router has become the standard choice for routing non-trivial apps in AngularJS (1.x).
 
 ## Getting UI-Router
@@ -30,19 +31,19 @@ Other examples:
 
 - Via command line
   - Adding a specific version to your project: `npm install --save @uirouter/angularjs@1.0.7`
-  
-- From <http://unpkg.com> via a `<script>` tag in your html: 
+
+- From <http://unpkg.com> via a `<script>` tag in your html:
   - Latest stable version: `<script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>`
   - A specific version: `<script src="//unpkg.com/@uirouter/angularjs@1.0.7/release/angular-ui-router.min.js"></script>`
   - A legacy version: `<script src="//unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>`
-  
+
 - From bower:
   - Latest stable version: `bower install angular-ui-router`
   - A specific version: `bower install angular-ui-router#1.0.7`
   - A legacy version: `bower install angular-ui-router#0.3.1`
 
 Note: bower releases are considered 'legacy' and are managed at <https://github.com/angular-ui/angular-ui-router-bower>
-  
+
 ## Tutorials
 
 Learn UI-Router by following our tutorials.
@@ -50,15 +51,15 @@ Learn UI-Router by following our tutorials.
 - [Hello World](/tutorial/ng1/helloworld)
 - [Hello Solar System](/tutorial/ng1/hellosolarsystem)
 - [Hello Galaxy](/tutorial/ng1/hellogalaxy)
- 
- 
+
+
 ## Sample application
 
 The [UI-Router Sample App](/resources/sampleapp) is a non-trivial UI-Router application.
- 
+
 ## Development
 
-To fix a UI-Router bug, or create an enhancement, follow these steps: 
+To fix a UI-Router bug, or create an enhancement, follow these steps:
 
 The Typescript source code for UI-Router for Angular (2+) can be found at <https://github.com/angular-ui/ui-router>
 UI-Router for AngularJS (1.x) depends on UI-Router Core, which can be found at <https://github.com/ui-router/core>
