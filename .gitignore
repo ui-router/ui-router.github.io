@@ -12,3 +12,4 @@ npm-debug.log*
 *.iml
 *.iws
 .*
+yarn-error.log
