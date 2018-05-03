@@ -104,12 +104,21 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					<!--
         <h3>ABORTED</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">ABORTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<div class="tsd-signature tsd-kind-icon">ABORTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span>    <div class="tsd-header">
+							<p> The transition was aborted </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The transition was aborted</p>
+							</div>
+							<p>The transition was aborted by a hook which returned <code>false</code></p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:11</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L24">ui-router-core/src/transition/rejectFactory.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,12 +127,21 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					<!--
         <h3>ERROR</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+					<div class="tsd-signature tsd-kind-icon">ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span>    <div class="tsd-header">
+							<p> The transition errored. </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The transition errored.</p>
+							</div>
+							<p>This generally means a hook threw an error or returned a rejected promise</p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:11</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L50">ui-router-core/src/transition/rejectFactory.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,12 +150,26 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					<!--
         <h3>IGNORED</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">IGNORED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
+					<div class="tsd-signature tsd-kind-icon">IGNORED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span>    <div class="tsd-header">
+							<p> The transition was ignored </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The transition was ignored</p>
+							</div>
+							<p>The transition was ignored because it would have no effect.</p>
+							<p>Either:</p>
+							<ul>
+								<li>The transition is targeting the current state and parameter values</li>
+								<li>The transition is targeting the same state and parameter values as the currently running transition.</li>
+							</ul>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:11</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L43">ui-router-core/src/transition/rejectFactory.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,12 +178,21 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					<!--
         <h3>INVALID</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">INVALID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
+					<div class="tsd-signature tsd-kind-icon">INVALID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span>    <div class="tsd-header">
+							<p> The transition was invalid </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The transition was invalid</p>
+							</div>
+							<p>The transition was never started because it was invalid</p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:11</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L31">ui-router-core/src/transition/rejectFactory.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,12 +201,22 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					<!--
         <h3>SUPERSEDED</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">SUPERSEDED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<div class="tsd-signature tsd-kind-icon">SUPERSEDED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span>    <div class="tsd-header">
+							<p> A new transition superseded this one. </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A new transition superseded this one.</p>
+							</div>
+							<p>While this transition was running, a new transition started.
+							This transition is cancelled because it was superseded by new transition.</p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:11</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L17">ui-router-core/src/transition/rejectFactory.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,9 +233,6 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/injectables.html">injectables</a>
@@ -218,6 +266,9 @@ redirect_from: /docs/latest/enums/transition.rejecttype.html
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/hooks.html">hooks</a>

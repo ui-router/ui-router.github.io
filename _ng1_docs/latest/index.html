@@ -75,40 +75,52 @@ redirect_from: /docs/latest/
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="-ui-router-for-angular-1-https-ui-router-github-io-ng1-docs-latest-"><a href="https://ui-router.github.io/ng1/docs/latest">UI Router for Angular 1</a></h1>
-				<h4 id="the-de-facto-solution-to-flexible-routing-in-angular-1">The de-facto solution to flexible routing in angular 1</h4>
-				<div style="display: flex;">
-					<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=angular-ui&repo=ui-router&type=fork&count=true&size=medium" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-					<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=angular-ui&repo=ui-router&type=star&count=true&size=medium" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-					<a href="https://travis-ci.org/angular-ui/ui-router"><img src="https://travis-ci.org/angular-ui/ui-router.svg?branch=master" alt="Build Status"></a>
-				</div>
+				<h1 id="angularui-router-build-status">AngularUI Router &nbsp;<a href="https://travis-ci.org/angular-ui/ui-router"><img src="https://travis-ci.org/angular-ui/ui-router.svg?branch=master" alt="Build Status"></a></h1>
+				<p><a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/angular-ui/ui-router.svg" alt="Greenkeeper badge"></a></p>
+				<p><strong>Note: this is the Angular 1.x source for UI-Router version 1.0.  If you are looking for the source for UI-Router
+				version 0.2.x, it can be found <a href="https://github.com/angular-ui/ui-router/tree/legacy">here</a></strong></p>
+				<hr>
+				<h4 id="the-de-facto-solution-to-flexible-routing-in-angular">The de-facto solution to flexible routing in angular</h4>
+				<hr>
+				<p><strong><a href="https://ui-router.github.io/tutorials/">Tutorials</a></strong> |
+					<strong><a href="https://ui-router.github.io/docs/latest/">API Docs</a></strong> |
+					<strong><a href="http://unpkg.com/@uirouter/angularjs@latest/release/angular-ui-router.js">Download stable</a></strong> (or <strong><a href="http://unpkg.com/@uirouter/angularjs@latest/release/angular-ui-router.min.js">Minified</a></strong>) <strong>|</strong>
+					<strong><a href="https://github.com/angular-ui/ui-router/wiki">Guide</a> |</strong>
+					<strong><a href="http://ui-router.github.io/resources/sampleapp/">Sample App</a> |</strong>
+					<strong><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions">FAQ</a> |</strong>
+					<strong><a href="https://github.com/angular-ui/ui-router/blob/master/CONTRIBUTING.md#report-an-issue">Report an Issue</a> |</strong>
+					<strong><a href="https://github.com/angular-ui/ui-router/blob/master/CONTRIBUTING.md#contribute">Contribute</a> |</strong>
+				<strong><a href="http://stackoverflow.com/questions/ask?tags=angularjs,angular-ui-router">Help!</a> |</strong></p>
+				<hr>
 				<p>Angular UI-Router is a client-side <a href="https://en.wikipedia.org/wiki/Single-page_application">Single Page Application</a>
 				routing framework for <a href="http://angularjs.org">AngularJS</a>.  </p>
-				<p><strong><a href="http://github.com/angular-ui/ui-router">View on Github</a> |</strong>
-					<strong><a href="https://ui-router.github.io/ng1/tutorials/">Tutorials</a></strong> |
-					<strong><a href="https://ui-router.github.io/guide">Guides</a> |</strong>
-					<strong><a href="http://ui-router.github.io/resources/sampleapp/">Sample App</a> |</strong>
-					<strong><a href="https://github.com/angular-ui/ui-router/wiki">Wiki</a> |</strong>
-				<strong><a href="https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions">FAQ</a></strong></p>
-				<h4 id="api-documentation-organization">API Documentation Organization</h4>
-				<p>The documentation is arranged according to API concern, such as <code>url</code>, <code>resolve</code>, and <code>core</code>.
-				For a list of services and objects that can be injectable, see the <a href="./injectables.html"><code>injectables</code> section</a>.</p>
-				<p>By default, only the public UI-Router API is shown.
-				To view both public API and the internal APIs, check the &quot;Internal UI-Router API&quot; checkbox.</p>
-				<h4 id="typescript">Typescript</h4>
-				<p>UI-Router is written in Typescript.
-					The API documentation is generated using <a href="https://github.com/TypeStrong/typedoc">TypeDoc</a>.
-				The documentation reflects the Typescript classes, interfaces, and parameter types information embedded in the source code.</p>
-				<h4 id="contributing">Contributing</h4>
-				<p>Angular UI-Router depends on the framework agnostic <code>@uirouter/core</code>.
-					To contribute to the documentation, please submit a PR to either
-					<a href="http://github.com/angular-ui/ui-router">@uirouter/angularjs</a>
-					or
-					<a href="http://github.com/ui-router/core">@uirouter/core</a>.
-				To find where a specific piece of documentation is written, follow the links that say:</p>
-				<blockquote>
-					<p><em>Defined in ui-router/somedir/somefile.ts</em></p>
-				</blockquote>
+				<p>Routing frameworks for SPAs update the browser&#39;s URL as the user navigates through the app.  Conversely, this allows
+					changes to the browser&#39;s URL to drive navigation through the app, thus allowing the user to create a bookmark to a
+				location deep within the SPA.</p>
+				<p>UI-Router applications are modeled as a hierarchical tree of states. UI-Router provides a
+					<a href="https://en.wikipedia.org/wiki/Finite-state_machine"><em>state machine</em></a> to manage the transitions between those
+				application states in a transaction-like manner. </p>
+				<h2 id="get-started">Get Started</h2>
+				<ul>
+					<li><a href="https://ui-router.github.io/ng1">UI-Router for Angular 1</a></li>
+					<li><a href="https://ui-router.github.io/ng2">UI-Router for Angular 2</a></li>
+					<li><a href="https://ui-router.github.io/react">UI-Router for React</a></li>
+				</ul>
+				<h2 id="resources">Resources</h2>
+				<ul>
+					<li><a href="https://github.com/angular-ui/ui-router/wiki">In-Depth Guide</a></li>
+					<li><a href="http://slid.es/timkindberg/ui-router#/">Slides comparing ngRoute to ui-router</a></li>
+					<li><a href="http://christopherthielen.github.io/ui-router-extras/#/home">UI-Router Extras / Addons for legacy (0.x)</a> (@christopherthielen)</li>
+				</ul>
+				<h3 id="videos">Videos</h3>
+				<ul>
+					<li><a href="https://egghead.io/lessons/angularjs-introduction-ui-router">Introduction Video</a> (egghead.io)</li>
+					<li><a href="https://www.youtube.com/watch?v=lBqiZSemrqg">Tim Kindberg on Angular UI-Router</a></li>
+					<li><a href="https://egghead.io/lessons/angularjs-ui-router-activating-states">Activating States</a> (egghead.io)</li>
+					<li><a href="http://youtu.be/QETUuZ27N0w">Learn Angular.js using UI-Router</a> (LearnCode.academy)</li>
+				</ul>
+				<h2 id="reporting-issues-and-contributing">Reporting issues and Contributing</h2>
+				<p>Please read our <a href="CONTRIBUTING.md">Contributor guidelines</a> before reporting an issue or creating a pull request.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -122,9 +134,6 @@ redirect_from: /docs/latest/
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/core.html">core</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/injectables.html">injectables</a>
@@ -158,6 +167,9 @@ redirect_from: /docs/latest/
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="modules/hooks.html">hooks</a>

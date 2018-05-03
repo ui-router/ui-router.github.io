@@ -120,7 +120,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
         <h3>_define<wbr>Event</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_define<wbr>Event<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookPhase<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransitionHookPhase.CREATE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.BEFORE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.RUN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.SUCCESS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.ERROR</span>, hookOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, criteriaMatchPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathType</span>, reverseSort<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, getResultHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#getresulthandler" class="tsd-signature-type">GetResultHandler</a>, getErrorHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#geterrorhandler" class="tsd-signature-type">GetErrorHandler</a>, rejectIfSuperseded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">_define<wbr>Event<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookPhase<span class="tsd-signature-symbol">: </span><a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a>, hookOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, criteriaMatchPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PathType</span>, reverseSort<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, getResultHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#getresulthandler" class="tsd-signature-type">GetResultHandler</a>, getErrorHandler<span class="tsd-signature-symbol">?: </span><a href="../modules/transition.html#geterrorhandler" class="tsd-signature-type">GetErrorHandler</a>, rejectIfSuperseded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 						<li class="tsd-header">
 							<p> Defines a transition hook type and returns a transition hook registration
 							function (which can then be used to register hooks of this type). </p>
@@ -140,7 +140,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 									<h5>name <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>hookPhase <span class="tsd-signature-type">TransitionHookPhase.CREATE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.BEFORE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.RUN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.SUCCESS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.ERROR</span></h5>
+									<h5>hookPhase <a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a></h5>
 								</li>
 								<li>
 									<h5>hookOrder <span class="tsd-signature-type">number</span></h5>
@@ -167,7 +167,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/transitionService.ts:79</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/transitionService.ts#L88">ui-router-core/src/transition/transitionService.ts:88</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -178,7 +178,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
         <h3>_define<wbr>Path<wbr>Type</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_define<wbr>Path<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookScope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransitionHookScope.TRANSITION</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookScope.STATE</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">_define<wbr>Path<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookScope<span class="tsd-signature-symbol">: </span><a href="../enums/transition.transitionhookscope.html" class="tsd-signature-type">TransitionHookScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 						<li class="tsd-header">
 							<p> Adds a Path to be used as a criterion against a TreeChanges path </p>
 						</li>
@@ -202,7 +202,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 									<h5>name <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>hookScope <span class="tsd-signature-type">TransitionHookScope.TRANSITION</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookScope.STATE</span></h5>
+									<h5>hookScope <a href="../enums/transition.transitionhookscope.html" class="tsd-signature-type">TransitionHookScope</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -211,7 +211,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/transitionService.ts:68</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/transitionService.ts#L77">ui-router-core/src/transition/transitionService.ts:77</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -222,7 +222,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
         <h3>_get<wbr>Events</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">_get<wbr>Events<span class="tsd-signature-symbol">(</span>phase<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TransitionHookPhase.CREATE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.BEFORE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.RUN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.SUCCESS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.ERROR</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransitionEventType[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">_get<wbr>Events<span class="tsd-signature-symbol">(</span>phase<span class="tsd-signature-symbol">?: </span><a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TransitionEventType[]</span></li>
 						<li class="tsd-header">
 							<p> Returns the known event types, such as <code>onBefore</code>
 							If a phase argument is provided, returns only events for the given phase. </p>
@@ -239,7 +239,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>phase: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">TransitionHookPhase.CREATE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.BEFORE</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.RUN</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.SUCCESS</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TransitionHookPhase.ERROR</span></h5>
+									<h5>phase: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../enums/transition.transitionhookphase.html" class="tsd-signature-type">TransitionHookPhase</a></h5>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -248,7 +248,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/transitionService.ts:92</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/transitionService.ts#L103">ui-router-core/src/transition/transitionService.ts:103</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -277,7 +277,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/transitionService.ts:73</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/transitionService.ts#L82">ui-router-core/src/transition/transitionService.ts:82</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -312,7 +312,7 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/transitionService.ts:95</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/transitionService.ts#L106">ui-router-core/src/transition/transitionService.ts:106</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -330,9 +330,6 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/injectables.html">injectables</a>
@@ -366,6 +363,9 @@ redirect_from: /docs/latest/interfaces/transition.transitionservicepluginapi.htm
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/hooks.html">hooks</a>

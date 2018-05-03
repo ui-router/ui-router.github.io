@@ -96,7 +96,7 @@ redirect_from: /docs/latest/modules/directives.html
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uisrefactivedirective" class="tsd-kind-icon">ui<wbr>Sref<wbr>Active<wbr>Directive</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uisrefdirective" class="tsd-kind-icon">ui<wbr>Sref<wbr>Directive</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="directives.html#uistatedirective" class="tsd-kind-icon">ui<wbr>State<wbr>Directive</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="directives.html#uiview" class="tsd-kind-icon">ui<wbr>View</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="directives.html#uiview" class="tsd-kind-icon">ui<wbr>View</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,7 +107,7 @@ redirect_from: /docs/latest/modules/directives.html
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="uisrefactivedirective" class="tsd-anchor"></a>
 					<!--
-        <h3>ui<wbr>Sref<wbr>Active<wbr>Directive</h3>
+        <h3><span class="tsd-flag ts-flagLet">Let</span> ui<wbr>Sref<wbr>Active<wbr>Directive</h3>
     -->
 					<div class="tsd-signature tsd-kind-icon">ui<wbr>Sref<wbr>Active<wbr>Directive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
 							<p> <code>ui-sref-active</code> and <code>ui-sref-active-eq</code>: A directive that adds a CSS class when a <code>ui-sref</code> is active </p>
@@ -122,7 +122,7 @@ redirect_from: /docs/latest/modules/directives.html
 							related directive&#39;s state is active (and remove them when it is inactive).</p>
 							<p>The primary use-case is to highlight the active link in navigation menus,
 							distinguishing it from the inactive menu items.</p>
-							<h3 id="linking-to-a-ui-sref-or-ui-state-">Linking to a <code>ui-sref</code> or <code>ui-state</code></h3>
+							<h3 id="linking-to-a-ui-sref-or-ui-state">Linking to a <code>ui-sref</code> or <code>ui-state</code></h3>
 							<p><code>ui-sref-active</code> can live on the same element as <code>ui-sref</code>/<code>ui-state</code>, or it can be on a parent element.
 							If a <code>ui-sref-active</code> is a parent to more than one <code>ui-sref</code>/<code>ui-state</code>, it will apply the CSS class when <strong>any of the links are active</strong>.</p>
 							<h3 id="matching">Matching</h3>
@@ -189,14 +189,14 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/directives/stateDirectives.ts#L535">src/directives/stateDirectives.ts:535</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/632df97/src/directives/stateDirectives.ts#L573">ui-router-angularjs/src/directives/stateDirectives.ts:573</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="uisrefdirective" class="tsd-anchor"></a>
 					<!--
-        <h3>ui<wbr>Sref<wbr>Directive</h3>
+        <h3><span class="tsd-flag ts-flagLet">Let</span> ui<wbr>Sref<wbr>Directive</h3>
     -->
 					<div class="tsd-signature tsd-kind-icon">ui<wbr>Sref<wbr>Directive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
 							<p> <code>ui-sref</code>: A directive for linking to a state </p>
@@ -310,14 +310,14 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/directives/stateDirectives.ts#L259">src/directives/stateDirectives.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/632df97/src/directives/stateDirectives.ts#L284">ui-router-angularjs/src/directives/stateDirectives.ts:284</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="uistatedirective" class="tsd-anchor"></a>
 					<!--
-        <h3>ui<wbr>State<wbr>Directive</h3>
+        <h3><span class="tsd-flag ts-flagLet">Let</span> ui<wbr>State<wbr>Directive</h3>
     -->
 					<div class="tsd-signature tsd-kind-icon">ui<wbr>State<wbr>Directive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
 							<p> <code>ui-state</code>: A fully dynamic directive for linking to a state </p>
@@ -386,20 +386,20 @@ redirect_from: /docs/latest/modules/directives.html
 </code></pre>
 							<ul>
 								<li>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.
-								```</li>
+								<code>`</code></li>
 							</ul>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/directives/stateDirectives.ts#L391">src/directives/stateDirectives.ts:391</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/632df97/src/directives/stateDirectives.ts#L423">ui-router-angularjs/src/directives/stateDirectives.ts:423</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
 					<a name="uiview" class="tsd-anchor"></a>
 					<!--
-        <h3>ui<wbr>View</h3>
+        <h3><span class="tsd-flag ts-flagLet">Let</span> ui<wbr>View</h3>
     -->
 					<div class="tsd-signature tsd-kind-icon">ui<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ng1_directive</span>    <div class="tsd-header">
 							<p> <code>ui-view</code>: A viewport directive which is filled in by a view from the active state. </p>
@@ -512,7 +512,7 @@ $stateProvider.state("home", {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/00139c6/src/directives/viewDirective.ts#L156">src/directives/viewDirective.ts:156</a></li>
+							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/632df97/src/directives/viewDirective.ts#L176">ui-router-angularjs/src/directives/viewDirective.ts:176</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -529,9 +529,6 @@ $stateProvider.state("home", {
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="core.html">core</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="injectables.html">injectables</a>
@@ -565,6 +562,9 @@ $stateProvider.state("home", {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="hooks.html">hooks</a>
@@ -600,7 +600,7 @@ $stateProvider.state("home", {
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="directives.html#uistatedirective" class="tsd-kind-icon">ui<wbr>State<wbr>Directive</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
 						<a href="directives.html#uiview" class="tsd-kind-icon">ui<wbr>View</a>
 					</li>
 				</ul>

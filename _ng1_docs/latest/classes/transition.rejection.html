@@ -101,7 +101,6 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#_id" class="tsd-kind-icon">$id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#detail" class="tsd-kind-icon">detail</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#message" class="tsd-kind-icon">message</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="transition.rejection.html#redirected" class="tsd-kind-icon">redirected</a></li>
@@ -156,7 +155,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:79</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L150">ui-router-core/src/transition/rejectFactory.ts:150</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -165,30 +164,27 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="_id" class="tsd-anchor"></a>
-					<!--
-        <h3>$id</h3>
-    -->
-					<div class="tsd-signature tsd-kind-icon">$id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;id++</span></div>
-					<div class="tsd-declaration">
-					</div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:18</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="detail" class="tsd-anchor"></a>
 					<!--
         <h3>detail</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span>    <div class="tsd-header">
+							<p> A detail object </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A detail object</p>
+							</div>
+							<p>This value varies based on the mechanism for rejecting the transition.
+								For example, if an error was thrown from a hook, the <code>detail</code> will be the <code>Error</code> object.
+							If a hook returned a rejected promise, the <code>detail</code> will be the rejected value.</p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:21</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L86">ui-router-core/src/transition/rejectFactory.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -197,12 +193,20 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<!--
         <h3>message</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> A message describing the rejection </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A message describing the rejection</p>
+							</div>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:20</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L77">ui-router-core/src/transition/rejectFactory.ts:77</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -211,12 +215,21 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<!--
         <h3>redirected</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">redirected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<div class="tsd-signature tsd-kind-icon">redirected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> Indicates if the transition was redirected. </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Indicates if the transition was redirected.</p>
+							</div>
+							<p>When a transition is redirected, the rejection <a href="transition.rejection.html#type">type</a> will be <a href="../enums/transition.rejecttype.html#superseded">RejectType.SUPERSEDED</a> and this flag will be true.</p>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:22</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L93">ui-router-core/src/transition/rejectFactory.ts:93</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,12 +238,29 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					<!--
         <h3>type</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/transition.rejecttype.html" class="tsd-signature-type">RejectType</a>    <div class="tsd-header">
+							<p> The type of the rejection. </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The type of the rejection.</p>
+							</div>
+							<p>This value is an number representing the type of transition rejection.
+							If using Typescript, this is a Typescript enum.</p>
+							<ul>
+								<li><a href="../enums/transition.rejecttype.html#superseded">RejectType.SUPERSEDED</a> (<code>2</code>)</li>
+								<li><a href="../enums/transition.rejecttype.html#aborted">RejectType.ABORTED</a> (<code>3</code>)</li>
+								<li><a href="../enums/transition.rejecttype.html#invalid">RejectType.INVALID</a> (<code>4</code>)</li>
+								<li><a href="../enums/transition.rejecttype.html#ignored">RejectType.IGNORED</a> (<code>5</code>)</li>
+								<li><a href="../enums/transition.rejecttype.html#error">RejectType.ERROR</a> (<code>6</code>)</li>
+							</ul>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:19</li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L72">ui-router-core/src/transition/rejectFactory.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -253,7 +283,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:95</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L165">ui-router-core/src/transition/rejectFactory.ts:165</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -274,7 +304,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:87</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L158">ui-router-core/src/transition/rejectFactory.ts:158</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -309,7 +339,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:57</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L128">ui-router-core/src/transition/rejectFactory.ts:128</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -344,7 +374,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:63</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L134">ui-router-core/src/transition/rejectFactory.ts:134</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -379,7 +409,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:51</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L122">ui-router-core/src/transition/rejectFactory.ts:122</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -414,7 +444,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:45</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L116">ui-router-core/src/transition/rejectFactory.ts:116</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -449,7 +479,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:25</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L96">ui-router-core/src/transition/rejectFactory.ts:96</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -488,7 +518,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:77</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L148">ui-router-core/src/transition/rejectFactory.ts:148</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -523,7 +553,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:40</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L111">ui-router-core/src/transition/rejectFactory.ts:111</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -561,7 +591,7 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in .downstream_cache/@uirouter/core/src/transition/rejectFactory.ts:30</li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/transition/rejectFactory.ts#L101">ui-router-core/src/transition/rejectFactory.ts:101</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -579,9 +609,6 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/injectables.html">injectables</a>
@@ -615,6 +642,9 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/hooks.html">hooks</a>
@@ -663,9 +693,6 @@ redirect_from: /docs/latest/classes/transition.rejection.html
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="transition.rejection.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="transition.rejection.html#_id" class="tsd-kind-icon">$id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="transition.rejection.html#detail" class="tsd-kind-icon">detail</a>
