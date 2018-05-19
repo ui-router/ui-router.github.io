@@ -21,7 +21,7 @@ UI-Router provides extremely flexible, state based routing to the React ecosyste
 The UI-Router package is distributed using [npm](https://www.npmjs.com/), the node package manager.
 
 ```
-npm install --save ui-router-react
+npm install --save @uirouter/react
 ```
 
 ## Tutorials
