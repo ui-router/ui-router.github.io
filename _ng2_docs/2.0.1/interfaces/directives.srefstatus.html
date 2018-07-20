@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ParamFactory | @uirouter/angular</title>
+	<title>SrefStatus | @uirouter/angular</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -66,13 +66,13 @@
 					<a href="../index.html">@uirouter/angular</a>
 				</li>
 				<li>
-					<a href="../modules/url.html">url</a>
+					<a href="../modules/directives.html">directives</a>
 				</li>
 				<li>
-					<a href="url.paramfactory.html">ParamFactory</a>
+					<a href="directives.srefstatus.html">SrefStatus</a>
 				</li>
 			</ul>
-			<h1>Interface ParamFactory</h1>
+			<h1>Interface SrefStatus</h1>
 		</div>
 	</div>
 </header>
@@ -81,13 +81,16 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>UISref status emitted from <a href="../classes/directives.uisrefstatus.html">UISrefStatus</a></p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ParamFactory</span>
+						<span class="target">SrefStatus</span>
 					</li>
 				</ul>
 			</section>
@@ -96,140 +99,129 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#fromconfig" class="tsd-kind-icon">from<wbr>Config</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#frompath" class="tsd-kind-icon">from<wbr>Path</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#fromsearch" class="tsd-kind-icon">from<wbr>Search</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="directives.srefstatus.html#active" class="tsd-kind-icon">active</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="directives.srefstatus.html#entering" class="tsd-kind-icon">entering</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="directives.srefstatus.html#exact" class="tsd-kind-icon">exact</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="directives.srefstatus.html#exiting" class="tsd-kind-icon">exiting</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="directives.srefstatus.html#targetstates" class="tsd-kind-icon">target<wbr>States</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="fromconfig" class="tsd-anchor"></a>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="active" class="tsd-anchor"></a>
 					<!--
-        <h3>from<wbr>Config</h3>
+        <h3>active</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Config<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a CONFIG block </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a CONFIG block</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> The sref&#39;s target state (or one of its children) is currently active </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The sref&#39;s target state (or one of its children) is currently active</p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/83a054e/src/url/interface.ts#L25">ui-router-core/src/url/interface.ts:25</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/angular/blob/d4c0fbd/src/directives/uiSrefStatus.ts#L33">ui-router-angular/src/directives/uiSrefStatus.ts:33</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="frompath" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="entering" class="tsd-anchor"></a>
 					<!--
-        <h3>from<wbr>Path</h3>
+        <h3>entering</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Path<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a url PATH </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a url PATH</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">entering<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> A transition is entering the sref&#39;s target state </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A transition is entering the sref&#39;s target state</p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/83a054e/src/url/interface.ts#L27">ui-router-core/src/url/interface.ts:27</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/angular/blob/d4c0fbd/src/directives/uiSrefStatus.ts#L37">ui-router-angular/src/directives/uiSrefStatus.ts:37</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="fromsearch" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="exact" class="tsd-anchor"></a>
 					<!--
-        <h3>from<wbr>Search</h3>
+        <h3>exact</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Search<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a url SEARCH </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a url SEARCH</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">exact<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> The sref&#39;s target state is currently active </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The sref&#39;s target state is currently active</p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/angular/blob/d4c0fbd/src/directives/uiSrefStatus.ts#L35">ui-router-angular/src/directives/uiSrefStatus.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="exiting" class="tsd-anchor"></a>
+					<!--
+        <h3>exiting</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">exiting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> A transition is exiting the sref&#39;s target state </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A transition is exiting the sref&#39;s target state</p>
 							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/83a054e/src/url/interface.ts#L29">ui-router-core/src/url/interface.ts:29</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/angular/blob/d4c0fbd/src/directives/uiSrefStatus.ts#L39">ui-router-angular/src/directives/uiSrefStatus.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="targetstates" class="tsd-anchor"></a>
+					<!--
+        <h3>target<wbr>States</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">target<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TargetState[]</span>    <div class="tsd-header">
+							<p> The enclosed sref(s) target state(s) </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The enclosed sref(s) target state(s)</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/angular/blob/d4c0fbd/src/directives/uiSrefStatus.ts#L41">ui-router-angular/src/directives/uiSrefStatus.ts:41</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -245,7 +237,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -260,7 +252,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/url.html">url</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -301,85 +293,76 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.baseurlrule.html" class="tsd-kind-icon">Base<wbr>Url<wbr>Rule</a>
+						<a href="../classes/directives.anchoruisref.html" class="tsd-kind-icon">AnchorUISref</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/url.urlmatcher.html" class="tsd-kind-icon">Url<wbr>Matcher</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlmatcherfactory.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlrouter.html" class="tsd-kind-icon">Url<wbr>Router</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlrulefactory.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Factory</a>
+						<a href="../classes/directives.uisref.html" class="tsd-kind-icon">UISref</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/url.urlservice.html" class="tsd-kind-icon">Url<wbr>Service</a>
+						<a href="../classes/directives.uisrefactive.html" class="tsd-kind-icon">UISref<wbr>Active</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.matchresult.html" class="tsd-kind-icon">Match<wbr>Result</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/directives.uisrefstatus.html" class="tsd-kind-icon">UISref<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/directives.uiview.html" class="tsd-kind-icon">UIView</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="directives.inputmapping.html" class="tsd-kind-icon">Input<wbr>Mapping</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
+						<a href="directives.parentuiviewinject.html" class="tsd-kind-icon">ParentUIView<wbr>Inject</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="directives.srefstatus.html" class="tsd-kind-icon">Sref<wbr>Status</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#fromconfig" class="tsd-kind-icon">from<wbr>Config</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="directives.srefstatus.html#active" class="tsd-kind-icon">active</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#frompath" class="tsd-kind-icon">from<wbr>Path</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="directives.srefstatus.html#entering" class="tsd-kind-icon">entering</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#fromsearch" class="tsd-kind-icon">from<wbr>Search</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="directives.srefstatus.html#exact" class="tsd-kind-icon">exact</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="directives.srefstatus.html#exiting" class="tsd-kind-icon">exiting</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="directives.srefstatus.html#targetstates" class="tsd-kind-icon">target<wbr>States</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.regexprule.html" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Rule</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="directives.transevt.html" class="tsd-kind-icon">Trans<wbr>Evt</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.staterule.html" class="tsd-kind-icon">State<wbr>Rule</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/directives.html#uirouter_directives" class="tsd-kind-icon">UIROUTER_<wbr>DIRECTIVES</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlparts.html" class="tsd-kind-icon">Url<wbr>Parts</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrule.html" class="tsd-kind-icon">Url<wbr>Rule</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulehandlerfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Handler<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulematchfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Match<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulesapi.html" class="tsd-kind-icon">Url<wbr>Rules<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.urlsyncapi.html" class="tsd-kind-icon">Url<wbr>Sync<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
-						<a href="../modules/url.html#urlruletype" class="tsd-kind-icon">Url<wbr>Rule<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/directives.html#_uirouter_directives" class="tsd-kind-icon">_UIROUTER_<wbr>DIRECTIVES</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
+						<a href="../modules/directives.html#getsrefstatus" class="tsd-kind-icon">get<wbr>Sref<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/directives.html#mergesrefstatus" class="tsd-kind-icon">merge<wbr>Sref<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/directives.html#ng2componentinputs" class="tsd-kind-icon">ng2<wbr>Component<wbr>Inputs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/directives.html#pathmatches" class="tsd-kind-icon">path<wbr>Matches</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/directives.html#spreadtosubpaths" class="tsd-kind-icon">spread<wbr>ToSub<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/directives.html#inactivestatus" class="tsd-kind-icon">inactive<wbr>Status</a>
 					</li>
 				</ul>
 			</nav>
