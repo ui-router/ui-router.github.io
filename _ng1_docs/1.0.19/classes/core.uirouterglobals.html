@@ -1,12 +1,12 @@
 ---
-redirect_from: /docs/latest/interfaces/url.paramfactory.html
+redirect_from: /docs/1.0.19/classes/core.uirouterglobals.html
 ---
 <!doctype html>
 <html class="default no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ParamFactory | @uirouter/angularjs</title>
+	<title>UIRouterGlobals | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -67,13 +67,13 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
-					<a href="../modules/url.html">url</a>
+					<a href="../modules/core.html">core</a>
 				</li>
 				<li>
-					<a href="url.paramfactory.html">ParamFactory</a>
+					<a href="core.uirouterglobals.html">UIRouterGlobals</a>
 				</li>
 			</ul>
-			<h1>Interface ParamFactory</h1>
+			<h1>Class UIRouterGlobals</h1>
 		</div>
 	</div>
 </header>
@@ -82,14 +82,25 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Global router state</p>
+					</div>
+					<p>This is where we hold the global mutable state such as current state, current
+					params, current transition, etc.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ParamFactory</span>
+						<span class="target">UIRouterGlobals</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/core.disposable.html" class="tsd-signature-type">Disposable</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -97,137 +108,189 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="core.uirouterglobals.html#_current" class="tsd-kind-icon">$current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.uirouterglobals.html#current" class="tsd-kind-icon">current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="core.uirouterglobals.html#laststartedtransitionid" class="tsd-kind-icon">last<wbr>Started<wbr>Transition<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.uirouterglobals.html#params" class="tsd-kind-icon">params</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="core.uirouterglobals.html#successfultransitions" class="tsd-kind-icon">successful<wbr>Transitions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.uirouterglobals.html#transition" class="tsd-kind-icon">transition</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="core.uirouterglobals.html#transitionhistory" class="tsd-kind-icon">transition<wbr>History</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#fromconfig" class="tsd-kind-icon">from<wbr>Config</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#frompath" class="tsd-kind-icon">from<wbr>Path</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="url.paramfactory.html#fromsearch" class="tsd-kind-icon">from<wbr>Search</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.uirouterglobals.html#dispose" class="tsd-kind-icon">dispose</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="_current" class="tsd-anchor"></a>
+					<!--
+        <h3>$current</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">$current<span class="tsd-signature-symbol">:</span> <a href="state.stateobject.html" class="tsd-signature-type">StateObject</a>    <div class="tsd-header">
+							<p> Current state (internal object) </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Current state (internal object)</p>
+							</div>
+							<p>The to-state from the latest successful transition</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L39">ui-router-core/src/globals.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="current" class="tsd-anchor"></a>
+					<!--
+        <h3>current</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <a href="../interfaces/state.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a>    <div class="tsd-header">
+							<p> Current state </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Current state</p>
+							</div>
+							<p>The to-state from the latest successful transition</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L31">ui-router-core/src/globals.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="laststartedtransitionid" class="tsd-anchor"></a>
+					<!--
+        <h3>last<wbr>Started<wbr>Transition<wbr>Id</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Started<wbr>Transition<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L48">ui-router-core/src/globals.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="params" class="tsd-anchor"></a>
+					<!--
+        <h3>params</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <a href="params.stateparams.html" class="tsd-signature-type">StateParams</a><span class="tsd-signature-symbol"> =&nbsp;new StateParams()</span>    <div class="tsd-header">
+							<p> Current parameter values </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Current parameter values</p>
+							</div>
+							<p>The parameter values from the latest successful transition</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L24">ui-router-core/src/globals.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="successfultransitions" class="tsd-anchor"></a>
+					<!--
+        <h3>successful<wbr>Transitions</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">successful<wbr>Transitions<span class="tsd-signature-symbol">:</span> <a href="common.queue.html" class="tsd-signature-type">Queue</a><span class="tsd-signature-symbol">&lt;</span><a href="transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Queue&lt;Transition&gt;([], 1)</span></div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L54">ui-router-core/src/globals.ts:54</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="transition" class="tsd-anchor"></a>
+					<!--
+        <h3>transition</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">transition<span class="tsd-signature-symbol">:</span> <a href="transition.transition-1.html" class="tsd-signature-type">Transition</a>    <div class="tsd-header">
+							<p> The current started/running transition.
+							This transition has reached at least the onStart phase, but is not yet complete </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The current started/running transition.
+								This transition has reached at least the onStart phase, but is not yet complete</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L45">ui-router-core/src/globals.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="transitionhistory" class="tsd-anchor"></a>
+					<!--
+        <h3>transition<wbr>History</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">transition<wbr>History<span class="tsd-signature-symbol">:</span> <a href="common.queue.html" class="tsd-signature-type">Queue</a><span class="tsd-signature-symbol">&lt;</span><a href="transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Queue&lt;Transition&gt;([], 1)</span></div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L51">ui-router-core/src/globals.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="fromconfig" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
 					<!--
-        <h3>from<wbr>Config</h3>
+        <h3>dispose</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Config<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a CONFIG block </p>
-						</li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a CONFIG block</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
 							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 							</div>
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/interface.ts#L25">ui-router-core/src/url/interface.ts:25</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="frompath" class="tsd-anchor"></a>
-					<!--
-        <h3>from<wbr>Path</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Path<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a url PATH </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a url PATH</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/interface.ts#L27">ui-router-core/src/url/interface.ts:27</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="fromsearch" class="tsd-anchor"></a>
-					<!--
-        <h3>from<wbr>Search</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>Search<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/params.param.html" class="tsd-signature-type">Param</a></li>
-						<li class="tsd-header">
-							<p> Creates a new <a href="../classes/params.param.html">Param</a> from a url SEARCH </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new <a href="../classes/params.param.html">Param</a> from a url SEARCH</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>type <a href="../classes/params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-								</li>
-								<li>
-									<h5>config <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <a href="../classes/params.param.html" class="tsd-signature-type">Param</a></h4>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/interface.ts#L29">ui-router-core/src/url/interface.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/globals.ts#L56">ui-router-core/src/globals.ts:56</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -243,7 +306,7 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 					<li class="label tsd-is-external">
 						<span>Public API</span>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -294,7 +357,7 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/trace.html">trace</a>
 					</li>
-					<li class="current tsd-kind-external-module tsd-is-external">
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/url.html">url</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -307,92 +370,59 @@ redirect_from: /docs/latest/interfaces/url.paramfactory.html
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.baseurlrule.html" class="tsd-kind-icon">Base<wbr>Url<wbr>Rule</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core.glob.html" class="tsd-kind-icon">Glob</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/url.urlmatcher.html" class="tsd-kind-icon">Url<wbr>Matcher</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlmatcherfactory.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlrouter.html" class="tsd-kind-icon">Url<wbr>Router</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlrouterprovider.html" class="tsd-kind-icon">Url<wbr>Router<wbr>Provider</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/url.urlrulefactory.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/url.urlservice.html" class="tsd-kind-icon">Url<wbr>Service</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.matchresult.html" class="tsd-kind-icon">Match<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
+						<a href="core.uirouter.html" class="tsd-kind-icon">UIRouter</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core.uirouterglobals.html" class="tsd-kind-icon">UIRouter<wbr>Globals</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#fromconfig" class="tsd-kind-icon">from<wbr>Config</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="core.uirouterglobals.html#_current" class="tsd-kind-icon">$current</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#frompath" class="tsd-kind-icon">from<wbr>Path</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="core.uirouterglobals.html#current" class="tsd-kind-icon">current</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="url.paramfactory.html#fromsearch" class="tsd-kind-icon">from<wbr>Search</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="core.uirouterglobals.html#laststartedtransitionid" class="tsd-kind-icon">last<wbr>Started<wbr>Transition<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="core.uirouterglobals.html#params" class="tsd-kind-icon">params</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="core.uirouterglobals.html#successfultransitions" class="tsd-kind-icon">successful<wbr>Transitions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="core.uirouterglobals.html#transition" class="tsd-kind-icon">transition</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="core.uirouterglobals.html#transitionhistory" class="tsd-kind-icon">transition<wbr>History</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core.uirouterglobals.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.rawng1rulefunction.html" class="tsd-kind-icon">Raw<wbr>Ng1<wbr>Rule<wbr>Function</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="core.uirouterpluginbase.html" class="tsd-kind-icon">UIRouter<wbr>Plugin<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.regexprule.html" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Rule</a>
+						<a href="../interfaces/core.disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/core.uiinjector.html" class="tsd-kind-icon">UIInjector</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.staterule.html" class="tsd-kind-icon">State<wbr>Rule</a>
+						<a href="../interfaces/core.uirouterplugin.html" class="tsd-kind-icon">UIRouter<wbr>Plugin</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlparts.html" class="tsd-kind-icon">Url<wbr>Parts</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrule.html" class="tsd-kind-icon">Url<wbr>Rule</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulehandlerfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Handler<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulematchfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Match<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="url.urlrulesapi.html" class="tsd-kind-icon">Url<wbr>Rules<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="url.urlsyncapi.html" class="tsd-kind-icon">Url<wbr>Sync<wbr>Api</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
-						<a href="../modules/url.html#urlruletype" class="tsd-kind-icon">Url<wbr>Rule<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/url.html#defaultrulesortfn" class="tsd-kind-icon">default<wbr>Rule<wbr>Sort<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/core.html#pluginfactory" class="tsd-kind-icon">Plugin<wbr>Factory</a>
 					</li>
 				</ul>
 			</nav>

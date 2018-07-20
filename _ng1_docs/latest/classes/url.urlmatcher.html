@@ -154,7 +154,6 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="url.urlmatcher.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="url.urlmatcher.html#pattern" class="tsd-kind-icon">pattern</a></li>
 							</ul>
 						</section>
@@ -180,7 +179,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
         <h3>constructor</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Url<wbr>Matcher<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, paramTypes<span class="tsd-signature-symbol">: </span><a href="params.paramtypes.html" class="tsd-signature-type">ParamTypes</a>, paramFactory<span class="tsd-signature-symbol">: </span><a href="../interfaces/url.paramfactory.html" class="tsd-signature-type">ParamFactory</a>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Url<wbr>Matcher<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, paramTypes<span class="tsd-signature-symbol">: </span><a href="params.paramtypes.html" class="tsd-signature-type">ParamTypes</a>, paramFactory<span class="tsd-signature-symbol">: </span><a href="url.paramfactory.html" class="tsd-signature-type">ParamFactory</a>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-signature-type">UrlMatcherCompileConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -205,17 +204,18 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 									</div>
 								</li>
 								<li>
-									<h5>paramFactory <a href="../interfaces/url.paramfactory.html" class="tsd-signature-type">ParamFactory</a></h5>
-								</li>
-								<li>
-									<h5>config: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">any</span></h5>
+									<h5>paramFactory <a href="url.paramfactory.html" class="tsd-signature-type">ParamFactory</a></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>A configuration object</p>
-											<ul>
-												<li><code>caseInsensitive</code> - <code>true</code> if URL matching should be case insensitive, otherwise <code>false</code>, the default value (for backward compatibility) is <code>false</code>.</li>
-												<li><code>strict</code> - <code>false</code> if matching against a URL with a trailing slash should be treated as equivalent to a URL without a trailing slash, the default value is <code>true</code>.</li>
-											</ul>
+											<p>A <a href="url.paramfactory.html">ParamFactory</a> object</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>config: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-signature-type">UrlMatcherCompileConfig</a></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A <a href="../interfaces/url.urlmatchercompileconfig.html">UrlMatcherCompileConfig</a> configuration object</p>
 										</div>
 									</div>
 								</li>
@@ -226,7 +226,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L227">ui-router-core/src/url/urlMatcher.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L233">ui-router-core/src/url/urlMatcher.ts:233</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -234,36 +234,6 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="config" class="tsd-anchor"></a>
-					<!--
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> config</h3>
-    -->
-					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span>    <div class="tsd-header">
-							<p> A configuration object</p>
-							<ul>
-								<li><code>caseInsensitive</code> - <code>true</code> if URL matching should be case insensitive, otherwise <code>false</code>, the default value (for backward compatibility) is <code>false</code>.</li>
-								<li><code>strict</code> - <code>false</code> if matching against a URL with a trailing slash should be treated as equivalent to a URL without a trailing slash, the default value is <code>true</code>.</li>
-							</ul>
-						</div>
-					</div>
-					<div class="tsd-declaration">
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>A configuration object</p>
-								<ul>
-									<li><code>caseInsensitive</code> - <code>true</code> if URL matching should be case insensitive, otherwise <code>false</code>, the default value (for backward compatibility) is <code>false</code>.</li>
-									<li><code>strict</code> - <code>false</code> if matching against a URL with a trailing slash should be treated as equivalent to a URL without a trailing slash, the default value is <code>true</code>.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L236">ui-router-core/src/url/urlMatcher.ts:236</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="pattern" class="tsd-anchor"></a>
 					<!--
@@ -282,7 +252,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L131">ui-router-core/src/url/urlMatcher.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L137">ui-router-core/src/url/urlMatcher.ts:137</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -323,7 +293,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L338">ui-router-core/src/url/urlMatcher.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L338">ui-router-core/src/url/urlMatcher.ts:338</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -391,7 +361,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L384">ui-router-core/src/url/urlMatcher.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L384">ui-router-core/src/url/urlMatcher.ts:384</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -436,7 +406,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L513">ui-router-core/src/url/urlMatcher.ts:513</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L513">ui-router-core/src/url/urlMatcher.ts:513</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -465,7 +435,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L354">ui-router-core/src/url/urlMatcher.ts:354</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L354">ui-router-core/src/url/urlMatcher.ts:354</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -506,7 +476,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L488">ui-router-core/src/url/urlMatcher.ts:488</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L488">ui-router-core/src/url/urlMatcher.ts:488</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -548,7 +518,7 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcher.ts#L169">ui-router-core/src/url/urlMatcher.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcher.ts#L175">ui-router-core/src/url/urlMatcher.ts:175</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -631,6 +601,9 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
 						<a href="url.baseurlrule.html" class="tsd-kind-icon">Base<wbr>Url<wbr>Rule</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
@@ -638,9 +611,6 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="url.urlmatcher.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="url.urlmatcher.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="url.urlmatcher.html#pattern" class="tsd-kind-icon">pattern</a>
@@ -689,9 +659,6 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 						<a href="../interfaces/url.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="../interfaces/url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="../interfaces/url.rawng1rulefunction.html" class="tsd-kind-icon">Raw<wbr>Ng1<wbr>Rule<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
@@ -702,6 +669,9 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/url.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Compile<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/url.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
@@ -732,6 +702,9 @@ redirect_from: /docs/latest/classes/url.urlmatcher.html
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/url.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 					</li>
 				</ul>
 			</nav>

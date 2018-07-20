@@ -139,7 +139,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3><span class="tsd-flag ts-flagConst">Const</span> $injector</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">$injector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{/** Gets an object from DI based on a string token */get: name &#x3D;&gt; globals[name],/** Returns true if an object named &#x60;name&#x60; exists in global DI */has: name &#x3D;&gt; $injector.get(name) !&#x3D; null,/*** Injects a function** @param fn the function to inject* @param context the function&#x27;s &#x60;this&#x60; binding* @param locals An object with additional DI tokens and values, such as &#x60;{ someToken: { foo: 1 } }&#x60;*/invoke: (fn: IInjectable, context?, locals?) &#x3D;&gt; {const all &#x3D; extend({}, globals, locals || {});const params &#x3D; $injector.annotate(fn);const ensureExist &#x3D; assertPredicate((key: string) &#x3D;&gt; all.hasOwnProperty(key),key &#x3D;&gt; &#x60;DI can&#x27;t find injectable: &#x27;${key}&#x27;&#x60;,);const args &#x3D; params.filter(ensureExist).map(x &#x3D;&gt; all[x]);if (isFunction(fn)) return fn.apply(context, args);else return (fn as any[]).slice(-1)[0].apply(context, args);},/*** Returns a function&#x27;s dependencies** Analyzes a function (or array) and returns an array of DI tokens that the function requires.* @return an array of &#x60;string&#x60;s*/annotate: (fn: IInjectable): any[] &#x3D;&gt; {if (!isInjectable(fn)) throw new Error(&#x60;Not an injectable function: ${fn}&#x60;);if (fn &amp;&amp; (fn as any).$inject) return (fn as any).$inject;if (isArray(fn)) return fn.slice(0, -1);const fnStr &#x3D; fn.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);const result &#x3D; fnStr.slice(fnStr.indexOf(&#x27;(&#x27;) + 1, fnStr.indexOf(&#x27;)&#x27;)).match(ARGUMENT_NAMES);return result || [];},} as $InjectorLike</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">$injector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{/** Gets an object from DI based on a string token */get: name &#x3D;&gt; globals[name],/** Returns true if an object named &#x60;name&#x60; exists in global DI */has: name &#x3D;&gt; $injector.get(name) !&#x3D; null,/*** Injects a function** @param fn the function to inject* @param context the function&#x27;s &#x60;this&#x60; binding* @param locals An object with additional DI tokens and values, such as &#x60;{ someToken: { foo: 1 } }&#x60;*/invoke: (fn: IInjectable, context?, locals?) &#x3D;&gt; {const all &#x3D; extend({}, globals, locals || {});const params &#x3D; $injector.annotate(fn);const ensureExist &#x3D; assertPredicate((key: string) &#x3D;&gt; all.hasOwnProperty(key),key &#x3D;&gt; &#x60;DI can&#x27;t find injectable: &#x27;${key}&#x27;&#x60;);const args &#x3D; params.filter(ensureExist).map(x &#x3D;&gt; all[x]);if (isFunction(fn)) return fn.apply(context, args);else return (fn as any[]).slice(-1)[0].apply(context, args);},/*** Returns a function&#x27;s dependencies** Analyzes a function (or array) and returns an array of DI tokens that the function requires.* @return an array of &#x60;string&#x60;s*/annotate: (fn: IInjectable): any[] &#x3D;&gt; {if (!isInjectable(fn)) throw new Error(&#x60;Not an injectable function: ${fn}&#x60;);if (fn &amp;&amp; (fn as any).$inject) return (fn as any).$inject;if (isArray(fn)) return fn.slice(0, -1);const fnStr &#x3D; fn.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);const result &#x3D; fnStr.slice(fnStr.indexOf(&#x27;(&#x27;) + 1, fnStr.indexOf(&#x27;)&#x27;)).match(ARGUMENT_NAMES);return result || [];},} as $InjectorLike</span>    <div class="tsd-header">
 							<p> A basic angular1-like injector api </p>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/injector.ts#L68">ui-router-core/src/vanilla/injector.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/injector.ts#L68">ui-router-core/src/vanilla/injector.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +193,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3><span class="tsd-flag ts-flagConst">Const</span> $q</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/common._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> =&nbsp;{/** Normalizes a value as a promise */when: val &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: val &#x3D;&gt;new Promise((resolve, reject) &#x3D;&gt; {reject(val);}),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {const deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }const chain &#x3D; Object.keys(promises).map(key &#x3D;&gt; promises[key].then(val &#x3D;&gt; ({ key, val })));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then(values &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; {acc[tuple.key] &#x3D; tuple.val;return acc;}, {}),);}},} as $QLike</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/common._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> =&nbsp;{/** Normalizes a value as a promise */when: val &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: val &#x3D;&gt;new Promise((resolve, reject) &#x3D;&gt; {reject(val);}),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {const deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }const chain &#x3D; Object.keys(promises).map(key &#x3D;&gt; promises[key].then(val &#x3D;&gt; ({ key, val })));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then(values &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; {acc[tuple.key] &#x3D; tuple.val;return acc;}, {}));}},} as $QLike</span>    <div class="tsd-header">
 							<p> An angular1-like promise api </p>
 						</div>
 					</div>
@@ -214,7 +214,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/q.ts#L23">ui-router-core/src/vanilla/q.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/q.ts#L23">ui-router-core/src/vanilla/q.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +228,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/injector.ts#L19">ui-router-core/src/vanilla/injector.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/injector.ts#L19">ui-router-core/src/vanilla/injector.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +242,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/injector.ts#L18">ui-router-core/src/vanilla/injector.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/injector.ts#L18">ui-router-core/src/vanilla/injector.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +261,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/injector.ts#L17">ui-router-core/src/vanilla/injector.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/injector.ts#L17">ui-router-core/src/vanilla/injector.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +270,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3><span class="tsd-flag ts-flagConst">Const</span> hash<wbr>Location<wbr>Plugin</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">hash<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.hashBangLocation&#x27;,false,HashLocationService,BrowserLocationConfig,)</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">hash<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.hashBangLocation&#x27;,false,HashLocationService,BrowserLocationConfig)</span>    <div class="tsd-header">
 							<p> A <code>UIRouterPlugin</code> uses the browser hash to get/set the current location </p>
 						</div>
 					</div>
@@ -306,7 +306,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/plugins.ts#L26">ui-router-core/src/vanilla/plugins.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/plugins.ts#L26">ui-router-core/src/vanilla/plugins.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -315,7 +315,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3><span class="tsd-flag ts-flagConst">Const</span> memory<wbr>Location<wbr>Plugin</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">memory<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.memoryLocation&#x27;,false,MemoryLocationService,MemoryLocationConfig,)</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">memory<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.memoryLocation&#x27;,false,MemoryLocationService,MemoryLocationConfig)</span>    <div class="tsd-header">
 							<p> A <code>UIRouterPlugin</code> that gets/sets the current location from an in-memory object </p>
 						</div>
 					</div>
@@ -351,7 +351,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/plugins.ts#L42">ui-router-core/src/vanilla/plugins.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/plugins.ts#L42">ui-router-core/src/vanilla/plugins.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -360,7 +360,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					<!--
         <h3><span class="tsd-flag ts-flagConst">Const</span> push<wbr>State<wbr>Location<wbr>Plugin</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">push<wbr>State<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.pushStateLocation&#x27;,true,PushStateLocationService,BrowserLocationConfig,)</span>    <div class="tsd-header">
+					<div class="tsd-signature tsd-kind-icon">push<wbr>State<wbr>Location<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;locationPluginFactory(&#x27;vanilla.pushStateLocation&#x27;,true,PushStateLocationService,BrowserLocationConfig)</span>    <div class="tsd-header">
 							<p> A <code>UIRouterPlugin</code> that gets/sets the current location using the browser&#39;s <code>location</code> and <code>history</code> apis </p>
 						</div>
 					</div>
@@ -396,7 +396,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/plugins.ts#L34">ui-router-core/src/vanilla/plugins.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/plugins.ts#L34">ui-router-core/src/vanilla/plugins.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -425,7 +425,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L44">ui-router-core/src/vanilla/utils.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L44">ui-router-core/src/vanilla/utils.ts:44</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -452,7 +452,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L29">ui-router-core/src/vanilla/utils.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L29">ui-router-core/src/vanilla/utils.ts:29</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -482,7 +482,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L18">ui-router-core/src/vanilla/utils.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L18">ui-router-core/src/vanilla/utils.ts:18</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -527,7 +527,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 													<hr>
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L64">ui-router-core/src/vanilla/utils.ts:64</a></li>
+															<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L64">ui-router-core/src/vanilla/utils.ts:64</a></li>
 														</ul>
 												</aside>        </li>
 											</ul>
@@ -559,7 +559,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 													<hr>
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L65">ui-router-core/src/vanilla/utils.ts:65</a></li>
+															<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L65">ui-router-core/src/vanilla/utils.ts:65</a></li>
 														</ul>
 												</aside>        </li>
 											</ul>
@@ -573,7 +573,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L61">ui-router-core/src/vanilla/utils.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L61">ui-router-core/src/vanilla/utils.ts:61</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -614,7 +614,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/utils.ts#L36">ui-router-core/src/vanilla/utils.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/utils.ts#L36">ui-router-core/src/vanilla/utils.ts:36</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -641,7 +641,7 @@ redirect_from: /docs/latest/modules/vanilla.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/vanilla/plugins.ts#L18">ui-router-core/src/vanilla/plugins.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/vanilla/plugins.ts#L18">ui-router-core/src/vanilla/plugins.ts:18</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>

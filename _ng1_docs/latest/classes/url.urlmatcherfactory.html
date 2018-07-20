@@ -115,6 +115,12 @@ redirect_from: /docs/latest/classes/url.urlmatcherfactory.html
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#paramfactory" class="tsd-kind-icon">param<wbr>Factory</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#caseinsensitive" class="tsd-kind-icon">case<wbr>Insensitive</a></li>
@@ -124,12 +130,6 @@ redirect_from: /docs/latest/classes/url.urlmatcherfactory.html
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#ismatcher" class="tsd-kind-icon">is<wbr>Matcher</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#strictmode" class="tsd-kind-icon">strict<wbr>Mode</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#type" class="tsd-kind-icon">type</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-external">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-class tsd-is-external"><a href="url.urlmatcherfactory.html#paramfactory" class="tsd-kind-icon">param<wbr>Factory</a></li>
 							</ul>
 						</section>
 					</div>
@@ -153,10 +153,29 @@ redirect_from: /docs/latest/classes/url.urlmatcherfactory.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L37">ui-router-core/src/url/urlMatcherFactory.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L46">ui-router-core/src/url/urlMatcherFactory.ts:46</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="paramfactory" class="tsd-anchor"></a>
+					<!--
+        <h3>param<wbr>Factory</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">param<wbr>Factory<span class="tsd-signature-symbol">:</span> <a href="url.paramfactory.html" class="tsd-signature-type">ParamFactory</a><span class="tsd-signature-symbol"> =&nbsp;new ParamFactory(this)</span></div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L46">ui-router-core/src/url/urlMatcherFactory.ts:46</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
@@ -197,7 +216,7 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlmatcherconfig.html">UrlMatcherConfig</a>.<a href="../interfaces/url.urlmatcherconfig.html#caseinsensitive">caseInsensitive</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L44">ui-router-core/src/url/urlMatcherFactory.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L53">ui-router-core/src/url/urlMatcherFactory.ts:53</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -208,7 +227,7 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
         <h3>compile</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">compile<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">compile<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-signature-type">UrlMatcherCompileConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="url.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></li>
 						<li class="tsd-header">
 							<p> Creates a <a href="url.urlmatcher.html">UrlMatcher</a> for the specified pattern. </p>
 						</li>
@@ -229,15 +248,10 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
 									</div>
 								</li>
 								<li>
-									<h5>config: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">object</span></h5>
+									<h5>config: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-signature-type">UrlMatcherCompileConfig</a></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<p>The config object hash.</p>
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-index-signature">
-											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
-										</li>
-									</ul>
 								</li>
 							</ul>
 							<div class="tsd-returns">
@@ -247,7 +261,7 @@ urlService.config.caseInsensitive(<span class="hljs-literal">true</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L71">ui-router-core/src/url/urlMatcherFactory.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L76">ui-router-core/src/url/urlMatcherFactory.ts:76</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -293,7 +307,7 @@ urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlmatcherconfig.html">UrlMatcherConfig</a>.<a href="../interfaces/url.urlmatcherconfig.html#defaultsquashpolicy">defaultSquashPolicy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L54">ui-router-core/src/url/urlMatcherFactory.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L63">ui-router-core/src/url/urlMatcherFactory.ts:63</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -316,7 +330,7 @@ urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L125">ui-router-core/src/url/urlMatcherFactory.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L134">ui-router-core/src/url/urlMatcherFactory.ts:134</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -356,7 +370,7 @@ urlService.config.defaultSquashPolicy(<span class="hljs-literal">true</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L82">ui-router-core/src/url/urlMatcherFactory.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L91">ui-router-core/src/url/urlMatcherFactory.ts:91</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -397,7 +411,7 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/url.urlmatcherconfig.html">UrlMatcherConfig</a>.<a href="../interfaces/url.urlmatcherconfig.html#strictmode">strictMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L49">ui-router-core/src/url/urlMatcherFactory.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L58">ui-router-core/src/url/urlMatcherFactory.ts:58</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -473,152 +487,10 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L112">ui-router-core/src/url/urlMatcherFactory.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/url/urlMatcherFactory.ts#L121">ui-router-core/src/url/urlMatcherFactory.ts:121</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class tsd-is-external">
-					<a name="paramfactory" class="tsd-anchor"></a>
-					<!--
-        <h3>param<wbr>Factory</h3>
-    -->
-					<div class="tsd-signature tsd-kind-icon">param<wbr>Factory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<div class="tsd-declaration">
-						<div class="tsd-comment tsd-typography">
-						</div>
-					</div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L28">ui-router-core/src/url/urlMatcherFactory.ts:28</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-						<a name="paramfactory.fromconfig" class="tsd-anchor"></a>
-						<!--
-        <h3>from<wbr>Config</h3>
-    -->
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-							<li class="tsd-signature tsd-kind-icon">from<wbr>Config<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="params.param.html" class="tsd-signature-type">Param</a></li>
-							<li class="tsd-header">
-								<p> Creates a new <a href="params.param.html">Param</a> from a CONFIG block </p>
-							</li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Creates a new <a href="params.param.html">Param</a> from a CONFIG block</p>
-									</div>
-								</div>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>id <span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li>
-										<h5>type <a href="params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-									</li>
-									<li>
-										<h5>config <span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-								<div class="tsd-returns">
-									<h4 class="tsd-returns-title">Returns <a href="params.param.html" class="tsd-signature-type">Param</a></h4>
-								</div>
-								<hr>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L30">ui-router-core/src/url/urlMatcherFactory.ts:30</a></li>
-									</ul>
-							</aside>        </li>
-						</ul>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-						<a name="paramfactory.frompath" class="tsd-anchor"></a>
-						<!--
-        <h3>from<wbr>Path</h3>
-    -->
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-							<li class="tsd-signature tsd-kind-icon">from<wbr>Path<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="params.param.html" class="tsd-signature-type">Param</a></li>
-							<li class="tsd-header">
-								<p> Creates a new <a href="params.param.html">Param</a> from a url PATH </p>
-							</li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Creates a new <a href="params.param.html">Param</a> from a url PATH</p>
-									</div>
-								</div>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>id <span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li>
-										<h5>type <a href="params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-									</li>
-									<li>
-										<h5>config <span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-								<div class="tsd-returns">
-									<h4 class="tsd-returns-title">Returns <a href="params.param.html" class="tsd-signature-type">Param</a></h4>
-								</div>
-								<hr>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L33">ui-router-core/src/url/urlMatcherFactory.ts:33</a></li>
-									</ul>
-							</aside>        </li>
-						</ul>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-						<a name="paramfactory.fromsearch" class="tsd-anchor"></a>
-						<!--
-        <h3>from<wbr>Search</h3>
-    -->
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-external">
-							<li class="tsd-signature tsd-kind-icon">from<wbr>Search<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="params.paramtype.html" class="tsd-signature-type">ParamType</a>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="params.param.html" class="tsd-signature-type">Param</a></li>
-							<li class="tsd-header">
-								<p> Creates a new <a href="params.param.html">Param</a> from a url SEARCH </p>
-							</li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Creates a new <a href="params.param.html">Param</a> from a url SEARCH</p>
-									</div>
-								</div>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>id <span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li>
-										<h5>type <a href="params.paramtype.html" class="tsd-signature-type">ParamType</a></h5>
-									</li>
-									<li>
-										<h5>config <span class="tsd-signature-type">any</span></h5>
-									</li>
-								</ul>
-								<div class="tsd-returns">
-									<h4 class="tsd-returns-title">Returns <a href="params.param.html" class="tsd-signature-type">Param</a></h4>
-								</div>
-								<hr>
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/url/urlMatcherFactory.ts#L36">ui-router-core/src/url/urlMatcherFactory.ts:36</a></li>
-									</ul>
-							</aside>        </li>
-						</ul>
-					</section>
 				</section>
 			</section>
 		</div>
@@ -698,6 +570,9 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
 						<a href="url.baseurlrule.html" class="tsd-kind-icon">Base<wbr>Url<wbr>Rule</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
+					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="url.urlmatcher.html" class="tsd-kind-icon">Url<wbr>Matcher</a>
 					</li>
@@ -708,6 +583,9 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlmatcherfactory.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="url.urlmatcherfactory.html#paramfactory" class="tsd-kind-icon">param<wbr>Factory</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlmatcherfactory.html#caseinsensitive" class="tsd-kind-icon">case<wbr>Insensitive</a>
@@ -729,9 +607,6 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
 								<a href="url.urlmatcherfactory.html#type" class="tsd-kind-icon">type</a>
-							</li>
-							<li class=" tsd-kind-object-literal tsd-parent-kind-class tsd-is-external">
-								<a href="url.urlmatcherfactory.html#paramfactory" class="tsd-kind-icon">param<wbr>Factory</a>
 							</li>
 						</ul>
 					</li>
@@ -756,9 +631,6 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 						<a href="../interfaces/url.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="../interfaces/url.paramfactory.html" class="tsd-kind-icon">Param<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
 						<a href="../interfaces/url.rawng1rulefunction.html" class="tsd-kind-icon">Raw<wbr>Ng1<wbr>Rule<wbr>Function</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
@@ -769,6 +641,9 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/url.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/url.urlmatchercompileconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Compile<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/url.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
@@ -799,6 +674,9 @@ urlService.config.strictMode(<span class="hljs-literal">false</span>);
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="../modules/url.html#gethandlerfn" class="tsd-kind-icon">get<wbr>Handler<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/url.html#defaultconfig" class="tsd-kind-icon">default<wbr>Config</a>
 					</li>
 				</ul>
 			</nav>

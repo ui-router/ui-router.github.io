@@ -102,26 +102,6 @@ redirect_from: /docs/latest/interfaces/state.statedeclaration.html
 
 registry.register(foldersState);
 </code></pre>
-					<p>A state declaration may also be an ES6 class which implements the StateDeclaration interface
-					and has a <code>@State()</code> decorator</p>
-					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-keyword">import</span> { State } <span class="hljs-keyword">from</span> <span class="hljs-string">"@uirouter/core"</span>
-<span class="hljs-keyword">import</span> { FolderService } <span class="hljs-keyword">from</span> <span class="hljs-string">"../folder.service"</span>
-<span class="hljs-comment">// StateDeclaration class</span>
-@State()
-<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoldersState</span> <span class="hljs-title">implements</span> <span class="hljs-title">StateDeclaration</span> </span>{
-  name: <span class="hljs-string">'folders'</span>,
-  <span class="hljs-attr">url</span>: <span class="hljs-string">'/folders'</span>,
-  <span class="hljs-attr">component</span>: FoldersComponent
-
-  @Resolve({ <span class="hljs-attr">deps</span>: [ FolderService ] })
-  allfolders(FolderService) {
-      <span class="hljs-keyword">return</span> FolderService.list();
-  },
-}
-
-registry.register(FoldersState);
-</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -142,6 +122,7 @@ registry.register(FoldersState);
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#__state" class="tsd-kind-icon">$$state</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#abstract" class="tsd-kind-icon">abstract</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#dynamic" class="tsd-kind-icon">dynamic</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#lazyload" class="tsd-kind-icon">lazy<wbr>Load</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.statedeclaration.html#onenter" class="tsd-kind-icon">on<wbr>Enter</a></li>
@@ -199,7 +180,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L190">ui-router-core/src/state/interface.ts:190</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L167">ui-router-core/src/state/interface.ts:167</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,7 +204,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L155">ui-router-core/src/state/interface.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L132">ui-router-core/src/state/interface.ts:132</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +232,32 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L439">ui-router-core/src/state/interface.ts:439</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L416">ui-router-core/src/state/interface.ts:416</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dynamic" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> dynamic</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">dynamic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> Marks all the state&#39;s parameters as <code>dynamic</code>. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Marks all the state&#39;s parameters as <code>dynamic</code>.</p>
+							</div>
+							<p>All parameters on the state will use this value for <code>dynamic</code> as a default.
+							Individual parameters may override this default using <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a> in the <a href="state.statedeclaration.html#params">params</a> block.</p>
+							<p>Note: this value overrides the <code>dynamic</code> value on a custom parameter type (<a href="params.paramtypedefinition.html#dynamic">ParamTypeDefinition.dynamic</a>).</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L687">ui-router-core/src/state/interface.ts:687</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -408,7 +414,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L700">ui-router-core/src/state/interface.ts:700</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L677">ui-router-core/src/state/interface.ts:677</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -434,7 +440,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L147">ui-router-core/src/state/interface.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L124">ui-router-core/src/state/interface.ts:124</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -469,7 +475,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L532">ui-router-core/src/state/interface.ts:532</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L509">ui-router-core/src/state/interface.ts:509</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -504,7 +510,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L576">ui-router-core/src/state/interface.ts:576</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L553">ui-router-core/src/state/interface.ts:553</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -539,7 +545,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L554">ui-router-core/src/state/interface.ts:554</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L531">ui-router-core/src/state/interface.ts:531</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -583,7 +589,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L378">ui-router-core/src/state/interface.ts:378</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L355">ui-router-core/src/state/interface.ts:355</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -621,7 +627,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L181">ui-router-core/src/state/interface.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L158">ui-router-core/src/state/interface.ts:158</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -705,7 +711,7 @@ registry.register(FoldersState);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L506">ui-router-core/src/state/interface.ts:506</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L483">ui-router-core/src/state/interface.ts:483</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -714,19 +720,25 @@ registry.register(FoldersState);
 					<!--
         <h3><span class="tsd-flag ts-flagOptional">Optional</span> reload<wbr>OnSearch</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">reload<wbr>OnSearch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<div class="tsd-signature tsd-kind-icon">reload<wbr>OnSearch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> Marks all query parameters as <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a> </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
 						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Marks all query parameters as <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a></p>
+							</div>
 							<dl class="tsd-comment-tags">
 								<dt>deprecated</dt>
-								<dd><p>define individual parameters as <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a></p>
+								<dd><p>use either <a href="state.statedeclaration.html#dynamic">dynamic</a> or <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a></p>
 								</dd>
 							</dl>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L705">ui-router-core/src/state/interface.ts:705</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L694">ui-router-core/src/state/interface.ts:694</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -842,7 +854,7 @@ resolve: [
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L312">ui-router-core/src/state/interface.ts:312</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L289">ui-router-core/src/state/interface.ts:289</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -871,7 +883,7 @@ resolve: [
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L326">ui-router-core/src/state/interface.ts:326</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L303">ui-router-core/src/state/interface.ts:303</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -917,7 +929,7 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L356">ui-router-core/src/state/interface.ts:356</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L333">ui-router-core/src/state/interface.ts:333</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -987,7 +999,7 @@ views: {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/9bb7287/src/state/interface.ts#L425">ui-router-core/src/state/interface.ts:425</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/state/interface.ts#L402">ui-router-core/src/state/interface.ts:402</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1109,6 +1121,9 @@ views: {
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="state.statedeclaration.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="state.statedeclaration.html#dynamic" class="tsd-kind-icon">dynamic</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="state.statedeclaration.html#lazyload" class="tsd-kind-icon">lazy<wbr>Load</a>
