@@ -83,10 +83,17 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This service returns the location configuration</p>
+						<p>Returns low level URL configuration and metadata</p>
 					</div>
 					<p>This service returns information about the location configuration.
 					This service is primarily used when building URLs (e.g., for <code>hrefs</code>)</p>
+					<p>Implementors should pass these through to the underlying URL APIs.
+					The underlying URL mechanism might be browser APIs, framework APIs, or some 3rd party URL management library.</p>
+					<p>UI-Router Core includes two basic implementations:</p>
+					<ul>
+						<li><a href="../classes/vanilla.browserlocationconfig.html">BrowserLocationConfig</a></li>
+						<li><a href="../classes/vanilla.memorylocationconfig.html">MemoryLocationConfig</a></li>
+					</ul>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -118,59 +125,169 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#basehref" class="tsd-kind-icon">base<wbr>Href</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#hashprefix" class="tsd-kind-icon">hash<wbr>Prefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#html5mode" class="tsd-kind-icon">html5<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="common.locationconfig.html#protocol" class="tsd-kind-icon">protocol</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#basehref" class="tsd-kind-icon">base<wbr>Href</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external"><a href="common.locationconfig.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#hashprefix" class="tsd-kind-icon">hash<wbr>Prefix</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#host" class="tsd-kind-icon">host</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#html5mode" class="tsd-kind-icon">html5<wbr>Mode</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="common.locationconfig.html#protocol" class="tsd-kind-icon">protocol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="common.locationconfig.html#dispose" class="tsd-kind-icon">dispose</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="basehref" class="tsd-anchor"></a>
 					<!--
         <h3>base<wbr>Href</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">base<wbr>Href<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-header">
-							<p> Gets the base Href, e.g., <code>http://localhost/approot/</code> </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the base Href, e.g., <code>http://localhost/approot/</code></p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Href<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">baseHref</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#basehref">UrlConfig.baseHref</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#basehref">UrlConfig.baseHref</a></p>
 							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-								: <p>the application&#39;s base href</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L176">ui-router-core/src/common/coreservices.ts:176</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L90">ui-router-core/src/common/coreservices.ts:90</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="hashprefix" class="tsd-anchor"></a>
+					<!--
+        <h3>hash<wbr>Prefix</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">hash<wbr>Prefix<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">hashPrefix</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#hashprefix">UrlConfig.hashPrefix</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#hashprefix">UrlConfig.hashPrefix</a></p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L92">ui-router-core/src/common/coreservices.ts:92</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="host" class="tsd-anchor"></a>
+					<!--
+        <h3>host</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">host</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#host">UrlConfig.host</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#host">UrlConfig.host</a></p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L89">ui-router-core/src/common/coreservices.ts:89</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="html5mode" class="tsd-anchor"></a>
+					<!--
+        <h3>html5<wbr>Mode</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">html5<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">html5Mode</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#html5mode">UrlConfig.html5Mode</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#html5mode">UrlConfig.html5Mode</a></p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L91">ui-router-core/src/common/coreservices.ts:91</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="port" class="tsd-anchor"></a>
+					<!--
+        <h3>port</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">port</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#port">UrlConfig.port</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#port">UrlConfig.port</a></p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L87">ui-router-core/src/common/coreservices.ts:87</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="protocol" class="tsd-anchor"></a>
+					<!--
+        <h3>protocol</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">protocol<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">protocol</a>    <div class="tsd-header">
+							<p> See: <a href="../classes/url.urlconfig.html#protocol">UrlConfig.protocol</a> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>See: <a href="../classes/url.urlconfig.html#protocol">UrlConfig.protocol</a></p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L88">ui-router-core/src/common/coreservices.ts:88</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="dispose" class="tsd-anchor"></a>
 					<!--
         <h3>dispose</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">?: </span><a href="../classes/core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 						<li class="tsd-header">
 							<p> Instructs the Disposable to clean up any resources </p>
@@ -196,184 +313,7 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="core.disposable.html">Disposable</a>.<a href="core.disposable.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/interface.ts#L123">ui-router-core/src/interface.ts:123</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<a name="hashprefix" class="tsd-anchor"></a>
-					<!--
-        <h3>hash<wbr>Prefix</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">hash<wbr>Prefix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-header">
-							<p> Gets the hashPrefix (when not running in pushstate mode) </p>
-						</li>
-						<li class="tsd-signature tsd-kind-icon">hash<wbr>Prefix<span class="tsd-signature-symbol">(</span>newprefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-header">
-							<p> Sets the hashPrefix (when not running in pushstate mode) </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the hashPrefix (when not running in pushstate mode)</p>
-								</div>
-								<p>If the current url is <code>http://localhost/app#!/uirouter/path/#anchor</code>, it returns <code>!</code> which is the prefix for the &quot;hashbang&quot; portion.</p>
-							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-								: <p>the hash prefix</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L190">ui-router-core/src/common/coreservices.ts:190</a></li>
-								</ul>
-						</aside>        </li>
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets the hashPrefix (when not running in pushstate mode)</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>newprefix <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-								: <p>the new hash prefix</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L196">ui-router-core/src/common/coreservices.ts:196</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<a name="host" class="tsd-anchor"></a>
-					<!--
-        <h3>host</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-header">
-							<p> Gets the host, e.g., <code>localhost</code> </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the host, e.g., <code>localhost</code></p>
-								</div>
-							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-								: <p>the protocol</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L170">ui-router-core/src/common/coreservices.ts:170</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<a name="html5mode" class="tsd-anchor"></a>
-					<!--
-        <h3>html5<wbr>Mode</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">html5<wbr>Mode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-header">
-							<p> Returns true when running in pushstate mode </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns true when running in pushstate mode</p>
-								</div>
-							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-								: <p>true when running in pushstate mode</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L182">ui-router-core/src/common/coreservices.ts:182</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<a name="port" class="tsd-anchor"></a>
-					<!--
-        <h3>port</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-header">
-							<p> Gets the port, e.g., <code>80</code> </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the port, e.g., <code>80</code></p>
-								</div>
-							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-								: <p>the port number</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L158">ui-router-core/src/common/coreservices.ts:158</a></li>
-								</ul>
-						</aside>        </li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<a name="protocol" class="tsd-anchor"></a>
-					<!--
-        <h3>protocol</h3>
-    -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">protocol<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-header">
-							<p> Gets the protocol, e.g., <code>http</code> </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the protocol, e.g., <code>http</code></p>
-								</div>
-							</div>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-								: <p>the protocol</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/d461776/src/common/coreservices.ts#L164">ui-router-core/src/common/coreservices.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L121">ui-router-core/src/interface.ts:121</a></li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -389,8 +329,14 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 					<li class="label tsd-is-external">
 						<span>Public API</span>
 					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/common.html">common</a>
+					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/injectables.html">injectables</a>
@@ -408,13 +354,19 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/transition.html">transition</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
-					</li>
-					<li class="current tsd-kind-external-module tsd-is-external">
-						<a href="../modules/common.html">common</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
@@ -426,28 +378,16 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 						<a href="../modules/common_strings.html">common_<wbr>strings</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/directives.html">directives</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/state.html">state</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/view.html">view</a>
 					</li>
 				</ul>
 			</nav>
@@ -455,29 +395,29 @@ redirect_from: /docs/latest/interfaces/common.locationconfig.html
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="common.locationconfig.html" class="tsd-kind-icon">Location<wbr>Config</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#basehref" class="tsd-kind-icon">base<wbr>Href</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-external">
-								<a href="common.locationconfig.html#dispose" class="tsd-kind-icon">dispose</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#hashprefix" class="tsd-kind-icon">hash<wbr>Prefix</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#host" class="tsd-kind-icon">host</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#html5mode" class="tsd-kind-icon">html5<wbr>Mode</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#port" class="tsd-kind-icon">port</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="common.locationconfig.html#protocol" class="tsd-kind-icon">protocol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="common.locationconfig.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 						</ul>
 					</li>
