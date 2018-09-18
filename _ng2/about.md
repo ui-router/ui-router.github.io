@@ -40,8 +40,7 @@ Learn UI-Router by following our tutorials.
  
 ## Quick Start
  
-The [UI-Router Ng2 QuickStart](https://github.com/ui-router/quickstart-ng2) is a minimalistic Angular (2+) UI-Router app forked from 
-[the official Angular Quickstart](https://github.com/angular/quickstart).
+The [UI-Router Ng2 QuickStart](https://github.com/ui-router/quickstart-angular) is a minimalistic Angular (2+) UI-Router app generated with [Angular CLI](https://github.com/angular/angular-cli).
 It demonstrates:
 
 - States and nested substates
