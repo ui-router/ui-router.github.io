@@ -247,7 +247,7 @@ The `<ui-view>` viewport will be filled with the component from the currently ac
 *Links*
 
 It also contains two anchor tags with `uiSref` directives.
-The `uiSref` directives are links, similar to an anchor tag's `href.
+The `uiSref` directives are links, similar to an anchor tag's `href`.
 Instead of linking to a URL like an `href`, a `uiSref` links to a state.
   
 When clicked, the linked state is activated.
