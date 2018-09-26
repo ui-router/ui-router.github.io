@@ -64,7 +64,7 @@ We organized ours in the following way:
 - Leverage ES6 modules
   - Each thing (component, state, service) is defined in its own file (ES6 module) and is exported.
   - Each feature module has an index file which imports the code, and composes them together (as the feature module), then re-exports them.
-  - At the top level, the bootstrap imports all the features and composes the application, registering serviecs and states with UI-Router, etc.
+  - At the top level, the bootstrap imports all the features and composes the application, registering services and states with UI-Router, etc.
   
 ### UI-Router Patterns
   
