@@ -101,10 +101,9 @@ redirect_from: /docs/latest/interfaces/params.paramtypedefinition.html
 					UI-Router always provides the decoded parameter values to the user (from methods such as <a href="../classes/transition.transition-1.html#params">Transition.params</a>)).</p>
 					<p>For example, if a state has a url of <code>/foo/{fooId:int}</code> (the <code>fooId</code> parameter is of the <code>int</code> ParamType)
 					and if the browser is at <code>/foo/123</code>, then the 123 is parsed as an integer:</p>
-					<pre><code class="lang-js"><span class="hljs-keyword">var</span> fooId = transition.params().fooId;
+					<pre><code class="language-js"><span class="hljs-keyword">var</span> fooId = transition.params().fooId;
 fooId === <span class="hljs-string">"123"</span> <span class="hljs-comment">// false</span>
-fooId === <span class="hljs-number">123</span> <span class="hljs-comment">// true</span>
-</code></pre>
+fooId === <span class="hljs-number">123</span> <span class="hljs-comment">// true</span></code></pre>
 					<h4 id="examples">Examples</h4>
 					<p>This example encodes an array of integers as a dash-delimited string to be used in the URL.</p>
 					<p>If we call <code>$state.go(&#39;foo&#39;, { fooIds: [20, 30, 40] });</code>, the URL changes to <code>/foo/20-30-40</code>.
@@ -136,8 +135,7 @@ $stateProvider.state(<span class="hljs-string">'foo'</span>, {
   <span class="hljs-attr">onEnter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$transition$</span>) </span>{
     <span class="hljs-built_in">console</span>.log($transition$.fooIds); <span class="hljs-comment">// Logs "[1, 2, 3]"</span>
   }
-});
-</code></pre><p>This example decodes an integer from the URL.
+});</code></pre><p>This example decodes an integer from the URL.
 								It uses the integer as an index to look up an item from a static list.
 							That item from the list is the decoded parameter value.</p>
 						</dd>
@@ -171,8 +169,7 @@ $stateProvider.state(<span class="hljs-string">'list'</span>, {
 <span class="hljs-comment">// ...</span>
 
 <span class="hljs-comment">// Changes URL to '/list/3', logs "Ringo" to the console</span>
-$state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-string">"Ringo"</span> });
-</code></pre><p>See: <a href="../classes/url.urlconfig.html#type">UrlConfig.type</a></p>
+$state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-string">"Ringo"</span> });</code></pre><p>See: <a href="../classes/url.urlconfig.html#type">UrlConfig.type</a></p>
 						</dd>
 					</dl>
 				</div>
@@ -240,7 +237,7 @@ $state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-str
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L548">ui-router-core/src/params/interface.ts:548</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:548</li>
 						</ul>
 					</aside>
 				</section>
@@ -264,20 +261,19 @@ $state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-str
 							<p>The internal parameter type of <code>hash</code> has <code>inherit: false</code>.
 							This is used to disable inheriting of the hash value (<code>#</code>) on subsequent transitions.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
 ...
 <span class="hljs-comment">// "#" is not inherited.</span>
 <span class="hljs-comment">// The value of the "#" parameter will be `null`</span>
 <span class="hljs-comment">// The url's hash will be cleared.</span>
-$state.go(<span class="hljs-string">'home.nest'</span>);
-</code></pre>
+$state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 							<hr>
 							<p>See also <a href="transition.transitionoptions.html#inherit">TransitionOptions.inherit</a> and <a href="params.paramdeclaration.html#inherit">ParamDeclaration.inherit</a></p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L536">ui-router-core/src/params/interface.ts:536</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:536</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +304,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L496">ui-router-core/src/params/interface.ts:496</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:496</li>
 						</ul>
 					</aside>
 				</section>
@@ -335,7 +331,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L509">ui-router-core/src/params/interface.ts:509</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:509</li>
 						</ul>
 					</aside>
 				</section>
@@ -360,8 +356,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 									<p>Decodes a parameter value string (from URL string or transition param) to a custom/native value.</p>
 								</div>
 								<p>For example, if your type decodes to an array of ints, then decode the string as an array of ints here:</p>
-								<pre><code class="lang-js">decode: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> str.split(<span class="hljs-string">"-"</span>).map(<span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> <span class="hljs-built_in">parseInt</span>(str, <span class="hljs-number">10</span>))
-</code></pre>
+								<pre><code class="language-js">decode: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> str.split(<span class="hljs-string">"-"</span>).map(<span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> <span class="hljs-built_in">parseInt</span>(str, <span class="hljs-number">10</span>))</code></pre>
 								<p>Note: in general, <a href="params.paramtypedefinition.html#encode">encode</a> and <a href="params.paramtypedefinition.html#decode">decode</a> should be symmetrical.  That is, <code>encode(decode(str)) === str</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -386,7 +381,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L613">ui-router-core/src/params/interface.ts:613</a></li>
+									<li>Defined in ui-router-core/src/params/interface.ts:613</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -411,8 +406,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<p>Note that the return value does <em>not</em> need to be URL-safe (i.e. passed through <code>encodeURIComponent()</code>).
 								It only needs to be a representation of <code>val</code> that has been encoded as a string.</p>
 								<p>For example, if your custom type decodes to an array of ints, then encode the array of ints to a string here:</p>
-								<pre><code class="lang-js">encode: <span class="hljs-function">(<span class="hljs-params">intarray</span>) =&gt;</span> intarray.join(<span class="hljs-string">"-"</span>)
-</code></pre>
+								<pre><code class="language-js">encode: <span class="hljs-function">(<span class="hljs-params">intarray</span>) =&gt;</span> intarray.join(<span class="hljs-string">"-"</span>)</code></pre>
 								<p>Note: in general, <a href="params.paramtypedefinition.html#encode">encode</a> and <a href="params.paramtypedefinition.html#decode">decode</a> should be symmetrical.  That is, <code>encode(decode(str)) === str</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -440,7 +434,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L597">ui-router-core/src/params/interface.ts:597</a></li>
+									<li>Defined in ui-router-core/src/params/interface.ts:597</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -463,8 +457,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 									<p>Determines whether two decoded values are equivalent.</p>
 								</div>
 								<p>For example, if your type decodes to an array of ints, then check if the arrays are equal:</p>
-								<pre><code class="lang-js">equals: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.length === b.length &amp;&amp; a.reduce(<span class="hljs-function">(<span class="hljs-params">acc, x, idx</span>) =&gt;</span> acc &amp;&amp; x === b[idx], <span class="hljs-literal">true</span>)
-</code></pre>
+								<pre><code class="language-js">equals: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.length === b.length &amp;&amp; a.reduce(<span class="hljs-function">(<span class="hljs-params">acc, x, idx</span>) =&gt;</span> acc &amp;&amp; x === b[idx], <span class="hljs-literal">true</span>)</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -488,7 +481,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L627">ui-router-core/src/params/interface.ts:627</a></li>
+									<li>Defined in ui-router-core/src/params/interface.ts:627</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -515,8 +508,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<p>If your custom type encodes the parameter to a specific type, check for that type here.
 									For example, if your custom type decodes the URL parameter value as an array of ints, return true if the
 								input is an array of ints:</p>
-								<pre><code>is: (<span class="hljs-keyword">val</span>) =&gt; <span class="hljs-type">Array</span>.isArray(<span class="hljs-keyword">val</span>) &amp;&amp; <span class="hljs-built_in">array</span>.reduce((acc, x) =&gt; acc &amp;&amp; parseInt(<span class="hljs-keyword">val</span>, <span class="hljs-number">10</span>) === <span class="hljs-keyword">val</span>, <span class="hljs-literal">true</span>)
-</code></pre><p>If your type decodes the URL parameter value to a custom string, check that the string matches
+								<pre><code>is:<span class="hljs-function"> (<span class="hljs-params">val</span>) =&gt;</span> <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Array</span>.</span></span>is<span class="hljs-constructor">Array(<span class="hljs-params">val</span>)</span><span class="hljs-operator"> &amp;&amp; </span><span class="hljs-built_in">array</span>.reduce((acc, x) =&gt; acc<span class="hljs-operator"> &amp;&amp; </span>parse<span class="hljs-constructor">Int(<span class="hljs-params">val</span>, 10)</span><span class="hljs-operator"> === </span><span class="hljs-keyword">val</span>, <span class="hljs-literal">true</span>)</code></pre><p>If your type decodes the URL parameter value to a custom string, check that the string matches
 								the pattern (don&#39;t use an arrow fn if you need <code>this</code>): <code>function (val) { return !!this.pattern.exec(val) }</code></p>
 								<p>Note: This method is <em>not used to check if the URL matches</em>.
 									It&#39;s used to check if a <em>decoded value <em>is</em> this type</em>.
@@ -546,7 +538,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L577">ui-router-core/src/params/interface.ts:577</a></li>
+									<li>Defined in ui-router-core/src/params/interface.ts:577</li>
 								</ul>
 						</aside>        </li>
 					</ul>

@@ -88,7 +88,7 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 					<p>In a <a href="state.statedeclaration.html#params">StateDeclaration.params</a>, each <code>ParamDeclaration</code>
 					defines how a single State Parameter should work.</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-keyword">var</span> mystate = {
+					<pre><code class="language-js"><span class="hljs-keyword">var</span> mystate = {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;div ui-view/&gt;'</span>,
   <span class="hljs-attr">controller</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
   url: <span class="hljs-string">'/mystate/:start?{count:int}'</span>,
@@ -108,8 +108,7 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
     <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// &lt;-- Default value for 'param1'</span>
               <span class="hljs-comment">// (shorthand ParamDeclaration.value)</span>
   }
-}
-</code></pre>
+}</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -168,7 +167,7 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 							<p>If you specified a <a href="params.paramdeclaration.html#type">type</a> for the parameter, the value will be treated as an array
 							of the specified <a href="../classes/params.paramtype.html">ParamType</a>.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">{
+							<pre><code class="language-js">{
   name: &#39;foo&#39;,
   url: &#39;/foo/{arrayParam:int}`,
   params: {
@@ -177,8 +176,7 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 }
 
 // After the transition, URL should be &#39;/foo/1-2-3&#39;
-$state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });
-</code></pre>
+$state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>default</dt>
 								<dd><p><code>false</code> for path parameters, such as <code>url: &#39;/foo/:pathParam&#39;</code></p>
@@ -194,7 +192,7 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L164">ui-router-core/src/params/interface.ts:164</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:164</li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +224,7 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L268">ui-router-core/src/params/interface.ts:268</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:268</li>
 						</ul>
 					</aside>
 				</section>
@@ -248,7 +246,7 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });
 								<code>true</code>, the current param values are inherited in the new transition.
 							However, parameters values which have <code>inherit: false</code> set  will <em>not be inherited</em>.</p>
 							<h4 id="example-state-">Example state :</h4>
-							<pre><code class="lang-js"><span class="hljs-keyword">var</span> fooState = {
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> fooState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'foo'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/:fooId?mode&amp;refresh'</span>,
   <span class="hljs-attr">params</span>: {
@@ -257,13 +255,11 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });
 }
 
 <span class="hljs-comment">// Set fooId to 123</span>
-$state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr">fooId</span>: <span class="hljs-number">1234</span>, <span class="hljs-attr">mode</span>: <span class="hljs-string">'list'</span>, <span class="hljs-attr">refresh</span>: <span class="hljs-literal">true</span> });
-</code></pre>
+$state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr">fooId</span>: <span class="hljs-number">1234</span>, <span class="hljs-attr">mode</span>: <span class="hljs-string">'list'</span>, <span class="hljs-attr">refresh</span>: <span class="hljs-literal">true</span> });</code></pre>
 							<p>In the component:
 								<code>mode: &#39;list&#39; is inherited, but refresh: true is not inherited.
 // The param values are thus:</code>{ fooId: 4567, mode: &#39;list&#39; }`</p>
-							<pre><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ui-sref="foo(</span></span></span><span class="hljs-template-variable">{ fooId: 4567 }</span><span class="xml"><span class="hljs-tag">)"&gt;</span>4567<span class="hljs-tag">&lt;/<span class="hljs-name">ui-sref</span>&gt;</span></span>
-</code></pre><hr>
+							<pre><code><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ui-sref="foo(</span></span></span><span class="hljs-template-variable">{ fooId: 4567 }</span><span class="xml"><span class="hljs-tag">)"&gt;</span>4567<span class="hljs-tag">&lt;/<span class="hljs-name">ui-sref</span>&gt;</span></span></code></pre><hr>
 							<p>See also <a href="transition.transitionoptions.html#inherit">TransitionOptions.inherit</a> and <a href="params.paramtypedefinition.html#inherit">ParamTypeDefinition.inherit</a></p>
 							<hr>
 							<p>Default: <code>true</code></p>
@@ -271,7 +267,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L344">ui-router-core/src/params/interface.ts:344</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:344</li>
 						</ul>
 					</aside>
 				</section>
@@ -292,11 +288,10 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 							<p>When <code>true</code>, parameter values are not url-encoded.
 							This is commonly used to allow &quot;slug&quot; urls, with a parameter value including non-semantic slashes.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">url: <span class="hljs-string">'/product/:slug'</span>,
+							<pre><code class="language-js">url: <span class="hljs-string">'/product/:slug'</span>,
 <span class="hljs-attr">params</span>: {
   <span class="hljs-attr">slug</span>: { <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">raw</span>: <span class="hljs-literal">true</span> }
-}
-</code></pre>
+}</code></pre>
 							<p>This allows a URL parameter of <code>{ slug: &#39;camping/tents/awesome_tent&#39; }</code>
 								to serialize to <code>/product/camping/tents/awesome_tent</code>
 							instead of <code>/product/camping%2Ftents%2Fawesome_tent</code>.</p>
@@ -315,7 +310,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L306">ui-router-core/src/params/interface.ts:306</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:306</li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +326,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L238">ui-router-core/src/params/interface.ts:238</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:238</li>
 						</ul>
 					</aside>
 				</section>
@@ -361,7 +356,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 								placeholder of your choice.</li>
 							</ul>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">{
+							<pre><code class="language-js">{
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate/:myparam'</span>,
   <span class="hljs-attr">params</span>: {
@@ -374,10 +369,9 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam</span>: <span class="hljs-string">'defaultParamValue'</span> });
 
 <span class="hljs-comment">// URL will be `/mystate/someOtherValue`</span>
-$state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam</span>: <span class="hljs-string">'someOtherValue'</span> });
-</code></pre>
+$state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam</span>: <span class="hljs-string">'someOtherValue'</span> });</code></pre>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">{
+							<pre><code class="language-js">{
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate2'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate2/:myparam2'</span>,
   <span class="hljs-attr">params</span>: {
@@ -390,14 +384,13 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam2</span>: <span class="hljs-string">'defaultParamValue'</span> });
 
 <span class="hljs-comment">// URL will be `/mystate/someOtherValue`</span>
-$state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam2</span>: <span class="hljs-string">'someOtherValue'</span> });
-</code></pre>
+$state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam2</span>: <span class="hljs-string">'someOtherValue'</span> });</code></pre>
 							<p>Default: If squash is not set, it uses the configured default squash policy. (See <a href="../classes/url.urlconfig.html#defaultsquashpolicy">defaultSquashPolicy</a>())</p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L219">ui-router-core/src/params/interface.ts:219</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:219</li>
 						</ul>
 					</aside>
 				</section>
@@ -431,7 +424,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L129">ui-router-core/src/params/interface.ts:129</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:129</li>
 						</ul>
 					</aside>
 				</section>
@@ -464,8 +457,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
   <span class="hljs-attribute">param2</span>: {
     <span class="hljs-attribute">value</span>: "param2Default;
   }
-}
-</code></pre><h3 id="shorthand-declaration">Shorthand Declaration</h3>
+}</code></pre><h3 id="shorthand-declaration">Shorthand Declaration</h3>
 							<p>If you only want to set the default value of the parameter, you may use a shorthand syntax.
 								In the params map, instead mapping the param name to a full parameter configuration object, simply set map it
 							to the default parameter value, e.g.:</p>
@@ -483,8 +475,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 <span class="hljs-symbol">params:</span> {
 <span class="hljs-symbol">  param1:</span> <span class="hljs-string">"defaultValue"</span>,
 <span class="hljs-symbol">  param2:</span> <span class="hljs-string">"param2Default"</span>
-}
-</code></pre><p>This defines a default value for the parameter.
+}</code></pre><p>This defines a default value for the parameter.
 							If a parameter value is <code>undefined</code>, this default value will be used instead</p>
 							<hr>
 							<p>Default: <code>undefined</code></p>
@@ -492,7 +483,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/interface.ts#L108">ui-router-core/src/params/interface.ts:108</a></li>
+							<li>Defined in ui-router-core/src/params/interface.ts:108</li>
 						</ul>
 					</aside>
 				</section>

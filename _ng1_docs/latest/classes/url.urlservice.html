@@ -152,7 +152,7 @@ redirect_from: /docs/latest/classes/url.urlservice.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L26">ui-router-core/src/url/urlService.ts:26</a></li>
+							<li>Defined in ui-router-core/src/url/urlService.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +175,7 @@ redirect_from: /docs/latest/classes/url.urlservice.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L19">ui-router-core/src/url/urlService.ts:19</a></li>
+							<li>Defined in ui-router-core/src/url/urlService.ts:19</li>
 						</ul>
 					</aside>
 				</section>
@@ -204,15 +204,14 @@ redirect_from: /docs/latest/classes/url.urlservice.html
 								<p>This can be useful to perform some asynchronous initialization before the router starts.
 								Once the initialization is complete, call <a href="url.urlservice.html#listen">listen</a> to tell UI-Router to start watching and synchronizing the URL.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Prevent UI-Router from automatically intercepting URL changes when it starts;</span>
+								<pre><code class="language-js"><span class="hljs-comment">// Prevent UI-Router from automatically intercepting URL changes when it starts;</span>
 urlService.deferIntercept();
 
 fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-function"><span class="hljs-params">resp</span> =&gt;</span> resp.json()).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
   data.forEach(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> $stateRegistry.register(state));
   urlService.listen();
   urlService.sync();
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -230,7 +229,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L136">ui-router-core/src/url/urlService.ts:136</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:136</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -261,7 +260,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L255">ui-router-core/src/url/urlService.ts:255</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:255</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -287,15 +286,14 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 								This causes UI-Router to start listening for changes to the URL, if it wasn&#39;t already listening.</p>
 								<p>If called with <code>false</code>, UI-Router will stop listening (call listen(true) to start listening again).</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js">urlService.deferIntercept();
+								<pre><code class="language-js">urlService.deferIntercept();
 
 fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-function"><span class="hljs-params">resp</span> =&gt;</span> resp.json()).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
   data.forEach(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> $stateRegistry.register(state));
   <span class="hljs-comment">// Start responding to URL changes</span>
   urlService.listen();
   urlService.sync();
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -312,7 +310,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L103">ui-router-core/src/url/urlService.ts:103</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:103</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -349,7 +347,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L147">ui-router-core/src/url/urlService.ts:147</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:147</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -360,14 +358,14 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
         <h3>on<wbr>Change</h3>
     -->
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventListener</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>callback <span class="tsd-signature-type">Function</span></h5>
+									<h5>callback <span class="tsd-signature-type">EventListener</span></h5>
 									:         <div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>a function that will be called when the url is changing</p>
@@ -382,7 +380,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L272">ui-router-core/src/url/urlService.ts:272</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:272</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -412,7 +410,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L41">ui-router-core/src/url/urlService.ts:41</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:41</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -443,7 +441,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L237">ui-router-core/src/url/urlService.ts:237</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:237</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -479,7 +477,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L246">ui-router-core/src/url/urlService.ts:246</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:246</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -505,15 +503,14 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 								This method is called internally any time the URL has changed.</p>
 								<p>This effectively activates the state (or redirect, etc) which matches the current URL.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js">urlService.deferIntercept();
+								<pre><code class="language-js">urlService.deferIntercept();
 
 fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-function"><span class="hljs-params">resp</span> =&gt;</span> resp.json()).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
   data.forEach(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> $stateRegistry.register(state));
   urlService.listen();
   <span class="hljs-comment">// Find the matching URL and invoke the handler.</span>
   urlService.sync();
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -527,7 +524,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L65">ui-router-core/src/url/urlService.ts:65</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:65</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -555,19 +552,14 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 								<p>For example, the URL may be stored in the hash ([[HashLocationServices]]) or
 								have a base HREF prepended ([[PushStateLocationServices]]).</p>
 								<p>The raw URL in the browser might be:</p>
-								<pre><code><span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/mysite.com/somepath</span><span class="hljs-regexp">/index.html#/internal</span><span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span>
-</code></pre><p>or</p>
-								<pre><code>http:<span class="hljs-regexp">//my</span>site.com<span class="hljs-regexp">/basepath/i</span>nternal<span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span>
-</code></pre><p>then this method returns:</p>
-								<pre><code>/<span class="hljs-keyword">internal</span>/path/<span class="hljs-number">123</span>?param1=foo<span class="hljs-meta">#anchor</span>
-</code></pre><h4 id="example-">Example:</h4>
-								<pre><code class="lang-js">locationServices.url(); <span class="hljs-comment">// "/some/path?query=value#anchor"</span>
-</code></pre>
+								<pre><code><span class="hljs-symbol">http:</span>/<span class="hljs-regexp">/mysite.com/somepath</span><span class="hljs-regexp">/index.html#/internal</span><span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span></code></pre><p>or</p>
+								<pre><code>http:<span class="hljs-regexp">//my</span>site.com<span class="hljs-regexp">/basepath/i</span>nternal<span class="hljs-regexp">/path/</span><span class="hljs-number">123</span>?param1=foo<span class="hljs-comment">#anchor</span></code></pre><p>then this method returns:</p>
+								<pre><code>/<span class="hljs-built_in">int</span>ernal/path/<span class="hljs-number">123</span>?param1=foo#anchor</code></pre><h4 id="example-">Example:</h4>
+								<pre><code class="language-js">locationServices.url(); <span class="hljs-comment">// "/some/path?query=value#anchor"</span></code></pre>
 								<h3 id="updating-the-url">Updating the URL</h3>
 								<p>When <code>newurl</code> arguments is provided, changes the URL to reflect <code>newurl</code></p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js">locationServices.url(<span class="hljs-string">"/some/path?query=value#anchor"</span>, <span class="hljs-literal">true</span>);
-</code></pre>
+								<pre><code class="language-js">locationServices.url(<span class="hljs-string">"/some/path?query=value#anchor"</span>, <span class="hljs-literal">true</span>);</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -605,7 +597,7 @@ fetch(<span class="hljs-string">'/states.json'</span>).then(<span class="hljs-fu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlService.ts#L227">ui-router-core/src/url/urlService.ts:227</a></li>
+									<li>Defined in ui-router-core/src/url/urlService.ts:227</li>
 								</ul>
 						</aside>        </li>
 					</ul>

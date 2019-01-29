@@ -150,7 +150,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L81">ui-router-core/src/url/urlRules.ts:81</a></li>
+							<li>Defined in ui-router-core/src/url/urlRules.ts:81</li>
 						</ul>
 					</aside>
 				</section>
@@ -182,19 +182,16 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 								This allows 404-like behavior when an unknown URL is deep-linked.</p>
 								<h4 id="example-">Example:</h4>
 								<p>Start app at <code>home</code> state.</p>
-								<pre><code class="lang-js">.initial({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> });
-</code></pre>
+								<pre><code class="language-js">.initial({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> });</code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>Start app at <code>/home</code> (by url)</p>
-								<pre><code class="lang-js">.initial(<span class="hljs-string">'/home'</span>);
-</code></pre>
+								<pre><code class="language-js">.initial(<span class="hljs-string">'/home'</span>);</code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, go to <code>home</code> state</p>
-								<pre><code class="lang-js">.initial(<span class="hljs-function">(<span class="hljs-params">matchValue, url, router</span>) =&gt;</span> {
+								<pre><code class="language-js">.initial(<span class="hljs-function">(<span class="hljs-params">matchValue, url, router</span>) =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'initial state'</span>);
   <span class="hljs-keyword">return</span> { <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> };
-})
-</code></pre>
+})</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -211,7 +208,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L135">ui-router-core/src/url/urlRules.ts:135</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:135</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -240,31 +237,27 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, redirect to <code>/index</code></p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-string">'/index'</span>);
-</code></pre>
+								<pre><code class="language-js">.otherwise(<span class="hljs-string">'/index'</span>);</code></pre>
 								<ul>
 									<li>If <code>handler</code> is an object with a <code>state</code> property, the state is activated.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, redirect to <code>home</code> and provide a <code>dashboard</code> parameter value.</p>
-								<pre><code class="lang-js">.otherwise({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span>, <span class="hljs-attr">params</span>: { <span class="hljs-attr">dashboard</span>: <span class="hljs-string">'default'</span> } });
-</code></pre>
+								<pre><code class="language-js">.otherwise({ <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span>, <span class="hljs-attr">params</span>: { <span class="hljs-attr">dashboard</span>: <span class="hljs-string">'default'</span> } });</code></pre>
 								<ul>
 									<li>If <code>handler</code> is a function, the function receives the current url (<a href="../interfaces/url.urlparts.html">UrlParts</a>) and the <a href="../interfaces/ng1.__uirouter_core_lib_router_.uirouter.html">UIRouter</a> object.
 									The function can perform actions, and/or return a value.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, manually trigger a transition to the <code>home</code> state</p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">matchValue, urlParts, router</span>) =&gt;</span> {
+								<pre><code class="language-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">matchValue, urlParts, router</span>) =&gt;</span> {
   router.stateService.go(<span class="hljs-string">'home'</span>);
-});
-</code></pre>
+});</code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>When no other url rule matches, go to <code>home</code> state</p>
-								<pre><code class="lang-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">matchValue, urlParts, router</span>) =&gt;</span> {
+								<pre><code class="language-js">.otherwise(<span class="hljs-function">(<span class="hljs-params">matchValue, urlParts, router</span>) =&gt;</span> {
   <span class="hljs-keyword">return</span> { <span class="hljs-attr">state</span>: <span class="hljs-string">'home'</span> };
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -281,7 +274,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L186">ui-router-core/src/url/urlRules.ts:186</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:186</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -319,7 +312,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L198">ui-router-core/src/url/urlRules.ts:198</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:198</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -360,7 +353,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L214">ui-router-core/src/url/urlRules.ts:214</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:214</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -390,7 +383,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L230">ui-router-core/src/url/urlRules.ts:230</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:230</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -428,10 +421,9 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 								<h4 id="example-">Example:</h4>
 								<p>This compare function prioritizes rules by the order in which the rules were registered.
 								A rule registered earlier has higher priority.</p>
-								<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compareFn</span>(<span class="hljs-params">a, b</span>) </span>{
+								<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compareFn</span>(<span class="hljs-params">a, b</span>) </span>{
   <span class="hljs-keyword">return</span> a.$id - b.$id;
-}
-</code></pre>
+}</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -477,7 +469,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L277">ui-router-core/src/url/urlRules.ts:277</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:277</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -515,15 +507,13 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 								string is interpolated with parameter values.</p>
 								<h4 id="example-">Example:</h4>
 								<p>When the URL is <code>/foo/123</code> the rule will redirect to <code>/bar/123</code>.</p>
-								<pre><code class="lang-js">.when(<span class="hljs-string">"/foo/:param1"</span>, <span class="hljs-string">"/bar/:param1"</span>)
-</code></pre>
+								<pre><code class="language-js">.when(<span class="hljs-string">"/foo/:param1"</span>, <span class="hljs-string">"/bar/:param1"</span>)</code></pre>
 								<hr>
 								<p>When the <code>handler</code> is a string and the <code>matcher</code> is a <code>RegExp</code>, the redirect string is
 								interpolated with capture groups from the RegExp.</p>
 								<h4 id="example-">Example:</h4>
 								<p>When the URL is <code>/foo/123</code> the rule will redirect to <code>/bar/123</code>.</p>
-								<pre><code class="lang-js">.when(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">"^/foo/(.*)$"</span>), <span class="hljs-string">"/bar/$1"</span>);
-</code></pre>
+								<pre><code class="language-js">.when(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">"^/foo/(.*)$"</span>), <span class="hljs-string">"/bar/$1"</span>);</code></pre>
 								<hr>
 								<p>When the handler is a function, it receives the matched value, the current URL, and the <code>UIRouter</code> object (See <a href="../interfaces/url.urlrulehandlerfn.html">UrlRuleHandlerFn</a>).
 									The &quot;matched value&quot; differs based on the <code>matcher</code>.
@@ -532,8 +522,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 								<p>If the handler returns a string, the URL is redirected to the string.</p>
 								<h4 id="example-">Example:</h4>
 								<p>When the URL is <code>/foo/123</code> the rule will redirect to <code>/bar/123</code>.</p>
-								<pre><code class="lang-js">.when(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">"^/foo/(.*)$"</span>), match =&gt; <span class="hljs-string">"/bar/"</span> + match[<span class="hljs-number">1</span>]);
-</code></pre>
+								<pre><code class="language-js">.when(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">"^/foo/(.*)$"</span>), match =&gt; <span class="hljs-string">"/bar/"</span> + match[<span class="hljs-number">1</span>]);</code></pre>
 								<p>Note: the <code>handler</code> may also invoke arbitrary code, such as <code>$state.go()</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -569,7 +558,7 @@ redirect_from: /docs/latest/classes/url.urlrules.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/url/urlRules.ts#L369">ui-router-core/src/url/urlRules.ts:369</a></li>
+									<li>Defined in ui-router-core/src/url/urlRules.ts:369</li>
 								</ul>
 						</aside>        </li>
 					</ul>

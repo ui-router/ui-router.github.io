@@ -146,7 +146,7 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 								<p>This can be useful to perform some asynchronous initialization before the router starts.
 								Once the initialization is complete, call <a href="url.urlrouter.html#listen">listen</a> to tell UI-Router to start watching and synchronizing the URL.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router'</span>]);
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
   <span class="hljs-comment">// Prevent $urlRouter from automatically intercepting URL changes;</span>
@@ -159,8 +159,7 @@ app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (
     $urlRouter.listen();
     $urlRouter.sync();
   });
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -178,7 +177,7 @@ app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/urlRouterProvider.ts#L206">ui-router-angularjs/src/urlRouterProvider.ts:206</a></li>
+									<li>Defined in ui-router-angularjs/src/urlRouterProvider.ts:206</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -201,7 +200,7 @@ app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (
 									<p>Defines the path or behavior to use when no url can be matched.</p>
 								</div>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
   <span class="hljs-comment">// if the path doesn't match any of the urls you configured</span>
@@ -213,8 +212,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
   $urlRouterProvider.otherwise(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$injector, $location</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">'/a/valid/url'</span>;
   });
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -233,7 +231,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/urlRouterProvider.ts#L116">ui-router-angularjs/src/urlRouterProvider.ts:116</a></li>
+									<li>Defined in ui-router-angularjs/src/urlRouterProvider.ts:116</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -259,7 +257,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 								A rule detects specific URL patterns and returns a redirect, or performs some action.</p>
 								<p>If a rule returns a string, the URL is replaced with the string, and all rules are fired again.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
   <span class="hljs-comment">// Here's an example of how you might allow case insensitive urls</span>
@@ -271,8 +269,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
       <span class="hljs-keyword">return</span> normalized;
     }
   });
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -291,7 +288,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/urlRouterProvider.ts#L80">ui-router-angularjs/src/urlRouterProvider.ts:80</a></li>
+									<li>Defined in ui-router-angularjs/src/urlRouterProvider.ts:80</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -327,7 +324,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 									<li><strong>void</strong> or any <strong>truthy</strong> value tells <code>$urlRouter</code> that the url was handled.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
   $urlRouterProvider.when($state.url, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$match, $stateParams</span>) </span>{
@@ -336,8 +333,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
      $state.transitionTo(state, $match, <span class="hljs-literal">false</span>);
     }
   });
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -360,7 +356,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/urlRouterProvider.ts#L167">ui-router-angularjs/src/urlRouterProvider.ts:167</a></li>
+									<li>Defined in ui-router-angularjs/src/urlRouterProvider.ts:167</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -390,7 +386,7 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/urlRouterProvider.ts#L34">ui-router-angularjs/src/urlRouterProvider.ts:34</a></li>
+									<li>Defined in ui-router-angularjs/src/urlRouterProvider.ts:34</li>
 								</ul>
 						</aside>        </li>
 					</ul>

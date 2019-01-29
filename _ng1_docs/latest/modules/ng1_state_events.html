@@ -87,10 +87,8 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 						provide much more flexibility, support async, and provide the context (the Transition, etc) necessary
 					to implement meaningful application behaviors.</p>
 					<p>To enable these state events, include the <code>stateEvents.js</code> file in your project, e.g.,</p>
-					<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"stateEvents.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-</code></pre><p>and also make sure you depend on the <code>ui.router.state.events</code> angular module, e.g.,</p>
-					<pre><code>angular.module(<span class="hljs-string">"myApplication"</span>, ['ui.router', 'ui.router.<span class="hljs-keyword">state</span>.events']
-</code></pre>
+					<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"stateEvents.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre><p>and also make sure you depend on the <code>ui.router.state.events</code> angular module, e.g.,</p>
+					<pre><code>angular.module(<span class="hljs-string">"myApplication"</span>, ['ui.router', 'ui.router.<span class="hljs-keyword">state</span>.events']</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -144,7 +142,7 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/legacy/stateEvents.ts#L82">ui-router-angularjs/src/legacy/stateEvents.ts:82</a></li>
+							<li>Defined in ui-router-angularjs/src/legacy/stateEvents.ts:82</li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +183,7 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/legacy/stateEvents.ts#L124">ui-router-angularjs/src/legacy/stateEvents.ts:124</a></li>
+							<li>Defined in ui-router-angularjs/src/legacy/stateEvents.ts:124</li>
 						</ul>
 					</aside>
 				</section>
@@ -217,12 +215,11 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 								<li><code>$transition$</code>: the <a href="../classes/transition.transition-1.html">Transition</a></li>
 							</ul>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">$rootScope.$on(<span class="hljs-string">'$stateChangeStart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, transition</span>) </span>{
+							<pre><code class="language-js">$rootScope.$on(<span class="hljs-string">'$stateChangeStart'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, transition</span>) </span>{
   event.preventDefault();
   <span class="hljs-comment">// transitionTo() promise will be rejected with</span>
   <span class="hljs-comment">// a 'transition prevented' error</span>
-})
-</code></pre>
+})</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>deprecated</dt>
 								<dd></dd>
@@ -231,7 +228,7 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/legacy/stateEvents.ts#L64">ui-router-angularjs/src/legacy/stateEvents.ts:64</a></li>
+							<li>Defined in ui-router-angularjs/src/legacy/stateEvents.ts:64</li>
 						</ul>
 					</aside>
 				</section>
@@ -267,7 +264,7 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/legacy/stateEvents.ts#L100">ui-router-angularjs/src/legacy/stateEvents.ts:100</a></li>
+							<li>Defined in ui-router-angularjs/src/legacy/stateEvents.ts:100</li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +296,7 @@ redirect_from: /docs/latest/modules/ng1_state_events.html
 								<li><code>options</code>: any Transition Options</li>
 							</ul>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js"><span class="hljs-comment">// somewhere, assume lazy.state has not been defined</span>
+							<pre><code class="language-js"><span class="hljs-comment">// somewhere, assume lazy.state has not been defined</span>
 $state.go(<span class="hljs-string">"lazy.state"</span>, { <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span> }, { <span class="hljs-attr">inherit</span>: <span class="hljs-literal">false</span> });
 
 <span class="hljs-comment">// somewhere else</span>
@@ -308,8 +305,7 @@ $scope.$on(<span class="hljs-string">'$stateNotFound'</span>, <span class="hljs-
     <span class="hljs-built_in">console</span>.log(unfoundState.to); <span class="hljs-comment">// "lazy.state"</span>
     <span class="hljs-built_in">console</span>.log(unfoundState.toParams); <span class="hljs-comment">// {a:1, b:2}</span>
     <span class="hljs-built_in">console</span>.log(unfoundState.options); <span class="hljs-comment">// {inherit:false} + default options</span>
-});
-</code></pre>
+});</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>deprecated</dt>
 								<dd></dd>
@@ -318,7 +314,7 @@ $scope.$on(<span class="hljs-string">'$stateNotFound'</span>, <span class="hljs-
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/legacy/stateEvents.ts#L160">ui-router-angularjs/src/legacy/stateEvents.ts:160</a></li>
+							<li>Defined in ui-router-angularjs/src/legacy/stateEvents.ts:160</li>
 						</ul>
 					</aside>
 				</section>

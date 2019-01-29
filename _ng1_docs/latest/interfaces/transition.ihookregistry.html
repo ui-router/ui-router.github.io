@@ -145,8 +145,7 @@ redirect_from: /docs/latest/interfaces/transition.ihookregistry.html
 									<p>Returns all the registered hooks of a given <code>hookName</code> type</p>
 								</div>
 								<h4 id="example-">Example:</h4>
-								<pre><code><span class="hljs-meta">$</span><span class="bash">transitions.getHooks(<span class="hljs-string">"onEnter"</span>)</span>
-</code></pre>
+								<pre><code><span class="hljs-symbol">$tra</span>nsitions.getHooks(<span class="hljs-string">"onEnter"</span>)</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -160,7 +159,7 @@ redirect_from: /docs/latest/interfaces/transition.ihookregistry.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L716">ui-router-core/src/transition/interface.ts:716</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:716</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -208,17 +207,16 @@ redirect_from: /docs/latest/interfaces/transition.ihookregistry.html
 								&quot;default substate&quot;.</p>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="lang-js"><span class="hljs-comment">// ng2</span>
+									<dd><pre><code class="language-js"><span class="hljs-comment">// ng2</span>
 transitionService.onBefore({ <span class="hljs-attr">to</span>: <span class="hljs-string">'home'</span> }, (trans: Transition) =&gt;
-    trans.router.stateService.target(<span class="hljs-string">"home.dashboard"</span>));
-</code></pre>
+    trans.router.stateService.target(<span class="hljs-string">"home.dashboard"</span>));</code></pre>
 										<h4 id="data-driven-default-substate">Data Driven Default Substate</h4>
 										<p>This example provides data-driven default substate functionality. It matches on a transition to any state
 											which has <code>defaultSubstate: &quot;some.sub.state&quot;</code> defined.  See: <a href="../classes/transition.transition-1.html#to">Transition.to</a> which returns the &quot;to state&quot;
 										definition.</p>
 									</dd>
 									<dt>example</dt>
-									<dd><pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
+									<dd><pre><code class="language-js"><span class="hljs-comment">// ng1</span>
 <span class="hljs-comment">// state declaration</span>
 {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'home'</span>,
@@ -235,20 +233,18 @@ transitionService.onBefore({ <span class="hljs-attr">to</span>: <span class="hlj
 $transitions.onBefore(criteria, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans: Transition</span>) </span>{
   <span class="hljs-keyword">var</span> substate = trans.to().defaultSubstate;
   <span class="hljs-keyword">return</span> trans.router.stateService.target(substate);
-});
-</code></pre>
+});</code></pre>
 										<h4 id="require-authentication">Require authentication</h4>
 										<p>This example cancels a transition to a state which requires authentication, if the user is not currently authenticated.</p>
 										<p>This example assumes a state tree where all states which require authentication are children of a parent <code>&#39;requireauth&#39;</code> state.
 										This example assumes <code>MyAuthService</code> synchronously returns a boolean from <code>isAuthenticated()</code>.</p>
 										<h4 id="example-">Example:</h4>
-										<pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
+										<pre><code class="language-js"><span class="hljs-comment">// ng1</span>
 $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-string">'requireauth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> myAuthService = trans.injector().get(<span class="hljs-string">'MyAuthService'</span>);
   <span class="hljs-comment">// If isAuthenticated returns false, the transition is cancelled.</span>
   <span class="hljs-keyword">return</span> myAuthService.isAuthenticated();
-});
-</code></pre>
+});</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -277,7 +273,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L389">ui-router-core/src/transition/interface.ts:389</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:389</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -329,18 +325,16 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 <span class="hljs-variable">$transitions</span>.<span class="hljs-keyword">on</span>Enter({ entering: 'admin' }, function(transition, <span class="hljs-keyword">state</span>) {
   var AuditService = trans.injector().get('AuditService');
   AuditService.<span class="hljs-keyword">log</span>(<span class="hljs-string">"Entered "</span> + <span class="hljs-keyword">state</span>.name + <span class="hljs-string">" module while transitioning to "</span> + transition.<span class="hljs-keyword">to</span>().name);
-}
-</code></pre><h4 id="audit-log-inside-a-state-declaration-">Audit Log (inside a state declaration)</h4>
+}</code></pre><h4 id="audit-log-inside-a-state-declaration-">Audit Log (inside a state declaration)</h4>
 										<p>The <code>onEnter</code> inside this state declaration is syntactic sugar for the previous Audit Log example.</p>
 										<pre><code>{
-  name: 'admin',
-  component: 'admin',
-  <span class="hljs-keyword">on</span>Enter: function(<span class="hljs-variable">$transition</span>$, <span class="hljs-variable">$state</span>$) {
-    var AuditService = <span class="hljs-variable">$transition</span>$.injector().get('AuditService');
-    AuditService.<span class="hljs-keyword">log</span>(<span class="hljs-string">"Entered "</span> + <span class="hljs-keyword">state</span>.name + <span class="hljs-string">" module while transitioning to "</span> + transition.<span class="hljs-keyword">to</span>().name);
+  <span class="hljs-type">name</span>: <span class="hljs-string">'admin'</span>,
+  component: <span class="hljs-string">'admin'</span>,
+  onEnter: <span class="hljs-keyword">function</span>($transition$<span class="php">, $state$) {
+    <span class="hljs-keyword">var</span> AuditService = $transition$</span>.injector().<span class="hljs-keyword">get</span>(<span class="hljs-string">'AuditService'</span>);
+    AuditService.log("Entered " + state.name + " module while transitioning to " + transition.<span class="hljs-keyword">to</span>().name);
   }
-}
-</code></pre><p>Note: A state declaration&#39;s <code>onEnter</code> function is injected for Angular 1 only.</p>
+}</code></pre><p>Note: A state declaration&#39;s <code>onEnter</code> function is injected for Angular 1 only.</p>
 									</dd>
 								</dl>
 							</div>
@@ -369,7 +363,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L530">ui-router-core/src/transition/interface.ts:530</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:530</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -441,7 +435,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L706">ui-router-core/src/transition/interface.ts:706</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:706</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -509,7 +503,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L608">ui-router-core/src/transition/interface.ts:608</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:608</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -569,7 +563,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L636">ui-router-core/src/transition/interface.ts:636</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:636</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -636,7 +630,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L568">ui-router-core/src/transition/interface.ts:568</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:568</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -686,7 +680,7 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 									or rejected, whether or not the login attempt was successful.</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// ng1</span>
+								<pre><code class="language-js"><span class="hljs-comment">// ng1</span>
 $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-string">'auth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> $state = trans.router.stateService;
   <span class="hljs-keyword">var</span> MyAuthService = trans.injector().get(<span class="hljs-string">'MyAuthService'</span>);
@@ -704,8 +698,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
       <span class="hljs-keyword">return</span> $state.target(<span class="hljs-string">"guest"</span>);
     });
   }
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -732,7 +725,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L458">ui-router-core/src/transition/interface.ts:458</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:458</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -791,7 +784,7 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L663">ui-router-core/src/transition/interface.ts:663</a></li>
+									<li>Defined in ui-router-core/src/transition/interface.ts:663</li>
 								</ul>
 						</aside>        </li>
 					</ul>

@@ -103,90 +103,84 @@ redirect_from: /docs/latest/classes/core.glob.html
 					<table>
 						<thead>
 							<tr>
-								<th style="text-align:left">Glob</th>
-								<th style="text-align:left">Matches states named</th>
-								<th style="text-align:left">Does not match state named</th>
+								<th align="left">Glob</th>
+								<th align="left">Matches states named</th>
+								<th align="left">Does not match state named</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td style="text-align:left"><code>&#39;A&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code></td>
-								<td style="text-align:left"><code>&#39;B&#39;</code> , <code>&#39;A.C&#39;</code></td>
+						<tbody><tr>
+								<td align="left"><code>&#39;A&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code></td>
+								<td align="left"><code>&#39;B&#39;</code> , <code>&#39;A.C&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;A.B&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A.B&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
+								<td align="left"><code>&#39;A.B&#39;</code></td>
+								<td align="left"><code>&#39;A.B&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;foo&#39;</code></td>
-								<td style="text-align:left"><code>&#39;foo&#39;</code></td>
-								<td style="text-align:left"><code>&#39;FOO&#39;</code> , <code>&#39;foo.bar&#39;</code></td>
+								<td align="left"><code>&#39;foo&#39;</code></td>
+								<td align="left"><code>&#39;foo&#39;</code></td>
+								<td align="left"><code>&#39;FOO&#39;</code> , <code>&#39;foo.bar&#39;</code></td>
 							</tr>
-						</tbody>
-					</table>
+					</tbody></table>
 					<h3 id="single-star-">Single star (<code>*</code>)</h3>
 					<p>A single star (<code>*</code>) is a wildcard that matches exactly one segment.</p>
 					<table>
 						<thead>
 							<tr>
-								<th style="text-align:left">Glob</th>
-								<th style="text-align:left">Matches states named</th>
-								<th style="text-align:left">Does not match state named</th>
+								<th align="left">Glob</th>
+								<th align="left">Matches states named</th>
+								<th align="left">Does not match state named</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td style="text-align:left"><code>&#39;*&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;Z&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A.B&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
+						<tbody><tr>
+								<td align="left"><code>&#39;*&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;Z&#39;</code></td>
+								<td align="left"><code>&#39;A.B&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;A.*&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A.B&#39;</code> , <code>&#39;A.C&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
+								<td align="left"><code>&#39;A.*&#39;</code></td>
+								<td align="left"><code>&#39;A.B&#39;</code> , <code>&#39;A.C&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;A.*.*&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A.B.C&#39;</code> , <code>&#39;A.X.Y&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code>, <code>&#39;A.B&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
+								<td align="left"><code>&#39;A.*.*&#39;</code></td>
+								<td align="left"><code>&#39;A.B.C&#39;</code> , <code>&#39;A.X.Y&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code>, <code>&#39;A.B&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
 							</tr>
-						</tbody>
-					</table>
+					</tbody></table>
 					<h3 id="double-star-">Double star (<code>**</code>)</h3>
 					<p>A double star (<code>&#39;**&#39;</code>) is a wildcard that matches <em>zero or more segments</em></p>
 					<table>
 						<thead>
 							<tr>
-								<th style="text-align:left">Glob</th>
-								<th style="text-align:left">Matches states named</th>
-								<th style="text-align:left">Does not match state named</th>
+								<th align="left">Glob</th>
+								<th align="left">Matches states named</th>
+								<th align="left">Does not match state named</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td style="text-align:left"><code>&#39;**&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.B&#39;</code>, <code>&#39;Z.Y.X&#39;</code></td>
-								<td style="text-align:left">(matches all states)</td>
+						<tbody><tr>
+								<td align="left"><code>&#39;**&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.B&#39;</code>, <code>&#39;Z.Y.X&#39;</code></td>
+								<td align="left">(matches all states)</td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;A.**&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.B&#39;</code> , <code>&#39;A.C.X&#39;</code></td>
-								<td style="text-align:left"><code>&#39;Z.Y.X&#39;</code></td>
+								<td align="left"><code>&#39;A.**&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.B&#39;</code> , <code>&#39;A.C.X&#39;</code></td>
+								<td align="left"><code>&#39;Z.Y.X&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;**.X&#39;</code></td>
-								<td style="text-align:left"><code>&#39;X&#39;</code> , <code>&#39;A.X&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.login.Z&#39;</code></td>
+								<td align="left"><code>&#39;**.X&#39;</code></td>
+								<td align="left"><code>&#39;X&#39;</code> , <code>&#39;A.X&#39;</code> , <code>&#39;Z.Y.X&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.login.Z&#39;</code></td>
 							</tr>
 							<tr>
-								<td style="text-align:left"><code>&#39;A.**.X&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A.X&#39;</code> , <code>&#39;A.B.X&#39;</code> , <code>&#39;A.B.C.X&#39;</code></td>
-								<td style="text-align:left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
+								<td align="left"><code>&#39;A.**.X&#39;</code></td>
+								<td align="left"><code>&#39;A.X&#39;</code> , <code>&#39;A.B.X&#39;</code> , <code>&#39;A.B.C.X&#39;</code></td>
+								<td align="left"><code>&#39;A&#39;</code> , <code>&#39;A.B.C&#39;</code></td>
 							</tr>
-						</tbody>
-					</table>
+					</tbody></table>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -250,7 +244,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L63">ui-router-core/src/common/glob.ts:63</a></li>
+									<li>Defined in ui-router-core/src/common/glob.ts:63</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -268,7 +262,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L52">ui-router-core/src/common/glob.ts:52</a></li>
+							<li>Defined in ui-router-core/src/common/glob.ts:52</li>
 						</ul>
 					</aside>
 				</section>
@@ -282,7 +276,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L53">ui-router-core/src/common/glob.ts:53</a></li>
+							<li>Defined in ui-router-core/src/common/glob.ts:53</li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +290,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L51">ui-router-core/src/common/glob.ts:51</a></li>
+							<li>Defined in ui-router-core/src/common/glob.ts:51</li>
 						</ul>
 					</aside>
 				</section>
@@ -325,7 +319,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L81">ui-router-core/src/common/glob.ts:81</a></li>
+									<li>Defined in ui-router-core/src/common/glob.ts:81</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -360,7 +354,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L61">ui-router-core/src/common/glob.ts:61</a></li>
+									<li>Defined in ui-router-core/src/common/glob.ts:61</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -395,7 +389,7 @@ redirect_from: /docs/latest/classes/core.glob.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/glob.ts#L56">ui-router-core/src/common/glob.ts:56</a></li>
+									<li>Defined in ui-router-core/src/common/glob.ts:56</li>
 								</ul>
 						</aside>        </li>
 					</ul>

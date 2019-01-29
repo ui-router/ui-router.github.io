@@ -196,7 +196,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L27">ui-router-core/src/transition/transitionHook.ts:27</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionHook.ts:27</li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +233,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L24">ui-router-core/src/transition/transitionHook.ts:24</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionHook.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +270,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L23">ui-router-core/src/transition/transitionHook.ts:23</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionHook.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -284,7 +284,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L241">ui-router-core/src/transition/interface.ts:241</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:241</li>
 						</ul>
 					</aside>
 				</section>
@@ -303,14 +303,14 @@ redirect_from: /docs/latest/modules/transition.html
 								<p>Hook Criterion used to match a transition.</p>
 							</div>
 							<p>A <a href="../classes/core.glob.html">Glob</a> string that matches the name of a state.</p>
-							<p>Or, a function with the signature <code>function(state) { return matches; }</code>
+							<p>Or, a function with the signature <code>function(state, transition) { return matches; }</code>
 							which should return a boolean to indicate if a state matches.</p>
 							<p>Or, <code>true</code> to always match</p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L834">ui-router-core/src/transition/interface.ts:834</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:842</li>
 						</ul>
 					</aside>
 				</section>
@@ -344,7 +344,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L256">ui-router-core/src/transition/interface.ts:256</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:256</li>
 						</ul>
 					</aside>
 				</section>
@@ -387,7 +387,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L170">ui-router-core/src/transition/interface.ts:170</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:170</li>
 						</ul>
 					</aside>
 				</section>
@@ -396,20 +396,20 @@ redirect_from: /docs/latest/modules/transition.html
 					<!--
         <h3>IState<wbr>Match</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">IState<wbr>Match<span class="tsd-signature-symbol">:</span> <a href="common.html#predicate" class="tsd-signature-type">Predicate</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span>    <div class="tsd-header">
-							<p> A predicate type which tests if a <a href="../classes/state.stateobject.html">StateObject</a> passes some test. Returns a boolean. </p>
+					<div class="tsd-signature tsd-kind-icon">IState<wbr>Match<span class="tsd-signature-symbol">:</span> <a href="common.html#predicatebinary" class="tsd-signature-type">PredicateBinary</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">, </span><a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">&gt;</span>    <div class="tsd-header">
+							<p> A predicate type which tests if a <a href="../classes/state.stateobject.html">StateObject</a> and <a href="../classes/transition.transition-1.html">Transition</a> passes some test. Returns a boolean. </p>
 						</div>
 					</div>
 					<div class="tsd-declaration">
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>A predicate type which tests if a <a href="../classes/state.stateobject.html">StateObject</a> passes some test. Returns a boolean.</p>
+								<p>A predicate type which tests if a <a href="../classes/state.stateobject.html">StateObject</a> and <a href="../classes/transition.transition-1.html">Transition</a> passes some test. Returns a boolean.</p>
 							</div>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L720">ui-router-core/src/transition/interface.ts:720</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:720</li>
 						</ul>
 					</aside>
 				</section>
@@ -446,7 +446,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L26">ui-router-core/src/transition/transitionHook.ts:26</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionHook.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -489,7 +489,7 @@ redirect_from: /docs/latest/modules/transition.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/hookBuilder.ts#L141">ui-router-core/src/transition/hookBuilder.ts:141</a></li>
+									<li>Defined in ui-router-core/src/transition/hookBuilder.ts:145</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -507,7 +507,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L16">ui-router-core/src/transition/transitionHook.ts:16</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionHook.ts:16</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -520,7 +520,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L20">ui-router-core/src/transition/transitionHook.ts:20</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionHook.ts:20</li>
 							</ul>
 						</aside>
 					</section>
@@ -534,7 +534,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L17">ui-router-core/src/transition/transitionHook.ts:17</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionHook.ts:17</li>
 							</ul>
 						</aside>
 					</section>
@@ -553,7 +553,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L19">ui-router-core/src/transition/transitionHook.ts:19</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionHook.ts:19</li>
 							</ul>
 						</aside>
 					</section>
@@ -567,7 +567,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionHook.ts#L18">ui-router-core/src/transition/transitionHook.ts:18</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionHook.ts:18</li>
 							</ul>
 						</aside>
 					</section>
@@ -593,7 +593,7 @@ redirect_from: /docs/latest/modules/transition.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L46">ui-router-core/src/transition/transitionService.ts:46</a></li>
+							<li>Defined in ui-router-core/src/transition/transitionService.ts:46</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -611,7 +611,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L52">ui-router-core/src/transition/transitionService.ts:52</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:52</li>
 							</ul>
 						</aside>
 					</section>
@@ -625,7 +625,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L49">ui-router-core/src/transition/transitionService.ts:49</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:49</li>
 							</ul>
 						</aside>
 					</section>
@@ -639,7 +639,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L47">ui-router-core/src/transition/transitionService.ts:47</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:47</li>
 							</ul>
 						</aside>
 					</section>
@@ -653,7 +653,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L50">ui-router-core/src/transition/transitionService.ts:50</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:50</li>
 							</ul>
 						</aside>
 					</section>
@@ -667,7 +667,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L48">ui-router-core/src/transition/transitionService.ts:48</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:48</li>
 							</ul>
 						</aside>
 					</section>
@@ -681,7 +681,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L51">ui-router-core/src/transition/transitionService.ts:51</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:51</li>
 							</ul>
 						</aside>
 					</section>
@@ -695,7 +695,7 @@ redirect_from: /docs/latest/modules/transition.html
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L54">ui-router-core/src/transition/transitionService.ts:54</a></li>
+								<li>Defined in ui-router-core/src/transition/transitionService.ts:54</li>
 							</ul>
 						</aside>
 					</section>
@@ -715,7 +715,7 @@ redirect_from: /docs/latest/modules/transition.html
 								<hr>
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/transitionService.ts#L53">ui-router-core/src/transition/transitionService.ts:53</a></li>
+										<li>Defined in ui-router-core/src/transition/transitionService.ts:53</li>
 									</ul>
 							</aside>        </li>
 						</ul>

@@ -98,19 +98,16 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statetransitionhook.html
 						<li><a href="transition.ihookregistry.html#onenter">IHookRegistry.onEnter</a></li>
 					</ul>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js">onEnter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering'</span>); }
-</code></pre>
+					<pre><code class="language-js">onEnter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering'</span>); }</code></pre>
 					<p>Not minification-safe</p>
-					<pre><code class="lang-js">onRetain: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$state$</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Retained '</span> + $state$.name); }
-</code></pre>
+					<pre><code class="language-js">onRetain: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$state$</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Retained '</span> + $state$.name); }</code></pre>
 					<p>Annotated for minification-safety</p>
-					<pre><code class="lang-js">onExit: [ <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$transition$, $state</span>) </span>{
+					<pre><code class="language-js">onExit: [ <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$transition$, $state</span>) </span>{
   <span class="hljs-comment">// always redirect to 'foo' state when being exited</span>
   <span class="hljs-keyword">if</span> ($transition$.to().name !== <span class="hljs-string">'foo'</span>) {
     <span class="hljs-keyword">return</span> $state.target(<span class="hljs-string">'foo'</span>);
   }
-} ]
-</code></pre>
+} ]</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -148,19 +145,16 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statetransitionhook.html
 								<li><a href="transition.ihookregistry.html#onenter">IHookRegistry.onEnter</a></li>
 							</ul>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">onEnter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering'</span>); }
-</code></pre>
+							<pre><code class="language-js">onEnter: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering'</span>); }</code></pre>
 							<p>Not minification-safe</p>
-							<pre><code class="lang-js">onRetain: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$state$</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Retained '</span> + $state$.name); }
-</code></pre>
+							<pre><code class="language-js">onRetain: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$state$</span>) </span>{ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Retained '</span> + $state$.name); }</code></pre>
 							<p>Annotated for minification-safety</p>
-							<pre><code class="lang-js">onExit: [ <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$transition$, $state</span>) </span>{
+							<pre><code class="language-js">onExit: [ <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$transition$, $state</span>) </span>{
   <span class="hljs-comment">// always redirect to 'foo' state when being exited</span>
   <span class="hljs-keyword">if</span> ($transition$.to().name !== <span class="hljs-string">'foo'</span>) {
     <span class="hljs-keyword">return</span> $state.target(<span class="hljs-string">'foo'</span>);
   }
-} ]
-</code></pre>
+} ]</code></pre>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -175,7 +169,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statetransitionhook.html
 						<hr>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L43">ui-router-angularjs/src/interface.ts:43</a></li>
+								<li>Defined in ui-router-angularjs/src/interface.ts:43</li>
 							</ul>
 					</aside>        </li>
 				</ul>

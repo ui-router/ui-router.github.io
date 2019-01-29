@@ -134,28 +134,25 @@ redirect_from: /docs/latest/modules/directives.html
 							<p>If the <code>ui-sref</code>/<code>ui-state</code> includes parameter values, the current parameter values must match the link&#39;s values for the link to be highlighted.
 							This allows a list of links to the same state with different parameters to be rendered, and the correct one highlighted.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"user.details({ userId: user.id })"</span>&gt;</span>{{ user.lastName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
 							<h3 id="examples">Examples</h3>
 							<p>Given the following template:</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 							<p>When the app state is <code>app.user</code> (or any child state),
 								and contains the state parameter &quot;user&quot; with value &quot;bilbobaggins&quot;,
 							the resulting HTML will appear as (note the &#39;active&#39; class):</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item active"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/bilbobaggins"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 							<h3 id="glob-mode">Glob mode</h3>
 							<p>It is possible to pass <code>ui-sref-active</code> an expression that evaluates to an object.
 								The objects keys represent active class names and values represent the respective state names/globs.
@@ -163,18 +160,16 @@ redirect_from: /docs/latest/modules/directives.html
 							the specified state names/globs, even the abstract ones.</p>
 							<h4 id="example-">Example:</h4>
 							<p>Given the following template, with &quot;admin&quot; being an abstract state:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': 'admin.**'}"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': 'admin.**'}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"admin.roles"</span>&gt;</span>Roles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							<p>Arrays are also supported as values in the <code>ngClass</code>-like interface.
 							This allows multiple states to add <code>active</code> class.</p>
 							<h4 id="example-">Example:</h4>
 							<p>Given the following template, with &quot;admin.roles&quot; being the current state, the class will be added too:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': ['owner.**', 'admin.**']}"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': ['owner.**', 'admin.**']}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"admin.roles"</span>&gt;</span>Roles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							<p>When the current state is &quot;admin.roles&quot; the &quot;active&quot; class will be applied to both the <code>&lt;div&gt;</code> and <code>&lt;a&gt;</code> elements.
 							It is important to note that the state names/globs passed to <code>ui-sref-active</code> override any state provided by a linked <code>ui-sref</code>.</p>
 							<h3 id="notes-">Notes:</h3>
@@ -189,7 +184,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/directives/stateDirectives.ts#L573">ui-router-angularjs/src/directives/stateDirectives.ts:573</a></li>
+							<li>Defined in ui-router-angularjs/src/directives/stateDirectives.ts:572</li>
 						</ul>
 					</aside>
 				</section>
@@ -213,27 +208,23 @@ redirect_from: /docs/latest/modules/directives.html
 							<p>The attribute value of the <code>ui-sref</code> is the name of the state to link to.</p>
 							<h4 id="example-">Example:</h4>
 							<p>This will activate the <code>home</code> state when the link is clicked.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="relative-links">Relative Links</h3>
 							<p>You can also use relative state paths within <code>ui-sref</code>, just like a relative path passed to <code>$state.go()</code> (<a href="../classes/state.stateservice.html#go">StateService.go</a>).
 								You just need to be aware that the path is relative to the state that <em>created</em> the link.
 							This allows a state to create a relative <code>ui-sref</code> which always targets the same destination.</p>
 							<h4 id="example-">Example:</h4>
 							<p>Both these links are relative to the parent state, even when a child state is currently active.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child1"</span>&gt;</span>child 1 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child2"</span>&gt;</span>child 2 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child1"</span>&gt;</span>child 1 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child2"</span>&gt;</span>child 2 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<p>This link activates the parent state.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"^"</span>&gt;</span>Return<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"^"</span>&gt;</span>Return<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="hrefs">hrefs</h3>
 							<p>If the linked state has a URL, the directive will automatically generate and
 							update the <code>href</code> attribute (using the <a href="../classes/state.stateservice.html#href">StateService.href</a>  method).</p>
 							<h4 id="example-">Example:</h4>
 							<p>Assuming the <code>users</code> state has a url of <code>/users/</code></p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/"</span>&gt;</span>Users<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/"</span>&gt;</span>Users<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="parameter-values">Parameter Values</h3>
 							<p>In addition to the state name, a <code>ui-sref</code> can include parameter values which are applied when activating the state.
 								Param values can be provided in the <code>ui-sref</code> value after the state name, enclosed by parentheses.
@@ -241,29 +232,26 @@ redirect_from: /docs/latest/modules/directives.html
 							<h4 id="example-">Example:</h4>
 							<p>This example renders a list of links to users.
 							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users.detail({ userId: user.id })"</span>&gt;</span>{{ user.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
 							<p>Note:
 							The parameter values expression is <code>$watch</code>ed for updates.</p>
 							<h3 id="transition-options">Transition Options</h3>
 							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-sref-opts</code> attribute.
 							Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="other-dom-events">Other DOM Events</h3>
 							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
 							providing an <code>events</code> array in the <code>ui-sref-opts</code> attribute.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span></code></pre>
 							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
 							<p>This directive can be used in conjunction with [[uiSrefActive]] to highlight the active link.</p>
 							<h3 id="examples">Examples</h3>
 							<p>If you have the following template:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{page: 2}"</span>&gt;</span>Next page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
@@ -271,10 +259,9 @@ redirect_from: /docs/latest/modules/directives.html
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"contact in contacts"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts.detail({ id: contact.id })"</span>&gt;</span>{{ contact.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
 							<p>Then (assuming the current state is <code>contacts</code>) the rendered html including hrefs would be:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/about"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/contacts?page=2"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{page: 2}"</span>&gt;</span>Next page<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
@@ -290,15 +277,13 @@ redirect_from: /docs/latest/modules/directives.html
     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{reload: true}"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{reload: true}"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="notes">Notes</h3>
 							<ul>
 								<li>You can use <code>ui-sref</code> to change <strong>only the parameter values</strong> by omitting the state name and parentheses.<h4 id="example-">Example:</h4>
 								Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</li>
 							</ul>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<ul>
 								<li><p>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.</p>
 								</li>
@@ -310,7 +295,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/directives/stateDirectives.ts#L284">ui-router-angularjs/src/directives/stateDirectives.ts:284</a></li>
+							<li>Defined in ui-router-angularjs/src/directives/stateDirectives.ts:283</li>
 						</ul>
 					</aside>
 				</section>
@@ -338,10 +323,9 @@ redirect_from: /docs/latest/modules/directives.html
 							<strong>This is in contrast with <code>ui-sref</code>, which takes a state name as a string literal.</strong></p>
 							<h4 id="example-">Example:</h4>
 							<p>Create a list of links.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
 							<h3 id="relative-links">Relative Links</h3>
 							<p>If the expression evaluates to a relative path, it is processed like [[uiSref]].
 								You just need to be aware that the path is relative to the state that <em>created</em> the link.
@@ -356,23 +340,20 @@ redirect_from: /docs/latest/modules/directives.html
 							<h4 id="example-">Example:</h4>
 							<p>This example renders a list of links with param values.
 							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"link.params"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
 							<h3 id="transition-options">Transition Options</h3>
 							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-state-opts</code> attribute.
 								Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.
 							The value of the <code>ui-state-opts</code> is <code>$watch</code>ed and evaluated as an expression.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"returnto.state"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"returnto.state"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<h3 id="other-dom-events">Other DOM Events</h3>
 							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
 							providing an <code>events</code> array in the <code>ui-state-opts</code> attribute.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span></code></pre>
 							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
 							<p>This directive can be used in conjunction with [[uiSrefActive]] to highlight the active link.</p>
 							<h3 id="notes">Notes</h3>
@@ -382,8 +363,7 @@ redirect_from: /docs/latest/modules/directives.html
 							</ul>
 							<h4 id="example-">Example:</h4>
 							<p>Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">""</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-</code></pre>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">""</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<ul>
 								<li>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.
 								<code>`</code></li>
@@ -392,7 +372,7 @@ redirect_from: /docs/latest/modules/directives.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/directives/stateDirectives.ts#L423">ui-router-angularjs/src/directives/stateDirectives.ts:423</a></li>
+							<li>Defined in ui-router-angularjs/src/directives/stateDirectives.ts:422</li>
 						</ul>
 					</aside>
 				</section>
@@ -425,51 +405,45 @@ redirect_from: /docs/latest/modules/directives.html
 							</ul>
 							<h4 id="example-">Example:</h4>
 							<p>A view can be unnamed or named.</p>
-							<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Unnamed --&gt;</span>
+							<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Unnamed --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- Named --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"viewName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- Named (different style) --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ui-view</span>&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewName"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">ui-view</span>&gt;</span></code></pre>
 							<p>You can only have one unnamed view within any template (or root html). If you are only using a
 							single view and it is unnamed then you can populate it like so:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 $stateProvider.state("home", {
   template: "<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>HELLO!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>"
-})
-</code></pre>
+})</code></pre>
 							<p>The above is a convenient shortcut equivalent to specifying your view explicitly with the
 							<a href="../interfaces/ng1.ng1statedeclaration.html#views">Ng1StateDeclaration.views</a> config property, by name, in this case an empty name:</p>
-							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
   <span class="hljs-attr">views</span>: {
     <span class="hljs-string">""</span>: {
       <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
     }
   }
-})
-</code></pre>
+})</code></pre>
 							<p>But typically you&#39;ll only use the views property if you name your view or have more than one view
 								in the same template. There&#39;s not really a compelling reason to name a view if its the only one,
 							but you could if you wanted, like so:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"main"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
   <span class="hljs-attr">views</span>: {
     <span class="hljs-string">"main"</span>: {
       <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
     }
   }
-})
-</code></pre>
+})</code></pre>
 							<p>Really though, you&#39;ll use views to set up multiple views:</p>
-							<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"chart"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>=<span class="hljs-string">"data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">"home"</span>, {
   <span class="hljs-attr">views</span>: {
     <span class="hljs-string">""</span>: {
       <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;h1&gt;HELLO!&lt;/h1&gt;"</span>
@@ -481,10 +455,9 @@ $stateProvider.state("home", {
       <span class="hljs-attr">template</span>: <span class="hljs-string">"&lt;data_thing/&gt;"</span>
     }
   }
-})
-</code></pre>
+})</code></pre>
 							<h4 id="examples-for-autoscroll-">Examples for <code>autoscroll</code>:</h4>
-							<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- If autoscroll present with no expression,
+							<pre><code class="language-html"><span class="hljs-comment">&lt;!-- If autoscroll present with no expression,
      then scroll ui-view into view --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>/&gt;</span>
 
@@ -492,8 +465,7 @@ $stateProvider.state("home", {
      then scroll ui-view into view if expression evaluates to true --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'true'</span>/&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'false'</span>/&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'scopeVariable'</span>/&gt;</span>
-</code></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>=<span class="hljs-string">'scopeVariable'</span>/&gt;</span></code></pre>
 							<p>Resolve data:</p>
 							<p>The resolved data from the state&#39;s <code>resolve</code> block is placed on the scope as <code>$resolve</code> (this
 							can be customized using <a href="../interfaces/ng1.ng1viewdeclaration.html#resolveas">Ng1ViewDeclaration.resolveAs</a>).  This can be then accessed from the template.</p>
@@ -501,18 +473,17 @@ $stateProvider.state("home", {
 								controller is instantiated.  The <code>$onInit()</code> hook can be used to perform initialization code which
 							depends on <code>$resolve</code> data.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">'home'</span>, {
+							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">'home'</span>, {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;my-component user="$resolve.user"&gt;&lt;/my-component&gt;'</span>,
   <span class="hljs-attr">resolve</span>: {
     <span class="hljs-attr">user</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">UserService</span>) </span>{ <span class="hljs-keyword">return</span> UserService.fetchUser(); }
   }
-});
-</code></pre>
+});</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/directives/viewDirective.ts#L172">ui-router-angularjs/src/directives/viewDirective.ts:172</a></li>
+							<li>Defined in ui-router-angularjs/src/directives/viewDirective.ts:172</li>
 						</ul>
 					</aside>
 				</section>

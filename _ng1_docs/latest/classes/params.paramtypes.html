@@ -99,8 +99,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 						<li><a href="params.paramtypes.html#any">any</a></li>
 					</ul>
 					<p>To register custom parameter types, use <a href="url.urlconfig.html#type">UrlConfig.type</a>, i.e.,</p>
-					<pre><code class="lang-js">router.urlService.config.type(customType)
-</code></pre>
+					<pre><code class="language-js">router.urlService.config.type(customType)</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -167,7 +166,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L211">ui-router-core/src/params/paramTypes.ts:211</a></li>
+									<li>Defined in ui-router-core/src/params/paramTypes.ts:211</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -187,7 +186,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L201">ui-router-core/src/params/paramTypes.ts:201</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:201</li>
 						</ul>
 					</aside>
 				</section>
@@ -210,21 +209,19 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							It is compared using a deep <code>equals</code> comparison.</p>
 							<h4 id="example-">Example:</h4>
 							<p>This example defines a non-url parameter on a <a href="../interfaces/state.statedeclaration.html">StateDeclaration</a>.</p>
-							<pre><code class="lang-js">.state({
+							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'new'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/new'</span>,
   <span class="hljs-attr">params</span>: {
     <span class="hljs-attr">inrepyto</span>: <span class="hljs-literal">null</span>
   }
-});
-</code></pre>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'new'</span>, { <span class="hljs-attr">inreplyto</span>: currentMessage });
-</code></pre>
+});</code></pre>
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'new'</span>, { <span class="hljs-attr">inreplyto</span>: currentMessage });</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L191">ui-router-core/src/params/paramTypes.ts:191</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:191</li>
 						</ul>
 					</aside>
 				</section>
@@ -244,20 +241,18 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							</div>
 							<p>This parameter type serializes <code>true</code>/<code>false</code> as <code>1</code>/<code>0</code></p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">.state({
+							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'inbox'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/inbox?{unread:bool}'</span>
-});
-</code></pre>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'inbox'</span>, { <span class="hljs-attr">unread</span>: <span class="hljs-literal">true</span> });
-</code></pre>
+});</code></pre>
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'inbox'</span>, { <span class="hljs-attr">unread</span>: <span class="hljs-literal">true</span> });</code></pre>
 							<p>The URL will serialize to: <code>/inbox?unread=1</code>.</p>
 							<p>Conversely, if the url is <code>/inbox?unread=0</code>, the value of the <code>unread</code> parameter will be a <code>false</code>.</p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L120">ui-router-core/src/params/paramTypes.ts:120</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:120</li>
 						</ul>
 					</aside>
 				</section>
@@ -277,13 +272,11 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							</div>
 							<p>This parameter type can be used to serialize Javascript dates as parameter values.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">.state({
+							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'search'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/search?{start:date}'</span>
-});
-</code></pre>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'search'</span>, { <span class="hljs-attr">start</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2000</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) });
-</code></pre>
+});</code></pre>
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'search'</span>, { <span class="hljs-attr">start</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2000</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) });</code></pre>
 							<p>The URL will serialize to: <code>/search?start=2000-01-01</code>.</p>
 							<p>Conversely, if the url is <code>/search?start=2016-12-25</code>, the value of the <code>start</code> parameter will be a <code>Date</code> object where:</p>
 							<ul>
@@ -295,7 +288,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L146">ui-router-core/src/params/paramTypes.ts:146</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:146</li>
 						</ul>
 					</aside>
 				</section>
@@ -319,7 +312,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L76">ui-router-core/src/params/paramTypes.ts:76</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:76</li>
 						</ul>
 					</aside>
 				</section>
@@ -339,20 +332,18 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							</div>
 							<p>This parameter type serializes javascript integers (<code>number</code>s which represent an integer) to the URL.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">.state({
+							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'user'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/user/{id:int}'</span>
-});
-</code></pre>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'user'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-number">1298547</span> });
-</code></pre>
+});</code></pre>
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'user'</span>, { <span class="hljs-attr">id</span>: <span class="hljs-number">1298547</span> });</code></pre>
 							<p>The URL will serialize to: <code>/user/1298547</code>.</p>
 							<p>When the parameter value is read, it will be the <code>number</code> <code>1298547</code>, not the string <code>&quot;1298547&quot;</code>.</p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L98">ui-router-core/src/params/paramTypes.ts:98</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:98</li>
 						</ul>
 					</aside>
 				</section>
@@ -373,19 +364,17 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							<p>This parameter type can be used to serialize javascript objects into the URL using JSON serialization.</p>
 							<h4 id="example-">Example:</h4>
 							<p>This example serializes an plain javascript object to the URL</p>
-							<pre><code class="lang-js">.state({
+							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'map'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/map/{coords:json}'</span>
-});
-</code></pre>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'map'</span>, { <span class="hljs-attr">coords</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">10399.2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">49071</span> });
-</code></pre>
+});</code></pre>
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'map'</span>, { <span class="hljs-attr">coords</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">10399.2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">49071</span> });</code></pre>
 							<p>The URL will serialize to: <code>/map/%7B%22x%22%3A10399.2%2C%22y%22%3A49071%7D</code></p>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L167">ui-router-core/src/params/paramTypes.ts:167</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:167</li>
 						</ul>
 					</aside>
 				</section>
@@ -417,7 +406,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L56">ui-router-core/src/params/paramTypes.ts:56</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:56</li>
 						</ul>
 					</aside>
 				</section>
@@ -445,7 +434,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L68">ui-router-core/src/params/paramTypes.ts:68</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:68</li>
 						</ul>
 					</aside>
 				</section>
@@ -469,7 +458,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L39">ui-router-core/src/params/paramTypes.ts:39</a></li>
+							<li>Defined in ui-router-core/src/params/paramTypes.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -494,7 +483,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L245">ui-router-core/src/params/paramTypes.ts:245</a></li>
+									<li>Defined in ui-router-core/src/params/paramTypes.ts:245</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -517,7 +506,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L221">ui-router-core/src/params/paramTypes.ts:221</a></li>
+									<li>Defined in ui-router-core/src/params/paramTypes.ts:221</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -573,7 +562,7 @@ redirect_from: /docs/latest/classes/params.paramtypes.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramTypes.ts#L230">ui-router-core/src/params/paramTypes.ts:230</a></li>
+									<li>Defined in ui-router-core/src/params/paramTypes.ts:230</li>
 								</ul>
 						</aside>        </li>
 					</ul>

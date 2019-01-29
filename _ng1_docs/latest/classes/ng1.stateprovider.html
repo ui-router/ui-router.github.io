@@ -159,7 +159,7 @@ redirect_from: /docs/latest/classes/ng1.stateprovider.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L29">ui-router-angularjs/src/stateProvider.ts:29</a></li>
+									<li>Defined in ui-router-angularjs/src/stateProvider.ts:29</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -177,7 +177,7 @@ redirect_from: /docs/latest/classes/ng1.stateprovider.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L30">ui-router-angularjs/src/stateProvider.ts:30</a></li>
+							<li>Defined in ui-router-angularjs/src/stateProvider.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +191,7 @@ redirect_from: /docs/latest/classes/ng1.stateprovider.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L30">ui-router-angularjs/src/stateProvider.ts:30</a></li>
+							<li>Defined in ui-router-angularjs/src/stateProvider.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -258,7 +258,7 @@ redirect_from: /docs/latest/classes/ng1.stateprovider.html
 								<h4 id="example-">Example:</h4>
 								<p>Override the internal &#39;views&#39; builder with a function that takes the state
 								definition, and a reference to the internal function being overridden:</p>
-								<pre><code class="lang-js">$stateProvider.decorator(<span class="hljs-string">'views'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state, parent</span>) </span>{
+								<pre><code class="language-js">$stateProvider.decorator(<span class="hljs-string">'views'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state, parent</span>) </span>{
   <span class="hljs-keyword">let</span> result = {},
       views = parent(state);
 
@@ -275,12 +275,10 @@ $stateProvider.state(<span class="hljs-string">'home'</span>, {
     <span class="hljs-string">'contact.list'</span>: { <span class="hljs-attr">controller</span>: <span class="hljs-string">'ListController'</span> },
     <span class="hljs-string">'contact.item'</span>: { <span class="hljs-attr">controller</span>: <span class="hljs-string">'ItemController'</span> }
   }
-});
-</code></pre>
-								<pre><code class="lang-js"><span class="hljs-comment">// Auto-populates list and item views with /partials/home/contact/list.html,</span>
+});</code></pre>
+								<pre><code class="language-js"><span class="hljs-comment">// Auto-populates list and item views with /partials/home/contact/list.html,</span>
 <span class="hljs-comment">// and /partials/home/contact/item.html, respectively.</span>
-$state.go(<span class="hljs-string">'home'</span>);
-</code></pre>
+$state.go(<span class="hljs-string">'home'</span>);</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -314,7 +312,7 @@ $state.go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L123">ui-router-angularjs/src/stateProvider.ts:123</a></li>
+									<li>Defined in ui-router-angularjs/src/stateProvider.ts:123</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -350,7 +348,7 @@ $state.go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L277">ui-router-angularjs/src/stateProvider.ts:277</a></li>
+									<li>Defined in ui-router-angularjs/src/stateProvider.ts:277</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -482,7 +480,7 @@ $state.go(<span class="hljs-string">'home'</span>);
 								</ul>
 								<h4 id="example-">Example:</h4>
 								<p>Some state name examples</p>
-								<pre><code class="lang-js"><span class="hljs-comment">// stateName can be a single top-level name (must be unique).</span>
+								<pre><code class="language-js"><span class="hljs-comment">// stateName can be a single top-level name (must be unique).</span>
 $stateProvider.state(<span class="hljs-string">"home"</span>, {});
 
 <span class="hljs-comment">// Or it can be a nested state name. This state is a child of the</span>
@@ -496,8 +494,7 @@ $stateProvider.state(<span class="hljs-string">"home.newest.abc.xyz.inception"</
 $stateProvider
   .state(<span class="hljs-string">"home"</span>, {})
   .state(<span class="hljs-string">"about"</span>, {})
-  .state(<span class="hljs-string">"contacts"</span>, {});
-</code></pre>
+  .state(<span class="hljs-string">"contacts"</span>, {});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -521,7 +518,7 @@ $stateProvider
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L259">ui-router-angularjs/src/stateProvider.ts:259</a></li>
+									<li>Defined in ui-router-angularjs/src/stateProvider.ts:259</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -537,7 +534,7 @@ $stateProvider
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/stateProvider.ts#L260">ui-router-angularjs/src/stateProvider.ts:260</a></li>
+									<li>Defined in ui-router-angularjs/src/stateProvider.ts:260</li>
 								</ul>
 						</aside>        </li>
 					</ul>

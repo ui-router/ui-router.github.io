@@ -90,7 +90,7 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 					<p>This class has naive implementations for all the <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a> methods.</p>
 					<p>Used by <a href="url.urlmatcher.html">UrlMatcher</a> when matching or formatting URLs, or comparing and validating parameter values.</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-keyword">var</span> paramTypeDef = {
+					<pre><code class="language-js"><span class="hljs-keyword">var</span> paramTypeDef = {
   <span class="hljs-attr">decode</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-built_in">parseInt</span>(val, <span class="hljs-number">10</span>); },
   <span class="hljs-attr">encode</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> val &amp;&amp; val.toString(); },
   <span class="hljs-attr">equals</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.is(a) &amp;&amp; a === b; },
@@ -98,8 +98,7 @@ redirect_from: /docs/latest/classes/params.paramtype.html
   <span class="hljs-attr">pattern</span>: <span class="hljs-regexp">/\d+/</span>
 }
 
-<span class="hljs-keyword">var</span> paramType = <span class="hljs-keyword">new</span> ParamType(paramTypeDef);
-</code></pre>
+<span class="hljs-keyword">var</span> paramType = <span class="hljs-keyword">new</span> ParamType(paramTypeDef);</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -185,7 +184,7 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L40">ui-router-core/src/params/paramType.ts:40</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:40</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -216,7 +215,7 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#dynamic">dynamic</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L38">ui-router-core/src/params/paramType.ts:38</a></li>
+							<li>Defined in ui-router-core/src/params/paramType.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -240,13 +239,12 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 							<p>The internal parameter type of <code>hash</code> has <code>inherit: false</code>.
 							This is used to disable inheriting of the hash value (<code>#</code>) on subsequent transitions.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
+							<pre><code class="language-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
 ...
 <span class="hljs-comment">// "#" is not inherited.</span>
 <span class="hljs-comment">// The value of the "#" parameter will be `null`</span>
 <span class="hljs-comment">// The url's hash will be cleared.</span>
-$state.go(<span class="hljs-string">'home.nest'</span>);
-</code></pre>
+$state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 							<hr>
 							<p>See also <a href="../interfaces/transition.transitionoptions.html#inherit">TransitionOptions.inherit</a> and <a href="../interfaces/params.paramdeclaration.html#inherit">ParamDeclaration.inherit</a></p>
 						</div>
@@ -254,7 +252,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#inherit">inherit</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L40">ui-router-core/src/params/paramType.ts:40</a></li>
+							<li>Defined in ui-router-core/src/params/paramType.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +274,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L34">ui-router-core/src/params/paramType.ts:34</a></li>
+							<li>Defined in ui-router-core/src/params/paramType.ts:34</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,7 +306,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#pattern">pattern</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L32">ui-router-core/src/params/paramType.ts:32</a></li>
+							<li>Defined in ui-router-core/src/params/paramType.ts:32</li>
 						</ul>
 					</aside>
 				</section>
@@ -336,7 +334,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#raw">raw</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L36">ui-router-core/src/params/paramType.ts:36</a></li>
+							<li>Defined in ui-router-core/src/params/paramType.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -394,7 +392,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L94">ui-router-core/src/params/paramType.ts:94</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:94</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -429,7 +427,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L80">ui-router-core/src/params/paramType.ts:80</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:80</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -450,7 +448,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L70">ui-router-core/src/params/paramType.ts:70</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:70</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -473,8 +471,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 									<p>Decodes a parameter value string (from URL string or transition param) to a custom/native value.</p>
 								</div>
 								<p>For example, if your type decodes to an array of ints, then decode the string as an array of ints here:</p>
-								<pre><code class="lang-js">decode: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> str.split(<span class="hljs-string">"-"</span>).map(<span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> <span class="hljs-built_in">parseInt</span>(str, <span class="hljs-number">10</span>))
-</code></pre>
+								<pre><code class="language-js">decode: <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> str.split(<span class="hljs-string">"-"</span>).map(<span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> <span class="hljs-built_in">parseInt</span>(str, <span class="hljs-number">10</span>))</code></pre>
 								<p>Note: in general, <a href="params.paramtype.html#encode">encode</a> and <a href="params.paramtype.html#decode">decode</a> should be symmetrical.  That is, <code>encode(decode(str)) === str</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -494,7 +491,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#decode">decode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L61">ui-router-core/src/params/paramType.ts:61</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:61</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -519,8 +516,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<p>Note that the return value does <em>not</em> need to be URL-safe (i.e. passed through <code>encodeURIComponent()</code>).
 								It only needs to be a representation of <code>val</code> that has been encoded as a string.</p>
 								<p>For example, if your custom type decodes to an array of ints, then encode the array of ints to a string here:</p>
-								<pre><code class="lang-js">encode: <span class="hljs-function">(<span class="hljs-params">intarray</span>) =&gt;</span> intarray.join(<span class="hljs-string">"-"</span>)
-</code></pre>
+								<pre><code class="language-js">encode: <span class="hljs-function">(<span class="hljs-params">intarray</span>) =&gt;</span> intarray.join(<span class="hljs-string">"-"</span>)</code></pre>
 								<p>Note: in general, <a href="params.paramtype.html#encode">encode</a> and <a href="params.paramtype.html#decode">decode</a> should be symmetrical.  That is, <code>encode(decode(str)) === str</code></p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -543,7 +539,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#encode">encode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L57">ui-router-core/src/params/paramType.ts:57</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:57</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -566,8 +562,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 									<p>Determines whether two decoded values are equivalent.</p>
 								</div>
 								<p>For example, if your type decodes to an array of ints, then check if the arrays are equal:</p>
-								<pre><code class="lang-js">equals: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.length === b.length &amp;&amp; a.reduce(<span class="hljs-function">(<span class="hljs-params">acc, x, idx</span>) =&gt;</span> acc &amp;&amp; x === b[idx], <span class="hljs-literal">true</span>)
-</code></pre>
+								<pre><code class="language-js">equals: <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.length === b.length &amp;&amp; a.reduce(<span class="hljs-function">(<span class="hljs-params">acc, x, idx</span>) =&gt;</span> acc &amp;&amp; x === b[idx], <span class="hljs-literal">true</span>)</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -586,7 +581,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#equals">equals</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L65">ui-router-core/src/params/paramType.ts:65</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:65</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -613,8 +608,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 								<p>If your custom type encodes the parameter to a specific type, check for that type here.
 									For example, if your custom type decodes the URL parameter value as an array of ints, return true if the
 								input is an array of ints:</p>
-								<pre><code>is: (<span class="hljs-keyword">val</span>) =&gt; <span class="hljs-type">Array</span>.isArray(<span class="hljs-keyword">val</span>) &amp;&amp; <span class="hljs-built_in">array</span>.reduce((acc, x) =&gt; acc &amp;&amp; parseInt(<span class="hljs-keyword">val</span>, <span class="hljs-number">10</span>) === <span class="hljs-keyword">val</span>, <span class="hljs-literal">true</span>)
-</code></pre><p>If your type decodes the URL parameter value to a custom string, check that the string matches
+								<pre><code>is:<span class="hljs-function"> (<span class="hljs-params">val</span>) =&gt;</span> <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Array</span>.</span></span>is<span class="hljs-constructor">Array(<span class="hljs-params">val</span>)</span><span class="hljs-operator"> &amp;&amp; </span><span class="hljs-built_in">array</span>.reduce((acc, x) =&gt; acc<span class="hljs-operator"> &amp;&amp; </span>parse<span class="hljs-constructor">Int(<span class="hljs-params">val</span>, 10)</span><span class="hljs-operator"> === </span><span class="hljs-keyword">val</span>, <span class="hljs-literal">true</span>)</code></pre><p>If your type decodes the URL parameter value to a custom string, check that the string matches
 								the pattern (don&#39;t use an arrow fn if you need <code>this</code>): <code>function (val) { return !!this.pattern.exec(val) }</code></p>
 								<p>Note: This method is <em>not used to check if the URL matches</em>.
 									It&#39;s used to check if a <em>decoded value <em>is</em> this type</em>.
@@ -637,7 +631,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a>.<a href="../interfaces/params.paramtypedefinition.html#is">is</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L53">ui-router-core/src/params/paramType.ts:53</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:53</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -658,7 +652,7 @@ $state.go(<span class="hljs-string">'home.nest'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/params/paramType.ts#L75">ui-router-core/src/params/paramType.ts:75</a></li>
+									<li>Defined in ui-router-core/src/params/paramType.ts:75</li>
 								</ul>
 						</aside>        </li>
 					</ul>

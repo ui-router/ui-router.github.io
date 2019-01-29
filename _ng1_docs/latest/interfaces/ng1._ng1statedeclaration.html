@@ -277,8 +277,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							<p>For example, this code lazy loads a service before the <code>abc</code> state is activated:</p>
 							<pre><code>.<span class="hljs-keyword">state</span>('abc', {
   lazyLoad: (transition, <span class="hljs-keyword">state</span>) =&gt; System.import('./abcService')
-}
-</code></pre><p>The <code>abcService</code> file is imported and loaded
+}</code></pre><p>The <code>abcService</code> file is imported and loaded
 							(it is assumed that the <code>abcService</code> file knows how to register itself as a service).</p>
 							<h4 id="lifecycle">Lifecycle</h4>
 							<ul>
@@ -320,18 +319,17 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							<h3 id="additional-resources">Additional resources</h3>
 							<p>For in depth information on lazy loading and Future States, see the <a href="https://ui-router.github.io/guides/lazyload">Lazy Loading Guide</a>.</p>
 							<h4 id="example-states-js">Example: states.js</h4>
-							<pre><code class="lang-js">
+							<pre><code class="language-js">
 <span class="hljs-comment">// This child state is a lazy loaded future state</span>
 <span class="hljs-comment">// The `lazyLoad` function loads the final state definition</span>
 {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'parent.**'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/parent'</span>,
   <span class="hljs-attr">lazyLoad</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.import(<span class="hljs-string">'./lazy.states.js'</span>)
-}
-</code></pre>
+}</code></pre>
 							<h4 id="example-lazy-states-js">Example: lazy.states.js</h4>
 							<p>This file is lazy loaded.  It exports an array of states.</p>
-							<pre><code class="lang-js"><span class="hljs-keyword">import</span> {ChildComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./child.component.js"</span>;
+							<pre><code class="language-js"><span class="hljs-keyword">import</span> {ChildComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./child.component.js"</span>;
 <span class="hljs-keyword">import</span> {ParentComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./parent.component.js"</span>;
 
 <span class="hljs-comment">// This fully defined state replaces the future state</span>
@@ -363,8 +361,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
   <span class="hljs-attr">states</span>: [ parentState, childState ]
 };
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> lazyLoadResults;
-</code></pre>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> lazyLoadResults;</code></pre>
 							<dl class="tsd-comment-tags">
 								<dt>param</dt>
 								<dd><p>the <a href="../classes/transition.transition-1.html">Transition</a> that is activating the future state</p>
@@ -451,7 +448,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites StateDeclaration.onEnter</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L56">ui-router-angularjs/src/interface.ts:56</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:56</li>
 						</ul>
 					</aside>
 				</section>
@@ -466,7 +463,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites StateDeclaration.onExit</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L54">ui-router-angularjs/src/interface.ts:54</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:54</li>
 						</ul>
 					</aside>
 				</section>
@@ -481,7 +478,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Overwrites StateDeclaration.onRetain</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L55">ui-router-angularjs/src/interface.ts:55</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -502,7 +499,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							<p>An object which optionally configures parameters declared in the url, or defines additional non-url
 							parameters. For each parameter being configured, add a <a href="params.paramdeclaration.html">ParamDeclaration</a> keyed to the name of the parameter.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">params: {
+							<pre><code class="language-js">params: {
   <span class="hljs-attr">param1</span>: {
    <span class="hljs-attr">type</span>: <span class="hljs-string">"int"</span>,
    <span class="hljs-attr">array</span>: <span class="hljs-literal">true</span>,
@@ -511,8 +508,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
   <span class="hljs-attr">param2</span>: {
     <span class="hljs-attr">value</span>: <span class="hljs-string">"index"</span>
   }
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -550,7 +546,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							instead of `<a ui-sref="parentstate.childstate">Child</a></p>
 							<p>When using this property, the state&#39;s name should not have any dots in it.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js"><span class="hljs-keyword">var</span> parentstate = {
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> parentstate = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'parentstate'</span>
 }
 <span class="hljs-keyword">var</span> childstate = {
@@ -558,8 +554,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
   <span class="hljs-attr">parent</span>: <span class="hljs-string">'parentstate'</span>
   <span class="hljs-comment">// or use a JS var which is the parent StateDeclaration, i.e.:</span>
   <span class="hljs-comment">// parent: parentstate</span>
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
@@ -604,7 +599,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 								If your redirect function relies on resolve data, get the <a href="../classes/transition.transition-1.html#injector">Transition.injector</a> and get a
 							promise for the resolve data using <a href="core.uiinjector.html#getasync">UIInjector.getAsync</a>.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js"><span class="hljs-comment">// a string</span>
+							<pre><code class="language-js"><span class="hljs-comment">// a string</span>
 .state(<span class="hljs-string">'A'</span>, {
   <span class="hljs-attr">redirectTo</span>: <span class="hljs-string">'A.B'</span>
 })
@@ -643,8 +638,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
     <span class="hljs-keyword">let</span> resolvePromise = trans.injector().getAsync(<span class="hljs-string">'SomeResolve'</span>)
     <span class="hljs-keyword">return</span> resolvePromise.then(<span class="hljs-function"><span class="hljs-params">resolveData</span> =&gt;</span> resolveData === <span class="hljs-string">'login'</span> ? <span class="hljs-string">'login'</span> : <span class="hljs-literal">null</span>);
   }
-})
-</code></pre>
+})</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
@@ -705,7 +699,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							<p>The <code>user</code> resolve injects the current <code>Transition</code> and the <code>UserService</code> (using its token, which is a string).
 								The [[ResolvableLiteral.resolvePolicy]] sets how the resolve is processed.
 							The <code>user</code> data, fetched asynchronously, can then be used in a view.</p>
-							<pre><code class="lang-js">var state = {
+							<pre><code class="language-js">var state = {
   name: 'user',
   url: '/user/:userId
   resolve: [
@@ -716,15 +710,13 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
       resolveFn: (userSvc, trans) =&gt; userSvc.fetchUser(trans.params().userId) },
     }
   ]
-}
-</code></pre>
+}</code></pre>
 							<p>Note: an Angular 2 style <a href="https://angular.io/docs/ts/latest/cookbook/dependency-injection.html#!#provide"><code>useFactory</code> provider literal</a>
 							may also be used.  See <a href="resolve.providerlike.html">ProviderLike</a>.</p>
 							<h4 id="example-">Example:</h4>
 							<pre><code><span class="hljs-string">resolve:</span> [
   { <span class="hljs-string">provide:</span> <span class="hljs-string">'token'</span>, <span class="hljs-string">useFactory:</span> (http) =&gt; http.get(<span class="hljs-string">'/'</span>), <span class="hljs-string">deps:</span> [ Http ] },
-]
-</code></pre><h3 id="as-an-object">As an object</h3>
+]</code></pre><h3 id="as-an-object">As an object</h3>
 							<p>The <code>resolve</code> property may be an object where:</p>
 							<ul>
 								<li>Each key (string) is the name of the dependency.</li>
@@ -733,7 +725,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 							<p>This style is based on AngularJS injectable functions, but can be used with any UI-Router implementation.
 							If your code will be minified, the function should be <a href="https://docs.angularjs.org/guide/di#dependency-annotation">&quot;annotated&quot; in the AngularJS manner</a>.</p>
 							<h4 id="angularjs-example-">AngularJS Example:</h4>
-							<pre><code class="lang-js">resolve: {
+							<pre><code class="language-js">resolve: {
   <span class="hljs-comment">// If you inject `myStateDependency` into a controller, you'll get "abc"</span>
   myStateDependency: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"abc"</span>;
@@ -743,8 +735,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
     <span class="hljs-comment">// Return a promise (async) for the data</span>
     <span class="hljs-keyword">return</span> $http.get(<span class="hljs-string">"/foos/"</span> + $transition$.params().foo);
   }]
-}
-</code></pre>
+}</code></pre>
 							<p>Note: You cannot specify a policy for each Resolvable, nor can you use non-string
 							tokens when using the object style <code>resolve:</code> block.</p>
 							<h3 id="lifecycle">Lifecycle</h3>
@@ -779,7 +770,7 @@ redirect_from: /docs/latest/interfaces/ng1._ng1statedeclaration.html
 								<li>Other resolve tokens: A resolve can depend on another resolve, either from the same state, or from any parent state.</li>
 							</ul>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js"><span class="hljs-comment">// Injecting a resolve into another resolve</span>
+							<pre><code class="language-js"><span class="hljs-comment">// Injecting a resolve into another resolve</span>
 resolve: [
   <span class="hljs-comment">// Define a resolve 'allusers' which delegates to the UserService.list()</span>
   <span class="hljs-comment">// which returns a promise (async) for all the users</span>
@@ -788,8 +779,7 @@ resolve: [
   <span class="hljs-comment">// Define a resolve 'user' which depends on the allusers resolve.</span>
   <span class="hljs-comment">// This resolve function is not called until 'allusers' is ready.</span>
   { <span class="hljs-attr">provide</span>: <span class="hljs-string">'user'</span>, (allusers, trans) =&gt; _.find(allusers, trans.params().userId, <span class="hljs-attr">deps</span>: [<span class="hljs-string">'allusers'</span>, Transition] }
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
@@ -848,7 +838,7 @@ resolve: [
 							See <a href="../classes/url.urlmatcher.html">UrlMatcher</a> for details on acceptable patterns.</p>
 							<dl class="tsd-comment-tags">
 								<dt>examples</dt>
-								<dd><pre><code class="lang-js">
+								<dd><pre><code class="language-js">
 url: <span class="hljs-string">"/home"</span>
 <span class="hljs-comment">// Define a parameter named 'userid'</span>
 url: <span class="hljs-string">"/users/:userid"</span>
@@ -863,8 +853,7 @@ url: <span class="hljs-string">"/messages?before&amp;after"</span>
 <span class="hljs-comment">// Query parameters of type 'date'</span>
 url: <span class="hljs-string">"/messages?{before:date}&amp;{after:date}"</span>
 <span class="hljs-comment">// Path and query parameters</span>
-url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span>
-</code></pre>
+url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span></code></pre>
 								</dd>
 							</dl>
 						</div>
@@ -887,7 +876,7 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 					<aside class="tsd-sources">
 						<p>Overwrites StateDeclaration.views</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L57">ui-router-angularjs/src/interface.ts:57</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:57</li>
 						</ul>
 					</aside>
 				</section>

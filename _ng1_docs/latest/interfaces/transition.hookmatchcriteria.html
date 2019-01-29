@@ -91,40 +91,41 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					<p>All properties are optional.  If any property is omitted, it is replaced with the value <code>true</code>, and always matches.
 					To match any transition, use an empty criteria object <code>{}</code>.</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.child'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.**'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'mymodule.**'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
 <span class="hljs-comment">// set to a truthy value.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state</span>) </span>{
     <span class="hljs-keyword">return</span> state.data != <span class="hljs-literal">null</span> &amp;&amp; state.data.authRequired === <span class="hljs-literal">true</span>;
   }
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This will match when route is just entered (initial load) or when the state is hard-refreshed</span>
+<span class="hljs-comment">// by specifying `{refresh: true}` as transition options.</span>
+<span class="hljs-keyword">var</span> match = {
+  <span class="hljs-attr">from</span>: <span class="hljs-function">(<span class="hljs-params">state, transition</span>) =&gt;</span> state.self.name === <span class="hljs-string">''</span> || transition.options().reload
+}</code></pre>
+					<h4 id="example-">Example:</h4>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">exiting</span>: <span class="hljs-string">'parent.child'</span>
-}
-</code></pre>
+}</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -148,40 +149,41 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					<p>All properties are optional.  If any property is omitted, it is replaced with the value <code>true</code>, and always matches.
 					To match any transition, use an empty criteria object <code>{}</code>.</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.child'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.**'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'mymodule.**'</span>
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
 <span class="hljs-comment">// set to a truthy value.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state</span>) </span>{
     <span class="hljs-keyword">return</span> state.data != <span class="hljs-literal">null</span> &amp;&amp; state.data.authRequired === <span class="hljs-literal">true</span>;
   }
-}
-</code></pre>
+}</code></pre>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
+					<pre><code class="language-js"><span class="hljs-comment">// This will match when route is just entered (initial load) or when the state is hard-refreshed</span>
+<span class="hljs-comment">// by specifying `{refresh: true}` as transition options.</span>
+<span class="hljs-keyword">var</span> match = {
+  <span class="hljs-attr">from</span>: <span class="hljs-function">(<span class="hljs-params">state, transition</span>) =&gt;</span> state.self.name === <span class="hljs-string">''</span> || transition.options().reload
+}</code></pre>
+					<h4 id="example-">Example:</h4>
+					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">exiting</span>: <span class="hljs-string">'parent.child'</span>
-}
-</code></pre>
+}</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -221,7 +223,7 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L789">ui-router-core/src/transition/interface.ts:789</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:797</li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +245,7 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L785">ui-router-core/src/transition/interface.ts:785</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:793</li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +267,7 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L783">ui-router-core/src/transition/interface.ts:783</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:791</li>
 						</ul>
 					</aside>
 				</section>
@@ -287,7 +289,7 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L787">ui-router-core/src/transition/interface.ts:787</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:795</li>
 						</ul>
 					</aside>
 				</section>
@@ -309,7 +311,7 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/transition/interface.ts#L781">ui-router-core/src/transition/interface.ts:781</a></li>
+							<li>Defined in ui-router-core/src/transition/interface.ts:789</li>
 						</ul>
 					</aside>
 				</section>

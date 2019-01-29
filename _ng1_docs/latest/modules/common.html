@@ -114,6 +114,7 @@ redirect_from: /docs/latest/modules/common.html
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="common.html#iinjectable" class="tsd-kind-icon">IInjectable</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="common.html#mapper" class="tsd-kind-icon">Mapper</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="common.html#predicate" class="tsd-kind-icon">Predicate</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="common.html#predicatebinary" class="tsd-kind-icon">Predicate<wbr>Binary</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -206,26 +207,23 @@ redirect_from: /docs/latest/modules/common.html
 								<p>An ng1-style injectable</p>
 							</div>
 							<p>This could be a (non-minified) function such as:</p>
-							<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">injectableFunction</span>(<span class="hljs-params">SomeDependency</span>) </span>{
+							<pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">injectableFunction</span>(<span class="hljs-params">SomeDependency</span>) </span>{
 
-}
-</code></pre>
+}</code></pre>
 							<p>or an explicitly annotated function (minify safe)</p>
-							<pre><code class="lang-js">injectableFunction.$inject = [ <span class="hljs-string">'SomeDependency'</span> ];
+							<pre><code class="language-js">injectableFunction.$inject = [ <span class="hljs-string">'SomeDependency'</span> ];
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">injectableFunction</span>(<span class="hljs-params">SomeDependency</span>) </span>{
 
-}
-</code></pre>
+}</code></pre>
 							<p>or an array style annotated function (minify safe)</p>
-							<pre><code class="lang-js">[<span class="hljs-string">'SomeDependency'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">injectableFunction</span>(<span class="hljs-params">SomeDependency</span>) </span>{
+							<pre><code class="language-js">[<span class="hljs-string">'SomeDependency'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">injectableFunction</span>(<span class="hljs-params">SomeDependency</span>) </span>{
 
-}];
-</code></pre>
+}];</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L62">ui-router-core/src/common/common.ts:62</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:63</li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +263,7 @@ redirect_from: /docs/latest/modules/common.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L30">ui-router-core/src/common/common.ts:30</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -302,7 +300,47 @@ redirect_from: /docs/latest/modules/common.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L34">ui-router-core/src/common/common.ts:34</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:34</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="predicatebinary" class="tsd-anchor"></a>
+					<!--
+        <h3>Predicate<wbr>Binary</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">Predicate<wbr>Binary<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<div class="tsd-declaration">
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">X</span>, y<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Y</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>x: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">X</span></h5>
+											</li>
+											<li>
+												<h5>y: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">Y</span></h5>
+											</li>
+										</ul>
+										<div class="tsd-returns">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ui-router-core/src/common/common.ts:35</li>
 						</ul>
 					</aside>
 				</section>
@@ -319,7 +357,7 @@ redirect_from: /docs/latest/modules/common.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L18">ui-router-core/src/common/common.ts:18</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:18</li>
 						</ul>
 					</aside>
 				</section>
@@ -348,8 +386,7 @@ redirect_from: /docs/latest/modules/common.html
 
 <span class="hljs-keyword">let</span> keys = [ <span class="hljs-string">'foo'</span>, <span class="hljs-string">'bar'</span>, <span class="hljs-string">'baz'</span> ]
 <span class="hljs-keyword">let</span> values = keys.map(assertMap(<span class="hljs-function"><span class="hljs-params">key</span> =&gt;</span> data[key], <span class="hljs-string">"Key not found"</span>));
-<span class="hljs-comment">// throws Error("Key not found")</span>
-</code></pre></dd>
+<span class="hljs-comment">// throws Error("Key not found")</span></code></pre></dd>
 							</dl>
 						</div>
 					</div>
@@ -430,7 +467,7 @@ redirect_from: /docs/latest/modules/common.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L451">ui-router-core/src/common/common.ts:451</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:452</li>
 						</ul>
 					</aside>
 				</section>
@@ -456,8 +493,7 @@ let allNumbers = [ <span class="hljs-number">1</span>, <span class="hljs-number"
 allNumbers.filter(assertPredicate(isNumber)); <span class="hljs-comment">//OK</span>
 
 let oneString = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-string">"5"</span> ];
-oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all numbers"</span>)); <span class="hljs-comment">// throws Error(""Not all numbers"");</span>
-</code></pre></dd>
+oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all numbers"</span>)); <span class="hljs-comment">// throws Error(""Not all numbers"");</span></code></pre></dd>
 							</dl>
 						</div>
 					</div>
@@ -495,7 +531,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L434">ui-router-core/src/common/common.ts:434</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:435</li>
 						</ul>
 					</aside>
 				</section>
@@ -509,7 +545,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L24">ui-router-core/src/common/common.ts:24</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -523,7 +559,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L23">ui-router-core/src/common/common.ts:23</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -537,7 +573,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L22">ui-router-core/src/common/common.ts:22</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -551,7 +587,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L20">ui-router-core/src/common/common.ts:20</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:20</li>
 						</ul>
 					</aside>
 				</section>
@@ -565,7 +601,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L13">ui-router-core/src/common/common.ts:13</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:13</li>
 						</ul>
 					</aside>
 				</section>
@@ -587,7 +623,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L154">ui-router-core/src/common/common.ts:154</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:155</li>
 						</ul>
 					</aside>
 				</section>
@@ -662,7 +698,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L301">ui-router-core/src/common/common.ts:301</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:302</li>
 						</ul>
 					</aside>
 				</section>
@@ -684,7 +720,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L175">ui-router-core/src/common/common.ts:175</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:176</li>
 						</ul>
 					</aside>
 				</section>
@@ -708,7 +744,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L165">ui-router-core/src/common/common.ts:165</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:166</li>
 						</ul>
 					</aside>
 				</section>
@@ -722,7 +758,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L14">ui-router-core/src/common/common.ts:14</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:14</li>
 						</ul>
 					</aside>
 				</section>
@@ -736,7 +772,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L21">ui-router-core/src/common/common.ts:21</a></li>
+							<li>Defined in ui-router-core/src/common/common.ts:21</li>
 						</ul>
 					</aside>
 				</section>
@@ -768,7 +804,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L611">ui-router-core/src/common/common.ts:611</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:612</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -798,7 +834,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L581">ui-router-core/src/common/common.ts:581</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:582</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -836,7 +872,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L566">ui-router-core/src/common/common.ts:566</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:567</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -900,7 +936,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L560">ui-router-core/src/common/common.ts:560</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:561</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -931,7 +967,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L155">ui-router-core/src/common/common.ts:155</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:156</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -967,7 +1003,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L156">ui-router-core/src/common/common.ts:156</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:157</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1004,7 +1040,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L176">ui-router-core/src/common/common.ts:176</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:177</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1046,7 +1082,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L177">ui-router-core/src/common/common.ts:177</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:178</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1083,7 +1119,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L166">ui-router-core/src/common/common.ts:166</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:167</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1125,7 +1161,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L167">ui-router-core/src/common/common.ts:167</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:168</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1163,7 +1199,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L345">ui-router-core/src/common/common.ts:345</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:346</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1208,7 +1244,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L208">ui-router-core/src/common/common.ts:208</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:209</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1255,7 +1291,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L360">ui-router-core/src/common/common.ts:360</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:361</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1289,8 +1325,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 
 <span class="hljs-comment">// Or, more simply:</span>
 <span class="hljs-selector-tag">var</span> pairsToObj = pairs.reduce(applyPairs, {})
-<span class="hljs-comment">// pairsToObj == { fookey: "fooval", barkey: "barval" }</span>
-</code></pre></dd>
+<span class="hljs-comment">// pairsToObj == { fookey: "fooval", barkey: "barval" }</span></code></pre></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1308,7 +1343,7 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L537">ui-router-core/src/common/common.ts:537</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:538</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1338,9 +1373,8 @@ oneString.filter(assertPredicate(isNumber, <span class="hljs-string">"Not all nu
 let foo = [ <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">6</span> ];
 let bar = [ <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span> ];
 let baz = [ <span class="hljs-number">10</span>, <span class="hljs-number">30</span>, <span class="hljs-number">50</span>, <span class="hljs-number">70</span> ];
-arrayTuples(foo, bar);       <span class="hljs-comment">// [ [0, 1], [2, 3], [4, 5], [6, 7] ]</span>
-arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 30], [4, 5, 50], [6, 7, 70] ]</span>
-</code></pre></dd>
+<span class="hljs-built_in">array</span>Tuples(foo, bar);       <span class="hljs-comment">// [ [0, 1], [2, 3], [4, 5], [6, 7] ]</span>
+<span class="hljs-built_in">array</span>Tuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 30], [4, 5, 50], [6, 7, 70] ]</span></code></pre></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1355,7 +1389,7 @@ arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L487">ui-router-core/src/common/common.ts:487</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:488</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1385,7 +1419,7 @@ arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L452">ui-router-core/src/common/common.ts:452</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:453</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1423,7 +1457,7 @@ arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L553">ui-router-core/src/common/common.ts:553</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:554</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1449,7 +1483,7 @@ arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 
 								The proxy function calls the real function on the <code>from</code> object.</p>
 								<h4 id="example-">Example:</h4>
 								<p>This example creates an new class instance whose functions are prebound to the new&#39;d object.</p>
-								<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
+								<pre><code class="language-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
   <span class="hljs-keyword">constructor</span>(data) {
     <span class="hljs-comment">// Binds all functions from Foo.prototype to 'this',</span>
     <span class="hljs-comment">// then copies them to 'this'</span>
@@ -1464,28 +1498,26 @@ arrayTuples(foo, bar, baz);  <span class="hljs-comment">// [ [0, 1, 10], [2, 3, 
 
 <span class="hljs-keyword">let</span> myFoo = <span class="hljs-keyword">new</span> Foo([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]);
 <span class="hljs-keyword">var</span> logit = myFoo.log;
-logit(); <span class="hljs-comment">// logs [1, 2, 3] from the myFoo 'this' instance</span>
-</code></pre>
+logit(); <span class="hljs-comment">// logs [1, 2, 3] from the myFoo 'this' instance</span></code></pre>
 								<h4 id="example-">Example:</h4>
 								<p>This example creates a bound version of a service function, and copies it to another object</p>
 								<pre><code>
-<span class="hljs-keyword">var</span> SomeService = {
-  <span class="hljs-keyword">this</span>.data = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
-  <span class="hljs-keyword">this</span>.log = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.data);
+var SomeService = {
+  this.data = [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+  this.<span class="hljs-keyword">log</span> = <span class="hljs-keyword">function</span>() {
+    console.log(this.data);
   }
 }
 
-<span class="hljs-comment">// Constructor fn</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">OtherThing</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-comment">// Binds all functions from SomeService to SomeService,</span>
-  <span class="hljs-comment">// then copies them to 'this'</span>
-  bindFunctions(SomeService, <span class="hljs-keyword">this</span>, SomeService);
+// Constructor fn
+<span class="hljs-keyword">function</span> OtherThing() {
+  // Binds <span class="hljs-keyword">all</span> <span class="hljs-keyword">functions</span> <span class="hljs-keyword">from</span> SomeService <span class="hljs-keyword">to</span> SomeService,
+  // <span class="hljs-keyword">then</span> copies them <span class="hljs-keyword">to</span> <span class="hljs-string">'this'</span>
+  bindFunctions(SomeService, this, SomeService);
 }
 
-<span class="hljs-keyword">let</span> myOtherThing = <span class="hljs-keyword">new</span> OtherThing();
-myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeService's 'this'</span>
-</code></pre>
+let myOtherThing = <span class="hljs-built_in">new</span> OtherThing();
+myOtherThing.log(); // logs [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] <span class="hljs-keyword">from</span> SomeServic<span class="hljs-string">e's '</span>this<span class="hljs-string">'</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1526,7 +1558,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L124">ui-router-core/src/common/common.ts:124</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:125</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1568,7 +1600,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L193">ui-router-core/src/common/common.ts:193</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:194</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1603,7 +1635,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L183">ui-router-core/src/common/common.ts:183</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:184</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1674,7 +1706,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L270">ui-router-core/src/common/common.ts:270</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:271</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1727,7 +1759,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L272">ui-router-core/src/common/common.ts:272</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:273</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1775,7 +1807,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L285">ui-router-core/src/common/common.ts:285</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:286</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -1805,7 +1837,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L287">ui-router-core/src/common/common.ts:287</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:288</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1840,7 +1872,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L419">ui-router-core/src/common/common.ts:419</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:420</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1878,7 +1910,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L383">ui-router-core/src/common/common.ts:383</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:384</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1905,7 +1937,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L25">ui-router-core/src/common/common.ts:25</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:25</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1945,7 +1977,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L151">ui-router-core/src/common/common.ts:151</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:152</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -1981,7 +2013,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L15">ui-router-core/src/common/coreservices.ts:15</a></li>
+									<li>Defined in ui-router-core/src/common/coreservices.ts:15</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2035,7 +2067,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L307">ui-router-core/src/common/common.ts:307</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:308</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -2086,7 +2118,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L308">ui-router-core/src/common/common.ts:308</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:309</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2124,7 +2156,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L199">ui-router-core/src/common/common.ts:199</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:200</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2151,7 +2183,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L11">ui-router-core/src/common/coreservices.ts:11</a></li>
+									<li>Defined in ui-router-core/src/common/coreservices.ts:11</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2172,7 +2204,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L28">ui-router-core/src/common/common.ts:28</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:28</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2198,8 +2230,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 									<dt>example</dt>
 									<dd><pre><code>
 <span class="hljs-keyword">var</span> foo = <span class="hljs-comment">{ a: 1, b: 2, c: 3 }</span>;
-<span class="hljs-keyword">var</span> ab = omit(foo, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>]); <span class="hljs-comment">// { c: 3 }</span>
-</code></pre></dd>
+<span class="hljs-keyword">var</span> ab = omit(foo, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>]); <span class="hljs-comment">// { c: 3 }</span></code></pre></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2223,7 +2254,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L252">ui-router-core/src/common/common.ts:252</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:253</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2258,7 +2289,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L471">ui-router-core/src/common/common.ts:471</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:472</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2282,8 +2313,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 								</div>
 								<h4 id="example-">Example:</h4>
 								<pre><code><span class="hljs-keyword">var</span> foo = <span class="hljs-comment">{ a: 1, b: 2, c: 3 }</span>;
-<span class="hljs-keyword">var</span> ab = pick(foo, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>]); <span class="hljs-comment">// { a: 1, b: 2 }</span>
-</code></pre>
+<span class="hljs-keyword">var</span> ab = pick(foo, [<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>]); <span class="hljs-comment">// { a: 1, b: 2 }</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -2306,7 +2336,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L230">ui-router-core/src/common/common.ts:230</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:231</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2354,7 +2384,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L259">ui-router-core/src/common/common.ts:259</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:260</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -2388,7 +2418,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L261">ui-router-core/src/common/common.ts:261</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:262</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2428,7 +2458,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L390">ui-router-core/src/common/common.ts:390</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:391</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2455,7 +2485,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L617">ui-router-core/src/common/common.ts:617</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:618</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2482,7 +2512,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L618">ui-router-core/src/common/common.ts:618</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:619</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2523,7 +2553,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L546">ui-router-core/src/common/common.ts:546</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:547</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2567,7 +2597,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L396">ui-router-core/src/common/common.ts:396</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:397</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2602,7 +2632,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L408">ui-router-core/src/common/common.ts:408</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:409</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2640,7 +2670,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L371">ui-router-core/src/common/common.ts:371</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:372</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2675,7 +2705,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/common.ts#L330">ui-router-core/src/common/common.ts:330</a></li>
+									<li>Defined in ui-router-core/src/common/common.ts:331</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -2693,7 +2723,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L18">ui-router-core/src/common/coreservices.ts:18</a></li>
+							<li>Defined in ui-router-core/src/common/coreservices.ts:18</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -2706,7 +2736,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L20">ui-router-core/src/common/coreservices.ts:20</a></li>
+								<li>Defined in ui-router-core/src/common/coreservices.ts:20</li>
 							</ul>
 						</aside>
 					</section>
@@ -2720,7 +2750,7 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/coreservices.ts#L19">ui-router-core/src/common/coreservices.ts:19</a></li>
+								<li>Defined in ui-router-core/src/common/coreservices.ts:19</li>
 							</ul>
 						</aside>
 					</section>
@@ -2835,6 +2865,9 @@ myOtherThing.log(); <span class="hljs-comment">// logs [3, 4, 5] from SomeServic
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="common.html#predicate" class="tsd-kind-icon">Predicate</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="common.html#predicatebinary" class="tsd-kind-icon">Predicate<wbr>Binary</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="common.html#angular" class="tsd-kind-icon">angular</a>

@@ -146,7 +146,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L108">ui-router-core/src/common/hof.ts:108</a></li>
+							<li>Defined in ui-router-core/src/common/hof.ts:108</li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +189,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L149">ui-router-core/src/common/hof.ts:149</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:149</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -229,7 +229,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L131">ui-router-core/src/common/hof.ts:131</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:131</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -256,7 +256,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L152">ui-router-core/src/common/hof.ts:152</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:152</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -291,7 +291,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L72">ui-router-core/src/common/hof.ts:72</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:72</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -322,28 +322,27 @@ redirect_from: /docs/latest/modules/common_hof.html
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code><span class="hljs-comment">// returns true if an object is in both of the two arrays</span>
-<span class="hljs-keyword">function</span> inBoth(array<span class="hljs-number">1</span>, array<span class="hljs-number">2</span>, <span class="hljs-keyword">object</span>) {
-  <span class="hljs-keyword">return</span> array<span class="hljs-number">1</span>.indexOf(<span class="hljs-keyword">object</span>) !== -<span class="hljs-number">1</span> &amp;&amp;
-         array<span class="hljs-number">2</span>.indexOf(<span class="hljs-keyword">object</span>) !== <span class="hljs-number">1</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-keyword">in</span><span class="hljs-constructor">Both(<span class="hljs-params">array1</span>, <span class="hljs-params">array2</span>, <span class="hljs-params">object</span>)</span> {
+  return array1.index<span class="hljs-constructor">Of(<span class="hljs-params">object</span>)</span> !== -<span class="hljs-number">1</span><span class="hljs-operator"> &amp;&amp;
+         </span>array2.index<span class="hljs-constructor">Of(<span class="hljs-params">object</span>)</span> !== <span class="hljs-number">1</span>;
 }
-<span class="hljs-keyword">let</span> obj<span class="hljs-number">1</span>, obj<span class="hljs-number">2</span>, obj<span class="hljs-number">3</span>, obj<span class="hljs-number">4</span>, obj<span class="hljs-number">5</span>, obj<span class="hljs-number">6</span>, obj<span class="hljs-number">7</span>
-<span class="hljs-keyword">let</span> foos = [obj<span class="hljs-number">1</span>, obj<span class="hljs-number">3</span>]
-<span class="hljs-keyword">let</span> bars = [obj<span class="hljs-number">3</span>, obj<span class="hljs-number">4</span>, obj<span class="hljs-number">5</span>]
+<span class="hljs-keyword">let</span> obj1, obj2, obj3, obj4, obj5, obj6, obj7
+<span class="hljs-keyword">let</span> foos = <span class="hljs-literal">[<span class="hljs-identifier">obj1</span>, <span class="hljs-identifier">obj3</span>]</span>
+<span class="hljs-keyword">let</span> bars = <span class="hljs-literal">[<span class="hljs-identifier">obj3</span>, <span class="hljs-identifier">obj4</span>, <span class="hljs-identifier">obj5</span>]</span>
 
 <span class="hljs-comment">// A curried "copy" of inBoth</span>
 <span class="hljs-keyword">let</span> curriedInBoth = curry(inBoth);
 <span class="hljs-comment">// Partially apply both the array1 and array2</span>
-<span class="hljs-keyword">let</span> inFoosAndBars = curriedInBoth(foos, bars);
+<span class="hljs-keyword">let</span> inFoosAndBars = curried<span class="hljs-constructor">InBoth(<span class="hljs-params">foos</span>, <span class="hljs-params">bars</span>)</span>;
 
 <span class="hljs-comment">// Supply the final argument; since all arguments are</span>
 <span class="hljs-comment">// supplied, the original inBoth function is then called.</span>
-<span class="hljs-keyword">let</span> obj<span class="hljs-number">1</span>InBoth = inFoosAndBars(obj<span class="hljs-number">1</span>); <span class="hljs-comment">// false</span>
+<span class="hljs-keyword">let</span> obj1InBoth = <span class="hljs-keyword">in</span><span class="hljs-constructor">FoosAndBars(<span class="hljs-params">obj1</span>)</span>; <span class="hljs-comment">// false</span>
 
 <span class="hljs-comment">// Use the inFoosAndBars as a predicate.</span>
 <span class="hljs-comment">// Filter, on each iteration, supplies the final argument</span>
-<span class="hljs-keyword">let</span> allObjs = [ obj<span class="hljs-number">1</span>, obj<span class="hljs-number">2</span>, obj<span class="hljs-number">3</span>, obj<span class="hljs-number">4</span>, obj<span class="hljs-number">5</span>, obj<span class="hljs-number">6</span>, obj<span class="hljs-number">7</span> ];
+<span class="hljs-keyword">let</span> allObjs = <span class="hljs-literal">[ <span class="hljs-identifier">obj1</span>, <span class="hljs-identifier">obj2</span>, <span class="hljs-identifier">obj3</span>, <span class="hljs-identifier">obj4</span>, <span class="hljs-identifier">obj5</span>, <span class="hljs-identifier">obj6</span>, <span class="hljs-identifier">obj7</span> ]</span>;
 <span class="hljs-keyword">let</span> foundInBoth = allObjs.filter(inFoosAndBars); <span class="hljs-comment">// [ obj3 ]</span>
-
 </code></pre><p>Stolen from: <a href="http://stackoverflow.com/questions/4394747/javascript-curry-function">http://stackoverflow.com/questions/4394747/javascript-curry-function</a></p>
 									</dd>
 								</dl>
@@ -362,7 +361,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L53">ui-router-core/src/common/hof.ts:53</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:53</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -397,7 +396,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L159">ui-router-core/src/common/hof.ts:159</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:159</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -425,7 +424,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L164">ui-router-core/src/common/hof.ts:164</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:164</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -444,7 +443,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L165">ui-router-core/src/common/hof.ts:165</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:165</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -497,7 +496,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 													<hr>
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L155">ui-router-core/src/common/hof.ts:155</a></li>
+															<li>Defined in ui-router-core/src/common/hof.ts:155</li>
 														</ul>
 												</aside>        </li>
 											</ul>
@@ -511,7 +510,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L155">ui-router-core/src/common/hof.ts:155</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:155</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -548,7 +547,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L124">ui-router-core/src/common/hof.ts:124</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:124</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -588,7 +587,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L139">ui-router-core/src/common/hof.ts:139</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:139</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -633,7 +632,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L118">ui-router-core/src/common/hof.ts:118</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:118</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -681,8 +680,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 
 <span class="hljs-built_in">console</span>.log(descriptionOf(<span class="hljs-literal">undefined</span>)); <span class="hljs-comment">// 'notdefined'</span>
 <span class="hljs-built_in">console</span>.log(descriptionOf(<span class="hljs-number">55</span>)); <span class="hljs-comment">// '(55) That's a number!'</span>
-<span class="hljs-built_in">console</span>.log(descriptionOf(<span class="hljs-string">"foo"</span>)); <span class="hljs-comment">// 'Here's your string foo'</span>
-</code></pre></dd>
+<span class="hljs-built_in">console</span>.log(descriptionOf(<span class="hljs-string">"foo"</span>)); <span class="hljs-comment">// 'Here's your string foo'</span></code></pre></dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -702,7 +700,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L210">ui-router-core/src/common/hof.ts:210</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:210</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -763,7 +761,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L89">ui-router-core/src/common/hof.ts:89</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:89</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -804,7 +802,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L99">ui-router-core/src/common/hof.ts:99</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:99</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -845,7 +843,7 @@ redirect_from: /docs/latest/modules/common_hof.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/common/hof.ts#L162">ui-router-core/src/common/hof.ts:162</a></li>
+									<li>Defined in ui-router-core/src/common/hof.ts:162</li>
 								</ul>
 						</aside>        </li>
 					</ul>

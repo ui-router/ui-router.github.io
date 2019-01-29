@@ -278,7 +278,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 							<p>Any component bindings that are omitted from this map get the default behavior of mapping to a resolve of the
 							same name.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">$stateProvider.state(<span class="hljs-string">'foo'</span>, {
+							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">'foo'</span>, {
   <span class="hljs-attr">resolve</span>: {
     <span class="hljs-attr">foo</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">FooService</span>) </span>{ <span class="hljs-keyword">return</span> FooService.get(); },
     <span class="hljs-attr">bar</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">BarService</span>) </span>{ <span class="hljs-keyword">return</span> BarService.get(); }
@@ -298,8 +298,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
     <span class="hljs-attr">foo</span>: <span class="hljs-string">'&lt;'</span>, <span class="hljs-comment">// foo binding</span>
     baz: <span class="hljs-string">'&lt;'</span>  <span class="hljs-comment">// baz binding</span>
   }
-});
-</code></pre>
+});</code></pre>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -312,7 +311,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L464">ui-router-angularjs/src/interface.ts:464</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:464</li>
 						</ul>
 					</aside>
 				</section>
@@ -341,7 +340,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>Note: inside a &quot;views:&quot; block, a bare string <code>&quot;foo&quot;</code> is shorthand for <code>{ component: &quot;foo&quot; }</code></p>
 							<p>Note: Mapping from resolve names to component inputs may be specified using <a href="ng1.ng1viewdeclaration.html#bindings">bindings</a>.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">.state(<span class="hljs-string">'profile'</span>, {
+							<pre><code class="language-js">.state(<span class="hljs-string">'profile'</span>, {
   <span class="hljs-comment">// Use the &lt;my-profile&gt;&lt;/my-profile&gt; component for the Unnamed view</span>
   component: <span class="hljs-string">'MyProfile'</span>,
 }
@@ -363,8 +362,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
     <span class="hljs-attr">header</span>: <span class="hljs-string">'NavBar'</span>,
     <span class="hljs-attr">content</span>: <span class="hljs-string">'ContactList'</span>
   }
-}
-</code></pre>
+}</code></pre>
 							<p>Note: When using <code>component</code> to define a view, you may <em>not</em> use any of: <code>template</code>, <code>templateUrl</code>,
 							<code>templateProvider</code>, <code>controller</code>, <code>controllerProvider</code>, <code>controllerAs</code>.</p>
 							<p>See also: Todd Motto&#39;s angular 1.3 and 1.4 <a href="https://github.com/toddmotto/angular-component">backport of .component()</a></p>
@@ -372,7 +370,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L422">ui-router-angularjs/src/interface.ts:422</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:422</li>
 						</ul>
 					</aside>
 				</section>
@@ -395,19 +393,18 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 								The provider will invoked during a Transition in which the view&#39;s state is entered.
 							The provider is called after the resolve data is fetched.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">componentProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
+							<pre><code class="language-js">componentProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"fooComponent"</span>
   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ($transition$.to().name === <span class="hljs-string">'bar'</span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"barComponent"</span>;
   }
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L486">ui-router-angularjs/src/interface.ts:486</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:486</li>
 						</ul>
 					</aside>
 				</section>
@@ -435,7 +432,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L501">ui-router-angularjs/src/interface.ts:501</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:501</li>
 						</ul>
 					</aside>
 				</section>
@@ -460,7 +457,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L511">ui-router-angularjs/src/interface.ts:511</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:511</li>
 						</ul>
 					</aside>
 				</section>
@@ -483,7 +480,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 								of a registered controller.  The provider will invoked during a Transition in which the view&#39;s state is
 							entered.  The provider is called after the resolve data is fetched.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">controllerProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
+							<pre><code class="language-js">controllerProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"FooCtrl"</span>
   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ($transition$.to().name === <span class="hljs-string">'bar'</span>) {
@@ -493,13 +490,12 @@ app.component(<span class="hljs-string">'Baz'</span>, {
       $scope.baz = <span class="hljs-string">"Qux"</span>;
     }
   }
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L537">ui-router-angularjs/src/interface.ts:537</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:537</li>
 						</ul>
 					</aside>
 				</section>
@@ -525,7 +521,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L549">ui-router-angularjs/src/interface.ts:549</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:549</li>
 						</ul>
 					</aside>
 				</section>
@@ -549,18 +545,16 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>This property takes precedence over templateUrl.</p>
 							<p>If <code>template</code> is a function, it will be called with the Transition parameters as the first argument.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">template: <span class="hljs-string">"&lt;h1&gt;inline template definition&lt;/h1&gt;&lt;div ui-view&gt;&lt;/div&gt;"</span>
-</code></pre>
+							<pre><code class="language-js">template: <span class="hljs-string">"&lt;h1&gt;inline template definition&lt;/h1&gt;&lt;div ui-view&gt;&lt;/div&gt;"</span></code></pre>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">template: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+							<pre><code class="language-js">template: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;h1&gt;generated template&lt;/h1&gt;"</span>;
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L575">ui-router-angularjs/src/interface.ts:575</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:575</li>
 						</ul>
 					</aside>
 				</section>
@@ -582,15 +576,14 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>Injected function which returns the HTML template.
 							The template will be used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">templateProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyTemplateService, $transition$</span>) </span>{
+							<pre><code class="language-js">templateProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyTemplateService, $transition$</span>) </span>{
   <span class="hljs-keyword">return</span> MyTemplateService.getTemplate($transition$.params().pageId);
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L616">ui-router-angularjs/src/interface.ts:616</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:616</li>
 						</ul>
 					</aside>
 				</section>
@@ -613,18 +606,16 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							The template will be fetched and used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<p>If <code>templateUrl</code> is a function, it will be called with the Transition parameters as the first argument.</p>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">templateUrl: <span class="hljs-string">"/templates/home.html"</span>
-</code></pre>
+							<pre><code class="language-js">templateUrl: <span class="hljs-string">"/templates/home.html"</span></code></pre>
 							<h4 id="example-">Example:</h4>
-							<pre><code class="lang-js">templateUrl: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+							<pre><code class="language-js">templateUrl: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> myTemplates[params.pageId];
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L599">ui-router-angularjs/src/interface.ts:599</a></li>
+							<li>Defined in ui-router-angularjs/src/interface.ts:599</li>
 						</ul>
 					</aside>
 				</section>

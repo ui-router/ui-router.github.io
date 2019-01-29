@@ -149,20 +149,16 @@ redirect_from: /docs/latest/interfaces/core.uiinjector.html
 								<p>For a given token, returns the value from the injector that matches the token.
 								If the token is for a resolve that has not yet been fetched, this throws an error.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> myResolve = injector.get(<span class="hljs-string">'myResolve'</span>);
-</code></pre>
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> myResolve = injector.get(<span class="hljs-string">'myResolve'</span>);</code></pre>
 								<h4 id="ng1-example-">ng1 Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-comment">// Fetch StateService</span>
-injector.get(<span class="hljs-string">'$state'</span>).go(<span class="hljs-string">'home'</span>);
-</code></pre>
+								<pre><code class="language-js"><span class="hljs-comment">// Fetch StateService</span>
+injector.get(<span class="hljs-string">'$state'</span>).go(<span class="hljs-string">'home'</span>);</code></pre>
 								<h4 id="ng2-example-">ng2 Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">import</span> {StateService} <span class="hljs-keyword">from</span> <span class="hljs-string">"ui-router-ng2"</span>;
+								<pre><code class="language-js"><span class="hljs-keyword">import</span> {StateService} <span class="hljs-keyword">from</span> <span class="hljs-string">"ui-router-ng2"</span>;
 <span class="hljs-comment">// Fetch StateService</span>
-injector.get(StateService).go(<span class="hljs-string">'home'</span>);
-</code></pre>
+injector.get(StateService).go(<span class="hljs-string">'home'</span>);</code></pre>
 								<h4 id="typescript-example-">Typescript Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">var</span> stringArray = injector.get&lt;string[]&gt;(<span class="hljs-string">'myStringArray'</span>);
-</code></pre>
+								<pre><code class="language-js"><span class="hljs-keyword">var</span> stringArray = injector.get&lt;string[]&gt;(<span class="hljs-string">'myStringArray'</span>);</code></pre>
 								<h3 id="nowait-policy"><code>NOWAIT</code> policy</h3>
 								<p>When using <a href="resolve.resolvepolicy.html#async">ResolvePolicy.async</a> === <code>NOWAIT</code>, the value returned from <code>get()</code> is a promise for the result.
 								The promise is not automatically unwrapped.</p>
@@ -183,7 +179,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L66">ui-router-core/src/interface.ts:66</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:66</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -210,7 +206,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L68">ui-router-core/src/interface.ts:68</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:68</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -239,10 +235,9 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 								<p>For a given token, returns a promise for the value from the injector that matches the token.
 								If the token is for a resolve that has not yet been fetched, this triggers the resolve to load.</p>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js"><span class="hljs-keyword">return</span> injector.getAsync(<span class="hljs-string">'myResolve'</span>).then(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+								<pre><code class="language-js"><span class="hljs-keyword">return</span> injector.getAsync(<span class="hljs-string">'myResolve'</span>).then(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
   <span class="hljs-keyword">if</span> (value === <span class="hljs-string">'declined'</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
-});
-</code></pre>
+});</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -260,7 +255,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L86">ui-router-core/src/interface.ts:86</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:86</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -287,7 +282,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L88">ui-router-core/src/interface.ts:88</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:88</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -312,8 +307,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 								</div>
 								<p>Returns a value from the native injector, bypassing anything in the <a href="../classes/resolve.resolvecontext.html">ResolveContext</a>.</p>
 								<p>Example:</p>
-								<pre><code class="lang-js"><span class="hljs-keyword">let</span> someThing = injector.getNative(SomeToken);
-</code></pre>
+								<pre><code class="language-js"><span class="hljs-keyword">let</span> someThing = injector.getNative(SomeToken);</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -331,7 +325,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L103">ui-router-core/src/interface.ts:103</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:103</li>
 								</ul>
 						</aside>        </li>
 						<li class="tsd-description">
@@ -353,7 +347,7 @@ injector.get(StateService).go(<span class="hljs-string">'home'</span>);
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/interface.ts#L104">ui-router-core/src/interface.ts:104</a></li>
+									<li>Defined in ui-router-core/src/interface.ts:104</li>
 								</ul>
 						</aside>        </li>
 					</ul>

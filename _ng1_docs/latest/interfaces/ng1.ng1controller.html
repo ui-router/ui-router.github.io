@@ -156,7 +156,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 									<li>Anything else: the transition will continue normally (the state and view will be deactivated)</li>
 								</ul>
 								<h4 id="example-">Example:</h4>
-								<pre><code class="lang-js">app.component(<span class="hljs-string">'myComponent'</span>, {
+								<pre><code class="language-js">app.component(<span class="hljs-string">'myComponent'</span>, {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;input ng-model="$ctrl.data" type="text"&gt;'</span>,
   <span class="hljs-attr">bindings</span>: { <span class="hljs-string">'data'</span>: <span class="hljs-string">'&lt;'</span> },
   <span class="hljs-attr">controller</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -171,8 +171,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
       }
     }
   }
-}
-</code></pre>
+}</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -190,7 +189,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L708">ui-router-angularjs/src/interface.ts:708</a></li>
+									<li>Defined in ui-router-angularjs/src/interface.ts:708</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -236,12 +235,11 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 									:         <div class="tsd-comment tsd-typography">
 										<p>the new Transition which triggered this callback</p>
 										<h4 id="example-">Example:</h4>
-										<pre><code class="lang-js">angular.module(<span class="hljs-string">'foo'</span>).controller(<span class="hljs-string">'FancyCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+										<pre><code class="language-js">angular.module(<span class="hljs-string">'foo'</span>).controller(<span class="hljs-string">'FancyCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">this</span>.uiOnParamsChanged = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newParams</span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"new params: "</span>, newParams);
   }
-});
-</code></pre>
+});</code></pre>
 									</div>
 								</li>
 							</ul>
@@ -251,7 +249,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1controller.html
 							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/angular-ui/ui-router/blob/58637d9/src/interface.ts#L660">ui-router-angularjs/src/interface.ts:660</a></li>
+									<li>Defined in ui-router-angularjs/src/interface.ts:660</li>
 								</ul>
 						</aside>        </li>
 					</ul>

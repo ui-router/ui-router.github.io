@@ -87,15 +87,14 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 					</div>
 					<p>This object is the <a href="state.statedeclaration.html#resolvepolicy">StateDeclaration.resolvePolicy</a> property.</p>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// Fetched when the resolve's state is being entered.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// Fetched when the resolve's state is being entered.</span>
 <span class="hljs-comment">// Wait for the promise to resolve.</span>
 <span class="hljs-keyword">var</span> policy1 = { <span class="hljs-attr">when</span>: <span class="hljs-string">"LAZY"</span>, <span class="hljs-attr">async</span>: <span class="hljs-string">"WAIT"</span> }
 
 <span class="hljs-comment">// Fetched when the Transition is starting.</span>
 <span class="hljs-comment">// Do not wait for the returned promise to resolve.</span>
 <span class="hljs-comment">// Inject the raw promise/value</span>
-<span class="hljs-keyword">var</span> policy2 = { <span class="hljs-attr">when</span>: <span class="hljs-string">"EAGER"</span>, <span class="hljs-attr">async</span>: <span class="hljs-string">"NOWAIT"</span> }
-</code></pre>
+<span class="hljs-keyword">var</span> policy2 = { <span class="hljs-attr">when</span>: <span class="hljs-string">"EAGER"</span>, <span class="hljs-attr">async</span>: <span class="hljs-string">"NOWAIT"</span> }</code></pre>
 					<p>The policy for a given Resolvable is merged from three sources (highest priority first):</p>
 					<ul>
 						<li>1) Individual resolve definition</li>
@@ -103,12 +102,11 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 						<li>3) Global default</li>
 					</ul>
 					<h4 id="example-">Example:</h4>
-					<pre><code class="lang-js"><span class="hljs-comment">// Wait for an Observable to emit one item.</span>
+					<pre><code class="language-js"><span class="hljs-comment">// Wait for an Observable to emit one item.</span>
 <span class="hljs-comment">// Since `wait` is not specified, it uses the `wait`</span>
 <span class="hljs-comment">// policy defined on the state, or the global default</span>
 <span class="hljs-comment">// if no `wait` policy is defined on the state</span>
-<span class="hljs-keyword">var</span> myResolvablePolicy = { <span class="hljs-attr">async</span>: <span class="hljs-string">"RXWAIT"</span> }
-</code></pre>
+<span class="hljs-keyword">var</span> myResolvablePolicy = { <span class="hljs-attr">async</span>: <span class="hljs-string">"RXWAIT"</span> }</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -174,7 +172,7 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 							Resolves for <code>main</code> will be provided to components wrapped in a <code>Promise</code>.</p>
 							<p>The <code>Transition</code> will wait for the <code>main.home</code> resolve promises.
 							Resolved values will be unwrapped before being provided to components.</p>
-							<pre><code class="lang-js"><span class="hljs-keyword">var</span> mainState = {
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> mainState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">async</span>: <span class="hljs-string">'NOWAIT'</span> },
@@ -183,13 +181,12 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">async</span>: <span class="hljs-string">'WAIT'</span> }, <span class="hljs-comment">// default</span>
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/resolve/interface.ts#L199">ui-router-core/src/resolve/interface.ts:199</a></li>
+							<li>Defined in ui-router-core/src/resolve/interface.ts:199</li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +217,7 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 							<h4 id="example-">Example:</h4>
 							<p>Resolves for <code>main</code> and <code>main.home</code> are fetched when each state is entered.
 							All of <code>main</code> resolves are processed before fetching <code>main.home</code> resolves.</p>
-							<pre><code class="lang-js"><span class="hljs-keyword">var</span> state = {
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> state = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
@@ -230,13 +227,12 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
-}
-</code></pre>
+}</code></pre>
 							<h4 id="example-">Example:</h4>
 							<p>Resolves for <code>main</code> and <code>main.home</code> are fetched at the same time when the transition starts.
 								This happens earlier in the lifecycle than when states are entered.
 							All of the <code>main</code> and <code>main.home</code> resolves are fetched as soon as possible.</p>
-							<pre><code class="lang-js"><span class="hljs-keyword">var</span> mainState = {
+							<pre><code class="language-js"><span class="hljs-keyword">var</span> mainState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
@@ -246,13 +242,12 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
   resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
-}
-</code></pre>
+}</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/8ed691b/src/resolve/interface.ts#L162">ui-router-core/src/resolve/interface.ts:162</a></li>
+							<li>Defined in ui-router-core/src/resolve/interface.ts:162</li>
 						</ul>
 					</aside>
 				</section>
