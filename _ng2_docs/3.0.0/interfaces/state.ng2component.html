@@ -1,0 +1,1476 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ng2Component | @uirouter/angular</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/uirouter.css">
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/reset.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angular</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<!--
+                            <div class="tsd-select" id="tsd-filter-visibility">
+                                <span class="tsd-select-label">All</span>
+                                <ul class="tsd-select-list">
+                                    <li data-value="public">Public</li>
+                                    <li data-value="protected">Public/Protected</li>
+                                    <li data-value="private" class="selected">All</li>
+                                </ul>
+                            </div>
+
+                            <input type="checkbox" id="tsd-filter-inherited" checked />
+                            <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
+							<!--
+                                <input type="checkbox" id="tsd-filter-only-exported" />
+                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            -->
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/angular</a>
+				</li>
+				<li>
+					<a href="../modules/state.html">state</a>
+				</li>
+				<li>
+					<a href="state.ng2component.html">Ng2Component</a>
+				</li>
+			</ul>
+			<h1>Interface Ng2Component</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The shape of a controller for a view (and/or component), defining the controller callbacks.</p>
+					</div>
+					<p>A UI-Router view has an Angular <code>Component</code> (see <a href="state.ng2viewdeclaration.html#component">Ng2ViewDeclaration.component</a>).
+						The <code>Component</code> may define component-level hooks which UI-Router will call at the appropriate times.
+					These callbacks are similar to Transition Hooks (<a href="transition.ihookregistry.html">IHookRegistry</a>), but are only called if the view/component is currently active.</p>
+					<p>This interface defines the UI-Router component callbacks.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">Component</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Ng2Component</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.ng2component.html#component" class="tsd-kind-icon">Component</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#animations" class="tsd-kind-icon">animations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#changedetection" class="tsd-kind-icon">change<wbr>Detection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#encapsulation" class="tsd-kind-icon">encapsulation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#entrycomponents" class="tsd-kind-icon">entry<wbr>Components</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#exportas" class="tsd-kind-icon">export<wbr>As</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#inputs" class="tsd-kind-icon">inputs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#interpolation" class="tsd-kind-icon">interpolation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#moduleid" class="tsd-kind-icon">module<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#outputs" class="tsd-kind-icon">outputs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#preservewhitespaces" class="tsd-kind-icon">preserve<wbr>Whitespaces</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#providers" class="tsd-kind-icon">providers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#queries" class="tsd-kind-icon">queries</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#selector" class="tsd-kind-icon">selector</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#styleurls" class="tsd-kind-icon">style<wbr>Urls</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#styles" class="tsd-kind-icon">styles</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#template" class="tsd-kind-icon">template</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#templateurl" class="tsd-kind-icon">template<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.ng2component.html#viewproviders" class="tsd-kind-icon">view<wbr>Providers</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="state.ng2component.html#uicanexit" class="tsd-kind-icon">ui<wbr>Can<wbr>Exit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="state.ng2component.html#uionparamschanged" class="tsd-kind-icon">ui<wbr>OnParams<wbr>Changed</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="component" class="tsd-anchor"></a>
+					<!--
+        <h3>Component</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">Component<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ComponentDecorator</span>    <div class="tsd-header">
+							<p> Component decorator and metadata. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Component decorator and metadata.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>stable</dt>
+								<dd></dd>
+								<dt>annotation</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:731</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="animations" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> animations</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">animations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any[]</span>    <div class="tsd-header">
+							<p> Animations are defined on components via an animation-like DSL. This DSL approach to describing
+							animations allows for a flexibility that both benefits developers and the framework. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Animations are defined on components via an animation-like DSL. This DSL approach to describing
+								animations allows for a flexibility that both benefits developers and the framework.</p>
+							</div>
+							<p>Animations work by listening on state changes that occur on an element within
+								the template. When a state change occurs, Angular can then take advantage and animate the
+								arc in between. This works similar to how CSS transitions work, however, by having a
+								programmatic DSL, animations are not limited to environments that are DOM-specific.
+							(Angular can also perform optimizations behind the scenes to make animations more performant.)</p>
+							<p>For animations to be available for use, animation state changes are placed within
+								{@link trigger animation triggers} which are housed inside of the <code>animations</code> annotation
+								metadata. Within a trigger both {@link state state} and {@link transition transition} entries
+							can be placed.</p>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'animation-cmp'</span>,
+  templateUrl: <span class="hljs-string">'animation-cmp.html'</span>,
+  animations: [
+    <span class="hljs-comment">// this here is our animation trigger that</span>
+    <span class="hljs-comment">// will contain our state change animations.</span>
+    trigger(<span class="hljs-string">'myTriggerName'</span>, [
+      <span class="hljs-comment">// the styles defined for the `on` and `off`</span>
+      <span class="hljs-comment">// states declared below are persisted on the</span>
+      <span class="hljs-comment">// element once the animation completes.</span>
+      state(<span class="hljs-string">'on'</span>, style({ opacity: <span class="hljs-number">1</span> }),
+      state(<span class="hljs-string">'off'</span>, style({ opacity: <span class="hljs-number">0</span> }),
+
+      <span class="hljs-comment">// this here is our animation that kicks off when</span>
+      <span class="hljs-comment">// this state change jump is true</span>
+      transition(<span class="hljs-string">'on =&gt; off'</span>, [
+        animate(<span class="hljs-string">"1s"</span>)
+      ])
+    ])
+  ]
+})</code></pre>
+							<p>As depicted in the code above, a group of related animation states are all contained within
+								an animation <code>trigger</code> (the code example above called the trigger <code>myTriggerName</code>).
+								When a trigger is created then it can be bound onto an element within the component&#39;s
+								template via a property prefixed by an <code>@</code> symbol followed by trigger name and an expression
+								that
+							is used to determine the state value for that trigger.</p>
+							<pre><code class="language-html"><span class="hljs-comment">&lt;!-- animation-cmp.html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">myTriggerName</span>=<span class="hljs-string">"expression"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							<p>For state changes to be executed, the <code>expression</code> value must change value from its existing
+								value
+								to something that we have set an animation to animate on (in the example above we are listening
+								to a change of state between <code>on</code> and <code>off</code>). The <code>expression</code> value attached to the trigger
+							must be something that can be evaluated with the template/component context.</p>
+							<h3 id="dsl-animation-functions">DSL Animation Functions</h3>
+							<p>Please visit each of the animation DSL functions listed below to gain a better understanding
+							of how and why they are used for crafting animations in Angular:</p>
+							<ul>
+								<li>{@link trigger trigger()}</li>
+								<li>{@link state state()}</li>
+								<li>{@link transition transition()}</li>
+								<li>{@link group group()}</li>
+								<li>{@link sequence sequence()}</li>
+								<li>{@link style style()}</li>
+								<li>{@link animate animate()}</li>
+								<li>{@link keyframes keyframes()}</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.animations</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:628</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="changedetection" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> change<wbr>Detection</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">change<wbr>Detection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChangeDetectionStrategy</span>    <div class="tsd-header">
+							<p> Defines the used change detection strategy. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Defines the used change detection strategy.</p>
+							</div>
+							<p>When a component is instantiated, Angular creates a change detector, which is responsible for
+							propagating the component&#39;s bindings.</p>
+							<p>The <code>changeDetection</code> property defines, whether the change detection will be checked every time
+							or only when the component tells it to do so.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.changeDetection</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:478</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="encapsulation" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> encapsulation</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">encapsulation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ViewEncapsulation</span>    <div class="tsd-header">
+							<p> Specifies how the template and the styles should be encapsulated:</p>
+							<ul>
+								<li>{@link ViewEncapsulation#Native <code>ViewEncapsulation.Native</code>} to use shadow roots - only works
+								if natively available on the platform,</li>
+								<li>{@link ViewEncapsulation#Emulated <code>ViewEncapsulation.Emulated</code>} to use shimmed CSS that
+								emulates the native behavior,</li>
+								<li>{@link ViewEncapsulation#None <code>ViewEncapsulation.None</code>} to use global CSS without any
+								encapsulation. </li>
+							</ul>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specifies how the template and the styles should be encapsulated:</p>
+								<ul>
+									<li>{@link ViewEncapsulation#Native <code>ViewEncapsulation.Native</code>} to use shadow roots - only works
+									if natively available on the platform,</li>
+									<li>{@link ViewEncapsulation#Emulated <code>ViewEncapsulation.Emulated</code>} to use shimmed CSS that
+									emulates the native behavior,</li>
+									<li>{@link ViewEncapsulation#None <code>ViewEncapsulation.None</code>} to use global CSS without any
+									encapsulation.</li>
+								</ul>
+							</div>
+							<p>When no <code>encapsulation</code> is defined for the component, the default value from the
+								{@link CompilerOptions} is used. The default is <code>ViewEncapsulation.Emulated</code>}. Provide a new
+							<code>CompilerOptions</code> to override this value.</p>
+							<p>If the encapsulation is set to <code>ViewEncapsulation.Emulated</code> and the component has no <code>styles</code>
+							nor <code>styleUrls</code> the encapsulation will automatically be switched to <code>ViewEncapsulation.None</code>.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.encapsulation</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:645</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="entrycomponents" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> entry<wbr>Components</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">entry<wbr>Components<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Type</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any[]</span><span class="tsd-signature-symbol">&gt;</span>    <div class="tsd-header">
+							<p> Defines the components that should be compiled as well when
+								this component is defined. For each components listed here,
+								Angular will create a {@link ComponentFactory} and store it in the
+							{@link ComponentFactoryResolver}. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Defines the components that should be compiled as well when
+									this component is defined. For each components listed here,
+									Angular will create a {@link ComponentFactory} and store it in the
+								{@link ComponentFactoryResolver}.</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.entryComponents</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:656</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="exportas" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> export<wbr>As</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">export<wbr>As<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> Defines the name that can be used in the template to assign this directive to a variable. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Defines the name that can be used in the template to assign this directive to a variable.</p>
+							</div>
+							<h2 id="simple-example">Simple Example</h2>
+							<pre><code><span class="hljs-variable">@Directive</span>({
+  <span class="hljs-attribute">selector</span>: <span class="hljs-string">'child-dir'</span>,
+  <span class="hljs-attribute">exportAs</span>: <span class="hljs-string">'child'</span>
+})
+class ChildDir {
+}
+
+<span class="hljs-variable">@Component</span>({
+  <span class="hljs-attribute">selector</span>: <span class="hljs-string">'main'</span>,
+  <span class="hljs-attribute">template</span>: <span class="hljs-built_in">`&lt;child-dir #c="child"&gt;&lt;/child-dir&gt;`</span>
+})
+class MainComponent {
+}
+</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.exportAs</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:352</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="host" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span>    <div class="tsd-header">
+							<p> Specify the events, actions, properties and attributes related to the host element. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specify the events, actions, properties and attributes related to the host element.</p>
+							</div>
+							<h2 id="host-listeners">Host Listeners</h2>
+							<p>Specifies which DOM events a directive listens to via a set of <code>(event)</code> to <code>method</code>
+							key-value pairs:</p>
+							<ul>
+								<li><code>event</code>: the DOM event that the directive listens to.</li>
+								<li><code>statement</code>: the statement to execute when the event occurs.
+									If the evaluation of the statement returns <code>false</code>, then <code>preventDefault</code>is applied on the DOM
+								event.</li>
+							</ul>
+							<p>To listen to global events, a target must be added to the event name.
+							The target can be <code>window</code>, <code>document</code> or <code>body</code>.</p>
+							<p>When writing a directive event binding, you can also refer to the $event local variable.</p>
+							<h3 id="example-live-demo-">Example (<a href="http://plnkr.co/edit/DlA5KU?p=preview">live demo</a>)</h3>
+							<p>The following example declares a directive that attaches a click listener to the button and
+							counts clicks.</p>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Directive</span>({
+  selector: <span class="hljs-string">'button[counting]'</span>,
+  host: {
+    <span class="hljs-string">'(click)'</span>: <span class="hljs-string">'onClick($event.target)'</span>
+  }
+})
+<span class="hljs-keyword">class</span> CountClicks {
+  numberOfClicks = <span class="hljs-number">0</span>;
+
+  onClick(btn) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"button"</span>, btn, <span class="hljs-string">"number of clicks:"</span>, <span class="hljs-keyword">this</span>.numberOfClicks++);
+  }
+}
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app'</span>,
+  template: <span class="hljs-string">`&lt;button counting&gt;Increment&lt;/button&gt;`</span>
+})
+<span class="hljs-keyword">class</span> App {}</code></pre>
+							<h2 id="host-property-bindings">Host Property Bindings</h2>
+							<p>Specifies which DOM properties a directive updates.</p>
+							<p>Angular automatically checks host property bindings during change detection.
+							If a binding changes, it will update the host element of the directive.</p>
+							<h3 id="example-live-demo-">Example (<a href="http://plnkr.co/edit/gNg0ED?p=preview">live demo</a>)</h3>
+							<p>The following example creates a directive that sets the <code>valid</code> and <code>invalid</code> classes
+							on the DOM element that has ngModel directive on it.</p>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Directive</span>({
+  selector: <span class="hljs-string">'[ngModel]'</span>,
+  host: {
+    <span class="hljs-string">'[class.valid]'</span>: <span class="hljs-string">'valid'</span>,
+    <span class="hljs-string">'[class.invalid]'</span>: <span class="hljs-string">'invalid'</span>
+  }
+})
+<span class="hljs-keyword">class</span> NgModelStatus {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">public</span> control:NgModel</span>) {}
+  <span class="hljs-keyword">get</span> valid { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.control.valid; }
+  <span class="hljs-keyword">get</span> invalid { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.control.invalid; }
+}
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app'</span>,
+  template: <span class="hljs-string">`&lt;input [(ngModel)]="prop"&gt;`</span>
+})
+<span class="hljs-keyword">class</span> App {
+  prop;
+}</code></pre>
+							<h2 id="attributes">Attributes</h2>
+							<p>Specifies static attributes that should be propagated to a host element.</p>
+							<h3 id="example">Example</h3>
+							<p>In this example using <code>my-button</code> directive (ex.: <code>&lt;div my-button&gt;&lt;/div&gt;</code>) on a host element
+							(here: <code>&lt;div&gt;</code> ) will ensure that this element will get the &quot;button&quot; role.</p>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Directive</span>({
+  selector: <span class="hljs-string">'[my-button]'</span>,
+  host: {
+    <span class="hljs-string">'role'</span>: <span class="hljs-string">'button'</span>
+  }
+})
+<span class="hljs-keyword">class</span> MyButton {
+}</code></pre>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.host</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:296</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="inputs" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> inputs</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">inputs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string[]</span>    <div class="tsd-header">
+							<p> Enumerates the set of data-bound input properties for a directive </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Enumerates the set of data-bound input properties for a directive</p>
+							</div>
+							<p>Angular automatically updates input properties during change detection.</p>
+							<p>The <code>inputs</code> property defines a set of <code>directiveProperty</code> to <code>bindingProperty</code>
+							configuration:</p>
+							<ul>
+								<li><code>directiveProperty</code> specifies the component property where the value is written.</li>
+								<li><code>bindingProperty</code> specifies the DOM property where the value is read from.</li>
+							</ul>
+							<p>When <code>bindingProperty</code> is not provided, it is assumed to be equal to <code>directiveProperty</code>.</p>
+							<h3 id="example-live-demo-">Example (<a href="http://plnkr.co/edit/ivhfXY?p=preview">live demo</a>)</h3>
+							<p>The following example creates a component with two data-bound properties.</p>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'bank-account'</span>,
+  inputs: [<span class="hljs-string">'bankName'</span>, <span class="hljs-string">'id: account-id'</span>],
+  template: <span class="hljs-string">`
+    Bank Name: {{bankName}}
+    Account Id: {{id}}
+  `</span>
+})
+<span class="hljs-keyword">class</span> BankAccount {
+  bankName: <span class="hljs-built_in">string</span>;
+  id: <span class="hljs-built_in">string</span>;
+
+  <span class="hljs-comment">// this property is not bound, and won't be automatically updated by Angular</span>
+  normalizedBankName: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app'</span>,
+  template: <span class="hljs-string">`
+    &lt;bank-account bankName="RBC" account-id="4747"&gt;&lt;/bank-account&gt;
+  `</span>
+})
+<span class="hljs-keyword">class</span> App {}</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.inputs</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:151</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="interpolation" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> interpolation</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">interpolation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span>    <div class="tsd-header">
+							<p> Overrides the default encapsulation start and end delimiters (respectively <code>{{</code> and <code>}}</code>) </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Overrides the default encapsulation start and end delimiters (respectively <code>{{</code> and <code>}}</code>)</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.interpolation</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:649</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="moduleid" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> module<wbr>Id</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">module<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> The module id of the module that contains the component.
+								Needed to be able to resolve relative urls for templates and styles.
+								In CommonJS, this can always be set to <code>module.id</code>, similarly SystemJS exposes <code>__moduleName</code>
+							variable within each module. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The module id of the module that contains the component.
+									Needed to be able to resolve relative urls for templates and styles.
+									In CommonJS, this can always be set to <code>module.id</code>, similarly SystemJS exposes <code>__moduleName</code>
+								variable within each module.</p>
+							</div>
+							<h2 id="simple-example">Simple Example</h2>
+							<pre><code>@Directive({
+  <span class="hljs-symbol">selector:</span> <span class="hljs-string">'someDir'</span>,
+  <span class="hljs-symbol">moduleId:</span> <span class="hljs-class"><span class="hljs-keyword">module</span>.<span class="hljs-title">id</span></span>
+})
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SomeDir</span> {</span>
+}
+</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.moduleId</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:536</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="outputs" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> outputs</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">outputs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string[]</span>    <div class="tsd-header">
+							<p> Enumerates the set of event-bound output properties. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Enumerates the set of event-bound output properties.</p>
+							</div>
+							<p>When an output property emits an event, an event handler attached to that event
+							the template is invoked.</p>
+							<p>The <code>outputs</code> property defines a set of <code>directiveProperty</code> to <code>bindingProperty</code>
+							configuration:</p>
+							<ul>
+								<li><code>directiveProperty</code> specifies the component property that emits events.</li>
+								<li><code>bindingProperty</code> specifies the DOM property the event handler is attached to.</li>
+							</ul>
+							<h3 id="example-live-demo-">Example (<a href="http://plnkr.co/edit/d5CNq7?p=preview">live demo</a>)</h3>
+							<pre><code class="language-typescript"><span class="hljs-meta">@Directive</span>({
+  selector: <span class="hljs-string">'interval-dir'</span>,
+  outputs: [<span class="hljs-string">'everySecond'</span>, <span class="hljs-string">'five5Secs: everyFiveSeconds'</span>]
+})
+<span class="hljs-keyword">class</span> IntervalDir {
+  everySecond = <span class="hljs-keyword">new</span> EventEmitter();
+  five5Secs = <span class="hljs-keyword">new</span> EventEmitter();
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"></span>) {
+    setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>.everySecond.emit(<span class="hljs-string">"event"</span>), <span class="hljs-number">1000</span>);
+    setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">this</span>.five5Secs.emit(<span class="hljs-string">"event"</span>), <span class="hljs-number">5000</span>);
+  }
+}
+
+<span class="hljs-meta">@Component</span>({
+  selector: <span class="hljs-string">'app'</span>,
+  template: <span class="hljs-string">`
+    &lt;interval-dir (everySecond)="everySecond()" (everyFiveSeconds)="everyFiveSeconds()"&gt;
+    &lt;/interval-dir&gt;
+  `</span>
+})
+<span class="hljs-keyword">class</span> App {
+  everySecond() { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'second'</span>); }
+  everyFiveSeconds() { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'five seconds'</span>); }
+}</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.outputs</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:195</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="preservewhitespaces" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> preserve<wbr>Whitespaces</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">preserve<wbr>Whitespaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span>    <div class="tsd-header">
+							<p> If {@link Component#preserveWhitespaces Component.preserveWhitespaces} is set to <code>false</code>
+								potentially superfluous whitespace characters (ones matching the <code>\s</code> character class in
+								JavaScript regular expressions) will be removed from a compiled template. This can greatly
+							reduce AOT-generated code size as well as speed up view creation. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>If {@link Component#preserveWhitespaces Component.preserveWhitespaces} is set to <code>false</code>
+									potentially superfluous whitespace characters (ones matching the <code>\s</code> character class in
+									JavaScript regular expressions) will be removed from a compiled template. This can greatly
+								reduce AOT-generated code size as well as speed up view creation.</p>
+							</div>
+							<p>Current implementation works according to the following rules:</p>
+							<ul>
+								<li>all whitespaces at the beginning and the end of a template are removed (trimmed);</li>
+								<li>text nodes consisting of whitespaces only are removed (ex.:
+									<code>&lt;button&gt;Action 1&lt;/button&gt;  &lt;button&gt;Action 2&lt;/button&gt;</code> will be converted to
+								<code>&lt;button&gt;Action 1&lt;/button&gt;&lt;button&gt;Action 2&lt;/button&gt;</code> (no whitespaces between buttons);</li>
+								<li>series of whitespaces in text nodes are replaced with one space (ex.:
+								<code>&lt;span&gt;\n some text\n&lt;/span&gt;</code> will be converted to <code>&lt;span&gt; some text &lt;/span&gt;</code>);</li>
+								<li>text nodes are left as-is inside HTML tags where whitespaces are significant (ex. <code>&lt;pre&gt;</code>,
+								<code>&lt;textarea&gt;</code>).</li>
+							</ul>
+							<p>Described transformations can (potentially) influence DOM nodes layout so the
+								<code>preserveWhitespaces</code> option is <code>true</code> be default (no whitespace removal).
+								In Angular 5 you need to opt-in for whitespace removal (but we might revisit the default
+								setting in Angular 6 or later). If you want to change the default setting for all components
+							in your application you can use the <code>preserveWhitespaces</code> option of the AOT compiler.</p>
+							<p>Even if you decide to opt-in for whitespace removal there are ways of preserving whitespaces
+								in certain fragments of a template. You can either exclude entire DOM sub-tree by using the
+							<code>ngPreserveWhitespaces</code> attribute, ex.:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ngPreserveWhitespaces</span>&gt;</span>
+    whitespaces are preserved here
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>    and here <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							<p>Alternatively you can force a space to be preserved in a text node by using the <code>&amp;ngsp;</code>
+								pseudo-entity. <code>&amp;ngsp;</code> will be replaced with a space character by Angular&#39;s template
+							compiler, ex.:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>Spaces<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;ngsp;<span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>between<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;ngsp;<span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>links.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+							<p>will be compiled to the equivalent of:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>Spaces<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>between<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>links.<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+							<p>Please note that sequences of <code>&amp;ngsp;</code> are still collapsed to just one space character when
+							the <code>preserveWhitespaces</code> option is set to <code>false</code>. Ex.:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>before<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&amp;ngsp;&amp;ngsp;&amp;ngsp;<span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>after<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+							<p>would be equivalent to:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>before<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>after<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
+							<p>The <code>&amp;ngsp;</code> pseudo-entity is useful for forcing presence of
+								one space (a text node having <code>&amp;ngsp;</code> pseudo-entities will never be removed), but it is not
+								meant to mark sequences of whitespace characters. The previously described
+								<code>ngPreserveWhitespaces</code> attribute is more useful for preserving sequences of whitespace
+							characters.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.preserveWhitespaces</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:723</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="providers" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> providers</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">providers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Provider[]</span>    <div class="tsd-header">
+							<p> Defines the set of injectable objects that are visible to a Directive and its light DOM
+							children. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Defines the set of injectable objects that are visible to a Directive and its light DOM
+								children.</p>
+							</div>
+							<h2 id="simple-example">Simple Example</h2>
+							<p>Here is an example of a class that can be injected:</p>
+							<pre><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
+   greet(name:string) {
+     <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello '</span> + name + <span class="hljs-string">'!'</span>;
+   }
+}
+
+<span class="hljs-meta">@Directive({
+  selector: <span class="hljs-meta-string">'greet'</span>,
+  providers: [
+    Greeter
+  ]
+})</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+  greeter:Greeter;
+
+  <span class="hljs-keyword">constructor</span>(greeter:Greeter) {
+    <span class="hljs-keyword">this</span>.greeter = greeter;
+  }
+}</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.providers</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:329</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="queries" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> queries</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">queries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span>    <div class="tsd-header">
+							<p> Configures the queries that will be injected into the directive. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Configures the queries that will be injected into the directive.</p>
+							</div>
+							<p>Content queries are set before the <code>ngAfterContentInit</code> callback is called.
+							View queries are set before the <code>ngAfterViewInit</code> callback is called.</p>
+							<h3 id="example">Example</h3>
+							<pre><code>@Component({
+  selector: <span class="hljs-string">'someDir'</span>,
+  querie<span class="hljs-variable">s:</span> {
+    contentChildren: <span class="hljs-keyword">new</span> ContentChildren(ChildDirective),
+    viewChildren: <span class="hljs-keyword">new</span> ViewChildren(ChildDirective)
+  },
+  template: <span class="hljs-string">'&lt;child-directive&gt;&lt;/child-directive&gt;'</span>
+})
+class SomeDir {
+  contentChildren: QueryList<span class="hljs-symbol">&lt;ChildDirective&gt;</span>,
+  viewChildren: QueryList<span class="hljs-symbol">&lt;ChildDirective&gt;</span>
+
+  ngAfterContentInit() {
+    // contentChildren <span class="hljs-keyword">is</span> <span class="hljs-keyword">set</span>
+  }
+
+  ngAfterViewInit() {
+    // viewChildren <span class="hljs-keyword">is</span> <span class="hljs-keyword">set</span>
+  }
+}</code></pre>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.queries</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:384</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="selector" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> selector</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> The CSS selector that triggers the instantiation of a directive. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The CSS selector that triggers the instantiation of a directive.</p>
+							</div>
+							<p>Angular only allows directives to trigger on CSS selectors that do not cross element
+							boundaries.</p>
+							<p><code>selector</code> may be declared as one of the following:</p>
+							<ul>
+								<li><code>element-name</code>: select by element name.</li>
+								<li><code>.class</code>: select by class name.</li>
+								<li><code>[attribute]</code>: select by attribute name.</li>
+								<li><code>[attribute=value]</code>: select by attribute name and value.</li>
+								<li><code>:not(sub_selector)</code>: select only if the element does not match the <code>sub_selector</code>.</li>
+								<li><code>selector1, selector2</code>: select if either <code>selector1</code> or <code>selector2</code> matches.</li>
+							</ul>
+							<h3 id="example">Example</h3>
+							<p>Suppose we have a directive with an <code>input[type=text]</code> selector.</p>
+							<p>And the following HTML:</p>
+							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span></code></pre>
+							<p>The directive would only be instantiated on the <code>&lt;input type=&quot;text&quot;&gt;</code> element.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Directive.selector</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:106</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="styleurls" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> style<wbr>Urls</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">style<wbr>Urls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string[]</span>    <div class="tsd-header">
+							<p> Specifies stylesheet URLs for an Angular component. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specifies stylesheet URLs for an Angular component.</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.styleUrls</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:552</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="styles" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> styles</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string[]</span>    <div class="tsd-header">
+							<p> Specifies inline stylesheets for an Angular component. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specifies inline stylesheets for an Angular component.</p>
+							</div>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.styles</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:556</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="template" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> template</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">template<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> Specifies an inline template for an Angular component. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specifies an inline template for an Angular component.</p>
+							</div>
+							<p>Only one of <code>templateUrl</code> or <code>template</code> can be defined per Component.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.template</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:548</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="templateurl" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> template<wbr>Url</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">template<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> Specifies a template URL for an Angular component. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Specifies a template URL for an Angular component.</p>
+							</div>
+							<p>Only one of <code>templateUrl</code> or <code>template</code> can be defined per View.</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.templateUrl</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:542</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="viewproviders" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> view<wbr>Providers</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">view<wbr>Providers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Provider[]</span>    <div class="tsd-header">
+							<p> Defines the set of injectable objects that are visible to its view DOM children. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Defines the set of injectable objects that are visible to its view DOM children.</p>
+							</div>
+							<h2 id="simple-example">Simple Example</h2>
+							<p>Here is an example of a class that can be injected:</p>
+							<pre><code><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
+   greet(name:string) {
+     <span class="hljs-keyword">return</span> <span class="hljs-string">'Hello '</span> + name + <span class="hljs-string">'!'</span>;
+   }
+}
+
+<span class="hljs-meta">@Directive({
+  selector: <span class="hljs-meta-string">'needs-greeter'</span>
+})</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NeedsGreeter</span> </span>{
+  greeter:Greeter;
+
+  <span class="hljs-keyword">constructor</span>(greeter:Greeter) {
+    <span class="hljs-keyword">this</span>.greeter = greeter;
+  }
+}
+
+<span class="hljs-meta">@Component({
+  selector: <span class="hljs-meta-string">'greet'</span>,
+  viewProviders: [
+    Greeter
+  ],
+  template: `&lt;needs-greeter&gt;&lt;/needs-greeter&gt;`
+})</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+}
+</code></pre>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<p>Inherited from Component.viewProviders</p>
+						<ul>
+							<li>Defined in node_modules/@angular/core/src/metadata/directives.d.ts:516</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="uicanexit" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> ui<wbr>Can<wbr>Exit</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">ui<wbr>Can<wbr>Exit<span class="tsd-signature-symbol">(</span>newTransition<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Transition</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/transition.html#hookresult" class="tsd-signature-type">HookResult</a></li>
+						<li class="tsd-header">
+							<p> This callback is called when the routed component&#39;s state is about to be exited. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This callback is called when the routed component&#39;s state is about to be exited.</p>
+								</div>
+								<p>The callback can be used to cancel or alter the new Transition that would otherwise exit the component&#39;s state.</p>
+								<p>This callback is used to inform a view that it is about to be exited, due to a new <a href="../classes/transition.transition-1.html">Transition</a>.
+									The callback can ask for user confirmation, and cancel or alter the new Transition.  The callback should
+									return a value, or a promise for a value.  If a promise is returned, the new Transition waits until the
+								promise settles.</p>
+								<p>Called when:</p>
+								<ul>
+									<li>The component is still active inside a <code>ui-view</code></li>
+									<li>A new Transition is about to run</li>
+									<li>The new Transition will exit the view&#39;s state</li>
+								</ul>
+								<p>Called with:</p>
+								<ul>
+									<li>The <code>Transition</code> that is about to exit the component&#39;s state</li>
+								</ul>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="language-js">@Component({
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;input type="text"&gt;'</span>
+})
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> </span>{
+  dirty = <span class="hljs-literal">true</span>;
+
+  <span class="hljs-keyword">constructor</span>(public confirmService: confirmService) {
+
+  }
+
+  uiCanExit(newTransition: Transition) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.dirty &amp;&amp; newTransition.to() !== <span class="hljs-string">'logout'</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.confirmService.confirm(<span class="hljs-string">"Exit without saving changes?"</span>);
+    }
+  }
+}</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newTransition: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">Transition</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <a href="../modules/transition.html#hookresult" class="tsd-signature-type">HookResult</a></h4>
+								: <p>a hook result which may cancel or alter the pending Transition (see <a href="../modules/transition.html#hookresult">HookResult</a>)</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ui-router-angular/src/interface.ts:411</li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="uionparamschanged" class="tsd-anchor"></a>
+					<!--
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> ui<wbr>OnParams<wbr>Changed</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">ui<wbr>OnParams<wbr>Changed<span class="tsd-signature-symbol">(</span>newParams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, trans<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Transition</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-header">
+							<p> This callback is called when parameter values change </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This callback is called when parameter values change</p>
+								</div>
+								<p>This callback is used to respond dynamic parameter values changing.
+									It is called when a transition changed one or more dynamic parameter values,
+								and the routed component was not destroyed.</p>
+								<p>It receives two parameters:</p>
+								<ul>
+									<li>An object with (only) changed parameter values.
+									The keys are the parameter names and the values are the new parameter values.</li>
+									<li>The <a href="../classes/transition.transition-1.html">Transition</a> which changed the parameter values.</li>
+								</ul>
+								<h4 id="example-">Example:</h4>
+								<pre><code class="language-js">@Component({
+  <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;input type="text"&gt;'</span>
+})
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComponent</span> </span>{
+  uiOnParamsChanged(newParams: { [paramName: string]: any }, <span class="hljs-attr">trans</span>: Transition) {
+    <span class="hljs-built_in">Object</span>.keys(newParams).forEach(<span class="hljs-function"><span class="hljs-params">paramName</span> =&gt;</span> {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${paramName}</span> changed to <span class="hljs-subst">${newParams[paramName]}</span>`</span>)
+    });
+  }
+}</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newParams <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>paramName: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>trans: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">Transition</span></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in ui-router-angular/src/interface.ts:369</li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>@uirouter/angular</em></a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Public API</span>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/common.html">common</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/directives.html">directives</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/params.html">params</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/resolve.html">resolve</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/state.html">state</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/transition.html">transition</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/url.html">url</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/view.html">view</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Internal UI-<wbr><wbr>Router API</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_hof.html">common_<wbr>hof</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_predicates.html">common_<wbr>predicates</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/ng2.html">ng2</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/trace.html">trace</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/vanilla.html">vanilla</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/state.statebuilder.html" class="tsd-kind-icon">State<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/state.statematcher.html" class="tsd-kind-icon">State<wbr>Matcher</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/state.stateobject.html" class="tsd-kind-icon">State<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/state.statequeuemanager.html" class="tsd-kind-icon">State<wbr>Queue<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/state.stateregistry.html" class="tsd-kind-icon">State<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/state.stateservice.html" class="tsd-kind-icon">State<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/state.targetstate.html" class="tsd-kind-icon">Target<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="state.builders.html" class="tsd-kind-icon">Builders</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.hrefoptions.html" class="tsd-kind-icon">Href<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.lazyloadresult.html" class="tsd-kind-icon">Lazy<wbr>Load<wbr>Result</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.ng2component.html" class="tsd-kind-icon">Ng2<wbr>Component</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="state.ng2component.html#component" class="tsd-kind-icon">Component</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#animations" class="tsd-kind-icon">animations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#changedetection" class="tsd-kind-icon">change<wbr>Detection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#encapsulation" class="tsd-kind-icon">encapsulation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#entrycomponents" class="tsd-kind-icon">entry<wbr>Components</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#exportas" class="tsd-kind-icon">export<wbr>As</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#host" class="tsd-kind-icon">host</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#inputs" class="tsd-kind-icon">inputs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#interpolation" class="tsd-kind-icon">interpolation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#moduleid" class="tsd-kind-icon">module<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#outputs" class="tsd-kind-icon">outputs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#preservewhitespaces" class="tsd-kind-icon">preserve<wbr>Whitespaces</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#providers" class="tsd-kind-icon">providers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#queries" class="tsd-kind-icon">queries</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#selector" class="tsd-kind-icon">selector</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#styleurls" class="tsd-kind-icon">style<wbr>Urls</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#styles" class="tsd-kind-icon">styles</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#template" class="tsd-kind-icon">template</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#templateurl" class="tsd-kind-icon">template<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.ng2component.html#viewproviders" class="tsd-kind-icon">view<wbr>Providers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="state.ng2component.html#uicanexit" class="tsd-kind-icon">ui<wbr>Can<wbr>Exit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="state.ng2component.html#uionparamschanged" class="tsd-kind-icon">ui<wbr>OnParams<wbr>Changed</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.ng2statedeclaration.html" class="tsd-kind-icon">Ng2<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.ng2viewdeclaration.html" class="tsd-kind-icon">Ng2<wbr>View<wbr>Declaration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.statedeclaration.html" class="tsd-kind-icon">State<wbr>Declaration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="state.targetstatedef.html" class="tsd-kind-icon">Target<wbr>State<wbr>Def</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="state.transitionpromise.html" class="tsd-kind-icon">Transition<wbr>Promise</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="state._viewdeclaration.html" class="tsd-kind-icon">_<wbr>View<wbr>Declaration</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#builderfunction" class="tsd-kind-icon">Builder<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#oninvalidcallback" class="tsd-kind-icon">On<wbr>Invalid<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#redirecttoresult" class="tsd-kind-icon">Redirect<wbr>ToResult</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#resolvetypes" class="tsd-kind-icon">Resolve<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#stateorname" class="tsd-kind-icon">State<wbr>OrName</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#stateregistrylistener" class="tsd-kind-icon">State<wbr>Registry<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/state.html#_statedeclaration" class="tsd-kind-icon">_<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#databuilder" class="tsd-kind-icon">data<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#getnavigablebuilder" class="tsd-kind-icon">get<wbr>Navigable<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#getparamsbuilder" class="tsd-kind-icon">get<wbr>Params<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#geturlbuilder" class="tsd-kind-icon">get<wbr>Url<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#includesbuilder" class="tsd-kind-icon">includes<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#namebuilder" class="tsd-kind-icon">name<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#parseurl" class="tsd-kind-icon">parse<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#pathbuilder" class="tsd-kind-icon">path<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/state.html#resolvablesbuilder" class="tsd-kind-icon">resolvables<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/state.html#selfbuilder" class="tsd-kind-icon">self<wbr>Builder</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
