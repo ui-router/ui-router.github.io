@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransitionPromise | @uirouter/angular</title>
+	<title>_ViewDeclaration | @uirouter/angular</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -69,10 +69,10 @@
 					<a href="../modules/state.html">state</a>
 				</li>
 				<li>
-					<a href="state.transitionpromise.html">TransitionPromise</a>
+					<a href="state._viewdeclaration.html">_ViewDeclaration</a>
 				</li>
 			</ul>
-			<h1>Interface TransitionPromise</h1>
+			<h1>Interface _ViewDeclaration</h1>
 		</div>
 	</div>
 </header>
@@ -81,18 +81,19 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Base interface for declaring a view</p>
+					</div>
+					<p>This interface defines the basic data that a normalized view declaration will have on it.
+						Each implementation of UI-Router (for a specific framework) should define its own extension of this interface.
+					Add any additional fields that the framework requires to that interface.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">TransitionPromise</span>
-							</li>
-						</ul>
+						<span class="target">_ViewDeclaration</span>
 					</li>
 				</ul>
 			</section>
@@ -100,215 +101,144 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.transitionpromise.html#promise" class="tsd-kind-icon">Promise</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="state.transitionpromise.html#___tostringtag" class="tsd-kind-icon">__@to<wbr>String<wbr>Tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="state.transitionpromise.html#transition" class="tsd-kind-icon">transition</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="state.transitionpromise.html#catch" class="tsd-kind-icon">catch</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="state.transitionpromise.html#finally" class="tsd-kind-icon">finally</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="state.transitionpromise.html#then" class="tsd-kind-icon">then</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="state._viewdeclaration.html#_context" class="tsd-kind-icon">$context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="state._viewdeclaration.html#_name" class="tsd-kind-icon">$name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="state._viewdeclaration.html#_type" class="tsd-kind-icon">$type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="state._viewdeclaration.html#_uiviewcontextanchor" class="tsd-kind-icon">$ui<wbr>View<wbr>Context<wbr>Anchor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="state._viewdeclaration.html#_uiviewname" class="tsd-kind-icon">$ui<wbr>View<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="promise" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="_context" class="tsd-anchor"></a>
 					<!--
-        <h3>Promise</h3>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> $context</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseConstructor</span></div>
+					<div class="tsd-signature tsd-kind-icon">$context<span class="tsd-signature-symbol">:</span> <a href="view.viewcontext.html" class="tsd-signature-type">ViewContext</a>    <div class="tsd-header">
+							<p> The context that this view is declared within. </p>
+						</div>
+					</div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The context that this view is declared within.</p>
+							</div>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angular/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.promise.d.ts:216</li>
+							<li>Defined in ui-router-core/src/state/interface.ts:76</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="___tostringtag" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="_name" class="tsd-anchor"></a>
 					<!--
-        <h3>__@to<wbr>String<wbr>Tag</h3>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> $name</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">__@to<wbr>String<wbr>Tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<div class="tsd-declaration">
+					<div class="tsd-signature tsd-kind-icon">$name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> The raw name for the view declaration, i.e., the <a href="state.statedeclaration.html#views">StateDeclaration.views</a> property name. </p>
+						</div>
 					</div>
-					<aside class="tsd-sources">
-						<p>Inherited from Promise.[Symbol.toStringTag]</p>
-						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angular/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:169</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="transition" class="tsd-anchor"></a>
-					<!--
-        <h3>transition</h3>
-    -->
-					<div class="tsd-signature tsd-kind-icon">transition<span class="tsd-signature-symbol">:</span> <a href="../classes/transition.transition-1.html" class="tsd-signature-type">Transition</a></div>
 					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The raw name for the view declaration, i.e., the <a href="state.statedeclaration.html#views">StateDeclaration.views</a> property name.</p>
+							</div>
+						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/state/interface.ts:16</li>
+							<li>Defined in ui-router-core/src/state/interface.ts:40</li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-					<a name="catch" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="_type" class="tsd-anchor"></a>
 					<!--
-        <h3>catch</h3>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> $type</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">catch&lt;TResult&gt;<span class="tsd-signature-symbol">(</span>onrejected<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-header">
-							<p> Attaches a callback for only the rejection of the Promise. </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Attaches a callback for only the rejection of the Promise.</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">$type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> A type identifier for the View </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>A type identifier for the View</p>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TResult</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>onrejected: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is rejected.</p>
-									</div>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								: <p>A Promise for the completion of the callback.</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<p>Inherited from Promise.catch</p>
-								<ul>
-									<li>Defined in /Users/cthielen/projects/uirouter/angular/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:1403</li>
-								</ul>
-						</aside>        </li>
-					</ul>
+							<p>This is used when loading prerequisites for the view, before it enters the DOM.  Different types of views
+							may load differently (e.g., templateProvider+controllerProvider vs component class)</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ui-router-core/src/state/interface.ts:70</li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="finally" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="_uiviewcontextanchor" class="tsd-anchor"></a>
 					<!--
-        <h3>finally</h3>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> $ui<wbr>View<wbr>Context<wbr>Anchor</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">finally<span class="tsd-signature-symbol">(</span>onfinally<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-header">
-							<p> Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-							resolved value cannot be modified from the callback. </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-									resolved value cannot be modified from the callback.</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">$ui<wbr>View<wbr>Context<wbr>Anchor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> The normalized context anchor (state name) for the <code>uiViewName</code> </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The normalized context anchor (state name) for the <code>uiViewName</code></p>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>onfinally: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is settled (fulfilled or rejected).</p>
-									</div>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span></h4>
-								: <p>A Promise for the completion of the callback.</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<p>Inherited from Promise.finally</p>
-								<ul>
-									<li>Defined in /Users/cthielen/projects/uirouter/angular/node_modules/typedoc/node_modules/typescript/lib/lib.es2018.promise.d.ts:31</li>
-								</ul>
-						</aside>        </li>
-					</ul>
+							<p>When targeting a <code>ui-view</code>, the <code>uiViewName</code> address is anchored to a context name (state name).</p>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ui-router-core/src/state/interface.ts:61</li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-					<a name="then" class="tsd-anchor"></a>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="_uiviewname" class="tsd-anchor"></a>
 					<!--
-        <h3>then</h3>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> $ui<wbr>View<wbr>Name</h3>
     -->
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">then&lt;TResult1, TResult2&gt;<span class="tsd-signature-symbol">(</span>onfulfilled<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, onrejected<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-header">
-							<p> Attaches callbacks for the resolution and/or rejection of the Promise. </p>
-						</li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Attaches callbacks for the resolution and/or rejection of the Promise.</p>
-								</div>
+					<div class="tsd-signature tsd-kind-icon">$ui<wbr>View<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span>    <div class="tsd-header">
+							<p> The normalized address for the <code>ui-view</code> which this ViewConfig targets. </p>
+						</div>
+					</div>
+					<div class="tsd-declaration">
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>The normalized address for the <code>ui-view</code> which this ViewConfig targets.</p>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TResult1</h4>
-								</li>
-								<li>
-									<h4>TResult2</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>onfulfilled: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is resolved.</p>
-									</div>
-								</li>
-								<li>
-									<h5>onrejected: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-									:         <div class="tsd-comment tsd-typography">
-										<p>The callback to execute when the Promise is rejected.</p>
-									</div>
-								</li>
-							</ul>
-							<div class="tsd-returns">
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TResult2</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								: <p>A Promise for the completion of which ever callback is executed.</p>
-							</div>
-							<hr>
-							<aside class="tsd-sources">
-								<p>Inherited from Promise.then</p>
-								<ul>
-									<li>Defined in /Users/cthielen/projects/uirouter/angular/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:1396</li>
-								</ul>
-						</aside>        </li>
-					</ul>
+							<p>A ViewConfig targets a <code>ui-view</code> in the DOM (relative to the <code>uiViewContextAnchor</code>) which has
+							a specific name.</p>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><p><code>header</code> or <code>$default</code></p>
+									<p>The <code>uiViewName</code> can also target a <em>nested view</em> by providing a dot-notation address</p>
+								</dd>
+								<dt>example</dt>
+								<dd><p><code>foo.bar</code> or <code>foo.$default.bar</code></p>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ui-router-core/src/state/interface.ts:53</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -424,36 +354,33 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="state.targetstatedef.html" class="tsd-kind-icon">Target<wbr>State<wbr>Def</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="state.transitionpromise.html" class="tsd-kind-icon">Transition<wbr>Promise</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="state.transitionpromise.html" class="tsd-kind-icon">Transition<wbr>Promise</a>
+						<a href="state._viewdeclaration.html" class="tsd-kind-icon">_<wbr>View<wbr>Declaration</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="state.transitionpromise.html#promise" class="tsd-kind-icon">Promise</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="state._viewdeclaration.html#_context" class="tsd-kind-icon">$context</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="state.transitionpromise.html#___tostringtag" class="tsd-kind-icon">__@to<wbr>String<wbr>Tag</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="state._viewdeclaration.html#_name" class="tsd-kind-icon">$name</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="state.transitionpromise.html#transition" class="tsd-kind-icon">transition</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="state._viewdeclaration.html#_type" class="tsd-kind-icon">$type</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-								<a href="state.transitionpromise.html#catch" class="tsd-kind-icon">catch</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="state._viewdeclaration.html#_uiviewcontextanchor" class="tsd-kind-icon">$ui<wbr>View<wbr>Context<wbr>Anchor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="state.transitionpromise.html#finally" class="tsd-kind-icon">finally</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-								<a href="state.transitionpromise.html#then" class="tsd-kind-icon">then</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="state._viewdeclaration.html#_uiviewname" class="tsd-kind-icon">$ui<wbr>View<wbr>Name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
-						<a href="state._viewdeclaration.html" class="tsd-kind-icon">_<wbr>View<wbr>Declaration</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/state.html#builderfunction" class="tsd-kind-icon">Builder<wbr>Function</a>
 					</li>
