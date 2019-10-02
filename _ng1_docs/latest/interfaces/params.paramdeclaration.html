@@ -87,7 +87,9 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 					</div>
 					<p>In a <a href="state.statedeclaration.html#params">StateDeclaration.params</a>, each <code>ParamDeclaration</code>
 					defines how a single State Parameter should work.</p>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-keyword">var</span> mystate = {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;div ui-view/&gt;'</span>,
   <span class="hljs-attr">controller</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
@@ -166,7 +168,9 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 							</ul>
 							<p>If you specified a <a href="params.paramdeclaration.html#type">type</a> for the parameter, the value will be treated as an array
 							of the specified <a href="../classes/params.paramtype.html">ParamType</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">{
   name: &#39;foo&#39;,
   url: &#39;/foo/{arrayParam:int}`,
@@ -245,7 +249,9 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });</code></pre>
 							<p>When a transition is run with <a href="transition.transitionoptions.html#inherit">TransitionOptions.inherit</a> set to
 								<code>true</code>, the current param values are inherited in the new transition.
 							However, parameters values which have <code>inherit: false</code> set  will <em>not be inherited</em>.</p>
-							<h4 id="example-state-">Example state :</h4>
+							<a href="#example-state-" id="example-state-" style="color: inherit; text-decoration: none;">
+								<h4>Example state :</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> fooState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'foo'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/:fooId?mode&amp;refresh'</span>,
@@ -287,7 +293,9 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 							</div>
 							<p>When <code>true</code>, parameter values are not url-encoded.
 							This is commonly used to allow &quot;slug&quot; urls, with a parameter value including non-semantic slashes.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">url: <span class="hljs-string">'/product/:slug'</span>,
 <span class="hljs-attr">params</span>: {
   <span class="hljs-attr">slug</span>: { <span class="hljs-attr">type</span>: <span class="hljs-string">'string'</span>, <span class="hljs-attr">raw</span>: <span class="hljs-literal">true</span> }
@@ -297,7 +305,9 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 							instead of <code>/product/camping%2Ftents%2Fawesome_tent</code>.</p>
 							<hr>
 							<p>Note: this value overrides the <code>raw</code> value on a custom parameter type (<a href="params.paramtypedefinition.html#raw">ParamTypeDefinition.raw</a>).</p>
-							<h3 id="decoding-warning">Decoding warning</h3>
+							<a href="#decoding-warning" id="decoding-warning" style="color: inherit; text-decoration: none;">
+								<h3>Decoding warning</h3>
+							</a>
 							<p>The decoding behavior of raw parameters is not defined.
 								For example, given a url template such as <code>/:raw1/:raw2</code>
 							the url <code>/foo/bar/baz/qux/</code>, there is no way to determine which slashes belong to which params.</p>
@@ -355,7 +365,9 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 								<li><code>&quot;&amp;lt;arbitrary string&amp;gt;&quot;</code>: The parameter&#39;s default value is replaced with an arbitrary
 								placeholder of your choice.</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">{
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate/:myparam'</span>,
@@ -370,7 +382,9 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 
 <span class="hljs-comment">// URL will be `/mystate/someOtherValue`</span>
 $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">myparam</span>: <span class="hljs-string">'someOtherValue'</span> });</code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">{
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate2'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate2/:myparam2'</span>,
@@ -457,7 +471,10 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
   <span class="hljs-attribute">param2</span>: {
     <span class="hljs-attribute">value</span>: "param2Default;
   }
-}</code></pre><h3 id="shorthand-declaration">Shorthand Declaration</h3>
+}</code></pre>
+							<a href="#shorthand-declaration" id="shorthand-declaration" style="color: inherit; text-decoration: none;">
+								<h3>Shorthand Declaration</h3>
+							</a>
 							<p>If you only want to set the default value of the parameter, you may use a shorthand syntax.
 								In the params map, instead mapping the param name to a full parameter configuration object, simply set map it
 							to the default parameter value, e.g.:</p>
@@ -538,6 +555,9 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -551,9 +571,6 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

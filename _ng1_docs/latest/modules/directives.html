@@ -80,7 +80,9 @@ redirect_from: /docs/latest/modules/directives.html
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<h1 id="angular-1-directives">Angular 1 Directives</h1>
+						<a href="#angular-1-directives" id="angular-1-directives" style="color: inherit; text-decoration: none;">
+							<h1>Angular 1 Directives</h1>
+						</a>
 					</div>
 					<p>These are the directives included in UI-Router for Angular 1.
 					These directives are used in templates to create viewports and link/navigate to states.</p>
@@ -122,24 +124,36 @@ redirect_from: /docs/latest/modules/directives.html
 							related directive&#39;s state is active (and remove them when it is inactive).</p>
 							<p>The primary use-case is to highlight the active link in navigation menus,
 							distinguishing it from the inactive menu items.</p>
-							<h3 id="linking-to-a-ui-sref-or-ui-state">Linking to a <code>ui-sref</code> or <code>ui-state</code></h3>
+							<a href="#linking-to-a-codeui-srefcode-or-codeui-statecode" id="linking-to-a-codeui-srefcode-or-codeui-statecode" style="color: inherit; text-decoration: none;">
+								<h3>Linking to a <code>ui-sref</code> or <code>ui-state</code></h3>
+							</a>
 							<p><code>ui-sref-active</code> can live on the same element as <code>ui-sref</code>/<code>ui-state</code>, or it can be on a parent element.
 							If a <code>ui-sref-active</code> is a parent to more than one <code>ui-sref</code>/<code>ui-state</code>, it will apply the CSS class when <strong>any of the links are active</strong>.</p>
-							<h3 id="matching">Matching</h3>
+							<a href="#matching" id="matching" style="color: inherit; text-decoration: none;">
+								<h3>Matching</h3>
+							</a>
 							<p>The <code>ui-sref-active</code> directive applies the CSS class when the <code>ui-sref</code>/<code>ui-state</code>&#39;s target state <strong>or any child state is active</strong>.
 							This is a &quot;fuzzy match&quot; which uses <a href="../classes/state.stateservice.html#includes">StateService.includes</a>.</p>
 							<p>The <code>ui-sref-active-eq</code> directive applies the CSS class when the <code>ui-sref</code>/<code>ui-state</code>&#39;s target state is directly active (not when child states are active).
 							This is an &quot;exact match&quot; which uses <a href="../classes/state.stateservice.html#is">StateService.is</a>.</p>
-							<h3 id="parameter-values">Parameter values</h3>
+							<a href="#parameter-values" id="parameter-values" style="color: inherit; text-decoration: none;">
+								<h3>Parameter values</h3>
+							</a>
 							<p>If the <code>ui-sref</code>/<code>ui-state</code> includes parameter values, the current parameter values must match the link&#39;s values for the link to be highlighted.
 							This allows a list of links to the same state with different parameters to be rendered, and the correct one highlighted.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"user.details({ userId: user.id })"</span>&gt;</span>{{ user.lastName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
-							<h3 id="examples">Examples</h3>
+							<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+								<h3>Examples</h3>
+							</a>
 							<p>Given the following template:</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -153,26 +167,34 @@ redirect_from: /docs/latest/modules/directives.html
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"app.user({user: 'bilbobaggins'})"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/bilbobaggins"</span>&gt;</span>@bilbobaggins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
-							<h3 id="glob-mode">Glob mode</h3>
+							<a href="#glob-mode" id="glob-mode" style="color: inherit; text-decoration: none;">
+								<h3>Glob mode</h3>
+							</a>
 							<p>It is possible to pass <code>ui-sref-active</code> an expression that evaluates to an object.
 								The objects keys represent active class names and values represent the respective state names/globs.
 								<code>ui-sref-active</code> will match if the current active state <strong>includes</strong> any of
 							the specified state names/globs, even the abstract ones.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Given the following template, with &quot;admin&quot; being an abstract state:</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': 'admin.**'}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"admin.roles"</span>&gt;</span>Roles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							<p>Arrays are also supported as values in the <code>ngClass</code>-like interface.
 							This allows multiple states to add <code>active</code> class.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Given the following template, with &quot;admin.roles&quot; being the current state, the class will be added too:</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"{'active': ['owner.**', 'admin.**']}"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref-active</span>=<span class="hljs-string">"active"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"admin.roles"</span>&gt;</span>Roles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 							<p>When the current state is &quot;admin.roles&quot; the &quot;active&quot; class will be applied to both the <code>&lt;div&gt;</code> and <code>&lt;a&gt;</code> elements.
 							It is important to note that the state names/globs passed to <code>ui-sref-active</code> override any state provided by a linked <code>ui-sref</code>.</p>
-							<h3 id="notes-">Notes:</h3>
+							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+								<h3>Notes:</h3>
+							</a>
 							<ul>
 								<li><p>The class name is interpolated <strong>once</strong> during the directives link time (any further changes to the
 									interpolated value are ignored).</p>
@@ -204,32 +226,48 @@ redirect_from: /docs/latest/modules/directives.html
 							</div>
 							<p>A directive which links to a state (and optionally, parameters).
 							When clicked, this directive activates the linked state with the supplied parameter values.</p>
-							<h3 id="linked-state">Linked State</h3>
+							<a href="#linked-state" id="linked-state" style="color: inherit; text-decoration: none;">
+								<h3>Linked State</h3>
+							</a>
 							<p>The attribute value of the <code>ui-sref</code> is the name of the state to link to.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>This will activate the <code>home</code> state when the link is clicked.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="relative-links">Relative Links</h3>
+							<a href="#relative-links" id="relative-links" style="color: inherit; text-decoration: none;">
+								<h3>Relative Links</h3>
+							</a>
 							<p>You can also use relative state paths within <code>ui-sref</code>, just like a relative path passed to <code>$state.go()</code> (<a href="../classes/state.stateservice.html#go">StateService.go</a>).
 								You just need to be aware that the path is relative to the state that <em>created</em> the link.
 							This allows a state to create a relative <code>ui-sref</code> which always targets the same destination.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Both these links are relative to the parent state, even when a child state is currently active.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child1"</span>&gt;</span>child 1 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">".child2"</span>&gt;</span>child 2 state<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<p>This link activates the parent state.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"^"</span>&gt;</span>Return<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="hrefs">hrefs</h3>
+							<a href="#hrefs" id="hrefs" style="color: inherit; text-decoration: none;">
+								<h3>hrefs</h3>
+							</a>
 							<p>If the linked state has a URL, the directive will automatically generate and
 							update the <code>href</code> attribute (using the <a href="../classes/state.stateservice.html#href">StateService.href</a>  method).</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Assuming the <code>users</code> state has a url of <code>/users/</code></p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"users"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/users/"</span>&gt;</span>Users<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="parameter-values">Parameter Values</h3>
+							<a href="#parameter-values" id="parameter-values" style="color: inherit; text-decoration: none;">
+								<h3>Parameter Values</h3>
+							</a>
 							<p>In addition to the state name, a <code>ui-sref</code> can include parameter values which are applied when activating the state.
 								Param values can be provided in the <code>ui-sref</code> value after the state name, enclosed by parentheses.
 							The content inside the parentheses is an expression, evaluated to the parameter values.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>This example renders a list of links to users.
 							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"user in users"</span>&gt;</span>
@@ -237,19 +275,31 @@ redirect_from: /docs/latest/modules/directives.html
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
 							<p>Note:
 							The parameter values expression is <code>$watch</code>ed for updates.</p>
-							<h3 id="transition-options">Transition Options</h3>
+							<a href="#transition-options" id="transition-options" style="color: inherit; text-decoration: none;">
+								<h3>Transition Options</h3>
+							</a>
 							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-sref-opts</code> attribute.
 							Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-4" id="example-4" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="other-dom-events">Other DOM Events</h3>
+							<a href="#other-dom-events" id="other-dom-events" style="color: inherit; text-decoration: none;">
+								<h3>Other DOM Events</h3>
+							</a>
 							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
 							providing an <code>events</code> array in the <code>ui-sref-opts</code> attribute.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-5" id="example-5" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span></code></pre>
-							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
+							<a href="#highlighting-the-active-link" id="highlighting-the-active-link" style="color: inherit; text-decoration: none;">
+								<h3>Highlighting the active link</h3>
+							</a>
 							<p>This directive can be used in conjunction with [[uiSrefActive]] to highlight the active link.</p>
-							<h3 id="examples">Examples</h3>
+							<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+								<h3>Examples</h3>
+							</a>
 							<p>If you have the following template:</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -278,9 +328,14 @@ redirect_from: /docs/latest/modules/directives.html
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#/home"</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"home"</span> <span class="hljs-attr">ui-sref-opts</span>=<span class="hljs-string">"{reload: true}"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="notes">Notes</h3>
+							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+								<h3>Notes</h3>
+							</a>
 							<ul>
-								<li>You can use <code>ui-sref</code> to change <strong>only the parameter values</strong> by omitting the state name and parentheses.<h4 id="example-">Example:</h4>
+								<li>You can use <code>ui-sref</code> to change <strong>only the parameter values</strong> by omitting the state name and parentheses.
+									<a href="#example-6" id="example-6" style="color: inherit; text-decoration: none;">
+										<h4>Example:</h4>
+									</a>
 								Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</li>
 							</ul>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-sref</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
@@ -318,55 +373,80 @@ redirect_from: /docs/latest/modules/directives.html
 							<p><strong>This directive is very similar to [[uiSref]], but it <code>$observe</code>s and <code>$watch</code>es/evaluates all its inputs.</strong></p>
 							<p>A directive which links to a state (and optionally, parameters).
 							When clicked, this directive activates the linked state with the supplied parameter values.</p>
-							<h3 id="linked-state">Linked State</h3>
+							<a href="#linked-state" id="linked-state" style="color: inherit; text-decoration: none;">
+								<h3>Linked State</h3>
+							</a>
 							<p>The attribute value of <code>ui-state</code> is an expression which is <code>$watch</code>ed and evaluated as the state to link to.
 							<strong>This is in contrast with <code>ui-sref</code>, which takes a state name as a string literal.</strong></p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Create a list of links.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
-							<h3 id="relative-links">Relative Links</h3>
+							<a href="#relative-links" id="relative-links" style="color: inherit; text-decoration: none;">
+								<h3>Relative Links</h3>
+							</a>
 							<p>If the expression evaluates to a relative path, it is processed like [[uiSref]].
 								You just need to be aware that the path is relative to the state that <em>created</em> the link.
 							This allows a state to create relative <code>ui-state</code> which always targets the same destination.</p>
-							<h3 id="hrefs">hrefs</h3>
+							<a href="#hrefs" id="hrefs" style="color: inherit; text-decoration: none;">
+								<h3>hrefs</h3>
+							</a>
 							<p>If the linked state has a URL, the directive will automatically generate and
 							update the <code>href</code> attribute (using the <a href="../classes/state.stateservice.html#href">StateService.href</a>  method).</p>
-							<h3 id="parameter-values">Parameter Values</h3>
+							<a href="#parameter-values" id="parameter-values" style="color: inherit; text-decoration: none;">
+								<h3>Parameter Values</h3>
+							</a>
 							<p>In addition to the state name expression, a <code>ui-state</code> can include parameter values which are applied when activating the state.
 								Param values should be provided using the <code>ui-state-params</code> attribute.
 							The <code>ui-state-params</code> attribute value is <code>$watch</code>ed and evaluated as an expression.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>This example renders a list of links with param values.
 							The state&#39;s <code>userId</code> parameter value comes from each user&#39;s <code>user.id</code> property.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">ng-repeat</span>=<span class="hljs-string">"link in navlinks"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"link.state"</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"link.params"</span>&gt;</span>{{ link.displayName }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></code></pre>
-							<h3 id="transition-options">Transition Options</h3>
+							<a href="#transition-options" id="transition-options" style="color: inherit; text-decoration: none;">
+								<h3>Transition Options</h3>
+							</a>
 							<p>You can specify <a href="../interfaces/transition.transitionoptions.html">TransitionOptions</a> to pass to <a href="../classes/state.stateservice.html#go">StateService.go</a> by using the <code>ui-state-opts</code> attribute.
 								Options are restricted to <code>location</code>, <code>inherit</code>, and <code>reload</code>.
 							The value of the <code>ui-state-opts</code> is <code>$watch</code>ed and evaluated as an expression.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"returnto.state"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ reload: true }"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
-							<h3 id="other-dom-events">Other DOM Events</h3>
+							<a href="#other-dom-events" id="other-dom-events" style="color: inherit; text-decoration: none;">
+								<h3>Other DOM Events</h3>
+							</a>
 							<p>You can also customize which DOM events to respond to (instead of <code>click</code>) by
 							providing an <code>events</code> array in the <code>ui-state-opts</code> attribute.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">"contacts"</span> <span class="hljs-attr">ui-state-opts</span>=<span class="hljs-string">"{ events: ['change', 'blur'] }"</span>&gt;</span></code></pre>
-							<h3 id="highlighting-the-active-link">Highlighting the active link</h3>
+							<a href="#highlighting-the-active-link" id="highlighting-the-active-link" style="color: inherit; text-decoration: none;">
+								<h3>Highlighting the active link</h3>
+							</a>
 							<p>This directive can be used in conjunction with [[uiSrefActive]] to highlight the active link.</p>
-							<h3 id="notes">Notes</h3>
+							<a href="#notes" id="notes" style="color: inherit; text-decoration: none;">
+								<h3>Notes</h3>
+							</a>
 							<ul>
 								<li>You can use <code>ui-params</code> to change <strong>only the parameter values</strong> by omitting the state name and supplying only <code>ui-state-params</code>.
 								However, it might be simpler to use [[uiSref]] parameter-only links.</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-4" id="example-4" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>Sets the <code>lang</code> parameter to <code>en</code> and remains on the same state.</p>
 							<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">ui-state</span>=<span class="hljs-string">""</span> <span class="hljs-attr">ui-state-params</span>=<span class="hljs-string">"{ lang: 'en' }"</span>&gt;</span>English<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre>
 							<ul>
-								<li>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.
-								<code>`</code></li>
+								<li>A middle-click, right-click, or ctrl-click is handled (natively) by the browser to open the href in a new window, for example.<pre><code></code></pre></li>
 							</ul>
 						</div>
 					</div>
@@ -390,7 +470,9 @@ redirect_from: /docs/latest/modules/directives.html
 							<div class="lead">
 								<p><code>ui-view</code>: A viewport directive which is filled in by a view from the active state.</p>
 							</div>
-							<h3 id="attributes">Attributes</h3>
+							<a href="#attributes" id="attributes" style="color: inherit; text-decoration: none;">
+								<h3>Attributes</h3>
+							</a>
 							<ul>
 								<li><p><code>name</code>: (Optional) A view name.
 										The name should be unique amongst the other views in the same state.
@@ -403,7 +485,9 @@ redirect_from: /docs/latest/modules/directives.html
 								<li><p><code>onload</code>: Expression to evaluate whenever the view updates.</p>
 								</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>A view can be unnamed or named.</p>
 							<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Unnamed --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ui-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -456,7 +540,9 @@ $stateProvider.state("home", {
     }
   }
 })</code></pre>
-							<h4 id="examples-for-autoscroll-">Examples for <code>autoscroll</code>:</h4>
+							<a href="#examples-for-codeautoscrollcode" id="examples-for-codeautoscrollcode" style="color: inherit; text-decoration: none;">
+								<h4>Examples for <code>autoscroll</code>:</h4>
+							</a>
 							<pre><code class="language-html"><span class="hljs-comment">&lt;!-- If autoscroll present with no expression,
      then scroll ui-view into view --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">ui-view</span> <span class="hljs-attr">autoscroll</span>/&gt;</span>
@@ -472,7 +558,9 @@ $stateProvider.state("home", {
 							<p>Note that when <code>controllerAs</code> is being used, <code>$resolve</code> is set on the controller instance <em>after</em> the
 								controller is instantiated.  The <code>$onInit()</code> hook can be used to perform initialization code which
 							depends on <code>$resolve</code> data.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">'home'</span>, {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;my-component user="$resolve.user"&gt;&lt;/my-component&gt;'</span>,
   <span class="hljs-attr">resolve</span>: {
@@ -538,6 +626,9 @@ $stateProvider.state("home", {
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -551,9 +642,6 @@ $stateProvider.state("home", {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="vanilla.html">vanilla</a>

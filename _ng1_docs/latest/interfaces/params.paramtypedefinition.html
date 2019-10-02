@@ -104,7 +104,9 @@ redirect_from: /docs/latest/interfaces/params.paramtypedefinition.html
 					<pre><code class="language-js"><span class="hljs-keyword">var</span> fooId = transition.params().fooId;
 fooId === <span class="hljs-string">"123"</span> <span class="hljs-comment">// false</span>
 fooId === <span class="hljs-number">123</span> <span class="hljs-comment">// true</span></code></pre>
-					<h4 id="examples">Examples</h4>
+					<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+						<h4>Examples</h4>
+					</a>
 					<p>This example encodes an array of integers as a dash-delimited string to be used in the URL.</p>
 					<p>If we call <code>$state.go(&#39;foo&#39;, { fooIds: [20, 30, 40] });</code>, the URL changes to <code>/foo/20-30-40</code>.
 					If we navigate to <code>/foo/1-2-3</code>, the <code>foo</code> state&#39;s onEnter logs <code>[1, 2, 3]</code>.</p>
@@ -260,7 +262,9 @@ $state.go(<span class="hljs-string">'list'</span>, { item: <span class="hljs-str
 							However, parameters whose type has <code>inherit: false</code> set  will <em>not be inherited</em>.</p>
 							<p>The internal parameter type of <code>hash</code> has <code>inherit: false</code>.
 							This is used to disable inheriting of the hash value (<code>#</code>) on subsequent transitions.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
 ...
 <span class="hljs-comment">// "#" is not inherited.</span>
@@ -324,7 +328,9 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 							</div>
 							<p>If a parameter type is declared <code>raw</code>, it will not be url-encoded.
 							Custom encoding can still be applied in the <a href="params.paramtypedefinition.html#encode">encode</a> function.</p>
-							<h3 id="decoding-warning">Decoding warning</h3>
+							<a href="#decoding-warning" id="decoding-warning" style="color: inherit; text-decoration: none;">
+								<h3>Decoding warning</h3>
+							</a>
 							<p>The decoding behavior of raw parameters is not defined.
 							See: <a href="params.paramdeclaration.html#raw">ParamDeclaration.raw</a> for details</p>
 						</div>
@@ -594,6 +600,9 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -607,9 +616,6 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

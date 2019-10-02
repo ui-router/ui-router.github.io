@@ -87,7 +87,9 @@ redirect_from: /docs/latest/interfaces/state.statedeclaration.html
 					</div>
 					<p>Note: Each implementation of UI-Router (for a specific framework)
 					extends this interface as necessary.</p>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// StateDeclaration object</span>
 <span class="hljs-keyword">var</span> foldersState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'folders'</span>,
@@ -284,22 +286,31 @@ registry.register(foldersState);</code></pre>
   lazyLoad: (transition, <span class="hljs-keyword">state</span>) =&gt; System.import('./abcService')
 }</code></pre><p>The <code>abcService</code> file is imported and loaded
 							(it is assumed that the <code>abcService</code> file knows how to register itself as a service).</p>
-							<h4 id="lifecycle">Lifecycle</h4>
+							<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+								<h4>Lifecycle</h4>
+							</a>
 							<ul>
-								<li>The <code>lazyLoad</code> function is invoked if a transition is going to enter the state.</li>
-								<li>The function is invoked before the transition starts (using an <code>onBefore</code> transition hook).</li>
-								<li>The function is only invoked once; while the <code>lazyLoad</code> function is loading code, it will not be invoked again.
-									For example, if the user double clicks a ui-sref, <code>lazyLoad</code> is only invoked once even though there were two transition attempts.
-								Instead, the existing lazy load promise is re-used.</li>
-								<li>When the promise resolves successfully, the <code>lazyLoad</code> property is deleted from the state declaration.</li>
-								<li>If the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a> which has an array of <code>states</code>, those states are registered.</li>
+								<li><p>The <code>lazyLoad</code> function is invoked if a transition is going to enter the state.</p>
+								</li>
+								<li><p>The function is invoked before the transition starts (using an <code>onBefore</code> transition hook).</p>
+								</li>
+								<li><p>The function is only invoked once; while the <code>lazyLoad</code> function is loading code, it will not be invoked again.
+										For example, if the user double clicks a ui-sref, <code>lazyLoad</code> is only invoked once even though there were two transition attempts.
+									Instead, the existing lazy load promise is re-used.</p>
+								</li>
+								<li><p>When the promise resolves successfully, the <code>lazyLoad</code> property is deleted from the state declaration.</p>
+								</li>
+								<li><p>If the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a> which has an array of <code>states</code>, those states are registered.</p>
+								</li>
 								<li><p>The original transition is retried (this time without the <code>lazyLoad</code> property present).</p>
 								</li>
 								<li><p>If the <code>lazyLoad</code> function fails, then the transition also fails.
 									The failed transition (and the <code>lazyLoad</code> function) could potentially be retried by the user.</p>
 								</li>
 							</ul>
-							<h3 id="lazy-loading-state-definitions-future-states-">Lazy loading state definitions (Future States)</h3>
+							<a href="#lazy-loading-state-definitions-future-states" id="lazy-loading-state-definitions-future-states" style="color: inherit; text-decoration: none;">
+								<h3>Lazy loading state definitions (Future States)</h3>
+							</a>
 							<p>State definitions can also be lazy loaded.
 							This might be desirable when building large, multi-module applications.</p>
 							<p>To lazy load state definitions, a Future State should be registered as a placeholder.
@@ -321,9 +332,13 @@ registry.register(foldersState);</code></pre>
 									Generally, one of the lazy loaded states should have the same name as the future state.
 								The new state will then <strong>replace the future state placeholder</strong> in the registry.</li>
 							</ul>
-							<h3 id="additional-resources">Additional resources</h3>
+							<a href="#additional-resources" id="additional-resources" style="color: inherit; text-decoration: none;">
+								<h3>Additional resources</h3>
+							</a>
 							<p>For in depth information on lazy loading and Future States, see the <a href="https://ui-router.github.io/guides/lazyload">Lazy Loading Guide</a>.</p>
-							<h4 id="example-states-js">Example: states.js</h4>
+							<a href="#example-statesjs" id="example-statesjs" style="color: inherit; text-decoration: none;">
+								<h4>Example: states.js</h4>
+							</a>
 							<pre><code class="language-js">
 <span class="hljs-comment">// This child state is a lazy loaded future state</span>
 <span class="hljs-comment">// The `lazyLoad` function loads the final state definition</span>
@@ -332,7 +347,9 @@ registry.register(foldersState);</code></pre>
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/parent'</span>,
   <span class="hljs-attr">lazyLoad</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.import(<span class="hljs-string">'./lazy.states.js'</span>)
 }</code></pre>
-							<h4 id="example-lazy-states-js">Example: lazy.states.js</h4>
+							<a href="#example-lazystatesjs" id="example-lazystatesjs" style="color: inherit; text-decoration: none;">
+								<h4>Example: lazy.states.js</h4>
+							</a>
 							<p>This file is lazy loaded.  It exports an array of states.</p>
 							<pre><code class="language-js"><span class="hljs-keyword">import</span> {ChildComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./child.component.js"</span>;
 <span class="hljs-keyword">import</span> {ParentComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./parent.component.js"</span>;
@@ -454,7 +471,9 @@ registry.register(foldersState);</code></pre>
 							<div class="lead">
 								<p>A Transition Hook called with the state is being entered.  See: <a href="transition.ihookregistry.html#onenter">IHookRegistry.onEnter</a></p>
 							</div>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onEnter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans, state</span>) </span>{
@@ -487,7 +506,9 @@ registry.register(foldersState);</code></pre>
 							<div class="lead">
 								<p>A Transition Hook called with the state is being exited. See: <a href="transition.ihookregistry.html#onexit">IHookRegistry.onExit</a></p>
 							</div>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onExit</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans, state</span>) </span>{
@@ -520,7 +541,9 @@ registry.register(foldersState);</code></pre>
 							<div class="lead">
 								<p>A <a href="transition.transitionstatehookfn.html">TransitionStateHookFn</a> called with the state is being retained/kept. See: <a href="transition.ihookregistry.html#onretain">IHookRegistry.onRetain</a></p>
 							</div>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onRetain</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans, state</span>) </span>{
@@ -555,7 +578,9 @@ registry.register(foldersState);</code></pre>
 							</div>
 							<p>An object which optionally configures parameters declared in the url, or defines additional non-url
 							parameters. For each parameter being configured, add a <a href="params.paramdeclaration.html">ParamDeclaration</a> keyed to the name of the parameter.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">params: {
   <span class="hljs-attr">param1</span>: {
    <span class="hljs-attr">type</span>: <span class="hljs-string">"int"</span>,
@@ -601,7 +626,9 @@ registry.register(foldersState);</code></pre>
 								This allows shorter state names, e.g., <code>&lt;a ui-sref=&quot;childstate&quot;&gt;Child&lt;/a&gt;</code>
 							instead of `<a ui-sref="parentstate.childstate">Child</a></p>
 							<p>When using this property, the state&#39;s name should not have any dots in it.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> parentstate = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'parentstate'</span>
 }
@@ -653,7 +680,9 @@ registry.register(foldersState);</code></pre>
 							<p>Note: <code>redirectTo</code> is processed as an <code>onStart</code> hook, before <code>LAZY</code> resolves.
 								If your redirect function relies on resolve data, get the <a href="../classes/transition.transition-1.html#injector">Transition.injector</a> and get a
 							promise for the resolve data using <a href="core.uiinjector.html#getasync">UIInjector.getAsync</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// a string</span>
 .state(<span class="hljs-string">'A'</span>, {
   <span class="hljs-attr">redirectTo</span>: <span class="hljs-string">'A.B'</span>
@@ -746,9 +775,13 @@ registry.register(foldersState);</code></pre>
 							<p>The <code>resolve:</code> property defines data (or other dependencies) to be fetched asynchronously when the state is being entered.
 								After the data is fetched, it may be used in views, transition hooks or other resolves that belong to this state.
 							The data may also be used in any views or resolves that belong to nested states.</p>
-							<h3 id="as-an-array">As an array</h3>
+							<a href="#as-an-array" id="as-an-array" style="color: inherit; text-decoration: none;">
+								<h3>As an array</h3>
+							</a>
 							<p>Each array element should be a <a href="resolve.resolvableliteral.html">ResolvableLiteral</a> object.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>The <code>user</code> resolve injects the current <code>Transition</code> and the <code>UserService</code> (using its token, which is a string).
 								The [[ResolvableLiteral.resolvePolicy]] sets how the resolve is processed.
 							The <code>user</code> data, fetched asynchronously, can then be used in a view.</p>
@@ -766,10 +799,15 @@ registry.register(foldersState);</code></pre>
 }</code></pre>
 							<p>Note: an Angular 2 style <a href="https://angular.io/docs/ts/latest/cookbook/dependency-injection.html#!#provide"><code>useFactory</code> provider literal</a>
 							may also be used.  See <a href="resolve.providerlike.html">ProviderLike</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code><span class="hljs-string">resolve:</span> [
   { <span class="hljs-string">provide:</span> <span class="hljs-string">'token'</span>, <span class="hljs-string">useFactory:</span> (http) =&gt; http.get(<span class="hljs-string">'/'</span>), <span class="hljs-string">deps:</span> [ Http ] },
-]</code></pre><h3 id="as-an-object">As an object</h3>
+]</code></pre>
+							<a href="#as-an-object" id="as-an-object" style="color: inherit; text-decoration: none;">
+								<h3>As an object</h3>
+							</a>
 							<p>The <code>resolve</code> property may be an object where:</p>
 							<ul>
 								<li>Each key (string) is the name of the dependency.</li>
@@ -777,7 +815,9 @@ registry.register(foldersState);</code></pre>
 							</ul>
 							<p>This style is based on AngularJS injectable functions, but can be used with any UI-Router implementation.
 							If your code will be minified, the function should be <a href="https://docs.angularjs.org/guide/di#dependency-annotation">&quot;annotated&quot; in the AngularJS manner</a>.</p>
-							<h4 id="angularjs-example-">AngularJS Example:</h4>
+							<a href="#angularjs-example" id="angularjs-example" style="color: inherit; text-decoration: none;">
+								<h4>AngularJS Example:</h4>
+							</a>
 							<pre><code class="language-js">resolve: {
   <span class="hljs-comment">// If you inject `myStateDependency` into a controller, you'll get "abc"</span>
   myStateDependency: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -791,7 +831,9 @@ registry.register(foldersState);</code></pre>
 }</code></pre>
 							<p>Note: You cannot specify a policy for each Resolvable, nor can you use non-string
 							tokens when using the object style <code>resolve:</code> block.</p>
-							<h3 id="lifecycle">Lifecycle</h3>
+							<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+								<h3>Lifecycle</h3>
+							</a>
 							<p>Since a resolve function can return a promise, the router will delay entering the state until the promises are ready.
 							If any of the promises are rejected, the Transition is aborted with an Error.</p>
 							<p>By default, resolves for a state are fetched just before that state is entered.
@@ -801,19 +843,25 @@ registry.register(foldersState);</code></pre>
 							previously resolved data for state <code>parent</code> can be injected into <code>parent.child</code> without delay.</p>
 							<p>Any resolved data for <code>parent.child</code> is retained until <code>parent.child</code> is exited, e.g., by transitioning back to the <code>parent</code> state.</p>
 							<p>Because of this scoping and lifecycle, resolves are a great place to fetch your application&#39;s primary data.</p>
-							<h3 id="injecting-resolves-into-other-things">Injecting resolves into other things</h3>
+							<a href="#injecting-resolves-into-other-things" id="injecting-resolves-into-other-things" style="color: inherit; text-decoration: none;">
+								<h3>Injecting resolves into other things</h3>
+							</a>
 							<p>During a transition, Resolve data can be injected into:</p>
 							<ul>
 								<li>Views (the components which fill a <code>ui-view</code> tag)</li>
 								<li>Transition Hooks</li>
 								<li>Other resolves (a resolve may depend on asynchronous data from a different resolve)</li>
 							</ul>
-							<h3 id="injecting-other-things-into-resolves">Injecting other things into resolves</h3>
+							<a href="#injecting-other-things-into-resolves" id="injecting-other-things-into-resolves" style="color: inherit; text-decoration: none;">
+								<h3>Injecting other things into resolves</h3>
+							</a>
 							<p>Resolve functions usually have dependencies on some other API(s).
 								The dependencies are usually declared and injected into the resolve function.
 								A common pattern is to inject a custom service such as <code>UserService</code>.
 							The resolve then delegates to a service method, such as <code>UserService.list()</code>;</p>
-							<h4 id="special-injectable-tokens">Special injectable tokens</h4>
+							<a href="#special-injectable-tokens" id="special-injectable-tokens" style="color: inherit; text-decoration: none;">
+								<h4>Special injectable tokens</h4>
+							</a>
 							<ul>
 								<li><code>UIRouter</code>: The <a href="ng1.__uirouter_core_lib_router_.uirouter.html">UIRouter</a> instance which has references to all the UI-Router services.</li>
 								<li><code>Transition</code>: The current <a href="../classes/transition.transition-1.html">Transition</a> object; information and API about the current transition, such as
@@ -822,7 +870,9 @@ registry.register(foldersState);</code></pre>
 								<li><code>&#39;$state$&#39;</code>: For <code>onEnter</code>/<code>onExit</code>/<code>onRetain</code>, the state being entered/exited/retained.</li>
 								<li>Other resolve tokens: A resolve can depend on another resolve, either from the same state, or from any parent state.</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// Injecting a resolve into another resolve</span>
 resolve: [
   <span class="hljs-comment">// Define a resolve 'allusers' which delegates to the UserService.list()</span>
@@ -931,15 +981,20 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 							</div>
 							<p>An optional object which defines multiple views, or explicitly targets specific named ui-views.</p>
 							<ul>
-								<li>What is a view config</li>
-								<li>What is a ui-view</li>
-								<li>Shorthand controller/template</li>
+								<li><p>What is a view config</p>
+								</li>
+								<li><p>What is a ui-view</p>
+								</li>
+								<li><p>Shorthand controller/template</p>
+								</li>
 								<li><p>Incompatible with ^</p>
 									<p>Examples:</p>
 									<p>Targets three named ui-views in the parent state&#39;s template</p>
 								</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">views: {
   <span class="hljs-attr">header</span>: {
     <span class="hljs-attr">controller</span>: <span class="hljs-string">"headerCtrl"</span>,
@@ -1034,6 +1089,9 @@ views: {
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -1047,9 +1105,6 @@ views: {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

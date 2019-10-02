@@ -264,22 +264,30 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 								<p>See <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> for the signature of the function.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onBefore</code> hooks are invoked <em>before a Transition starts</em>.
 									No resolves have been fetched yet.
 									Each <code>onBefore</code> hook is invoked synchronously, in the same call stack as <a href="state.stateservice.html#transitionto">StateService.transitionTo</a>.
 								The registered <code>onBefore</code> hooks are invoked in priority order.</p>
 								<p>Note: during the <code>onBefore</code> phase, additional hooks can be added to the specific <a href="transition.transition-1.html">Transition</a> instance.
 								These &quot;on-the-fly&quot; hooks only affect the currently running transition..</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
 								<p>If any hook modifies the transition <em>synchronously</em> (by throwing, returning <code>false</code>, or returning
 									a <a href="state.targetstate.html">TargetState</a>), the remainder of the hooks are skipped.
 									If a hook returns a promise, the remainder of the <code>onBefore</code> hooks are still invoked synchronously.
 								All promises are resolved, and processed asynchronously before the <code>onStart</code> phase of the Transition.</p>
-								<h3 id="examples">Examples</h3>
-								<h4 id="default-substate">Default Substate</h4>
+								<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+									<h3>Examples</h3>
+								</a>
+								<a href="#default-substate" id="default-substate" style="color: inherit; text-decoration: none;">
+									<h4>Default Substate</h4>
+								</a>
 								<p>This example redirects any transition from &#39;home&#39; to &#39;home.dashboard&#39;.  This is commonly referred to as a
 								&quot;default substate&quot;.</p>
 								<dl class="tsd-comment-tags">
@@ -287,7 +295,9 @@ redirect_from: /docs/latest/classes/transition.transitionservice.html
 									<dd><pre><code class="language-js"><span class="hljs-comment">// ng2</span>
 transitionService.onBefore({ <span class="hljs-attr">to</span>: <span class="hljs-string">'home'</span> }, (trans: Transition) =&gt;
     trans.router.stateService.target(<span class="hljs-string">"home.dashboard"</span>));</code></pre>
-										<h4 id="data-driven-default-substate">Data Driven Default Substate</h4>
+										<a href="#data-driven-default-substate" id="data-driven-default-substate" style="color: inherit; text-decoration: none;">
+											<h4>Data Driven Default Substate</h4>
+										</a>
 										<p>This example provides data-driven default substate functionality. It matches on a transition to any state
 											which has <code>defaultSubstate: &quot;some.sub.state&quot;</code> defined.  See: <a href="transition.transition-1.html#to">Transition.to</a> which returns the &quot;to state&quot;
 										definition.</p>
@@ -311,11 +321,15 @@ $transitions.onBefore(criteria, <span class="hljs-function"><span class="hljs-ke
   <span class="hljs-keyword">var</span> substate = trans.to().defaultSubstate;
   <span class="hljs-keyword">return</span> trans.router.stateService.target(substate);
 });</code></pre>
-										<h4 id="require-authentication">Require authentication</h4>
+										<a href="#require-authentication" id="require-authentication" style="color: inherit; text-decoration: none;">
+											<h4>Require authentication</h4>
+										</a>
 										<p>This example cancels a transition to a state which requires authentication, if the user is not currently authenticated.</p>
 										<p>This example assumes a state tree where all states which require authentication are children of a parent <code>&#39;requireauth&#39;</code> state.
 										This example assumes <code>MyAuthService</code> synchronously returns a boolean from <code>isAuthenticated()</code>.</p>
-										<h4 id="example-">Example:</h4>
+										<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+											<h4>Example:</h4>
+										</a>
 										<pre><code class="language-js"><span class="hljs-comment">// ng1</span>
 $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-string">'requireauth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> myAuthService = trans.injector().get(<span class="hljs-string">'MyAuthService'</span>);
@@ -371,9 +385,13 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>This low level hook should only be used by plugins.
 									This can be a useful time for plugins to add resolves or mutate the transition as needed.
 								The Sticky States plugin uses this hook to modify the treechanges.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onCreate</code> hooks are invoked <em>while a transition is being constructed</em>.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value is ignored</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -434,20 +452,30 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 									<code>onEnter</code> hooks generally specify <code>{ entering: &#39;somestate&#39; }</code>.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onEnter</code> hooks are invoked when the Transition is entering a state.
 									States are entered after the <code>onRetain</code> phase is complete.
 									If more than one state is being entered, the parent state is entered first.
 								The registered <code>onEnter</code> hooks for a state are invoked in priority order.</p>
 								<p>Note: A built-in <code>onEnter</code> hook with high priority is used to fetch lazy resolve data for states being entered.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
-								<h3 id="inside-a-state-declaration">Inside a state declaration</h3>
+								<a href="#inside-a-state-declaration" id="inside-a-state-declaration" style="color: inherit; text-decoration: none;">
+									<h3>Inside a state declaration</h3>
+								</a>
 								<p>Instead of registering <code>onEnter</code> hooks using the <a href="transition.transitionservice.html">TransitionService</a>, you may define an <code>onEnter</code> hook
 								directly on a state declaration (see: <a href="../interfaces/state.statedeclaration.html#onenter">StateDeclaration.onEnter</a>).</p>
-								<h3 id="examples">Examples</h3>
-								<h4 id="audit-log">Audit Log</h4>
+								<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+									<h3>Examples</h3>
+								</a>
+								<a href="#audit-log" id="audit-log" style="color: inherit; text-decoration: none;">
+									<h4>Audit Log</h4>
+								</a>
 								<p>This example uses a service to log that a user has entered the admin section of an app.
 								This assumes that there are substates of the &quot;admin&quot; state, such as &quot;admin.users&quot;, &quot;admin.pages&quot;, etc.</p>
 								<dl class="tsd-comment-tags">
@@ -456,7 +484,10 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 <span class="hljs-variable">$transitions</span>.<span class="hljs-keyword">on</span>Enter({ entering: 'admin' }, function(transition, <span class="hljs-keyword">state</span>) {
   var AuditService = trans.injector().get('AuditService');
   AuditService.<span class="hljs-keyword">log</span>(<span class="hljs-string">"Entered "</span> + <span class="hljs-keyword">state</span>.name + <span class="hljs-string">" module while transitioning to "</span> + transition.<span class="hljs-keyword">to</span>().name);
-}</code></pre><h4 id="audit-log-inside-a-state-declaration-">Audit Log (inside a state declaration)</h4>
+}</code></pre>
+										<a href="#audit-log-inside-a-state-declaration" id="audit-log-inside-a-state-declaration" style="color: inherit; text-decoration: none;">
+											<h4>Audit Log (inside a state declaration)</h4>
+										</a>
 										<p>The <code>onEnter</code> inside this state declaration is syntactic sugar for the previous Audit Log example.</p>
 										<pre><code>{
   <span class="hljs-type">name</span>: <span class="hljs-string">'admin'</span>,
@@ -515,7 +546,9 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>See <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> for the signature of the function.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p>The <code>onError</code> hooks are chained off the Transition&#39;s promise (see <a href="transition.transition-1.html#promise">Transition.promise</a>).
 									If a Transition fails, its promise is rejected and the <code>onError</code> hooks are invoked.
 								The <code>onError</code> hooks are invoked in priority order.</p>
@@ -533,7 +566,9 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>To check the failure reason, inspect the return value of <a href="transition.transition-1.html#error">Transition.error</a>.</p>
 								<p>Note: <code>onError</code> should be used for targeted error handling, or error recovery.
 								For simple catch-all error reporting, use <a href="state.stateservice.html#defaulterrorhandler">StateService.defaultErrorHandler</a>.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>Since the Transition is already completed, the hook&#39;s return value is ignored</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -586,15 +621,21 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 									<code>onExit</code> hooks generally specify <code>{ exiting: &#39;somestate&#39; }</code>.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onExit</code> hooks are invoked when the Transition is exiting a state.
 									States are exited after any <code>onStart</code> phase is complete.
 									If more than one state is being exited, the child states are exited first.
 								The registered <code>onExit</code> hooks for a state are invoked in priority order.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
-								<h3 id="inside-a-state-declaration">Inside a state declaration</h3>
+								<a href="#inside-a-state-declaration" id="inside-a-state-declaration" style="color: inherit; text-decoration: none;">
+									<h3>Inside a state declaration</h3>
+								</a>
 								<p>Instead of registering <code>onExit</code> hooks using the <a href="transition.transitionservice.html">TransitionService</a>, you may define an <code>onExit</code> hook
 								directly on a state declaration (see: <a href="../interfaces/state.statedeclaration.html#onexit">StateDeclaration.onExit</a>).</p>
 								<p>Note: A state declaration&#39;s <code>onExit</code> function is injected for Angular 1 only.</p>
@@ -646,11 +687,15 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>See <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> for the signature of the function.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onFinish</code> hooks are invoked after the <code>onEnter</code> phase is complete.
 									These hooks are invoked just before the transition is &quot;committed&quot;.
 								Each hook is invoked in priority order.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
 							</div>
@@ -704,14 +749,20 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 									<code>onRetain</code> hooks generally specify <code>{ retained: &#39;somestate&#39; }</code>.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onRetain</code> hooks are invoked after any <code>onExit</code> hooks have been fired.
 									If more than one state is retained, the child states&#39; <code>onRetain</code> hooks are invoked first.
 								The registered <code>onRetain</code> hooks for a state are invoked in priority order.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
-								<h3 id="inside-a-state-declaration">Inside a state declaration</h3>
+								<a href="#inside-a-state-declaration" id="inside-a-state-declaration" style="color: inherit; text-decoration: none;">
+									<h3>Inside a state declaration</h3>
+								</a>
 								<p>Instead of registering <code>onRetain</code> hooks using the <a href="transition.transitionservice.html">TransitionService</a>, you may define an <code>onRetain</code> hook
 								directly on a state declaration (see: <a href="../interfaces/state.statedeclaration.html#onretain">StateDeclaration.onRetain</a>).</p>
 								<p>Note: A state declaration&#39;s <code>onRetain</code> function is injected for Angular 1 only.</p>
@@ -763,17 +814,25 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 								<p>See <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> for the signature of the function.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onStart</code> hooks are invoked asynchronously when the Transition starts running.
 									This happens after the <code>onBefore</code> phase is complete.
 									At this point, the Transition has not yet exited nor entered any states.
 								The registered <code>onStart</code> hooks are invoked in priority order.</p>
 								<p>Note: A built-in <code>onStart</code> hook with high priority is used to fetch any eager resolve data.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>The hook&#39;s return value can be used to pause, cancel, or redirect the current Transition.
 								See <a href="../modules/transition.html#hookresult">HookResult</a> for more information.</p>
-								<h3 id="example">Example</h3>
-								<h4 id="login-during-transition">Login during transition</h4>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h3>Example</h3>
+								</a>
+								<a href="#login-during-transition" id="login-during-transition" style="color: inherit; text-decoration: none;">
+									<h4>Login during transition</h4>
+								</a>
 								<p>This example intercepts any transition to a state which requires authentication, when the user is
 									not currently authenticated.  It allows the user to authenticate asynchronously, then resumes the
 									transition.  If the user did not authenticate successfully, it redirects to the &quot;guest&quot; state, which
@@ -785,7 +844,9 @@ $transitions.onBefore( { <span class="hljs-attr">to</span>: <span class="hljs-st
 									<li><code>MyAuthService.authenticate()</code> presents a login dialog, and returns a promise which is resolved
 									or rejected, whether or not the login attempt was successful.</li>
 								</ul>
-								<h4 id="example-">Example:</h4>
+								<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
 								<pre><code class="language-js"><span class="hljs-comment">// ng1</span>
 $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-string">'auth.**'</span> }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">trans</span>) </span>{
   <span class="hljs-keyword">var</span> $state = trans.router.stateService;
@@ -852,12 +913,16 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 								<p>See <a href="../interfaces/transition.transitionhookfn.html">TransitionHookFn</a> for the signature of the function.</p>
 								<p>The <a href="../interfaces/transition.hookmatchcriteria.html">HookMatchCriteria</a> is used to determine which Transitions the hook should be invoked for.
 								To match all Transitions, use an empty criteria object <code>{}</code>.</p>
-								<h3 id="lifecycle">Lifecycle</h3>
+								<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+									<h3>Lifecycle</h3>
+								</a>
 								<p><code>onSuccess</code> hooks are chained off the Transition&#39;s promise (see <a href="transition.transition-1.html#promise">Transition.promise</a>).
 									If the Transition is successful and its promise is resolved, then the <code>onSuccess</code> hooks are invoked.
 									Since these hooks are run after the transition is over, their return value is ignored.
 								The <code>onSuccess</code> hooks are invoked in priority order.</p>
-								<h3 id="return-value">Return value</h3>
+								<a href="#return-value" id="return-value" style="color: inherit; text-decoration: none;">
+									<h3>Return value</h3>
+								</a>
 								<p>Since the Transition is already completed, the hook&#39;s return value is ignored</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -936,6 +1001,9 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -949,9 +1017,6 @@ $transitions.onStart( { <span class="hljs-attr">to</span>: <span class="hljs-str
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

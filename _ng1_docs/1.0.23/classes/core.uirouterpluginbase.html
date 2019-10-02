@@ -1,12 +1,12 @@
 ---
-redirect_from: /docs/latest/modules/trace.html
+redirect_from: /docs/1.0.23/classes/core.uirouterpluginbase.html
 ---
 <!doctype html>
 <html class="default no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>trace | @uirouter/angularjs</title>
+	<title>UIRouterPluginBase | @uirouter/angularjs</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -67,67 +67,104 @@ redirect_from: /docs/latest/modules/trace.html
 					<a href="../index.html">@uirouter/angularjs</a>
 				</li>
 				<li>
-					<a href="trace.html">trace</a>
+					<a href="../modules/core.html">core</a>
+				</li>
+				<li>
+					<a href="core.uirouterpluginbase.html">UIRouterPluginBase</a>
 				</li>
 			</ul>
-			<h1>Module trace</h1>
+			<h1>Class UIRouterPluginBase</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">UIRouterPluginBase</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/core.uirouterplugin.html" class="tsd-signature-type">UIRouterPlugin</a></li>
+					<li><a href="../interfaces/core.disposable.html" class="tsd-signature-type">Disposable</a></li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
-							<h3>Enumerations</h3>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="../enums/trace.category.html" class="tsd-kind-icon">Category</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="core.uirouterpluginbase.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-external">
-							<h3>Classes</h3>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-external"><a href="../classes/trace.trace-1.html" class="tsd-kind-icon">Trace</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="trace.html#trace-2" class="tsd-kind-icon">trace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core.uirouterpluginbase.html#dispose" class="tsd-kind-icon">dispose</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-					<a name="trace-2" class="tsd-anchor"></a>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
 					<!--
-        <h3><span class="tsd-flag ts-flagConst">Const</span> trace</h3>
+        <h3><span class="tsd-flag ts-flagAbstract">Abstract</span> name</h3>
     -->
-					<div class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">:</span> <a href="../classes/trace.trace-1.html" class="tsd-signature-type">Trace</a><span class="tsd-signature-symbol"> =&nbsp;new Trace()</span>    <div class="tsd-header">
-							<p> The <a href="../classes/trace.trace-1.html">Trace</a> singleton </p>
-						</div>
-					</div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<div class="tsd-declaration">
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>The <a href="../classes/trace.trace-1.html">Trace</a> singleton</p>
-							</div>
-							<h4 id="example-">Example:</h4>
-							<pre><code class="language-js"><span class="hljs-keyword">import</span> {trace} <span class="hljs-keyword">from</span> <span class="hljs-string">"@uirouter/core"</span>;
-trace.enable(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>);</code></pre>
-						</div>
 					</div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/core.uirouterplugin.html">UIRouterPlugin</a>.<a href="../interfaces/core.uirouterplugin.html#name">name</a></p>
 						<ul>
-							<li>Defined in ui-router-core/src/common/trace.ts:285</li>
+							<li>Defined in ui-router-core/src/interface.ts:114</li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dispose" class="tsd-anchor"></a>
+					<!--
+        <h3>dispose</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span>router<span class="tsd-signature-symbol">: </span><a href="core.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>router <a href="core.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core.disposable.html">Disposable</a>.<a href="../interfaces/core.disposable.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in ui-router-core/src/interface.ts:115</li>
+								</ul>
+						</aside>        </li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -141,77 +178,104 @@ trace.enable(<span class="hljs-number">1</span>, <span class="hljs-number">5</sp
 						<span>Public API</span>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="common.html">common</a>
+						<a href="../modules/common.html">common</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="core.html">core</a>
+						<a href="../modules/directives.html">directives</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="directives.html">directives</a>
+						<a href="../modules/injectables.html">injectables</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="injectables.html">injectables</a>
+						<a href="../modules/ng1.html">ng1</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="ng1.html">ng1</a>
+						<a href="../modules/ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="ng1_state_events.html">ng1_<wbr>state_<wbr>events</a>
+						<a href="../modules/params.html">params</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="params.html">params</a>
+						<a href="../modules/resolve.html">resolve</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="resolve.html">resolve</a>
+						<a href="../modules/state.html">state</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="state.html">state</a>
+						<a href="../modules/transition.html">transition</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="transition.html">transition</a>
+						<a href="../modules/url.html">url</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="url.html">url</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="view.html">view</a>
+						<a href="../modules/view.html">view</a>
 					</li>
 					<li class="label tsd-is-external">
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="common_hof.html">common_<wbr>hof</a>
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="common_predicates.html">common_<wbr>predicates</a>
+						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="common_strings.html">common_<wbr>strings</a>
+						<a href="../modules/common_predicates.html">common_<wbr>predicates</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="hooks.html">hooks</a>
+						<a href="../modules/common_strings.html">common_<wbr>strings</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="path.html">path</a>
-					</li>
-					<li class="current tsd-kind-external-module tsd-is-external">
-						<a href="trace.html">trace</a>
+						<a href="../modules/hooks.html">hooks</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="vanilla.html">vanilla</a>
+						<a href="../modules/path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="../enums/trace.category.html" class="tsd-kind-icon">Category</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core.glob.html" class="tsd-kind-icon">Glob</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
-						<a href="../classes/trace.trace-1.html" class="tsd-kind-icon">Trace</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core.uirouter.html" class="tsd-kind-icon">UIRouter</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
-						<a href="trace.html#trace-2" class="tsd-kind-icon">trace</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="core.uirouterglobals.html" class="tsd-kind-icon">UIRouter<wbr>Globals</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="core.uirouterpluginbase.html" class="tsd-kind-icon">UIRouter<wbr>Plugin<wbr>Base</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="core.uirouterpluginbase.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core.uirouterpluginbase.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/core.disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/core.uiinjector.html" class="tsd-kind-icon">UIInjector</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="../interfaces/core.uirouterplugin.html" class="tsd-kind-icon">UIRouter<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/core.html#pluginfactory" class="tsd-kind-icon">Plugin<wbr>Factory</a>
 					</li>
 				</ul>
 			</nav>

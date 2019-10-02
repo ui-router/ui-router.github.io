@@ -113,6 +113,7 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="state.transitionpromise.html#catch" class="tsd-kind-icon">catch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="state.transitionpromise.html#finally" class="tsd-kind-icon">finally</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="state.transitionpromise.html#then" class="tsd-kind-icon">then</a></li>
 							</ul>
 						</section>
@@ -131,7 +132,7 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typescript/lib/lib.es2015.promise.d.ts:216</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.promise.d.ts:152</li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +147,7 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 					<aside class="tsd-sources">
 						<p>Inherited from Promise.[Symbol.toStringTag]</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:169</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typedoc/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts:169</li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +209,49 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 							<aside class="tsd-sources">
 								<p>Inherited from Promise.catch</p>
 								<ul>
-									<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typescript/lib/lib.es5.d.ts:1403</li>
+									<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:1413</li>
+								</ul>
+						</aside>        </li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="finally" class="tsd-anchor"></a>
+					<!--
+        <h3>finally</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">finally<span class="tsd-signature-symbol">(</span>onfinally<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-header">
+							<p> Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+							resolved value cannot be modified from the callback. </p>
+						</li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+									resolved value cannot be modified from the callback.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>onfinally: <span class="tsd-flag ts-flagOptional">Optional</span>&nbsp; <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									:         <div class="tsd-comment tsd-typography">
+										<p>The callback to execute when the Promise is settled (fulfilled or rejected).</p>
+									</div>
+								</li>
+							</ul>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/state.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">&gt;</span></h4>
+								: <p>A Promise for the completion of the callback.</p>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<p>Inherited from Promise.finally</p>
+								<ul>
+									<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typedoc/node_modules/typescript/lib/lib.es2018.promise.d.ts:31</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -263,7 +306,7 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 							<aside class="tsd-sources">
 								<p>Inherited from Promise.then</p>
 								<ul>
-									<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typescript/lib/lib.es5.d.ts:1396</li>
+									<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:1406</li>
 								</ul>
 						</aside>        </li>
 					</ul>
@@ -319,6 +362,9 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -332,9 +378,6 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
@@ -395,6 +438,9 @@ redirect_from: /docs/latest/interfaces/state.transitionpromise.html
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
 								<a href="state.transitionpromise.html#catch" class="tsd-kind-icon">catch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="state.transitionpromise.html#finally" class="tsd-kind-icon">finally</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
 								<a href="state.transitionpromise.html#then" class="tsd-kind-icon">then</a>

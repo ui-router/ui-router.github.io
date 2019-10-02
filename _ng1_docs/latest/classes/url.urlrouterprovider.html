@@ -85,7 +85,9 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 					<div class="lead">
 						<p>Manages rules for client-side URL</p>
 					</div>
-					<h3 id="deprecation-warning-">Deprecation warning:</h3>
+					<a href="#deprecation-warning" id="deprecation-warning" style="color: inherit; text-decoration: none;">
+						<h3>Deprecation warning:</h3>
+					</a>
 					<p>This class is now considered to be an internal API
 						Use the <a href="url.urlservice.html">UrlService</a> instead.
 					For configuring URL rules, use the <a href="../interfaces/url.urlrulesapi.html">UrlRulesApi</a> which can be found as <a href="url.urlservice.html#rules">UrlService.rules</a>.</p>
@@ -145,7 +147,9 @@ redirect_from: /docs/latest/classes/url.urlrouterprovider.html
 								It will stop UI-Router from performing the initial url sync.</p>
 								<p>This can be useful to perform some asynchronous initialization before the router starts.
 								Once the initialization is complete, call <a href="url.urlrouter.html#listen">listen</a> to tell UI-Router to start watching and synchronizing the URL.</p>
-								<h4 id="example-">Example:</h4>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
 								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
@@ -199,7 +203,9 @@ app.run(<span class="hljs-function"><span class="hljs-keyword">function</span> (
 								<div class="lead">
 									<p>Defines the path or behavior to use when no url can be matched.</p>
 								</div>
-								<h4 id="example-">Example:</h4>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
 								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
@@ -256,7 +262,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 								<p>Registers a low level url handler (a <code>rule</code>).
 								A rule detects specific URL patterns and returns a redirect, or performs some action.</p>
 								<p>If a rule returns a string, the URL is replaced with the string, and all rules are fired again.</p>
-								<h4 id="example-">Example:</h4>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
 								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
@@ -323,7 +331,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 									<li><strong>string</strong> which is treated as a redirect and passed to <code>$location.url()</code></li>
 									<li><strong>void</strong> or any <strong>truthy</strong> value tells <code>$urlRouter</code> that the url was handled.</li>
 								</ul>
-								<h4 id="example-">Example:</h4>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
 								<pre><code class="language-js"><span class="hljs-keyword">var</span> app = angular.module(<span class="hljs-string">'app'</span>, [<span class="hljs-string">'ui.router.router'</span>]);
 
 app.config(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">$urlRouterProvider</span>) </span>{
@@ -442,6 +452,9 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -455,9 +468,6 @@ app.config(<span class="hljs-function"><span class="hljs-keyword">function</span
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

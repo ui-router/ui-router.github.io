@@ -86,7 +86,9 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 						<p>The StateDeclaration object is used to define a state or nested state.
 						It should be registered with the <a href="ng1.__uirouter_core_lib_state_stateregistry_.stateregistry.html">StateRegistry</a>.</p>
 					</div>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// StateDeclaration object</span>
 <span class="hljs-keyword">var</span> foldersState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'folders'</span>,
@@ -110,25 +112,25 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
   <span class="hljs-attr">controller</span>: <span class="hljs-string">'FooController'</span>
 }</code></pre>
 					<p>is simply syntactic sugar for:</p>
-					<pre><code class="language-js">var state = {
-  name: 'foo',
-  url: '/foo',
-  views: {
-    $default: {
-      template: '&lt;h1&gt;foo&lt;/h1&gt;',
-      controller: 'FooController
+					<pre><code class="language-js"><span class="hljs-keyword">var</span> state = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'foo'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'/foo'</span>,
+  <span class="hljs-attr">views</span>: {
+    <span class="hljs-attr">$default</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;h1&gt;foo&lt;/h1&gt;'</span>,
+      <span class="hljs-attr">controller</span>: <span class="hljs-string">'FooController'</span>
     }
   }
 }</code></pre>
 					<p>If a state definition contains a <code>views:</code> object, any view properties set directly on the state are ignored.
 					Thus, this is an invalid state defintion:</p>
-					<pre><code class="language-js">var state = {
-  name: 'foo',
-  url: '/foo',
-  controller: 'FooController, // invalid because views: exists
+					<pre><code class="language-js"><span class="hljs-keyword">var</span> state = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'foo'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'/foo'</span>,
+  <span class="hljs-attr">controller</span>: <span class="hljs-string">'FooController'</span>, <span class="hljs-comment">// invalid because views: exists</span>
   views: {
-    header: {
-      template: '&lt;h1&gt;header&lt;/h1&gt;'
+    <span class="hljs-attr">header</span>: {
+      <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;h1&gt;header&lt;/h1&gt;'</span>
     }
   }
 }</code></pre>
@@ -234,7 +236,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.$$state</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:154</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:154</li>
 						</ul>
 					</aside>
 				</section>
@@ -257,7 +259,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$context</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +282,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$name</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -305,7 +307,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$type</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
 						</ul>
 					</aside>
 				</section>
@@ -329,7 +331,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewContextAnchor</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -363,7 +365,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewName</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
 						</ul>
 					</aside>
 				</section>
@@ -388,7 +390,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.abstract</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:121</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:121</li>
 						</ul>
 					</aside>
 				</section>
@@ -413,7 +415,9 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 							Each value is the name of the resolve that should be provided to that binding.</p>
 							<p>Any component bindings that are omitted from this map get the default behavior of mapping to a resolve of the
 							same name.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">'foo'</span>, {
   <span class="hljs-attr">resolve</span>: {
     <span class="hljs-attr">foo</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">FooService</span>) </span>{ <span class="hljs-keyword">return</span> FooService.get(); },
@@ -476,7 +480,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							input bindings as <a href="https://docs.angularjs.org/api/ng/service/$compile#-scope-">one-way (&quot;&lt;&quot;)</a>.</p>
 							<p>Note: inside a &quot;views:&quot; block, a bare string <code>&quot;foo&quot;</code> is shorthand for <code>{ component: &quot;foo&quot; }</code></p>
 							<p>Note: Mapping from resolve names to component inputs may be specified using <a href="ng1.ng1statedeclaration.html#bindings">bindings</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">.state(<span class="hljs-string">'profile'</span>, {
   <span class="hljs-comment">// Use the &lt;my-profile&gt;&lt;/my-profile&gt; component for the Unnamed view</span>
   component: <span class="hljs-string">'MyProfile'</span>,
@@ -530,7 +536,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>This is an injectable provider function which returns the name of the component to use.
 								The provider will invoked during a Transition in which the view&#39;s state is entered.
 							The provider is called after the resolve data is fetched.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">componentProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"fooComponent"</span>
@@ -620,7 +628,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>This is an injectable provider function which returns the actual controller function, or the name
 								of a registered controller.  The provider will invoked during a Transition in which the view&#39;s state is
 							entered.  The provider is called after the resolve data is fetched.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">controllerProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"FooCtrl"</span>
@@ -666,7 +676,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.data</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:403</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:403</li>
 						</ul>
 					</aside>
 				</section>
@@ -692,7 +702,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.dynamic</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:667</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:667</li>
 						</ul>
 					</aside>
 				</section>
@@ -720,22 +730,31 @@ app.component(<span class="hljs-string">'Baz'</span>, {
   lazyLoad: (transition, <span class="hljs-keyword">state</span>) =&gt; System.import('./abcService')
 }</code></pre><p>The <code>abcService</code> file is imported and loaded
 							(it is assumed that the <code>abcService</code> file knows how to register itself as a service).</p>
-							<h4 id="lifecycle">Lifecycle</h4>
+							<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+								<h4>Lifecycle</h4>
+							</a>
 							<ul>
-								<li>The <code>lazyLoad</code> function is invoked if a transition is going to enter the state.</li>
-								<li>The function is invoked before the transition starts (using an <code>onBefore</code> transition hook).</li>
-								<li>The function is only invoked once; while the <code>lazyLoad</code> function is loading code, it will not be invoked again.
-									For example, if the user double clicks a ui-sref, <code>lazyLoad</code> is only invoked once even though there were two transition attempts.
-								Instead, the existing lazy load promise is re-used.</li>
-								<li>When the promise resolves successfully, the <code>lazyLoad</code> property is deleted from the state declaration.</li>
-								<li>If the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a> which has an array of <code>states</code>, those states are registered.</li>
+								<li><p>The <code>lazyLoad</code> function is invoked if a transition is going to enter the state.</p>
+								</li>
+								<li><p>The function is invoked before the transition starts (using an <code>onBefore</code> transition hook).</p>
+								</li>
+								<li><p>The function is only invoked once; while the <code>lazyLoad</code> function is loading code, it will not be invoked again.
+										For example, if the user double clicks a ui-sref, <code>lazyLoad</code> is only invoked once even though there were two transition attempts.
+									Instead, the existing lazy load promise is re-used.</p>
+								</li>
+								<li><p>When the promise resolves successfully, the <code>lazyLoad</code> property is deleted from the state declaration.</p>
+								</li>
+								<li><p>If the promise resolves to a <a href="state.lazyloadresult.html">LazyLoadResult</a> which has an array of <code>states</code>, those states are registered.</p>
+								</li>
 								<li><p>The original transition is retried (this time without the <code>lazyLoad</code> property present).</p>
 								</li>
 								<li><p>If the <code>lazyLoad</code> function fails, then the transition also fails.
 									The failed transition (and the <code>lazyLoad</code> function) could potentially be retried by the user.</p>
 								</li>
 							</ul>
-							<h3 id="lazy-loading-state-definitions-future-states-">Lazy loading state definitions (Future States)</h3>
+							<a href="#lazy-loading-state-definitions-future-states" id="lazy-loading-state-definitions-future-states" style="color: inherit; text-decoration: none;">
+								<h3>Lazy loading state definitions (Future States)</h3>
+							</a>
 							<p>State definitions can also be lazy loaded.
 							This might be desirable when building large, multi-module applications.</p>
 							<p>To lazy load state definitions, a Future State should be registered as a placeholder.
@@ -757,9 +776,13 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 									Generally, one of the lazy loaded states should have the same name as the future state.
 								The new state will then <strong>replace the future state placeholder</strong> in the registry.</li>
 							</ul>
-							<h3 id="additional-resources">Additional resources</h3>
+							<a href="#additional-resources" id="additional-resources" style="color: inherit; text-decoration: none;">
+								<h3>Additional resources</h3>
+							</a>
 							<p>For in depth information on lazy loading and Future States, see the <a href="https://ui-router.github.io/guides/lazyload">Lazy Loading Guide</a>.</p>
-							<h4 id="example-states-js">Example: states.js</h4>
+							<a href="#example-statesjs" id="example-statesjs" style="color: inherit; text-decoration: none;">
+								<h4>Example: states.js</h4>
+							</a>
 							<pre><code class="language-js">
 <span class="hljs-comment">// This child state is a lazy loaded future state</span>
 <span class="hljs-comment">// The `lazyLoad` function loads the final state definition</span>
@@ -768,7 +791,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/parent'</span>,
   <span class="hljs-attr">lazyLoad</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> System.import(<span class="hljs-string">'./lazy.states.js'</span>)
 }</code></pre>
-							<h4 id="example-lazy-states-js">Example: lazy.states.js</h4>
+							<a href="#example-lazystatesjs" id="example-lazystatesjs" style="color: inherit; text-decoration: none;">
+								<h4>Example: lazy.states.js</h4>
+							</a>
 							<p>This file is lazy loaded.  It exports an array of states.</p>
 							<pre><code class="language-js"><span class="hljs-keyword">import</span> {ChildComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./child.component.js"</span>;
 <span class="hljs-keyword">import</span> {ParentComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">"./parent.component.js"</span>;
@@ -847,7 +872,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.lazyLoad</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:658</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:658</li>
 						</ul>
 					</aside>
 				</section>
@@ -874,7 +899,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.name</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:114</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:114</li>
 						</ul>
 					</aside>
 				</section>
@@ -894,14 +919,18 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</div>
 							<p>The hook can inject global services.
 							It can also inject <code>$transition$</code> or <code>$state$</code> (from the current transition).</p>
-							<h3 id="example-">Example:</h3>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h3>Example:</h3>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onEnter</span>: <span class="hljs-function">(<span class="hljs-params">MyService, $transition$, $state$</span>) =&gt;</span> {
     <span class="hljs-keyword">return</span> MyService.doSomething($state$.name, $transition$.params());
   }
 });</code></pre>
-							<h4 id="example-">Example:`</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:`</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onEnter</span>: [ <span class="hljs-string">'MyService'</span>, <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state$'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">MyService, $transition$, $state$</span>) </span>{
@@ -933,14 +962,18 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</div>
 							<p>The hook can inject global services.
 							It can also inject <code>$transition$</code> or <code>$state$</code> (from the current transition).</p>
-							<h3 id="example-">Example:</h3>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h3>Example:</h3>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onExit</span>: <span class="hljs-function">(<span class="hljs-params">MyService, $transition$, $state$</span>) =&gt;</span> {
     <span class="hljs-keyword">return</span> MyService.doSomething($state$.name, $transition$.params());
   }
 });</code></pre>
-							<h4 id="example-">Example:`</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:`</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onExit</span>: [ <span class="hljs-string">'MyService'</span>, <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state$'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">MyService, $transition$, $state$</span>) </span>{
@@ -972,14 +1005,18 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</div>
 							<p>The hook can inject global services.
 							It can also inject <code>$transition$</code> or <code>$state$</code> (from the current transition).</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onRetain</span>: <span class="hljs-function">(<span class="hljs-params">MyService, $transition$, $state$</span>) =&gt;</span> {
     <span class="hljs-keyword">return</span> MyService.doSomething($state$.name, $transition$.params());
   }
 });</code></pre>
-							<h4 id="example-">Example:`</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:`</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'mystate'</span>,
   <span class="hljs-attr">onRetain</span>: [ <span class="hljs-string">'MyService'</span>, <span class="hljs-string">'$transition$'</span>, <span class="hljs-string">'$state$'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">MyService, $transition$, $state$</span>) </span>{
@@ -1011,7 +1048,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</div>
 							<p>An object which optionally configures parameters declared in the url, or defines additional non-url
 							parameters. For each parameter being configured, add a <a href="params.paramdeclaration.html">ParamDeclaration</a> keyed to the name of the parameter.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">params: {
   <span class="hljs-attr">param1</span>: {
    <span class="hljs-attr">type</span>: <span class="hljs-string">"int"</span>,
@@ -1035,7 +1074,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.params</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:340</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:340</li>
 						</ul>
 					</aside>
 				</section>
@@ -1058,7 +1097,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 								This allows shorter state names, e.g., <code>&lt;a ui-sref=&quot;childstate&quot;&gt;Child&lt;/a&gt;</code>
 							instead of `<a ui-sref="parentstate.childstate">Child</a></p>
 							<p>When using this property, the state&#39;s name should not have any dots in it.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> parentstate = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'parentstate'</span>
 }
@@ -1073,7 +1114,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.parent</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:146</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:146</li>
 						</ul>
 					</aside>
 				</section>
@@ -1111,7 +1152,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>Note: <code>redirectTo</code> is processed as an <code>onStart</code> hook, before <code>LAZY</code> resolves.
 								If your redirect function relies on resolve data, get the <a href="../classes/transition.transition-1.html#injector">Transition.injector</a> and get a
 							promise for the resolve data using <a href="core.uiinjector.html#getasync">UIInjector.getAsync</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// a string</span>
 .state(<span class="hljs-string">'A'</span>, {
   <span class="hljs-attr">redirectTo</span>: <span class="hljs-string">'A.B'</span>
@@ -1157,7 +1200,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.redirectTo</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:469</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:469</li>
 						</ul>
 					</aside>
 				</section>
@@ -1175,7 +1218,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<div class="lead">
 								<p>Makes all search/query parameters <code>dynamic</code></p>
 							</div>
-							<h3 id="deprecation-warning-use-a-href-params-paramdeclaration-html-dynamic-paramdeclaration-dynamic-a-instead">Deprecation warning: use <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a> instead</h3>
+							<a href="#deprecation-warning-use-a-hrefparamsparamdeclarationhtmldynamicparamdeclarationdynamica-instead" id="deprecation-warning-use-a-hrefparamsparamdeclarationhtmldynamicparamdeclarationdynamica-instead" style="color: inherit; text-decoration: none;">
+								<h3>Deprecation warning: use <a href="params.paramdeclaration.html#dynamic">ParamDeclaration.dynamic</a> instead</h3>
+							</a>
 							<dl class="tsd-comment-tags">
 								<dt>deprecated</dt>
 								<dd></dd>
@@ -1206,9 +1251,13 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>The <code>resolve:</code> property defines data (or other dependencies) to be fetched asynchronously when the state is being entered.
 								After the data is fetched, it may be used in views, transition hooks or other resolves that belong to this state.
 							The data may also be used in any views or resolves that belong to nested states.</p>
-							<h3 id="as-an-array">As an array</h3>
+							<a href="#as-an-array" id="as-an-array" style="color: inherit; text-decoration: none;">
+								<h3>As an array</h3>
+							</a>
 							<p>Each array element should be a <a href="resolve.resolvableliteral.html">ResolvableLiteral</a> object.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>The <code>user</code> resolve injects the current <code>Transition</code> and the <code>UserService</code> (using its token, which is a string).
 								The [[ResolvableLiteral.resolvePolicy]] sets how the resolve is processed.
 							The <code>user</code> data, fetched asynchronously, can then be used in a view.</p>
@@ -1226,10 +1275,15 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 }</code></pre>
 							<p>Note: an Angular 2 style <a href="https://angular.io/docs/ts/latest/cookbook/dependency-injection.html#!#provide"><code>useFactory</code> provider literal</a>
 							may also be used.  See <a href="resolve.providerlike.html">ProviderLike</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code><span class="hljs-string">resolve:</span> [
   { <span class="hljs-string">provide:</span> <span class="hljs-string">'token'</span>, <span class="hljs-string">useFactory:</span> (http) =&gt; http.get(<span class="hljs-string">'/'</span>), <span class="hljs-string">deps:</span> [ Http ] },
-]</code></pre><h3 id="as-an-object">As an object</h3>
+]</code></pre>
+							<a href="#as-an-object" id="as-an-object" style="color: inherit; text-decoration: none;">
+								<h3>As an object</h3>
+							</a>
 							<p>The <code>resolve</code> property may be an object where:</p>
 							<ul>
 								<li>Each key (string) is the name of the dependency.</li>
@@ -1237,7 +1291,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</ul>
 							<p>This style is based on AngularJS injectable functions, but can be used with any UI-Router implementation.
 							If your code will be minified, the function should be <a href="https://docs.angularjs.org/guide/di#dependency-annotation">&quot;annotated&quot; in the AngularJS manner</a>.</p>
-							<h4 id="angularjs-example-">AngularJS Example:</h4>
+							<a href="#angularjs-example" id="angularjs-example" style="color: inherit; text-decoration: none;">
+								<h4>AngularJS Example:</h4>
+							</a>
 							<pre><code class="language-js">resolve: {
   <span class="hljs-comment">// If you inject `myStateDependency` into a controller, you'll get "abc"</span>
   myStateDependency: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
@@ -1251,7 +1307,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 }</code></pre>
 							<p>Note: You cannot specify a policy for each Resolvable, nor can you use non-string
 							tokens when using the object style <code>resolve:</code> block.</p>
-							<h3 id="lifecycle">Lifecycle</h3>
+							<a href="#lifecycle" id="lifecycle" style="color: inherit; text-decoration: none;">
+								<h3>Lifecycle</h3>
+							</a>
 							<p>Since a resolve function can return a promise, the router will delay entering the state until the promises are ready.
 							If any of the promises are rejected, the Transition is aborted with an Error.</p>
 							<p>By default, resolves for a state are fetched just before that state is entered.
@@ -1261,19 +1319,25 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							previously resolved data for state <code>parent</code> can be injected into <code>parent.child</code> without delay.</p>
 							<p>Any resolved data for <code>parent.child</code> is retained until <code>parent.child</code> is exited, e.g., by transitioning back to the <code>parent</code> state.</p>
 							<p>Because of this scoping and lifecycle, resolves are a great place to fetch your application&#39;s primary data.</p>
-							<h3 id="injecting-resolves-into-other-things">Injecting resolves into other things</h3>
+							<a href="#injecting-resolves-into-other-things" id="injecting-resolves-into-other-things" style="color: inherit; text-decoration: none;">
+								<h3>Injecting resolves into other things</h3>
+							</a>
 							<p>During a transition, Resolve data can be injected into:</p>
 							<ul>
 								<li>Views (the components which fill a <code>ui-view</code> tag)</li>
 								<li>Transition Hooks</li>
 								<li>Other resolves (a resolve may depend on asynchronous data from a different resolve)</li>
 							</ul>
-							<h3 id="injecting-other-things-into-resolves">Injecting other things into resolves</h3>
+							<a href="#injecting-other-things-into-resolves" id="injecting-other-things-into-resolves" style="color: inherit; text-decoration: none;">
+								<h3>Injecting other things into resolves</h3>
+							</a>
 							<p>Resolve functions usually have dependencies on some other API(s).
 								The dependencies are usually declared and injected into the resolve function.
 								A common pattern is to inject a custom service such as <code>UserService</code>.
 							The resolve then delegates to a service method, such as <code>UserService.list()</code>;</p>
-							<h4 id="special-injectable-tokens">Special injectable tokens</h4>
+							<a href="#special-injectable-tokens" id="special-injectable-tokens" style="color: inherit; text-decoration: none;">
+								<h4>Special injectable tokens</h4>
+							</a>
 							<ul>
 								<li><code>UIRouter</code>: The <a href="ng1.__uirouter_core_lib_router_.uirouter.html">UIRouter</a> instance which has references to all the UI-Router services.</li>
 								<li><code>Transition</code>: The current <a href="../classes/transition.transition-1.html">Transition</a> object; information and API about the current transition, such as
@@ -1282,7 +1346,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 								<li><code>&#39;$state$&#39;</code>: For <code>onEnter</code>/<code>onExit</code>/<code>onRetain</code>, the state being entered/exited/retained.</li>
 								<li>Other resolve tokens: A resolve can depend on another resolve, either from the same state, or from any parent state.</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// Injecting a resolve into another resolve</span>
 resolve: [
   <span class="hljs-comment">// Define a resolve 'allusers' which delegates to the UserService.list()</span>
@@ -1298,7 +1364,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.resolve</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:275</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:275</li>
 						</ul>
 					</aside>
 				</section>
@@ -1355,7 +1421,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.resolvePolicy</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:290</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:290</li>
 						</ul>
 					</aside>
 				</section>
@@ -1378,9 +1444,13 @@ resolve: [
 							This template will be used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<p>This property takes precedence over templateUrl.</p>
 							<p>If <code>template</code> is a function, it will be called with the Transition parameters as the first argument.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">template: <span class="hljs-string">"&lt;h1&gt;inline template definition&lt;/h1&gt;&lt;div ui-view&gt;&lt;/div&gt;"</span></code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">template: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;h1&gt;generated template&lt;/h1&gt;"</span>;
 }</code></pre>
@@ -1410,7 +1480,9 @@ resolve: [
 							<p>A property of <a href="ng1.ng1statedeclaration.html">Ng1StateDeclaration</a> or <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>:</p>
 							<p>Injected function which returns the HTML template.
 							The template will be used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyTemplateService, $transition$</span>) </span>{
   <span class="hljs-keyword">return</span> MyTemplateService.getTemplate($transition$.params().pageId);
 }</code></pre>
@@ -1441,9 +1513,13 @@ resolve: [
 							<p>A path or a function that returns a path to an html template.
 							The template will be fetched and used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<p>If <code>templateUrl</code> is a function, it will be called with the Transition parameters as the first argument.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateUrl: <span class="hljs-string">"/templates/home.html"</span></code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateUrl: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> myTemplates[params.pageId];
 }</code></pre>
@@ -1498,7 +1574,7 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.url</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:319</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:319</li>
 						</ul>
 					</aside>
 				</section>
@@ -1530,7 +1606,9 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 									<p>Targets three named ui-views in the parent state&#39;s template</p>
 								</li>
 							</ul>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">views: {
   <span class="hljs-attr">header</span>: {
     <span class="hljs-attr">controller</span>: <span class="hljs-string">"headerCtrl"</span>,
@@ -1542,7 +1620,9 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
   },
   <span class="hljs-attr">footer</span>: <span class="hljs-string">"footerComponent"</span>
 }</code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// Targets named ui-view="header" in the template of the ancestor state 'top'</span>
 <span class="hljs-comment">// and the named `ui-view="body" from the parent state's template.</span>
 views: {
@@ -1555,37 +1635,55 @@ views: {
     <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"messages.html"</span>
   }
 }</code></pre>
-							<h2 id="view-targeting-details">View targeting details</h2>
+							<a href="#view-targeting-details" id="view-targeting-details" style="color: inherit; text-decoration: none;">
+								<h2>View targeting details</h2>
+							</a>
 							<p>There are a few styles of view addressing/targeting.
 							The most common is a simple <code>ui-view</code> name</p>
-							<h4 id="simple-ui-view-name">Simple ui-view name</h4>
+							<a href="#simple-ui-view-name" id="simple-ui-view-name" style="color: inherit; text-decoration: none;">
+								<h4>Simple ui-view name</h4>
+							</a>
 							<p>Addresses without an <code>@</code> are anchored to the parent state.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// target the `&lt;div ui-view='foo'&gt;&lt;/div&gt;` created in the parent state's view</span>
 views: {
   <span class="hljs-attr">foo</span>: {...}
 }</code></pre>
-							<h4 id="view-name-anchored-to-a-state">View name anchored to a state</h4>
+							<a href="#view-name-anchored-to-a-state" id="view-name-anchored-to-a-state" style="color: inherit; text-decoration: none;">
+								<h4>View name anchored to a state</h4>
+							</a>
 							<p>You can anchor the <code>ui-view</code> name to a specific state by including an <code>@</code></p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>targets the <code>&lt;div ui-view=&#39;foo&#39;&gt;&lt;/div&gt;</code> which was created in a view owned by the state <code>bar.baz</code></p>
 							<pre><code class="language-js">views: {
   <span class="hljs-string">'foo@bar.baz'</span>: {...}
 }</code></pre>
-							<h4 id="absolute-addressing">Absolute addressing</h4>
+							<a href="#absolute-addressing" id="absolute-addressing" style="color: inherit; text-decoration: none;">
+								<h4>Absolute addressing</h4>
+							</a>
 							<p>You can address a <code>ui-view</code> absolutely, using dotted notation, by prefixing the address with a <code>!</code>.
 							Dotted addresses traverse the hierarchy of <code>ui-view</code>s active in the DOM:</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-4" id="example-4" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>absolutely targets the <code>&lt;div ui-view=&#39;nested&#39;&gt;&lt;/div&gt;</code>
 							... which was created in the unnamed/$default root <code>&lt;ui-view&gt;&lt;/ui-view&gt;</code></p>
 							<pre><code class="language-js">views: {
   <span class="hljs-string">'!$default.nested'</span>: {...}
 }</code></pre>
-							<h4 id="relative-addressing">Relative addressing</h4>
+							<a href="#relative-addressing" id="relative-addressing" style="color: inherit; text-decoration: none;">
+								<h4>Relative addressing</h4>
+							</a>
 							<p>Absolute addressing is actually relative addressing, anchored to the unnamed root state (<code>&quot;&quot;</code>).
 								You can also use relative addressing anchored to <em>any state</em>, in order to target a target deeply nested <code>ui-views</code>:
 							The <code>ui-view</code> is targeted relative to the anchored state by traversing the nested <code>ui-view</code> names.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-5" id="example-5" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>targets the <code>&lt;div ui-view=&#39;bar&#39;&gt;&lt;/div&gt;</code>
 								... which was created inside the
 								<code>&lt;div ui-view=&#39;foo&#39;&gt;&lt;/div&gt;</code>
@@ -1593,14 +1691,18 @@ views: {
 							<pre><code class="language-js">views: {
   <span class="hljs-string">'foo.bar'</span>: {...}
 }</code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-6" id="example-6" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>targets the <code>&lt;div ui-view=&#39;bar&#39;&gt;&lt;/div&gt;</code>
 								... which was created in <code>&lt;div ui-view=&#39;foo&#39;&gt;&lt;/div&gt;</code>
 							... which was created in a template from the state <code>baz.qux</code></p>
 							<pre><code class="language-js">views: {
   <span class="hljs-string">'foo.bar@baz.qux'</span>: {...}
 }</code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-7" id="example-7" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<p>a view can relatively target a named <code>ui-view</code> defined on an ancestor using <code>^</code> (meaning &quot;parent&quot;)</p>
 							<pre><code class="language-js">views: {
   <span class="hljs-string">'foo@^'</span>: {...}, <span class="hljs-comment">// foo@(parent state) (same as simply 'foo')</span>
@@ -1609,7 +1711,9 @@ views: {
 }</code></pre>
 							<p>For additional in-depth details about how <code>ui-view</code> addressing works, see the internal api [[ViewService.match]].</p>
 							<hr>
-							<h2 id="state-template-controller-and-views-incompatiblity">State template+controller and <code>views:</code> incompatiblity</h2>
+							<a href="#state-templatecontroller-and-codeviewscode-incompatiblity" id="state-templatecontroller-and-codeviewscode-incompatiblity" style="color: inherit; text-decoration: none;">
+								<h2>State template+controller and <code>views:</code> incompatiblity</h2>
+							</a>
 							<p>If a state has a <code>views</code> object, any state-level view properties (<a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>) are ignored.  Therefore,
 								if <em>any view</em> for a state is declared in the <code>views</code> object, then <em>all of the state&#39;s views</em> must be defined in
 							the <code>views</code> object.  The state declaration must not have any of the following fields:</p>
@@ -1700,6 +1804,9 @@ views: {
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -1713,9 +1820,6 @@ views: {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
@@ -1877,10 +1981,10 @@ views: {
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#router" class="tsd-kind-icon">router</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#_includedbystatefilter" class="tsd-kind-icon">$<wbr>Included<wbr>ByState<wbr>Filter</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#_isstatefilter" class="tsd-kind-icon">$<wbr>IsState<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">

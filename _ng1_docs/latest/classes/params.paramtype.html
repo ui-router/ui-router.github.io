@@ -89,7 +89,9 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 					When a param type definition is registered, an instance of this class is created internally.</p>
 					<p>This class has naive implementations for all the <a href="../interfaces/params.paramtypedefinition.html">ParamTypeDefinition</a> methods.</p>
 					<p>Used by <a href="url.urlmatcher.html">UrlMatcher</a> when matching or formatting URLs, or comparing and validating parameter values.</p>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-keyword">var</span> paramTypeDef = {
   <span class="hljs-attr">decode</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> <span class="hljs-built_in">parseInt</span>(val, <span class="hljs-number">10</span>); },
   <span class="hljs-attr">encode</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{ <span class="hljs-keyword">return</span> val &amp;&amp; val.toString(); },
@@ -238,7 +240,9 @@ redirect_from: /docs/latest/classes/params.paramtype.html
 							However, parameters whose type has <code>inherit: false</code> set  will <em>not be inherited</em>.</p>
 							<p>The internal parameter type of <code>hash</code> has <code>inherit: false</code>.
 							This is used to disable inheriting of the hash value (<code>#</code>) on subsequent transitions.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$state.go(<span class="hljs-string">'home'</span>, { <span class="hljs-string">'#'</span>: <span class="hljs-string">'inboxAnchor'</span> });
 ...
 <span class="hljs-comment">// "#" is not inherited.</span>
@@ -326,7 +330,9 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 							</div>
 							<p>If a parameter type is declared <code>raw</code>, it will not be url-encoded.
 							Custom encoding can still be applied in the <a href="params.paramtype.html#encode">encode</a> function.</p>
-							<h3 id="decoding-warning">Decoding warning</h3>
+							<a href="#decoding-warning" id="decoding-warning" style="color: inherit; text-decoration: none;">
+								<h3>Decoding warning</h3>
+							</a>
 							<p>The decoding behavior of raw parameters is not defined.
 							See: <a href="../interfaces/params.paramdeclaration.html#raw">ParamDeclaration.raw</a> for details</p>
 						</div>
@@ -708,6 +714,9 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -721,9 +730,6 @@ $state.go(<span class="hljs-string">'home.nest'</span>);</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>

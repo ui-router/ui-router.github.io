@@ -146,7 +146,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$context</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +169,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$name</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -194,7 +194,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$type</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +218,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewContextAnchor</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -252,7 +252,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewName</p>
 						<ul>
-							<li>Defined in node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
+							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
 						</ul>
 					</aside>
 				</section>
@@ -277,7 +277,9 @@ redirect_from: /docs/latest/interfaces/ng1.ng1viewdeclaration.html
 							Each value is the name of the resolve that should be provided to that binding.</p>
 							<p>Any component bindings that are omitted from this map get the default behavior of mapping to a resolve of the
 							same name.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">$stateProvider.state(<span class="hljs-string">'foo'</span>, {
   <span class="hljs-attr">resolve</span>: {
     <span class="hljs-attr">foo</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">FooService</span>) </span>{ <span class="hljs-keyword">return</span> FooService.get(); },
@@ -339,7 +341,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							input bindings as <a href="https://docs.angularjs.org/api/ng/service/$compile#-scope-">one-way (&quot;&lt;&quot;)</a>.</p>
 							<p>Note: inside a &quot;views:&quot; block, a bare string <code>&quot;foo&quot;</code> is shorthand for <code>{ component: &quot;foo&quot; }</code></p>
 							<p>Note: Mapping from resolve names to component inputs may be specified using <a href="ng1.ng1viewdeclaration.html#bindings">bindings</a>.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">.state(<span class="hljs-string">'profile'</span>, {
   <span class="hljs-comment">// Use the &lt;my-profile&gt;&lt;/my-profile&gt; component for the Unnamed view</span>
   component: <span class="hljs-string">'MyProfile'</span>,
@@ -392,7 +396,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>This is an injectable provider function which returns the name of the component to use.
 								The provider will invoked during a Transition in which the view&#39;s state is entered.
 							The provider is called after the resolve data is fetched.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">componentProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"fooComponent"</span>
@@ -479,7 +485,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>This is an injectable provider function which returns the actual controller function, or the name
 								of a registered controller.  The provider will invoked during a Transition in which the view&#39;s state is
 							entered.  The provider is called after the resolve data is fetched.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">controllerProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyResolveData, $transition$</span>) </span>{
   <span class="hljs-keyword">if</span> (MyResolveData.foo) {
     <span class="hljs-keyword">return</span> <span class="hljs-string">"FooCtrl"</span>
@@ -544,9 +552,13 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							This template will be used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<p>This property takes precedence over templateUrl.</p>
 							<p>If <code>template</code> is a function, it will be called with the Transition parameters as the first argument.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">template: <span class="hljs-string">"&lt;h1&gt;inline template definition&lt;/h1&gt;&lt;div ui-view&gt;&lt;/div&gt;"</span></code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">template: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;h1&gt;generated template&lt;/h1&gt;"</span>;
 }</code></pre>
@@ -575,7 +587,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>A property of <a href="ng1.ng1statedeclaration.html">Ng1StateDeclaration</a> or <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>:</p>
 							<p>Injected function which returns the HTML template.
 							The template will be used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateProvider: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MyTemplateService, $transition$</span>) </span>{
   <span class="hljs-keyword">return</span> MyTemplateService.getTemplate($transition$.params().pageId);
 }</code></pre>
@@ -605,9 +619,13 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							<p>A path or a function that returns a path to an html template.
 							The template will be fetched and used to render the corresponding <a href="../modules/directives.html#uiview">directives.uiView</a> directive.</p>
 							<p>If <code>templateUrl</code> is a function, it will be called with the Transition parameters as the first argument.</p>
-							<h4 id="example-">Example:</h4>
+							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateUrl: <span class="hljs-string">"/templates/home.html"</span></code></pre>
-							<h4 id="example-">Example:</h4>
+							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+								<h4>Example:</h4>
+							</a>
 							<pre><code class="language-js">templateUrl: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
   <span class="hljs-keyword">return</span> myTemplates[params.pageId];
 }</code></pre>
@@ -678,6 +696,9 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -691,9 +712,6 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
@@ -804,10 +822,10 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#router" class="tsd-kind-icon">router</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#_includedbystatefilter" class="tsd-kind-icon">$<wbr>Included<wbr>ByState<wbr>Filter</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/ng1.html#_isstatefilter" class="tsd-kind-icon">$<wbr>IsState<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">

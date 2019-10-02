@@ -90,24 +90,32 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					a boolean, or a function that takes a state and returns a boolean (see <a href="../modules/transition.html#hookmatchcriterion">HookMatchCriterion</a>)</p>
 					<p>All properties are optional.  If any property is omitted, it is replaced with the value <code>true</code>, and always matches.
 					To match any transition, use an empty criteria object <code>{}</code>.</p>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.child'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.**'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'mymodule.**'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
 <span class="hljs-comment">// set to a truthy value.</span>
 <span class="hljs-keyword">var</span> match = {
@@ -115,13 +123,17 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
     <span class="hljs-keyword">return</span> state.data != <span class="hljs-literal">null</span> &amp;&amp; state.data.authRequired === <span class="hljs-literal">true</span>;
   }
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-4" id="example-4" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This will match when route is just entered (initial load) or when the state is hard-refreshed</span>
 <span class="hljs-comment">// by specifying `{refresh: true}` as transition options.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">from</span>: <span class="hljs-function">(<span class="hljs-params">state, transition</span>) =&gt;</span> state.self.name === <span class="hljs-string">''</span> || transition.options().reload
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-5" id="example-5" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">exiting</span>: <span class="hljs-string">'parent.child'</span>
@@ -148,24 +160,32 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					a boolean, or a function that takes a state and returns a boolean (see <a href="../modules/transition.html#hookmatchcriterion">HookMatchCriterion</a>)</p>
 					<p>All properties are optional.  If any property is omitted, it is replaced with the value <code>true</code>, and always matches.
 					To match any transition, use an empty criteria object <code>{}</code>.</p>
-					<h4 id="example-">Example:</h4>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from the `parent` state and going to the `parent.child` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.child'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any substate of `parent` and going directly to the `parent` state.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">from</span>: <span class="hljs-string">'parent.**'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-2" id="example-2" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any substate of `mymodule`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">to</span>: <span class="hljs-string">'mymodule.**'</span>
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-3" id="example-3" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition coming from any state and going to any state that has `data.authRequired`</span>
 <span class="hljs-comment">// set to a truthy value.</span>
 <span class="hljs-keyword">var</span> match = {
@@ -173,13 +193,17 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
     <span class="hljs-keyword">return</span> state.data != <span class="hljs-literal">null</span> &amp;&amp; state.data.authRequired === <span class="hljs-literal">true</span>;
   }
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-4" id="example-4" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This will match when route is just entered (initial load) or when the state is hard-refreshed</span>
 <span class="hljs-comment">// by specifying `{refresh: true}` as transition options.</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">from</span>: <span class="hljs-function">(<span class="hljs-params">state, transition</span>) =&gt;</span> state.self.name === <span class="hljs-string">''</span> || transition.options().reload
 }</code></pre>
-					<h4 id="example-">Example:</h4>
+					<a href="#example-5" id="example-5" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
 					<pre><code class="language-js"><span class="hljs-comment">// This matches a transition that is exiting `parent.child`</span>
 <span class="hljs-keyword">var</span> match = {
   <span class="hljs-attr">exiting</span>: <span class="hljs-string">'parent.child'</span>
@@ -366,6 +390,9 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
@@ -379,9 +406,6 @@ redirect_from: /docs/latest/interfaces/transition.hookmatchcriteria.html
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/path.html">path</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/trace.html">trace</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/vanilla.html">vanilla</a>
