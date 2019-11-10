@@ -38,6 +38,7 @@
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run uglify",
     "build:all": "npm run build:css && build:js",
-    "start": "npm run watch:all & jekyll serve"
+    "serve": "docker run -p 4000:4000 --volume=\\\"$PWD:/srv/jekyll\\\" -it jekyll/jekyll:latest jekyll serve --incremental --watch",
+    "start": "npm run watch:all & npm run serve"
   }
 }
