@@ -1,5 +1,5 @@
 ---
-title: "UI-Router for Angular (2+) - Hello Galaxy!"
+title: "UI-Router for Angular - Hello Galaxy!"
 excerpt: "Learn about Nested States and Nested Views"
 redirect_from: /tutorial/ng2/hellogalaxy/
 ---
@@ -10,8 +10,15 @@ We showed a list of `people` and allowed the user to drill down to view a single
 We implemented both the `people` and `person` states as siblings (peers to each other).
 When `people` was active, `person` could not be active, and vice versa.
 
-In this section, we will create a parent-child state relationship by nesting the `person` state _inside_ the `people` state.
-We will also nest their views, showing `person` details inside the `people` component.
+In this tutorial, we will learn about Nested States:
+
+- [Nested state names](#state-name)
+- [Nested URL](#url)
+- [Nested Resolve](#resolve)
+- [Nested Views](#views)
+
+We will create a parent-child state relationship by nesting the `person` state _inside_ the `people` state.
+We will also nest their views, showing `Person` details inside the `People` component.
 
 ## Live demo
 
@@ -19,12 +26,12 @@ As usual, let's first look at a live demo of the finished "Hello Galaxy" app.
 
 Click the "People" tab, then click on a person. 
 
-<iframe style="width: 100%; height: 500px;" 
-  src="//embed.plnkr.co/1wB5QZSPvvCJZXBWMLXU/?show=preview"
+<iframe style="width: 100%; height: 550px;" 
+  src="//stackblitz.com/edit/uirouter-angular-hello-galaxy?embed=1&file=src/main.ts&view=preview"
   frameborder="1" allowfullscren="allowfullscren"></iframe>
 
 When you switch from one state to the another, it is called a Transition. 
-On the bottom of the plunker, the [UI-Router Transition Visualizer](https://github.com/ui-router/visualizer)
+On the bottom of the stackblitz, the [UI-Router Transition Visualizer](https://github.com/ui-router/visualizer)
 shows each transition visually, and provides transition details when hovered and/or clicked.
 {: .notice--info}
 
@@ -42,21 +49,22 @@ The "Hello Solar System" app had four top-level states, while the
     <img src="/assets/tutorial/hellogalaxy.png">
 </figure>
 
-The `person` state is now a child of the `people` state.
+The `person` state is nested inside the `people` state.
+We say `people` is the parent state and `person` is the child state.
 {: .notice--info}
 
 The new `person` state definition:
 
 ```js
 export const personState = {
-  name: 'people.person',
-  url: '/:personId',
+  name: "people.person",
+  url: "/:personId",
   component: Person,
   resolve: [
-    { 
-      token: 'person', 
-      deps: [Transition, PeopleService],
-      resolveFn: (trans, people) => 
+    {
+      token: "person",
+      deps: [Transition, 'people'],
+      resolveFn: (trans: Transition, people: any[]) => 
           people.find(person => person.id === trans.params().personId)
     }
   ]
@@ -82,31 +90,31 @@ Another way to create a parent/child relationship is with the `parent:` property
 
 ## URL
 
-We changed the `url:` from `/people/{personId}` to the url fragment `/{personId}`.
+We changed the `url:` from `/people/:personId` to the url fragment `/:personId`.
 
 The child state's `url:` property is a url fragment (a partial url).
 The full url for a child state is built by appending the child state's url fragment to the parent state's url.
 
 The url for the parent state (`people`) is still `/people`.
-Appending `/{personId}` to `/people` results in `/people/{personId}` (which is the same as our previous `person` url).
+Appending `/:personId` to `/people` results in `/people/:personId` (which is the same as our previous `person` url).
 
 The router will map a browser url of `/people` to the `people` state.  
-It will map a browser url of `/people/123` to the `person` state, with a `peopleId` parameter value of "123".
+It will map a browser url of `/people/123` to the `people.person` state, with a `peopleId` parameter value of `"123"`.
 
 ## Resolve
 
-We changed the `resolve:` to use the data from the parent resolve, instead of fetching it from the server.
+We changed the `resolve:` to use the data from the parent resolve, instead of re-fetching it from the server.
 
 As before, when you click the "People" tab the router fetches the `people` resolve from the server API, 
 then activates the `people` state and renders the view.
 
 With our new nested state setup, the `person` resolve is a bit different.
 When we click a specific person, the router still invokes the `person` resolve before activating the `person` state.
-However, this resolve is a bit different.
 Instead of fetching the person from the server, the `person` resolve injects the parent state's `people` resolve.
 Since the list of people is already loaded in the parent resolve, no additional fetching occurs.
 
-A resolve function may inject the results of other resolves from ancestor states, or from other resolves on the same state.
+A resolve function may inject the results of other resolves from ancestor states,
+or from other resolves on the same state.
 {: .notice--info}
 
 
@@ -122,19 +130,22 @@ However, the parent state's `people` component has changed a bit.
 ```html
 <!-- outer container -->
 <div class="flex-h">
-
   <!-- inner container for people -->
   <div class="people">
     <h3>Some people:</h3>
     <ul>
       <li *ngFor="let person of people">
-        <a uiSref=".person" [uiParams]="{ personId: person.id }">
-          {{person.name}}
+        <a
+          uiSref=".person"
+          [uiParams]="{ personId: person.id }"
+          uiSrefActive="active"
+        >
+          {{ person.name }}
         </a>
       </li>
     </ul>
   </div>
-  
+
   <!-- viewport for child view -->
   <ui-view></ui-view>
 </div>
@@ -142,7 +153,7 @@ However, the parent state's `people` component has changed a bit.
 {% endraw %}
 
 We've added some container `div`s for layout and embedded a nested `<ui-view></ui-view>` viewport.
-When a child state of `people` is activated, its view is put into the viewport.
+When a child state of `people` is activated, the child state's view is loaded into the viewport.
 We also added some styling to create a side by side layout, so the nested viewport appears on the right. 
 
 
