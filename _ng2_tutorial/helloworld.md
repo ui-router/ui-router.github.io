@@ -111,9 +111,9 @@ import {UIRouterModule} from "@uirouter/angular";
 
 ## Angular Components
 
-*The root component*
+**The root component**
 
-The `AppRoot` component will be the root of the application component tree.
+The `App` component will be the root of the application component tree.
 We will tell Angular to bootstrap our app with this component later.
 
 ```js
@@ -127,17 +127,26 @@ We will tell Angular to bootstrap our app with this component later.
     <ui-view></ui-view>
   `
 })
-export class AppRoot {}
+export class App {}
 ```
 
 The `my-app` selector matches the `<my-app>loading</my-app>` html tag which Stackblitz added for us in `index.html`.
 
-*Viewport*
+**Viewport**
 
-The `AppRoot` component contains a `<ui-view>` viewport.
+```html
+<ui-view></ui-view>
+```
+
+The `App` component contains a `<ui-view>` viewport.
 This viewport will be filled with the component from the currently active state.
 
-*Links*
+**Links**
+
+```html
+<a uiSref="hello" uiSrefActive="active">Hello</a>
+<a uiSref="about" uiSrefActive="active">About</a>
+```
 
 The component also contains two anchor tags, each containing a `uiSref` directive.
 The `uiSref` directives are links, similar to an anchor tag's `href`.
@@ -146,16 +155,17 @@ Instead of linking to a URL like an `href` does, a `uiSref` links to a state.
 When clicked, the linked state is activated.
 The `uiSref` directive automatically builds a `href` attribute for you (`<a href=...></a>`) based on your state's url.
 
-*Active Link Indicator*
+**Active Link Indicator**
+
+```html
+uiSrefActive="active"
+```
 
 The `uiSref` links also have `uiSrefActive='active'` (which is another UIRouter directive).
 When the state that the `uiSref` links to is active, `uiSrefActive` will add the `active` CSS class to the link.
 In the demo, this makes the link **BOLD**.
 
 **The `Hello` and `About` components**
-
-These two simple components make up the two pages of our application.
-The router will fill the viewport with one of these components as you navigate between states.
 
 ```js
 @Component({  
@@ -169,16 +179,18 @@ class Hello { }
 class About { }
 ```
 
-## The UI-Router states
+These two simple components make up the two pages of our application.
+The router will fill the viewport with one of these components as you navigate between states.
 
-A state is the basic building block for UI-Router applications.
-We define two states: `helloState` and `aboutState`.
+## The UI-Router states
 
 ```js
 const helloState = { name: 'hello', url: '/hello',  component: Hello }; 
 const aboutState = { name: 'about', url: '/about',  component: About };
 ```
 
+A state is the basic building block for UI-Router applications.
+We define two states: `helloState` and `aboutState`.
 Each of these state objects have three properties:
 
 `name`
@@ -188,7 +200,7 @@ Each of these state objects have three properties:
 :    When the `hello` state is active, the browser's url will be `/hello`.
 
 `component`
-:    When the `hello` state is active, the `Hello` Angular component will be loaded into the `ui-view` viewport.
+:    When the `hello` state is active, the `Hello` component will be loaded into the `ui-view` viewport.
 
 ## The root `NgModule`
 
@@ -200,8 +212,8 @@ Angular requires that you define a root `NgModule` to bootstrap your application
     BrowserModule,
     UIRouterModule.forRoot({ states: [ helloState, aboutState ], useHash: true })
   ],
-  declarations: [ AppRoot, Hello, About ],
-  bootstrap: [ AppRoot ]
+  declarations: [ App, Hello, About ],
+  bootstrap: [ App ]
 })
 class RootAppModule {}
 ```
@@ -209,13 +221,12 @@ class RootAppModule {}
 `imports: [ BrowserModule, UIRouterModule.forRoot({ ...`
 :   Allows your app's module to use code from another module.
     In this example, `UIRouterModule.forRoot` imports the UI-Router module, and registers the states listed.
-    The `BrowserModule` contains built-in Angular directives like `ngFor`.
     
-`declarations: [ AppRoot, Hello, About ]`
+`declarations: [ App, Hello, About ]`
 :   Declares all components used in the root module.
 
-`bootstrap: [ AppRoot ]`
-:   Tells Angular to bootstrap the `AppRoot` component as the root of the application.
+`bootstrap: [ App ]`
+:   Tells Angular to bootstrap the `App` component as the root of the application.
 
 ## Bootstrapping Angular
 
