@@ -20,7 +20,8 @@ UI-Router provides extremely flexible, state based routing to the Angular (2+) e
 The UI-Router package is distributed using [npm](https://www.npmjs.com/), the node package manager.
 
 ```
-npm install --save @uirouter/angular
+npm install @uirouter/angular
+npx check-peer-dependencies --install
 ```
 
 Other examples:
