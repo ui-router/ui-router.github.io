@@ -24,13 +24,6 @@ npm install @uirouter/angular
 npx check-peer-dependencies --install
 ```
 
-Other examples:
-
-- Adding a specific version to your project: `npm install --save @uirouter/angular@1.0.0-beta.7`
-- From <http://unpkg.com> via a `<script>` tag in your html: 
-  - Latest stable version: `<script src="//unpkg.com/@uirouter/angular/_bundles/ui-router-ng2.js"></script>`
-  - A specific version: `<script src="//unpkg.com/@uirouter/angular@1.0.0-beta.7/_bundles/ui-router-ng2.js"></script>`
-
 ## Tutorials
 
 Learn UI-Router by following our tutorials.
