@@ -93,16 +93,16 @@ redirect_from: /docs/latest/interfaces/params.paramdeclaration.html
 					<pre><code class="language-js"><span class="hljs-keyword">var</span> mystate = {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;div ui-view/&gt;'</span>,
   <span class="hljs-attr">controller</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
-  url: <span class="hljs-string">'/mystate/:start?{count:int}'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate/:start?{count:int}'</span>,
   <span class="hljs-attr">params</span>: {
     <span class="hljs-attr">start</span>: { <span class="hljs-comment">// &lt;-- ParamDeclaration for `start`</span>
-      type: <span class="hljs-string">'date'</span>,
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'date'</span>,
       <span class="hljs-attr">value</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(), <span class="hljs-comment">// &lt;-- Default value</span>
-      squash: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">squash</span>: <span class="hljs-literal">true</span>,
     },
 
     <span class="hljs-attr">nonUrlParam</span>: { <span class="hljs-comment">// &lt;-- ParamDeclaration for 'nonUrlParam'</span>
-     type: <span class="hljs-string">"int"</span>,
+     <span class="hljs-attr">type</span>: <span class="hljs-string">"int"</span>,
      <span class="hljs-attr">array</span>: <span class="hljs-literal">true</span>,
      <span class="hljs-attr">value</span>: []
     },
@@ -196,7 +196,7 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });</code></pre>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:164</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:164</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,7 +228,7 @@ $state.go(&quot;foo&quot;, { arrayParam: [ 1, 2, 3 ] });</code></pre>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:268</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:268</li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +273,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:344</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:344</li>
 						</ul>
 					</aside>
 				</section>
@@ -320,7 +320,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:306</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:306</li>
 						</ul>
 					</aside>
 				</section>
@@ -336,7 +336,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:238</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:238</li>
 						</ul>
 					</aside>
 				</section>
@@ -373,7 +373,7 @@ $state.go(<span class="hljs-string">'fooState'</span>, { <span class="hljs-attr"
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate/:myparam'</span>,
   <span class="hljs-attr">params</span>: {
     <span class="hljs-attr">myparam</span>: <span class="hljs-string">'defaultParamValue'</span>
-    squash: <span class="hljs-literal">true</span>
+    <span class="hljs-attr">squash</span>: <span class="hljs-literal">true</span>
   }
 }
 
@@ -390,7 +390,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/mystate2/:myparam2'</span>,
   <span class="hljs-attr">params</span>: {
     <span class="hljs-attr">myparam2</span>: <span class="hljs-string">'defaultParamValue'</span>
-    squash: <span class="hljs-string">"~"</span>
+    <span class="hljs-attr">squash</span>: <span class="hljs-string">"~"</span>
   }
 }
 
@@ -404,7 +404,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:219</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:219</li>
 						</ul>
 					</aside>
 				</section>
@@ -438,7 +438,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:129</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:129</li>
 						</ul>
 					</aside>
 				</section>
@@ -500,7 +500,7 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/params/interface.ts:108</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/params/interface.ts:108</li>
 						</ul>
 					</aside>
 				</section>
@@ -555,7 +555,10 @@ $state.go(<span class="hljs-string">'mystate'</span>, { <span class="hljs-attr">
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+						<a href="../modules/_ui_router_core_src_common_safeconsole_.html">&quot;ui-<wbr>router-<wbr>core/src/common/safe<wbr>Console&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">&quot;ui-<wbr>router-<wbr>core/src/common/trace&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>

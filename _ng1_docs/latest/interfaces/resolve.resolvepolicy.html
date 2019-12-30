@@ -110,7 +110,9 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 <span class="hljs-comment">// Since `wait` is not specified, it uses the `wait`</span>
 <span class="hljs-comment">// policy defined on the state, or the global default</span>
 <span class="hljs-comment">// if no `wait` policy is defined on the state</span>
-<span class="hljs-keyword">var</span> myResolvablePolicy = { <span class="hljs-attr">async</span>: <span class="hljs-string">"RXWAIT"</span> }</code></pre>
+<span class="hljs-keyword">import</span> { RXWAIT } <span class="hljs-keyword">from</span> <span class="hljs-string">'@uirouter/rx'</span>;
+
+<span class="hljs-keyword">var</span> myResolvablePolicy = { <span class="hljs-attr">async</span>: RXWAIT }</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -152,23 +154,27 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 								<p>Determines the unwrapping behavior of asynchronous resolve values.</p>
 							</div>
 							<ul>
-								<li><code>WAIT</code> (default)<ul>
+								<li><p><code>WAIT</code> (default)</p>
+									<ul>
 										<li>If a promise is returned from the resolveFn, wait for the promise before proceeding</li>
 										<li>The unwrapped value from the promise</li>
 									</ul>
 								</li>
-								<li><code>NOWAIT</code><ul>
+								<li><p><code>NOWAIT</code></p>
+									<ul>
 										<li>If a promise is returned from the resolve, do not wait for the promise.</li>
 										<li>Any other value returned is wrapped in a promise.</li>
 										<li>The promise will not be unwrapped.</li>
 										<li>The promise itself will be provided when the resolve is injected or bound elsewhere.</li>
 									</ul>
 								</li>
-								<li><code>RXWAIT</code><ul>
-										<li>When an Observable is returned from the resolveFn, wait until the Observable emits at least one item.</li>
-										<li>The Observable item will not be unwrapped.</li>
-										<li>The Observable stream itself will be provided when the resolve is injected or bound elsewhere.</li>
+								<li><p><a href="resolve.customasyncpolicy.html">CustomAsyncPolicy</a></p>
+									<ul>
+										<li>You can define a custom function that will be called with the resolveFn value.</li>
+										<li>This function must return a promise.</li>
+										<li>The transition will wait for this promise before proceeding</li>
 									</ul>
+									<p>NOTE: The previous <code>RXWAIT</code> policy has become a CustomAsyncPolicy function exported in <code>@uirouter/rx</code> package.</p>
 								</li>
 							</ul>
 							<a href="#example" id="example" style="color: inherit; text-decoration: none;">
@@ -181,18 +187,18 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> mainState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">async</span>: <span class="hljs-string">'NOWAIT'</span> },
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">async</span>: <span class="hljs-string">'NOWAIT'</span> },
 }
 <span class="hljs-keyword">var</span> homeState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">async</span>: <span class="hljs-string">'WAIT'</span> }, <span class="hljs-comment">// default</span>
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">async</span>: <span class="hljs-string">'WAIT'</span> }, <span class="hljs-comment">// default</span>
 }</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/resolve/interface.ts:199</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/resolve/interface.ts:203</li>
 						</ul>
 					</aside>
 				</section>
@@ -228,13 +234,13 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> state = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
 }
 
 <span class="hljs-keyword">var</span> state = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">when</span>: <span class="hljs-string">'LAZY'</span> }, <span class="hljs-comment">// default</span>
 }</code></pre>
 							<a href="#example-1" id="example-1" style="color: inherit; text-decoration: none;">
 								<h4>Example:</h4>
@@ -245,19 +251,19 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 							<pre><code class="language-js"><span class="hljs-keyword">var</span> mainState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
   <span class="hljs-attr">resolve</span>: mainResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
 }
 
 <span class="hljs-keyword">var</span> homeState = {
   <span class="hljs-attr">name</span>: <span class="hljs-string">'main.home'</span>,
   <span class="hljs-attr">resolve</span>: homeResolves, <span class="hljs-comment">// defined elsewhere</span>
-  resolvePolicy: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
+  <span class="hljs-attr">resolvePolicy</span>: { <span class="hljs-attr">when</span>: <span class="hljs-string">'EAGER'</span> },
 }</code></pre>
 						</div>
 					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in ui-router-core/src/resolve/interface.ts:162</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-core/src/resolve/interface.ts:164</li>
 						</ul>
 					</aside>
 				</section>
@@ -312,7 +318,10 @@ redirect_from: /docs/latest/interfaces/resolve.resolvepolicy.html
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+						<a href="../modules/_ui_router_core_src_common_safeconsole_.html">&quot;ui-<wbr>router-<wbr>core/src/common/safe<wbr>Console&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">&quot;ui-<wbr>router-<wbr>core/src/common/trace&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>

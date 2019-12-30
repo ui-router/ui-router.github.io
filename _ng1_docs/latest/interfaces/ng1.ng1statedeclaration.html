@@ -128,7 +128,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
   <span class="hljs-attr">name</span>: <span class="hljs-string">'foo'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/foo'</span>,
   <span class="hljs-attr">controller</span>: <span class="hljs-string">'FooController'</span>, <span class="hljs-comment">// invalid because views: exists</span>
-  views: {
+  <span class="hljs-attr">views</span>: {
     <span class="hljs-attr">header</span>: {
       <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;h1&gt;header&lt;/h1&gt;'</span>
     }
@@ -236,7 +236,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.$$state</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:154</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:154</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +259,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$context</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:68</li>
 						</ul>
 					</aside>
 				</section>
@@ -282,7 +282,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$name</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -307,7 +307,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$type</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:63</li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +331,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewContextAnchor</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -365,7 +365,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from _ViewDeclaration.$uiViewName</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:48</li>
 						</ul>
 					</aside>
 				</section>
@@ -390,7 +390,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.abstract</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:121</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:121</li>
 						</ul>
 					</aside>
 				</section>
@@ -426,7 +426,7 @@ redirect_from: /docs/latest/interfaces/ng1.ng1statedeclaration.html
   <span class="hljs-attr">component</span>: <span class="hljs-string">'Baz'</span>,
   <span class="hljs-comment">// The component's `baz` binding gets data from the `bar` resolve</span>
   <span class="hljs-comment">// The component's `foo` binding gets data from the `foo` resolve (default behavior)</span>
-  bindings: {
+  <span class="hljs-attr">bindings</span>: {
     <span class="hljs-attr">baz</span>: <span class="hljs-string">'bar'</span>
   }
 });
@@ -436,7 +436,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
   <span class="hljs-attr">controller</span>: <span class="hljs-string">'BazController'</span>,
   <span class="hljs-attr">bindings</span>: {
     <span class="hljs-attr">foo</span>: <span class="hljs-string">'&lt;'</span>, <span class="hljs-comment">// foo binding</span>
-    baz: <span class="hljs-string">'&lt;'</span>  <span class="hljs-comment">// baz binding</span>
+    <span class="hljs-attr">baz</span>: <span class="hljs-string">'&lt;'</span>  <span class="hljs-comment">// baz binding</span>
   }
 });</code></pre>
 						</div>
@@ -452,7 +452,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#bindings">bindings</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:464</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:464</li>
 						</ul>
 					</aside>
 				</section>
@@ -485,13 +485,13 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</a>
 							<pre><code class="language-js">.state(<span class="hljs-string">'profile'</span>, {
   <span class="hljs-comment">// Use the &lt;my-profile&gt;&lt;/my-profile&gt; component for the Unnamed view</span>
-  component: <span class="hljs-string">'MyProfile'</span>,
+  <span class="hljs-attr">component</span>: <span class="hljs-string">'MyProfile'</span>,
 }
 
 .state(<span class="hljs-string">'messages'</span>, {
   <span class="hljs-comment">// use the &lt;nav-bar&gt;&lt;/nav-bar&gt; component for the view named 'header'</span>
   <span class="hljs-comment">// use the &lt;message-list&gt;&lt;/message-list&gt; component for the view named 'content'</span>
-  views: {
+  <span class="hljs-attr">views</span>: {
     <span class="hljs-attr">header</span>: { <span class="hljs-attr">component</span>: <span class="hljs-string">'NavBar'</span> },
     <span class="hljs-attr">content</span>: { <span class="hljs-attr">component</span>: <span class="hljs-string">'MessageList'</span> }
   }
@@ -501,7 +501,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
   <span class="hljs-comment">// Inside a "views:" block, a bare string "NavBar" is shorthand for { component: "NavBar" }</span>
   <span class="hljs-comment">// use the &lt;nav-bar&gt;&lt;/nav-bar&gt; component for the view named 'header'</span>
   <span class="hljs-comment">// use the &lt;contact-list&gt;&lt;/contact-list&gt; component for the view named 'content'</span>
-  views: {
+  <span class="hljs-attr">views</span>: {
     <span class="hljs-attr">header</span>: <span class="hljs-string">'NavBar'</span>,
     <span class="hljs-attr">content</span>: <span class="hljs-string">'ContactList'</span>
   }
@@ -514,7 +514,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#component">component</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:422</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:422</li>
 						</ul>
 					</aside>
 				</section>
@@ -551,7 +551,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#componentprovider">componentProvider</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:486</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:486</li>
 						</ul>
 					</aside>
 				</section>
@@ -580,7 +580,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#controller">controller</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:501</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:501</li>
 						</ul>
 					</aside>
 				</section>
@@ -606,7 +606,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#controlleras">controllerAs</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:511</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:511</li>
 						</ul>
 					</aside>
 				</section>
@@ -647,7 +647,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#controllerprovider">controllerProvider</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:537</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:537</li>
 						</ul>
 					</aside>
 				</section>
@@ -676,7 +676,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.data</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:403</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:403</li>
 						</ul>
 					</aside>
 				</section>
@@ -702,7 +702,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.dynamic</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:667</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:667</li>
 						</ul>
 					</aside>
 				</section>
@@ -801,7 +801,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 <span class="hljs-comment">// This fully defined state replaces the future state</span>
 <span class="hljs-keyword">let</span> parentState = {
   <span class="hljs-comment">// the name should match the future state</span>
-  name: <span class="hljs-string">'parent'</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'parent'</span>,
   <span class="hljs-attr">url</span>: <span class="hljs-string">'/parent/:parentId'</span>,
   <span class="hljs-attr">component</span>: ParentComponent,
   <span class="hljs-attr">resolve</span>: {
@@ -872,7 +872,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.lazyLoad</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:658</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:658</li>
 						</ul>
 					</aside>
 				</section>
@@ -899,7 +899,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.name</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:114</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:114</li>
 						</ul>
 					</aside>
 				</section>
@@ -942,7 +942,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="ng1._ng1statedeclaration.html">_Ng1StateDeclaration</a>.<a href="ng1._ng1statedeclaration.html#onenter">onEnter</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:301</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:301</li>
 						</ul>
 					</aside>
 				</section>
@@ -985,7 +985,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="ng1._ng1statedeclaration.html">_Ng1StateDeclaration</a>.<a href="ng1._ng1statedeclaration.html#onexit">onExit</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:329</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:329</li>
 						</ul>
 					</aside>
 				</section>
@@ -1028,7 +1028,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="ng1._ng1statedeclaration.html">_Ng1StateDeclaration</a>.<a href="ng1._ng1statedeclaration.html#onretain">onRetain</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:357</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:357</li>
 						</ul>
 					</aside>
 				</section>
@@ -1074,7 +1074,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.params</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:340</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:340</li>
 						</ul>
 					</aside>
 				</section>
@@ -1114,7 +1114,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.parent</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:146</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:146</li>
 						</ul>
 					</aside>
 				</section>
@@ -1200,7 +1200,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.redirectTo</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:469</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:469</li>
 						</ul>
 					</aside>
 				</section>
@@ -1230,7 +1230,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 					<aside class="tsd-sources">
 						<p>Overwrites StateDeclaration.reloadOnSearch</p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:366</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:366</li>
 						</ul>
 					</aside>
 				</section>
@@ -1296,11 +1296,11 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 							</a>
 							<pre><code class="language-js">resolve: {
   <span class="hljs-comment">// If you inject `myStateDependency` into a controller, you'll get "abc"</span>
-  myStateDependency: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-attr">myStateDependency</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-string">"abc"</span>;
   },
   <span class="hljs-comment">// Dependencies are annotated in "Inline Array Annotation"</span>
-  myAsyncData: [<span class="hljs-string">'$http'</span>, <span class="hljs-string">'$transition$'</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$http, $transition$</span>) </span>{
+  <span class="hljs-attr">myAsyncData</span>: [<span class="hljs-string">'$http'</span>, <span class="hljs-string">'$transition$'</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$http, $transition$</span>) </span>{
     <span class="hljs-comment">// Return a promise (async) for the data</span>
     <span class="hljs-keyword">return</span> $http.get(<span class="hljs-string">"/foos/"</span> + $transition$.params().foo);
   }]
@@ -1350,7 +1350,7 @@ app.component(<span class="hljs-string">'Baz'</span>, {
 								<h4>Example:</h4>
 							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// Injecting a resolve into another resolve</span>
-resolve: [
+<span class="hljs-attr">resolve</span>: [
   <span class="hljs-comment">// Define a resolve 'allusers' which delegates to the UserService.list()</span>
   <span class="hljs-comment">// which returns a promise (async) for all the users</span>
   { <span class="hljs-attr">provide</span>: <span class="hljs-string">'allusers'</span>, <span class="hljs-attr">useFactory</span>: <span class="hljs-function">(<span class="hljs-params">UserService</span>) =&gt;</span> UserService.list(), <span class="hljs-attr">deps</span>: [UserService] },
@@ -1364,7 +1364,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.resolve</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:275</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:275</li>
 						</ul>
 					</aside>
 				</section>
@@ -1391,7 +1391,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#resolveas">resolveAs</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:549</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:549</li>
 						</ul>
 					</aside>
 				</section>
@@ -1413,7 +1413,7 @@ resolve: [
 							<p>It can contain the following optional keys/values:</p>
 							<ul>
 								<li><code>when</code>: (optional) defines when the resolve is fetched. Accepted values: &quot;LAZY&quot; or &quot;EAGER&quot;</li>
-								<li><code>async</code>: (optional) if the transition waits for the resolve. Accepted values: &quot;WAIT&quot;, &quot;NOWAIT&quot;, &quot;RXWAIT&quot;</li>
+								<li><code>async</code>: (optional) if the transition waits for the resolve. Accepted values: &quot;WAIT&quot;, &quot;NOWAIT&quot;, <a href="resolve.customasyncpolicy.html">CustomAsyncPolicy</a></li>
 							</ul>
 							<p>See <a href="resolve.resolvepolicy.html">ResolvePolicy</a> for more details.</p>
 						</div>
@@ -1421,7 +1421,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.resolvePolicy</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:290</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:290</li>
 						</ul>
 					</aside>
 				</section>
@@ -1459,7 +1459,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#template">template</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:575</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:575</li>
 						</ul>
 					</aside>
 				</section>
@@ -1491,7 +1491,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#templateprovider">templateProvider</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:616</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:616</li>
 						</ul>
 					</aside>
 				</section>
@@ -1528,7 +1528,7 @@ resolve: [
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="ng1.ng1viewdeclaration.html">Ng1ViewDeclaration</a>.<a href="ng1.ng1viewdeclaration.html#templateurl">templateUrl</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:599</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:599</li>
 						</ul>
 					</aside>
 				</section>
@@ -1552,21 +1552,21 @@ resolve: [
 							<dl class="tsd-comment-tags">
 								<dt>examples</dt>
 								<dd><pre><code class="language-js">
-url: <span class="hljs-string">"/home"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/home"</span>
 <span class="hljs-comment">// Define a parameter named 'userid'</span>
-url: <span class="hljs-string">"/users/:userid"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/users/:userid"</span>
 <span class="hljs-comment">// param 'bookid' has a custom regexp</span>
-url: <span class="hljs-string">"/books/{bookid:[a-zA-Z_-]}"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/books/{bookid:[a-zA-Z_-]}"</span>
 <span class="hljs-comment">// param 'categoryid' is of type 'int'</span>
-url: <span class="hljs-string">"/books/{categoryid:int}"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/books/{categoryid:int}"</span>
 <span class="hljs-comment">// two parameters for this state</span>
-url: <span class="hljs-string">"/books/{publishername:string}/{categoryid:int}"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/books/{publishername:string}/{categoryid:int}"</span>
 <span class="hljs-comment">// Query parameters</span>
-url: <span class="hljs-string">"/messages?before&amp;after"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/messages?before&amp;after"</span>
 <span class="hljs-comment">// Query parameters of type 'date'</span>
-url: <span class="hljs-string">"/messages?{before:date}&amp;{after:date}"</span>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/messages?{before:date}&amp;{after:date}"</span>
 <span class="hljs-comment">// Path and query parameters</span>
-url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span></code></pre>
+<span class="hljs-attr">url</span>: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:date}"</span></code></pre>
 								</dd>
 							</dl>
 						</div>
@@ -1574,7 +1574,7 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 					<aside class="tsd-sources">
 						<p>Inherited from StateDeclaration.url</p>
 						<ul>
-							<li>Defined in /Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:319</li>
+							<li>Defined in Users/cthielen/projects/uirouter/angularjs/node_modules/@uirouter/core/lib/state/interface.d.ts:319</li>
 						</ul>
 					</aside>
 				</section>
@@ -1625,7 +1625,7 @@ url: <span class="hljs-string">"/messages/:mailboxid?{before:date}&amp;{after:da
 							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// Targets named ui-view="header" in the template of the ancestor state 'top'</span>
 <span class="hljs-comment">// and the named `ui-view="body" from the parent state's template.</span>
-views: {
+<span class="hljs-attr">views</span>: {
   <span class="hljs-string">'header@top'</span>: {
     <span class="hljs-attr">controller</span>: <span class="hljs-string">"msgHeaderCtrl"</span>,
     <span class="hljs-attr">templateUrl</span>: <span class="hljs-string">"msgHeader.html"</span>
@@ -1648,7 +1648,7 @@ views: {
 								<h4>Example:</h4>
 							</a>
 							<pre><code class="language-js"><span class="hljs-comment">// target the `&lt;div ui-view='foo'&gt;&lt;/div&gt;` created in the parent state's view</span>
-views: {
+<span class="hljs-attr">views</span>: {
   <span class="hljs-attr">foo</span>: {...}
 }</code></pre>
 							<a href="#view-name-anchored-to-a-state" id="view-name-anchored-to-a-state" style="color: inherit; text-decoration: none;">
@@ -1741,7 +1741,7 @@ views: {
 					<aside class="tsd-sources">
 						<p>Overwrites <a href="ng1._ng1statedeclaration.html">_Ng1StateDeclaration</a>.<a href="ng1._ng1statedeclaration.html#views">views</a></p>
 						<ul>
-							<li>Defined in ui-router-angularjs/src/interface.ts:273</li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-531520k5WmpgJSf63/ui-router-angularjs/src/interface.ts:273</li>
 						</ul>
 					</aside>
 				</section>
@@ -1772,10 +1772,10 @@ views: {
 						<a href="../modules/ng1.html">ng1</a>
 						<ul>
 							<li class=" tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported">
-								<a href="../modules/ng1.__uirouter_core_lib_router_.html">"@uirouter/core/lib/router"</a>
+								<a href="../modules/ng1.__uirouter_core_lib_router_.html">&quot;@uirouter/core/lib/router&quot;</a>
 							</li>
 							<li class=" tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported">
-								<a href="../modules/ng1.__uirouter_core_lib_state_stateregistry_.html">"@uirouter/core/lib/state/state<wbr>Registry"</a>
+								<a href="../modules/ng1.__uirouter_core_lib_state_stateregistry_.html">&quot;@uirouter/core/lib/state/state<wbr>Registry&quot;</a>
 							</li>
 						</ul>
 					</li>
@@ -1804,7 +1804,10 @@ views: {
 						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_ui_router_core_src_common_trace_.html">"ui-<wbr>router-<wbr>core/src/common/trace"</a>
+						<a href="../modules/_ui_router_core_src_common_safeconsole_.html">&quot;ui-<wbr>router-<wbr>core/src/common/safe<wbr>Console&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_ui_router_core_src_common_trace_.html">&quot;ui-<wbr>router-<wbr>core/src/common/trace&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module tsd-is-external">
 						<a href="../modules/common_hof.html">common_<wbr>hof</a>
