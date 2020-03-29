@@ -7,46 +7,65 @@ redirect_from: /tutorial/react/hellosolarsystem/
 ---
 {% include toc icon="columns" title="Hello Solar System!" %}
 
-In this tutorial, we will build on [Hello World!](helloworld) and create a slightly more ambitious _Hello Solar System_ app.
+In this tutorial, we will build on [Hello World!](helloworld) 
+and explore a slightly more ambitious _Hello Solar System_ app.
 
-We will implement a [list/detail interface](https://en.wikipedia.org/wiki/Master%E2%80%93detail_interface),
-also known as master-detail.
-To accomplish this, we will create two new application states:
+This app introduces some new concepts and UI-Router features.
 
-- The `people` state will show a list of all the people.
-- The `person` state will show details for a specific person.
+- [UIRouter Config](#uirouter-config)
+- [Resolve data](#resolve-data)
+- [State Parameters](#state-parameters)
+- [Linking with params](#linking-with-params)
 
-At any time, the user can click "reload plunker", and the app will restart at the same URL.
+We have implemented a [list/detail interface](https://en.wikipedia.org/wiki/Master%E2%80%93detail_interface). 
+To accomplish this, we added two new application states:
+
+- The `people` state shows a list of all the people.
+- The `person` state shows details for a specific person.
+
+At any time, you can click the Refresh button in the Stackblitz preview.
 The URL contains the information necessary to restore the application's state.
-When the app is restarted, it will be in the same state as before.
-{: .notice--info}
-
-Plunker embeds can time out.
-If you get a "Not Found" response, your plunker embed has timed out.
-Click the "Refresh" icon to get a new plunker, then try experimenting with the "reload plunker" button again.
+When the app restarts, UIRouter will route to the same state and load the same component and data as before.
 {: .notice--info}
 
 ## Live demo
 
 Take a look at the completed Hello Solar System live demo below.
-Click the `UISref` wrapped "People" to view the list of all people.
-Click a person to view the person details.
+Click "People" to view the list of all people.
+Click a person's name to view that person's details.
 
 As you navigate through the app, the [UI-Router State Visualizer](https://github.com/ui-router/visualizer) shows
 the current state
 {: .notice--info}
 
-<iframe style="width: 100%; height: 450px;" src="//embed.plnkr.co/3qSxCVrm1KuDTVH9nHjO/?show=preview" frameborder="1" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 450px;" src="//stackblitz.com/edit/uirouter-react-hello-solar-system?embed=1&file=src/index.js&view=preview" frameborder="1" allowfullscren="allowfullscren"></iframe>
 
 <br>
 
-# New concepts
+## UIRouter Config
 
-This app introduces some new concepts and UI-Router features.
+You can perform imperative router configuration or run initialization code before the router starts.
+Supply a `config` prop to the `UIRouter` component.
 
-- [Resolve data](#resolve-data)
-- [State Parameters](#state-parameters)
-- [Linking with params](#linking-with-params)
+```js 
+<UIRouter config={config}><App/></UIRouter>
+```
+
+The function is called and passed the `UIRouter` instance.
+
+```js
+import { visualizer } from '@uirouter/visualizer';
+ 
+// the config function takes the router
+// instance as argument. it lets you manually
+// configure the router
+export default function config(router) {
+  // Specify the initial route when the initial URL matched no state
+  router.urlService.rules.initial({ state: "hello" });
+  // Setup the state visualizer
+  visualizer(router);
+};
+````
 
 ## Resolve data
 
@@ -101,7 +120,7 @@ We also want to allow the user to be able to view the details for a specific per
 The `person` state takes a `personId` parameter, and uses it to fetch that specific person's details.
 
 The parameter value is included as a part of the URL.
-This enables the same person details to be shown when the plunker is reloaded.
+This enables the same person details to be shown when the browser is reloaded.
 
 The `person` state definition:
 
@@ -133,19 +152,32 @@ Note that our app's main Navigation Bar links to three states: `hello`, `about`,
 but it doesn't include a link directly to the `person` state.
 This is because the state cannot be activated without a parameter value for the `personId` parameter.
 
-In the `people` state we create links to the `person` state for each person.
-We still create the link using the `UISref` component, but we also include the `personId` parameter value.
-As we loop over each person object using `.map()`, we provide the `UISref` with the `personId` using each person's `.id` property.
+In the `people` state we separate create links to the `person` state for each person.
+Like before, we create the link using the `useSrefActive` hook, but we supply state parameters as the second argument.
+The object passed contain the `personId` parameter value.
+
+The `useSrefActive` hook is run inside a separate component to avoid the hooks order changing, if people were added or removed.
+{: .notice--info}
+
+We render a `PersonLink` for each person we loop over.
+The `PersonLink` component passes an object containing the `personId` parameter as the second argument to `useSrefActive`.
 
 {% raw %}
 ```js
-let list = people.map(person => (
-  <li key={person.id}>
-    <UISref to="person" params={{personId:person.id}}>
-      <a>{person.name}</a>
-    </UISref>
-  </li>
-));
+const PersonLink = ({ person }) => {
+  const personSref = useSrefActive("person", { personId: person.id }, "active");
+  return (
+    <li>
+      <a {...personSref}>{person.name}</a>
+    </li>
+  );
+};
+
+...
+  {people.map(person => (
+    <PersonLink key={person.id} person={person} />
+  ))}
+...
 ```
 {% endraw %}
 
