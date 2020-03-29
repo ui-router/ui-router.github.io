@@ -21,12 +21,10 @@ As usual, let's first look at a live demo of the finished "Hello Galaxy" app.
 
 Click the "People" tab, then click on a person.
 
-<iframe style="width: 100%; height: 500px;"
-  src="//embed.plnkr.co/NfIhgwegG7YF0kfbBewj/?show=preview"
-  frameborder="1" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 450px;" src="//stackblitz.com/edit/uirouter-react-hello-galaxy?embed=1&file=src/index.js&view=preview" frameborder="1" allowfullscren="allowfullscren"></iframe>
 
 When you switch from one state to the another, it is called a Transition.
-On the bottom of the plunker, the [UI-Router Transition Visualizer](https://github.com/ui-router/visualizer)
+On the bottom of the live demo, the [UI-Router Transition Visualizer](https://github.com/ui-router/visualizer)
 shows each transition visually, and provides transition details when hovered and/or clicked.
 {: .notice--info}
 
@@ -173,7 +171,3 @@ We could also have used relative addressing: `<UISref to=".person" params={{pers
 Since the `UISref` was created in the `people` state's view and it relatively targets `.person`, the final target state is `people.person`.
 {: .notice--info}
 {% endraw %}
-
-# Transitions
-
-TODO

@@ -156,11 +156,11 @@ In the `people` state we separate create links to the `person` state for each pe
 Like before, we create the link using the `useSrefActive` hook, but we supply state parameters as the second argument.
 The object passed contain the `personId` parameter value.
 
-The `useSrefActive` hook is run inside a separate component to avoid the hooks order changing, if people were added or removed.
-{: .notice--info}
-
 We render a `PersonLink` for each person we loop over.
 The `PersonLink` component passes an object containing the `personId` parameter as the second argument to `useSrefActive`.
+
+The `useSrefActive` hook is run inside a separate component to avoid the hooks order changing, if people were added or removed.
+{: .notice--info}
 
 {% raw %}
 ```js
