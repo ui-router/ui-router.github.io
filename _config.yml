@@ -93,6 +93,8 @@ author:
 include:
   - .htaccess
   - _pages
+  - "_*_.html"
+  - "_*_.*.html"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
