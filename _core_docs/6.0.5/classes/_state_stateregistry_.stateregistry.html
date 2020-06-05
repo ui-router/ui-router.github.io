@@ -1,0 +1,463 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>StateRegistry | @uirouter/core</title>
+	<meta name="description" content="Documentation for @uirouter/core">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/core</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_state_stateregistry_.html">&quot;state/stateRegistry&quot;</a>
+				</li>
+				<li>
+					<a href="_state_stateregistry_.stateregistry.html">StateRegistry</a>
+				</li>
+			</ul>
+			<h1>Class StateRegistry</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A registry for all of the application&#39;s <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a>s</p>
+					</div>
+					<p>This API is found at <code>router.stateRegistry</code> (<a href="_router_.uirouter.html#stateregistry">UIRouter.stateRegistry</a>)</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">StateRegistry</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#decorator" class="tsd-kind-icon">decorator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#deregister" class="tsd-kind-icon">deregister</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#onstateschanged" class="tsd-kind-icon">on<wbr>States<wbr>Changed</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#register" class="tsd-kind-icon">register</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_state_stateregistry_.stateregistry.html#root" class="tsd-kind-icon">root</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="decorator" class="tsd-anchor"></a>
+					<h3>decorator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">decorator<span class="tsd-signature-symbol">(</span>property<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, builderFunction<span class="tsd-signature-symbol">: </span><a href="../modules/_state_statebuilder_.html#builderfunction" class="tsd-signature-type">BuilderFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L225">src/state/stateRegistry.ts:225</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a <a href="../modules/_state_statebuilder_.html#builderfunction">BuilderFunction</a> for a specific <a href="_state_stateobject_.stateobject.html">StateObject</a> property (e.g., <code>parent</code>, <code>url</code>, or <code>path</code>).
+									More than one BuilderFunction can be registered for a given property.</p>
+								</div>
+								<p>The BuilderFunction(s) will be used to define the property on any subsequently built <a href="_state_stateobject_.stateobject.html">StateObject</a> objects.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>property: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the State property being registered for.</p>
+									</div>
+								</li>
+								<li>
+									<h5>builderFunction: <a href="../modules/_state_statebuilder_.html#builderfunction" class="tsd-signature-type">BuilderFunction</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The BuilderFunction which will be used to build the State property</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+							<p>a function which deregisters the BuilderFunction</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="deregister" class="tsd-anchor"></a>
+					<h3>deregister</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">deregister<span class="tsd-signature-symbol">(</span>stateOrName<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">StateOrName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L173">src/state/stateRegistry.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a state from the registry</p>
+								</div>
+								<p>This removes a state from the registry.
+								If the state has children, they are are also removed from the registry.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateOrName: <a href="" class="tsd-signature-type">StateOrName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the state&#39;s name or object representation</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>a list of removed states</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_state_interface_.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>stateOrName<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">StateOrName</a>, base<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">StateOrName</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_state_interface_.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L195">src/state/stateRegistry.ts:195</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all registered states</p>
+								</div>
+								<p>Calling this method with no arguments will return a list of all the states that are currently registered.
+								Note: this does not return states that are <em>queued</em> but not yet registered.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_state_interface_.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>a list of <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a>s</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L207">src/state/stateRegistry.ts:207</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a registered state</p>
+								</div>
+								<p>Given a state or a name, finds and returns the <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a> from the registry.
+								Note: this does not return states that are <em>queued</em> but not yet registered.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateOrName: <a href="" class="tsd-signature-type">StateOrName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>either the name of a state, or a state object.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> base: <a href="" class="tsd-signature-type">StateOrName</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the base state to use when stateOrName is relative.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_state_interface_.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h4>
+							<p>a registered <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a> that matched the <code>stateOrName</code>, or null if the state isn&#39;t registered.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="onstateschanged" class="tsd-anchor"></a>
+					<h3>on<wbr>States<wbr>Changed</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>States<wbr>Changed<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_state_stateregistry_.html#stateregistrylistener" class="tsd-signature-type">StateRegistryListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L101">src/state/stateRegistry.ts:101</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Listen for a State Registry events</p>
+								</div>
+								<p>Adds a callback that is invoked when states are registered or deregistered with the StateRegistry.</p>
+								<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+									<h4>Example:</h4>
+								</a>
+								<pre><code class="language-js"><span class="hljs-keyword">let</span> allStates = registry.get();
+
+<span class="hljs-comment">// Later, invoke deregisterFn() to remove the listener</span>
+<span class="hljs-keyword">let</span> deregisterFn = registry.onStatesChanged(<span class="hljs-function">(<span class="hljs-params">event, states</span>) =&gt;</span> {
+  <span class="hljs-keyword">switch</span>(event) {
+    <span class="hljs-attr">case</span>: <span class="hljs-string">'registered'</span>:
+      states.forEach(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> allStates.push(state));
+      <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span>: <span class="hljs-string">'deregistered'</span>:
+      states.forEach(<span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> {
+        <span class="hljs-keyword">let</span> idx = allStates.indexOf(state);
+        <span class="hljs-keyword">if</span> (idx !== <span class="hljs-number">-1</span>) allStates.splice(idx, <span class="hljs-number">1</span>);
+      });
+      <span class="hljs-keyword">break</span>;
+  }
+});</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <a href="../modules/_state_stateregistry_.html#stateregistrylistener" class="tsd-signature-type">StateRegistryListener</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>a callback function invoked when the registered states changes.
+											The function receives two parameters, <code>event</code> and <code>state</code>.
+										See <a href="../modules/_state_stateregistry_.html#stateregistrylistener">StateRegistryListener</a></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
+							<p>a function that deregisters the listener</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="register" class="tsd-anchor"></a>
+					<h3>register</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">register<span class="tsd-signature-symbol">(</span>stateDefinition<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">_StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L133">src/state/stateRegistry.ts:133</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a state to the registry</p>
+								</div>
+								<p>Registers a <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a> or queues it for registration.</p>
+								<p>Note: a state will be queued if the state&#39;s parent isn&#39;t yet registered.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateDefinition: <a href="" class="tsd-signature-type">_StateDeclaration</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the definition of the state to register.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
+							<p>the internal <a href="_state_stateobject_.stateobject.html">StateObject</a> object.
+								If the state was successfully registered, then the object is fully built (See: <a href="_state_statebuilder_.statebuilder.html">StateBuilder</a>).
+							If the state was only queued, then the object is not fully built.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="root" class="tsd-anchor"></a>
+					<h3>root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/state/stateRegistry.ts#L117">src/state/stateRegistry.ts:117</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the implicit root state</p>
+								</div>
+								<p>Gets the root of the state tree.
+									The root state is implicitly created by UI-Router.
+								Note: this returns the internal <a href="_state_stateobject_.stateobject.html">StateObject</a> representation, not a <a href="../interfaces/_state_interface_.statedeclaration.html">StateDeclaration</a></p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_state_stateobject_.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
+							<p>the root <a href="_state_stateobject_.stateobject.html">StateObject</a></p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_router_.uirouter.html">UIRouter</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_state_stateservice_.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_state_stateregistry_.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_transition_transitionservice_.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_url_urlservice_.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_url_urlconfig_.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_url_urlrules_.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_transition_transition_.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_common_trace_.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_state_stateregistry_.stateregistry.html" class="tsd-kind-icon">State<wbr>Registry</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#decorator" class="tsd-kind-icon">decorator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#deregister" class="tsd-kind-icon">deregister</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#onstateschanged" class="tsd-kind-icon">on<wbr>States<wbr>Changed</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#register" class="tsd-kind-icon">register</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_state_stateregistry_.stateregistry.html#root" class="tsd-kind-icon">root</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_state_stateregistry_.html#stateregistrylistener" class="tsd-kind-icon">State<wbr>Registry<wbr>Listener</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UrlRuleHandlerFn | @uirouter/core</title>
+	<meta name="description" content="Documentation for @uirouter/core">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/core</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_url_interface_.html">&quot;url/interface&quot;</a>
+				</li>
+				<li>
+					<a href="_url_interface_.urlrulehandlerfn.html">UrlRuleHandlerFn</a>
+				</li>
+			</ul>
+			<h1>Interface UrlRuleHandlerFn</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Handler invoked when a rule is matched</p>
+					</div>
+					<p>The matched value from the rule&#39;s <a href="_url_interface_.urlrulematchfn.html">UrlRuleMatchFn</a> is passed as the first argument
+					The handler should return a string (to redirect), a <a href="../classes/_state_targetstate_.targetstate.html">TargetState</a>/<a href="_state_interface_.targetstatedef.html">TargetStateDef</a>, or void</p>
+					<p>If the handler returns a string, the url is replaced with the string.
+					If the handler returns a <a href="../classes/_state_targetstate_.targetstate.html">TargetState</a>, the target state is activated.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">UrlRuleHandlerFn</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>matchValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, url<span class="tsd-signature-symbol">?: </span><a href="_url_interface_.urlparts.html" class="tsd-signature-type">UrlParts</a>, router<span class="tsd-signature-symbol">?: </span><a href="../classes/_router_.uirouter.html" class="tsd-signature-type">UIRouter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="_state_interface_.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/url/interface.ts#L99">src/url/interface.ts:99</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Handler invoked when a rule is matched</p>
+							</div>
+							<p>The matched value from the rule&#39;s <a href="_url_interface_.urlrulematchfn.html">UrlRuleMatchFn</a> is passed as the first argument
+							The handler should return a string (to redirect), a <a href="../classes/_state_targetstate_.targetstate.html">TargetState</a>/<a href="_state_interface_.targetstatedef.html">TargetStateDef</a>, or void</p>
+							<p>If the handler returns a string, the url is replaced with the string.
+							If the handler returns a <a href="../classes/_state_targetstate_.targetstate.html">TargetState</a>, the target state is activated.</p>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> matchValue: <span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <a href="_url_interface_.urlparts.html" class="tsd-signature-type">UrlParts</a></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> router: <a href="../classes/_router_.uirouter.html" class="tsd-signature-type">UIRouter</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="_state_interface_.targetstatedef.html" class="tsd-signature-type">TargetStateDef</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_router_.uirouter.html">UIRouter</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_state_stateservice_.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_state_stateregistry_.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_transition_transitionservice_.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_url_urlservice_.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_url_urlconfig_.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_url_urlrules_.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_transition_transition_.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_common_trace_.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.matchresult.html" class="tsd-kind-icon">Match<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.matcherurlrule.html" class="tsd-kind-icon">Matcher<wbr>Url<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.regexprule.html" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.staterule.html" class="tsd-kind-icon">State<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlconfigapi.html" class="tsd-kind-icon">Url<wbr>Config<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlmatchercompileconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Compile<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlmatcherconfig.html" class="tsd-kind-icon">Url<wbr>Matcher<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlparts.html" class="tsd-kind-icon">Url<wbr>Parts</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlrule.html" class="tsd-kind-icon">Url<wbr>Rule</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlrulehandlerfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Handler<wbr>Fn</a>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlrulematchfn.html" class="tsd-kind-icon">Url<wbr>Rule<wbr>Match<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlrulesapi.html" class="tsd-kind-icon">Url<wbr>Rules<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="_url_interface_.urlsyncapi.html" class="tsd-kind-icon">Url<wbr>Sync<wbr>Api</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
