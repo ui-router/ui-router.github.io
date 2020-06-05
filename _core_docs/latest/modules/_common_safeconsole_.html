@@ -6,16 +6,19 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>&quot;common/safeConsole&quot; | @uirouter/core</title>
-	<meta name="description" content="Documentation for @uirouter/core">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/uirouter.css">
+	<script src="../assets/js/modernizr.js"></script>
+	<script src="../assets/js/reset.js"></script>
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -30,20 +33,25 @@
 					<div id="tsd-filter">
 						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
 						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<!--
+                            <div class="tsd-select" id="tsd-filter-visibility">
+                                <span class="tsd-select-label">All</span>
+                                <ul class="tsd-select-list">
+                                    <li data-value="public">Public</li>
+                                    <li data-value="protected">Public/Protected</li>
+                                    <li data-value="private" class="selected">All</li>
+                                </ul>
+                            </div>
+
+                            <input type="checkbox" id="tsd-filter-inherited" checked />
+                            <label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+                            -->
 							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+							<label class="tsd-widget" for="tsd-filter-externals">Internal UI-Router API</label>
+							<!--
+                                <input type="checkbox" id="tsd-filter-only-exported" />
+                                <label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+                            -->
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -55,7 +63,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">Globals</a>
+					<a href="../index.html">@uirouter/core</a>
 				</li>
 				<li>
 					<a href="_common_safeconsole_.html">&quot;common/safeConsole&quot;</a>
@@ -68,13 +76,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>workaround for missing console object in IE9 when dev tools haven&#39;t been opened o_O</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -82,21 +83,21 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external"><a href="_common_safeconsole_.html#safeconsole" class="tsd-kind-icon">safe<wbr>Console</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external"><a href="_common_safeconsole_.html#safeconsole" class="tsd-kind-icon">safe<wbr>Console</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#fallbackconsole" class="tsd-kind-icon">fallback<wbr>Console</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#getsafeconsole" class="tsd-kind-icon">get<wbr>Safe<wbr>Console</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#ie9console" class="tsd-kind-icon">ie9<wbr>Console</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#fallbackconsole" class="tsd-kind-icon">fallback<wbr>Console</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#getsafeconsole" class="tsd-kind-icon">get<wbr>Safe<wbr>Console</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#ie9console" class="tsd-kind-icon">ie9<wbr>Console</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
 							<h3>Object literals</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#noopconsolestub" class="tsd-kind-icon">noop<wbr>Console<wbr>Stub</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_common_safeconsole_.html#noopconsolestub" class="tsd-kind-icon">noop<wbr>Console<wbr>Stub</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,15 +105,14 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
 					<a name="safeconsole" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> safe<wbr>Console</h3>
-					<div class="tsd-signature tsd-kind-icon">safe<wbr>Console<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = getSafeConsole()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L38">src/common/safeConsole.ts:38</a></li>
-						</ul>
-					</aside>
+					<!--
+        <h3><span class="tsd-flag ts-flagConst">Const</span> safe<wbr>Console</h3>
+    -->
+					<div class="tsd-signature tsd-kind-icon">safe<wbr>Console<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;getSafeConsole()</span></div>
+					<div class="tsd-declaration">
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -127,145 +127,178 @@
 							</li>
 						</ul>
 					</div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:35</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 					<a name="fallbackconsole" class="tsd-anchor"></a>
-					<h3>fallback<wbr>Console</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">fallback<wbr>Console<span class="tsd-signature-symbol">(</span>console<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+					<!--
+        <h3>fallback<wbr>Console</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">fallback<wbr>Console<span class="tsd-signature-symbol">(</span>console<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L19">src/common/safeConsole.ts:19</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>console: <span class="tsd-signature-type">any</span></h5>
+									<h5>console <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-						</li>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:16</li>
+								</ul>
+						</aside>        </li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 					<a name="getsafeconsole" class="tsd-anchor"></a>
-					<h3>get<wbr>Safe<wbr>Console</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Safe<wbr>Console<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+					<!--
+        <h3>get<wbr>Safe<wbr>Console</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Safe<wbr>Console<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+							</div>
+							<hr>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L26">src/common/safeConsole.ts:26</a></li>
+									<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:23</li>
 								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-						</li>
+						</aside>        </li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 					<a name="ie9console" class="tsd-anchor"></a>
-					<h3>ie9<wbr>Console</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">ie9<wbr>Console<span class="tsd-signature-symbol">(</span>console<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+					<!--
+        <h3>ie9<wbr>Console</h3>
+    -->
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">ie9<wbr>Console<span class="tsd-signature-symbol">(</span>console<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L10">src/common/safeConsole.ts:10</a></li>
-								</ul>
-							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>console: <span class="tsd-signature-type">any</span></h5>
+									<h5>console <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-						</li>
+							<div class="tsd-returns">
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>log<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>table<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:7</li>
+								</ul>
+						</aside>        </li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
 				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 					<a name="noopconsolestub" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> noop<wbr>Console<wbr>Stub</h3>
+					<!--
+        <h3><span class="tsd-flag ts-flagConst">Const</span> noop<wbr>Console<wbr>Stub</h3>
+    -->
 					<div class="tsd-signature tsd-kind-icon">noop<wbr>Console<wbr>Stub<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-declaration">
+					</div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L8">src/common/safeConsole.ts:8</a></li>
+							<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:5</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external tsd-is-not-exported">
 						<a name="noopconsolestub.error-1" class="tsd-anchor"></a>
-						<h3>error</h3>
-						<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <a href="_common_common_.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> = noop</span></div>
+						<!--
+        <h3>error</h3>
+    -->
+						<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <a href="common.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> =&nbsp;noop</span></div>
+						<div class="tsd-declaration">
+						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L8">src/common/safeConsole.ts:8</a></li>
+								<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:5</li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external tsd-is-not-exported">
 						<a name="noopconsolestub.log-1" class="tsd-anchor"></a>
-						<h3>log</h3>
-						<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <a href="_common_common_.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> = noop</span></div>
+						<!--
+        <h3>log</h3>
+    -->
+						<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <a href="common.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> =&nbsp;noop</span></div>
+						<div class="tsd-declaration">
+						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L8">src/common/safeConsole.ts:8</a></li>
+								<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:5</li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-external tsd-is-not-exported">
 						<a name="noopconsolestub.table-1" class="tsd-anchor"></a>
-						<h3>table</h3>
-						<div class="tsd-signature tsd-kind-icon">table<span class="tsd-signature-symbol">:</span> <a href="_common_common_.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> = noop</span></div>
+						<!--
+        <h3>table</h3>
+    -->
+						<div class="tsd-signature tsd-kind-icon">table<span class="tsd-signature-symbol">:</span> <a href="common.html#noop" class="tsd-signature-type">noop</a><span class="tsd-signature-symbol"> =&nbsp;noop</span></div>
+						<div class="tsd-declaration">
+						</div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/safeConsole.ts#L8">src/common/safeConsole.ts:8</a></li>
+								<li>Defined in private/var/folders/4n/ys7v20b52y9gyyx7kfdb93580000gp/T/tmp-16028wEw5zOIy63UQ/ui-router-core/src/common/safeConsole.ts:5</li>
 							</ul>
 						</aside>
 					</section>
@@ -275,59 +308,80 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="label ">
-						<span></span>
+					<li class="globals  ">
+						<a href="../index.html"><em>@uirouter/core</em></a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_router_.uirouter.html">UIRouter</a>
+					<li class="label tsd-is-external">
+						<span>Public API</span>
 					</li>
-					<li class="label ">
-						<span>Services</span>
+					<li class=" tsd-kind-external-module">
+						<a href="common.html">common</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_state_stateservice_.stateservice.html">State<wbr>Service</a>
+					<li class=" tsd-kind-external-module">
+						<a href="core.html">core</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_state_stateregistry_.stateregistry.html">State<wbr>Registry</a>
+					<li class=" tsd-kind-external-module">
+						<a href="params.html">params</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_transition_transitionservice_.transitionservice.html">Transition<wbr>Service</a>
+					<li class=" tsd-kind-external-module">
+						<a href="resolve.html">resolve</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_url_urlservice_.urlservice.html">Url<wbr>Service</a>
+					<li class=" tsd-kind-external-module">
+						<a href="state.html">state</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_url_urlconfig_.urlconfig.html">Url<wbr>Config</a>
+					<li class=" tsd-kind-external-module">
+						<a href="transition.html">transition</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_url_urlrules_.urlrules.html">Url<wbr>Rules</a>
+					<li class=" tsd-kind-external-module">
+						<a href="url.html">url</a>
 					</li>
-					<li class="label ">
-						<span>Other</span>
+					<li class=" tsd-kind-external-module">
+						<a href="view.html">view</a>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_transition_transition_.transition.html">Transition</a>
+					<li class="label tsd-is-external">
+						<span>Internal UI-<wbr><wbr>Router API</span>
 					</li>
-					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
-						<a href="../classes/_common_trace_.trace.html">Trace</a>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="_common_safeconsole_.html">&quot;common/safe<wbr>Console&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="_common_trace_.html">&quot;common/trace&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_hof.html">common_<wbr>hof</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_predicates.html">common_<wbr>predicates</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="common_strings.html">common_<wbr>strings</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="hooks.html">hooks</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="path.html">path</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="vanilla.html">vanilla</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
 						<a href="_common_safeconsole_.html#safeconsole" class="tsd-kind-icon">safe<wbr>Console</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="_common_safeconsole_.html#fallbackconsole" class="tsd-kind-icon">fallback<wbr>Console</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="_common_safeconsole_.html#getsafeconsole" class="tsd-kind-icon">get<wbr>Safe<wbr>Console</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="_common_safeconsole_.html#ie9console" class="tsd-kind-icon">ie9<wbr>Console</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
 						<a href="_common_safeconsole_.html#noopconsolestub" class="tsd-kind-icon">noop<wbr>Console<wbr>Stub</a>
 					</li>
 				</ul>
@@ -339,11 +393,63 @@
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
 		</div>
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
