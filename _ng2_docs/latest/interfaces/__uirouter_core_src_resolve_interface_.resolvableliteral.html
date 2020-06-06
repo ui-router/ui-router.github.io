@@ -1,0 +1,397 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ResolvableLiteral | @uirouter/angular</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angular</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">@uirouter/angular</a>
+				</li>
+				<li>
+					<a href="../modules/__uirouter_core_src_resolve_interface_.html">&quot;@uirouter/core/src/resolve/interface&quot;</a>
+				</li>
+				<li>
+					<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html">ResolvableLiteral</a>
+				</li>
+			</ul>
+			<h1>Interface ResolvableLiteral</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A plain object used to describe a <a href="../classes/__uirouter_core_src_resolve_resolvable_.resolvable.html">Resolvable</a></p>
+					</div>
+					<p>These objects may be used in the <a href="__uirouter_core_src_state_interface_.statedeclaration.html#resolve">StateDeclaration.resolve</a> array to declare
+					async data that the state or substates require.</p>
+					<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+						<h4>Example:</h4>
+					</a>
+					<pre><code class="language-js">
+<span class="hljs-keyword">var</span> state = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'main'</span>,
+  <span class="hljs-attr">resolve</span>: [
+    { <span class="hljs-attr">token</span>: <span class="hljs-string">'myData'</span>, <span class="hljs-attr">deps</span>: [MyDataApi], <span class="hljs-attr">resolveFn</span>: <span class="hljs-function">(<span class="hljs-params">myDataApi</span>) =&gt;</span> myDataApi.getData() },
+  ],
+}</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ResolvableLiteral</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/__uirouter_core_src_resolve_resolvable_.resolvable.html" class="tsd-signature-type">Resolvable</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#deps" class="tsd-kind-icon">deps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#policy" class="tsd-kind-icon">policy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#resolvefn" class="tsd-kind-icon">resolve<wbr>Fn</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#token" class="tsd-kind-icon">token</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @uirouter/core/src/resolve/interface.ts:81</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Pre-resolved data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="deps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deps</h3>
+					<div class="tsd-signature tsd-kind-icon">deps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @uirouter/core/src/resolve/interface.ts:78</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The Dependency Injection tokens</p>
+						</div>
+						<p>This is an array of Dependency Injection tokens for the dependencies of the <a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#resolvefn">resolveFn</a>.</p>
+						<p>The DI tokens are references to other <code>Resolvables</code>, or to other
+						services from the native DI system.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="policy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> policy</h3>
+					<div class="tsd-signature tsd-kind-icon">policy<span class="tsd-signature-symbol">:</span> <a href="__uirouter_core_src_resolve_interface_.resolvepolicy.html" class="tsd-signature-type">ResolvePolicy</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @uirouter/core/src/resolve/interface.ts:68</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the Resolve Policy</p>
+						</div>
+						<p>A policy that defines when to invoke the resolve,
+						and whether to wait for async and unwrap the data</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="resolvefn" class="tsd-anchor"></a>
+					<h3>resolve<wbr>Fn</h3>
+					<div class="tsd-signature tsd-kind-icon">resolve<wbr>Fn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @uirouter/core/src/resolve/interface.ts:60</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function which fetches the Resolvable&#39;s data</p>
+						</div>
+						<p>A function which returns one of:</p>
+						<ul>
+							<li>The resolved value (synchronously)</li>
+							<li>A promise for the resolved value</li>
+							<li>An Observable of the resolved value(s)</li>
+						</ul>
+						<p>This function will be provided the dependencies listed in <a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#deps">deps</a> as its arguments.
+						The resolve system will asynchronously fetch the dependencies before invoking this function.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="token" class="tsd-anchor"></a>
+					<h3>token</h3>
+					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in @uirouter/core/src/resolve/interface.ts:46</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A Dependency Injection token</p>
+						</div>
+						<p>This Resolvable&#39;s DI token.
+						The Resolvable will be injectable elsewhere using the token.</p>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_router_.uirouter.html">UIRouter</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_state_stateservice_.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_state_stateregistry_.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_transition_transitionservice_.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_url_urlservice_.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_url_urlconfig_.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_url_urlrules_.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Interfaces</span>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_interface_.ng2statedeclaration.html">Ng2<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_interface_.uionparamschanged.html">Ui<wbr>OnParams<wbr>Changed</a>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_interface_.uionexit.html">Ui<wbr>OnExit</a>
+					</li>
+					<li class="label ">
+						<span>Components</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_directives_uiview_.uiview.html">UIView</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_directives_uisref_.uisref.html">UISref</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_directives_uisrefactive_.uisrefactive.html">UISref<wbr>Active</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_transition_transition_.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/__uirouter_core_src_common_trace_.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="__uirouter_core_src_resolve_interface_.customasyncpolicy.html" class="tsd-kind-icon">Custom<wbr>Async<wbr>Policy</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="__uirouter_core_src_resolve_interface_.providerlike.html" class="tsd-kind-icon">Provider<wbr>Like</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html" class="tsd-kind-icon">Resolvable<wbr>Literal</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#deps" class="tsd-kind-icon">deps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#policy" class="tsd-kind-icon">policy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#resolvefn" class="tsd-kind-icon">resolve<wbr>Fn</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="__uirouter_core_src_resolve_interface_.resolvableliteral.html#token" class="tsd-kind-icon">token</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="__uirouter_core_src_resolve_interface_.resolvepolicy.html" class="tsd-kind-icon">Resolve<wbr>Policy</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/__uirouter_core_src_resolve_interface_.html#policyasync" class="tsd-kind-icon">Policy<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/__uirouter_core_src_resolve_interface_.html#policywhen" class="tsd-kind-icon">Policy<wbr>When</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/__uirouter_core_src_resolve_interface_.html#resolvepolicies" class="tsd-kind-icon">resolve<wbr>Policies</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
