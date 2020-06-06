@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -94,7 +92,6 @@
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isregexp" class="tsd-kind-icon">is<wbr>Reg<wbr>Exp</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isstring" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isundefined" class="tsd-kind-icon">is<wbr>Undefined</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_predicates_.html#tostr" class="tsd-kind-icon">to<wbr>Str</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
@@ -103,7 +100,6 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isinjectable" class="tsd-kind-icon">is<wbr>Injectable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isnull" class="tsd-kind-icon">is<wbr>Null</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_common_predicates_.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_common_predicates_.html#tis" class="tsd-kind-icon">tis</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">isArray</span><span class="tsd-signature-symbol"> = Array.isArray</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L23">src/common/predicates.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L23">src/common/predicates.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +123,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> = &lt;any&gt;((x: any) &#x3D;&gt; toStr.call(x) &#x3D;&#x3D;&#x3D; &#x27;[object Date]&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L24">src/common/predicates.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L24">src/common/predicates.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -158,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Defined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = not(isUndefined)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L16">src/common/predicates.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L16">src/common/predicates.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -189,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol"> = &lt;any&gt;tis(&#x27;function&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L19">src/common/predicates.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L19">src/common/predicates.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -220,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Null<wbr>OrUndefined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">X</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = or(isNull, isUndefined)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L18">src/common/predicates.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L18">src/common/predicates.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -251,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = &lt;any&gt;tis(&#x27;number&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L20">src/common/predicates.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L20">src/common/predicates.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -282,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = &lt;(x: any) &#x3D;&gt; x is Promise&lt;any&gt;&gt;and(isObject, pipe(prop(&#x27;then&#x27;), isFunction))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L47">src/common/predicates.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L47">src/common/predicates.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Reg<wbr>Exp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = &lt;any&gt;((x: any) &#x3D;&gt; toStr.call(x) &#x3D;&#x3D;&#x3D; &#x27;[object RegExp]&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L25">src/common/predicates.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L25">src/common/predicates.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -350,7 +346,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &lt;(x: any) &#x3D;&gt; x is string&gt;tis(&#x27;string&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L21">src/common/predicates.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L21">src/common/predicates.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -381,17 +377,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Undefined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = tis(&#x27;undefined&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L15">src/common/predicates.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="tostr" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Str</h3>
-					<div class="tsd-signature tsd-kind-icon">to<wbr>Str<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_common_common_.obj.html#tostring" class="tsd-signature-type">toString</a><span class="tsd-signature-symbol"> = Object.prototype.toString</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L13">src/common/predicates.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L15">src/common/predicates.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -408,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L33">src/common/predicates.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L33">src/common/predicates.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L17">src/common/predicates.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L17">src/common/predicates.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -461,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L22">src/common/predicates.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/common/predicates.ts#L22">src/common/predicates.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -471,29 +457,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="tis" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> tis</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">tis<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/common/predicates.ts#L14">src/common/predicates.ts:14</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>t: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -572,9 +535,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external">
 						<a href="_common_predicates_.html#isundefined" class="tsd-kind-icon">is<wbr>Undefined</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_common_predicates_.html#tostr" class="tsd-kind-icon">to<wbr>Str</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_common_predicates_.html#isinjectable" class="tsd-kind-icon">is<wbr>Injectable</a>
 					</li>
@@ -583,9 +543,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_common_predicates_.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_common_predicates_.html#tis" class="tsd-kind-icon">tis</a>
 					</li>
 				</ul>
 			</nav>

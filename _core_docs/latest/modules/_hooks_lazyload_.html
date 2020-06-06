@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -75,7 +73,6 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_hooks_lazyload_.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_lazyload_.html#lazyloadstate" class="tsd-kind-icon">lazy<wbr>Load<wbr>State</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_lazyload_.html#registerlazyloadhook" class="tsd-kind-icon">register<wbr>Lazy<wbr>Load<wbr>Hook</a></li>
 							</ul>
@@ -85,59 +82,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="lazyloadhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> lazy<wbr>Load<wbr>Hook</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">lazy<wbr>Load<wbr>Hook<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/lazyLoad.ts#L32">src/hooks/lazyLoad.ts:32</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A <a href="../interfaces/_transition_interface_.transitionhookfn.html">TransitionHookFn</a> that performs lazy loading</p>
-								</div>
-								<p>When entering a state &quot;abc&quot; which has a <code>lazyLoad</code> function defined:</p>
-								<ul>
-									<li>Invoke the <code>lazyLoad</code> function (unless it is already in process)<ul>
-											<li>Flag the hook function as &quot;in process&quot;</li>
-											<li>The function should return a promise (that resolves when lazy loading is complete)</li>
-										</ul>
-									</li>
-									<li>Wait for the promise to settle<ul>
-											<li>If the promise resolves to a <a href="../interfaces/_state_interface_.lazyloadresult.html">LazyLoadResult</a>, then register those states</li>
-											<li>Flag the hook function as &quot;not in process&quot;</li>
-										</ul>
-									</li>
-									<li>If the hook was successful<ul>
-											<li>Remove the <code>lazyLoad</code> function from the state declaration</li>
-										</ul>
-									</li>
-									<li>If all the hooks were successful<ul>
-											<li>Retry the transition (by returning a TargetState)</li>
-										</ul>
-									</li>
-								</ul>
-								<pre><code>.state(<span class="hljs-string">'abc'</span>, {
-  component: <span class="hljs-string">'fooComponent'</span>,
-  lazyLoad: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">'./fooComponent'</span>)
-  });</code></pre><p>See <a href="../interfaces/_state_interface_.statedeclaration.html#lazyload">StateDeclaration.lazyLoad</a></p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>transition: <a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
 					<a name="lazyloadstate" class="tsd-anchor"></a>
 					<h3>lazy<wbr>Load<wbr>State</h3>
@@ -148,7 +92,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/lazyLoad.ts#L79">src/hooks/lazyLoad.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/lazyLoad.ts#L79">src/hooks/lazyLoad.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/lazyLoad.ts#L69">src/hooks/lazyLoad.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/lazyLoad.ts#L69">src/hooks/lazyLoad.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -244,9 +188,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_hooks_lazyload_.html#lazyloadhook" class="tsd-kind-icon">lazy<wbr>Load<wbr>Hook</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_hooks_lazyload_.html#lazyloadstate" class="tsd-kind-icon">lazy<wbr>Load<wbr>State</a>
 					</li>

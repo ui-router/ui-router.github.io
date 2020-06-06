@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -89,7 +87,7 @@
 					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_common_coreservices_._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> = {/** Normalizes a value as a promise */when: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: (val) &#x3D;&gt;new Promise((resolve, reject) &#x3D;&gt; {reject(val);}),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {const deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }const chain &#x3D; Object.keys(promises).map((key) &#x3D;&gt; promises[key].then((val) &#x3D;&gt; ({ key, val })));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then((values) &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; {acc[tuple.key] &#x3D; tuple.val;return acc;}, {}));}},} as $QLike</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/vanilla/q.ts#L18">src/vanilla/q.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/vanilla/q.ts#L18">src/vanilla/q.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

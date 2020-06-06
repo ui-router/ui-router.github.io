@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -75,8 +73,6 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_hooks_views_.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_hooks_views_.html#loadenteringviews" class="tsd-kind-icon">load<wbr>Entering<wbr>Views</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_views_.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_views_.html#registerloadenteringviews" class="tsd-kind-icon">register<wbr>Load<wbr>Entering<wbr>Views</a></li>
 							</ul>
@@ -86,69 +82,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="activateviews" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> activate<wbr>Views</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">activate<wbr>Views<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/views.ts#L37">src/hooks/views.ts:37</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A <a href="../interfaces/_transition_interface_.transitionhookfn.html">TransitionHookFn</a> which activates the new views when a transition is successful.</p>
-								</div>
-								<p>Registered using <code>transitionService.onSuccess({}, activateViews);</code></p>
-								<p>After a transition is complete, this hook deactivates the old views from the previous state,
-								and activates the new views from the destination state.</p>
-								<p>See <a href="../classes/_view_view_.viewservice.html">ViewService</a></p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>transition: <a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="loadenteringviews" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> load<wbr>Entering<wbr>Views</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Entering<wbr>Views<span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/views.ts#L17">src/hooks/views.ts:17</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A <a href="../interfaces/_transition_interface_.transitionhookfn.html">TransitionHookFn</a> which waits for the views to load</p>
-								</div>
-								<p>Registered using <code>transitionService.onStart({}, loadEnteringViews);</code></p>
-								<p>Allows the views to do async work in <a href="../interfaces/_view_interface_.viewconfig.html#load">ViewConfig.load</a> before the transition continues.
-								In angular 1, this includes loading the templates.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>transition: <a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
 					<a name="registeractivateviews" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> register<wbr>Activate<wbr>Views</h3>
@@ -159,7 +92,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/views.ts#L50">src/hooks/views.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/views.ts#L50">src/hooks/views.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,7 +115,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/views.ts#L24">src/hooks/views.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/views.ts#L24">src/hooks/views.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -240,12 +173,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_hooks_views_.html#activateviews" class="tsd-kind-icon">activate<wbr>Views</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_hooks_views_.html#loadenteringviews" class="tsd-kind-icon">load<wbr>Entering<wbr>Views</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_hooks_views_.html#registeractivateviews" class="tsd-kind-icon">register<wbr>Activate<wbr>Views</a>
 					</li>

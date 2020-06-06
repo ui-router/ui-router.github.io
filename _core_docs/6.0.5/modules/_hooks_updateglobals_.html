@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -76,7 +74,6 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_updateglobals_.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_hooks_updateglobals_.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/updateGlobals.ts#L37">src/hooks/updateGlobals.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/updateGlobals.ts#L37">src/hooks/updateGlobals.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -104,40 +101,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="updateglobalstate" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> update<wbr>Global<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Global<wbr>State<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/updateGlobals.ts#L17">src/hooks/updateGlobals.ts:17</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A <a href="../interfaces/_transition_interface_.transitionhookfn.html">TransitionHookFn</a> which updates global UI-Router state</p>
-								</div>
-								<p>Registered using <code>transitionService.onBefore({}, updateGlobalState);</code></p>
-								<p>Before a <a href="../classes/_transition_transition_.transition.html">Transition</a> starts, updates the global value of &quot;the current transition&quot; ([[Globals.transition]]).
-									After a successful <a href="../classes/_transition_transition_.transition.html">Transition</a>, updates the global values of &quot;the current state&quot;
-								([[Globals.current]] and [[Globals.$current]]) and &quot;the current param values&quot; ([[Globals.params]]).</p>
-								<p>See also the deprecated properties:
-								<a href="../classes/_state_stateservice_.stateservice.html#transition">StateService.transition</a>, <a href="../classes/_state_stateservice_.stateservice.html#current">StateService.current</a>, <a href="../classes/_state_stateservice_.stateservice.html#params">StateService.params</a></p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>trans: <a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -188,9 +151,6 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_hooks_updateglobals_.html#registerupdateglobalstate" class="tsd-kind-icon">register<wbr>Update<wbr>Global<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_hooks_updateglobals_.html#updateglobalstate" class="tsd-kind-icon">update<wbr>Global<wbr>State</a>
 					</li>
 				</ul>
 			</nav>

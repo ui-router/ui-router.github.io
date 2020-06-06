@@ -42,8 +42,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -75,7 +73,6 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported"><a href="_hooks_redirectto_.html#redirecttohook" class="tsd-kind-icon">redirect<wbr>ToHook</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-external"><a href="_hooks_redirectto_.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a></li>
 							</ul>
 						</section>
@@ -84,36 +81,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-					<a name="redirecttohook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> redirect<wbr>ToHook</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">redirect<wbr>ToHook<span class="tsd-signature-symbol">(</span>trans<span class="tsd-signature-symbol">: </span><a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/redirectTo.ts#L15">src/hooks/redirectTo.ts:15</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>A <a href="../interfaces/_transition_interface_.transitionhookfn.html">TransitionHookFn</a> that redirects to a different state or params</p>
-								</div>
-								<p>Registered using <code>transitionService.onStart({ to: (state) =&gt; !!state.redirectTo }, redirectHook);</code></p>
-								<p>See <a href="../interfaces/_state_interface_.statedeclaration.html#redirectto">StateDeclaration.redirectTo</a></p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>trans: <a href="../classes/_transition_transition_.transition.html" class="tsd-signature-type">Transition</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_state_interface_.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_state_targetstate_.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-external">
 					<a name="registerredirecttohook" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> register<wbr>Redirect<wbr>ToHook</h3>
@@ -124,7 +91,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ui-router/core/blob/557c3db/src/hooks/redirectTo.ts#L35">src/hooks/redirectTo.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/d72c7b2/src/hooks/redirectTo.ts#L35">src/hooks/redirectTo.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,9 +149,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external tsd-is-not-exported">
-						<a href="_hooks_redirectto_.html#redirecttohook" class="tsd-kind-icon">redirect<wbr>ToHook</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-external">
 						<a href="_hooks_redirectto_.html#registerredirecttohook" class="tsd-kind-icon">register<wbr>Redirect<wbr>ToHook</a>
 					</li>
