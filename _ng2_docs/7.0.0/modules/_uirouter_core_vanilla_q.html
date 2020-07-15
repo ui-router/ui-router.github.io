@@ -1,0 +1,197 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@uirouter/core/vanilla/q | @uirouter/angular</title>
+	<meta name="description" content="Documentation for @uirouter/angular">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/angular</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/angular</a>
+				</li>
+				<li>
+					<a href="_uirouter_core_vanilla_q.html">@uirouter/core/vanilla/q</a>
+				</li>
+			</ul>
+			<h1>Module @uirouter/core/vanilla/q</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-external"><a href="_uirouter_core_vanilla_q.html#_q" class="tsd-kind-icon">$q</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-external">
+					<a name="_q" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> $q</h3>
+					<div class="tsd-signature tsd-kind-icon">$q<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_common_coreservices._qlike.html" class="tsd-signature-type">$QLike</a><span class="tsd-signature-symbol"> = {/** Normalizes a value as a promise */when: (val) &#x3D;&gt; new Promise((resolve, reject) &#x3D;&gt; resolve(val)),/** Normalizes a value as a promise rejection */reject: (val) &#x3D;&gt;new Promise((resolve, reject) &#x3D;&gt; {reject(val);}),/** @returns a deferred object, which has &#x60;resolve&#x60; and &#x60;reject&#x60; functions */defer: () &#x3D;&gt; {const deferred: any &#x3D; {};deferred.promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; {deferred.resolve &#x3D; resolve;deferred.reject &#x3D; reject;});return deferred;},/** Like Promise.all(), but also supports object key/promise notation like $q */all: (promises: { [key: string]: Promise&lt;any&gt; } | Promise&lt;any&gt;[]) &#x3D;&gt; {if (isArray(promises)) {return Promise.all(promises);}if (isObject(promises)) {// Convert promises map to promises array.// When each promise resolves, map it to a tuple { key: key, val: val }const chain &#x3D; Object.keys(promises).map((key) &#x3D;&gt; promises[key].then((val) &#x3D;&gt; ({ key, val })));// Then wait for all promises to resolve, and convert them back to an objectreturn $q.all(chain).then((values) &#x3D;&gt;values.reduce((acc, tuple) &#x3D;&gt; {acc[tuple.key] &#x3D; tuple.val;return acc;}, {}));}},} as $QLike</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/3d8c4a8/src/vanilla/q.ts#L18">@uirouter/core/src/vanilla/q.ts:18</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An angular1-like promise api</p>
+						</div>
+						<p>This object implements four methods similar to the
+						<a href="https://docs.angularjs.org/api/ng/service/$q">angular 1 promise api</a></p>
+						<p>UI-Router evolved from an angular 1 library to a framework agnostic library.
+						However, some of the <code>@uirouter/core</code> code uses these ng1 style APIs to support ng1 style dependency injection.</p>
+						<p>This API provides native ES6 promise support wrapped as a $q-like API.
+							Internally, UI-Router uses this $q object to perform promise operations.
+						The <code>angular-ui-router</code> (ui-router for angular 1) uses the $q API provided by angular.</p>
+						<p>$q-like promise api</p>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_router.uirouter.html">UIRouter</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_state_stateservice.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_state_stateregistry.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_transition_transitionservice.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_url_urlservice.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_url_urlconfig.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_url_urlrules.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Interfaces</span>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/_interface_.ng2statedeclaration.html">Ng2<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/_interface_.uionparamschanged.html">Ui<wbr>OnParams<wbr>Changed</a>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/_interface_.uionexit.html">Ui<wbr>OnExit</a>
+					</li>
+					<li class="label ">
+						<span>Components</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_directives_uiview_.uiview.html">UIView</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_directives_uisref_.uisref.html">UISref</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_directives_uisrefactive_.uisrefactive.html">UISref<wbr>Active</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_transition_transition.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="../classes/_uirouter_core_common_trace.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_vanilla_q.html#_q" class="tsd-kind-icon">$q</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
