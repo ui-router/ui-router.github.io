@@ -1,0 +1,665 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ParamTypes | @uirouter/react</title>
+	<meta name="description" content="Documentation for @uirouter/react">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/react</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/react</a>
+				</li>
+				<li>
+					<a href="../modules/_uirouter_core_params_paramtypes.html">@uirouter/core/params/paramTypes</a>
+				</li>
+				<li>
+					<a href="_uirouter_core_params_paramtypes.paramtypes.html">ParamTypes</a>
+				</li>
+			</ul>
+			<h1>Class ParamTypes</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A registry for parameter types.</p>
+					</div>
+					<p>This registry manages the built-in (and custom) parameter types.</p>
+					<p>The built-in parameter types are:</p>
+					<ul>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#string">string</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#path">path</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#query">query</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#hash">hash</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#int">int</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#bool">bool</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#date">date</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#json">json</a></li>
+						<li><a href="_uirouter_core_params_paramtypes.paramtypes.html#any">any</a></li>
+					</ul>
+					<p>To register custom parameter types, use <a href="_uirouter_core_url_urlconfig.urlconfig.html#type">UrlConfig.type</a>, i.e.,</p>
+					<pre><code class="language-js">router.urlService.config.type(customType)</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ParamTypes</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#enqueue" class="tsd-kind-icon">enqueue</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#typequeue" class="tsd-kind-icon">type<wbr>Queue</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#types" class="tsd-kind-icon">types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#any" class="tsd-kind-icon">any</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#bool" class="tsd-kind-icon">bool</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#date" class="tsd-kind-icon">date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#hash" class="tsd-kind-icon">hash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#int" class="tsd-kind-icon">int</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#json" class="tsd-kind-icon">json</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#query" class="tsd-kind-icon">query</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#string" class="tsd-kind-icon">string</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#_flushtypequeue" class="tsd-kind-icon">_flush<wbr>Type<wbr>Queue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_params_paramtypes.paramtypes.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Param<wbr>Types<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_params_paramtypes.paramtypes.html" class="tsd-signature-type">ParamTypes</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L206">@uirouter/core/src/params/paramTypes.ts:206</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_params_paramtypes.paramtypes.html" class="tsd-signature-type">ParamTypes</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="enqueue" class="tsd-anchor"></a>
+					<h3>enqueue</h3>
+					<div class="tsd-signature tsd-kind-icon">enqueue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L193">@uirouter/core/src/params/paramTypes.ts:193</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="typequeue" class="tsd-anchor"></a>
+					<h3>type<wbr>Queue</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Queue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L194">@uirouter/core/src/params/paramTypes.ts:194</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="types" class="tsd-anchor"></a>
+					<h3>types</h3>
+					<div class="tsd-signature tsd-kind-icon">types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L192">@uirouter/core/src/params/paramTypes.ts:192</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="any" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> any</h3>
+					<div class="tsd-signature tsd-kind-icon">any<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L190">@uirouter/core/src/params/paramTypes.ts:190</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>any</code></p>
+						</div>
+						<p>This parameter type is used by default for url-less parameters (parameters that do not appear in the URL).
+							This type does not encode or decode.
+						It is compared using a deep <code>equals</code> comparison.</p>
+						<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+							<h4>Example:</h4>
+						</a>
+						<p>This example defines a non-url parameter on a <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a>.</p>
+						<pre><code class="language-js">.state({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;new&#x27;</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/new&#x27;</span>,
+  <span class="hljs-attr">params</span>: {
+    <span class="hljs-attr">inrepyto</span>: <span class="hljs-literal">null</span>
+  }
+});</code></pre>
+						<pre><code class="language-js">$state.go(<span class="hljs-string">&#x27;new&#x27;</span>, { <span class="hljs-attr">inreplyto</span>: currentMessage });</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="bool" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> bool</h3>
+					<div class="tsd-signature tsd-kind-icon">bool<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L119">@uirouter/core/src/params/paramTypes.ts:119</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>bool</code></p>
+						</div>
+						<p>This parameter type serializes <code>true</code>/<code>false</code> as <code>1</code>/<code>0</code></p>
+						<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+							<h4>Example:</h4>
+						</a>
+						<pre><code class="language-js">.state({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;inbox&#x27;</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/inbox?{unread:bool}&#x27;</span>
+});</code></pre>
+						<pre><code class="language-js">$state.go(<span class="hljs-string">&#x27;inbox&#x27;</span>, { <span class="hljs-attr">unread</span>: <span class="hljs-literal">true</span> });</code></pre>
+						<p>The URL will serialize to: <code>/inbox?unread=1</code>.</p>
+						<p>Conversely, if the url is <code>/inbox?unread=0</code>, the value of the <code>unread</code> parameter will be a <code>false</code>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="date" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> date</h3>
+					<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L145">@uirouter/core/src/params/paramTypes.ts:145</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>date</code></p>
+						</div>
+						<p>This parameter type can be used to serialize Javascript dates as parameter values.</p>
+						<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+							<h4>Example:</h4>
+						</a>
+						<pre><code class="language-js">.state({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;search&#x27;</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/search?{start:date}&#x27;</span>
+});</code></pre>
+						<pre><code class="language-js">$state.go(<span class="hljs-string">&#x27;search&#x27;</span>, { <span class="hljs-attr">start</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2000</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) });</code></pre>
+						<p>The URL will serialize to: <code>/search?start=2000-01-01</code>.</p>
+						<p>Conversely, if the url is <code>/search?start=2016-12-25</code>, the value of the <code>start</code> parameter will be a <code>Date</code> object where:</p>
+						<ul>
+							<li><code>date.getFullYear() === 2016</code></li>
+							<li><code>date.getMonth() === 11</code> (month is 0-based)</li>
+							<li><code>date.getDate() === 25</code></li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="hash" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> hash</h3>
+					<div class="tsd-signature tsd-kind-icon">hash<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L75">@uirouter/core/src/params/paramTypes.ts:75</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>hash</code></p>
+						</div>
+						<p>This parameter type is used for the <code>#</code> parameter (the hash)
+						It behaves the same as the <a href="_uirouter_core_params_paramtypes.paramtypes.html#string">string</a> parameter type.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="int" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> int</h3>
+					<div class="tsd-signature tsd-kind-icon">int<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L97">@uirouter/core/src/params/paramTypes.ts:97</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>int</code></p>
+						</div>
+						<p>This parameter type serializes javascript integers (<code>number</code>s which represent an integer) to the URL.</p>
+						<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+							<h4>Example:</h4>
+						</a>
+						<pre><code class="language-js">.state({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;user&#x27;</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/user/{id:int}&#x27;</span>
+});</code></pre>
+						<pre><code class="language-js">$state.go(<span class="hljs-string">&#x27;user&#x27;</span>, { <span class="hljs-attr">id</span>: <span class="hljs-number">1298547</span> });</code></pre>
+						<p>The URL will serialize to: <code>/user/1298547</code>.</p>
+						<p>When the parameter value is read, it will be the <code>number</code> <code>1298547</code>, not the string <code>&quot;1298547&quot;</code>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="json" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> json</h3>
+					<div class="tsd-signature tsd-kind-icon">json<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L166">@uirouter/core/src/params/paramTypes.ts:166</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>json</code></p>
+						</div>
+						<p>This parameter type can be used to serialize javascript objects into the URL using JSON serialization.</p>
+						<a href="#example" id="example" style="color: inherit; text-decoration: none;">
+							<h4>Example:</h4>
+						</a>
+						<p>This example serializes an plain javascript object to the URL</p>
+						<pre><code class="language-js">.state({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;map&#x27;</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">&#x27;/map/{coords:json}&#x27;</span>
+});</code></pre>
+						<pre><code class="language-js">$state.go(<span class="hljs-string">&#x27;map&#x27;</span>, { <span class="hljs-attr">coords</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">10399.2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">49071</span> });</code></pre>
+						<p>The URL will serialize to: <code>/map/%7B%22x%22%3A10399.2%2C%22y%22%3A49071%7D</code></p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L55">@uirouter/core/src/params/paramTypes.ts:55</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>path</code></p>
+						</div>
+						<p>This parameter type is the default type for path parameters.
+						A path parameter is any parameter declared in the path portion of a url</p>
+						<ul>
+							<li><code>/foo/:param1/:param2</code>: two path parameters</li>
+						</ul>
+						<p>This parameter type behaves exactly like the <a href="_uirouter_core_params_paramtypes.paramtypes.html#string">string</a> type with one exception.
+						When matching parameter values in the URL, the <code>path</code> type does not match forward slashes <code>/</code>.</p>
+						<a href="#angular-1-note" id="angular-1-note" style="color: inherit; text-decoration: none;">
+							<h4>Angular 1 note:</h4>
+						</a>
+						<p>In ng1, this type is overridden with one that pre-encodes slashes as <code>~2F</code> instead of <code>%2F</code>.
+						For more details about this angular 1 behavior, see: <a href="https://github.com/angular-ui/ui-router/issues/2598">https://github.com/angular-ui/ui-router/issues/2598</a></p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="query" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> query</h3>
+					<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L67">@uirouter/core/src/params/paramTypes.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>query</code></p>
+						</div>
+						<p>This parameter type is the default type for query/search parameters.
+						It behaves the same as the <a href="_uirouter_core_params_paramtypes.paramtypes.html#string">string</a> parameter type.</p>
+						<p>A query parameter is any parameter declared in the query/search portion of a url</p>
+						<ul>
+							<li><code>/bar?param2</code>: a query parameter</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="string" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> string</h3>
+					<div class="tsd-signature tsd-kind-icon">string<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L38">@uirouter/core/src/params/paramTypes.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Built-in parameter type: <code>string</code></p>
+						</div>
+						<p>This parameter type coerces values to strings.
+						It matches anything (<code>new RegExp(&quot;.*&quot;)</code>) in the URL</p>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="_flushtypequeue" class="tsd-anchor"></a>
+					<h3>_flush<wbr>Type<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">_flush<wbr>Type<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L237">@uirouter/core/src/params/paramTypes.ts:237</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L214">@uirouter/core/src/params/paramTypes.ts:214</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, definition<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a>, definitionFn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/params/paramTypes.ts#L223">@uirouter/core/src/params/paramTypes.ts:223</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers a parameter type</p>
+								</div>
+								<p>End users should call <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#type">UrlMatcherFactory.type</a>, which delegates to this method.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> definition: <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> definitionFn: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <a href="../interfaces/_uirouter_core_params_interface.paramtypedefinition.html" class="tsd-signature-type">ParamTypeDefinition</a></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_core_.uirouterreact.html">UIRouter<wbr>React</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_state_stateservice.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_state_stateregistry.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_transition_transitionservice.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlservice.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlconfig.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlrules.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Interfaces</span>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/_interface_.reactstatedeclaration.html">React<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class="label ">
+						<span>Components</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_router.uirouter.html">UIRouter</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+						<a href="_components_uiview_.uiview.html">UIView</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_components_uisref_.html#uisref">UISref</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_components_uisrefactive_.html#uisrefactive">UISref<wbr>Active</a>
+					</li>
+					<li class="label ">
+						<span>React <wbr>Hooks</span>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_userouter_.html#userouter">use<wbr>Router</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesref_.html#usesref">use<wbr>Sref</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesrefactive_.html#usesrefactive">use<wbr>Sref<wbr>Active</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesrefactiveexact_.html#usesrefactiveexact">use<wbr>Sref<wbr>Active<wbr>Exact</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usetransitionhook_.html#usetransitionhook">use<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usecurrentstateandparams_.html#usecurrentstateandparams">use<wbr>Current<wbr>State<wbr>And<wbr>Params</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_useonstatechanged_.html#useonstatechanged">use<wbr>OnState<wbr>Changed</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_useisactive_.html#useisactive">use<wbr>IsActive</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_transition_transition.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_common_trace.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_params_paramtypes.paramtypes.html" class="tsd-kind-icon">Param<wbr>Types</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#enqueue" class="tsd-kind-icon">enqueue</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#typequeue" class="tsd-kind-icon">type<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#types" class="tsd-kind-icon">types</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#any" class="tsd-kind-icon">any</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#bool" class="tsd-kind-icon">bool</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#date" class="tsd-kind-icon">date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#hash" class="tsd-kind-icon">hash</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#int" class="tsd-kind-icon">int</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#json" class="tsd-kind-icon">json</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#query" class="tsd-kind-icon">query</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#string" class="tsd-kind-icon">string</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#_flushtypequeue" class="tsd-kind-icon">_flush<wbr>Type<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_params_paramtypes.paramtypes.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

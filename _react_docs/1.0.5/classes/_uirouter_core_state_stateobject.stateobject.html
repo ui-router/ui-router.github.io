@@ -1,0 +1,1035 @@
+---
+---
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>StateObject | @uirouter/react</title>
+	<meta name="description" content="Documentation for @uirouter/react">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@uirouter/react</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">@uirouter/react</a>
+				</li>
+				<li>
+					<a href="../modules/_uirouter_core_state_stateobject.html">@uirouter/core/state/stateObject</a>
+				</li>
+				<li>
+					<a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a>
+				</li>
+			</ul>
+			<h1>Class StateObject</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Internal representation of a UI-Router state.</p>
+					</div>
+					<p>Instances of this class are created when a <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a> is registered with the <a href="_uirouter_core_state_stateregistry.stateregistry.html">StateRegistry</a>.</p>
+					<p>A registered <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a> is augmented with a getter ([[StateDeclaration.$$state]]) which returns the corresponding <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a> object.</p>
+					<p>This class prototypally inherits from the corresponding <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a>.
+					Each of its own properties (i.e., <code>hasOwnProperty</code>) are built using builders from the <a href="_uirouter_core_state_statebuilder.statebuilder.html">StateBuilder</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">StateObject</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#abstract" class="tsd-kind-icon">abstract</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#includes" class="tsd-kind-icon">includes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#lazyload" class="tsd-kind-icon">lazy<wbr>Load</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#navigable" class="tsd-kind-icon">navigable</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#onenter" class="tsd-kind-icon">on<wbr>Enter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#onretain" class="tsd-kind-icon">on<wbr>Retain</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#params" class="tsd-kind-icon">params</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#redirectto" class="tsd-kind-icon">redirect<wbr>To</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#resolvables" class="tsd-kind-icon">resolvables</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#resolve" class="tsd-kind-icon">resolve</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#resolvepolicy" class="tsd-kind-icon">resolve<wbr>Policy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#self" class="tsd-kind-icon">self</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#views" class="tsd-kind-icon">views</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#fqn" class="tsd-kind-icon">fqn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#is" class="tsd-kind-icon">is</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#parameter" class="tsd-kind-icon">parameter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#parameters" class="tsd-kind-icon">parameters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#root" class="tsd-kind-icon">root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#isstate" class="tsd-kind-icon">is<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#isstateclass" class="tsd-kind-icon">is<wbr>State<wbr>Class</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external"><a href="_uirouter_core_state_stateobject.stateobject.html#isstatedeclaration" class="tsd-kind-icon">is<wbr>State<wbr>Declaration</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>State<wbr>Object<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L131">@uirouter/core/src/state/stateObject.ts:131</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>use State.create()</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> config: <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="abstract" class="tsd-anchor"></a>
+					<h3>abstract</h3>
+					<div class="tsd-signature tsd-kind-icon">abstract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L31">@uirouter/core/src/state/stateObject.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#abstract">StateDeclaration.abstract</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L73">@uirouter/core/src/state/stateObject.ts:73</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#data">StateDeclaration.data</a>
+								Note: This is the only field on the <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a> which is mutated.
+								The definition object&#39;s <code>data</code> field is replaced with a new object
+							which prototypally inherits from the parent state definition&#39;s <code>data</code> field.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="includes" class="tsd-anchor"></a>
+					<h3>includes</h3>
+					<div class="tsd-signature tsd-kind-icon">includes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L79">@uirouter/core/src/state/stateObject.ts:79</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An object containing the parent States&#39; names as keys and
+							true as their values.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="lazyload" class="tsd-anchor"></a>
+					<h3>lazy<wbr>Load</h3>
+					<div class="tsd-signature tsd-kind-icon">lazy<wbr>Load<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="_uirouter_core_transition_transition.transition.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_uirouter_core_state_interface.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_uirouter_core_state_interface.lazyloadresult.html" class="tsd-signature-type">LazyLoadResult</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L89">@uirouter/core/src/state/stateObject.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#lazyload">StateDeclaration.lazyLoad</a></p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>transition<span class="tsd-signature-symbol">: </span><a href="_uirouter_core_transition_transition.transition.html" class="tsd-signature-type">Transition</a>, state<span class="tsd-signature-symbol">: </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_uirouter_core_state_interface.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_uirouter_core_state_interface.lazyloadresult.html" class="tsd-signature-type">LazyLoadResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>transition: <a href="_uirouter_core_transition_transition.transition.html" class="tsd-signature-type">Transition</a></h5>
+											</li>
+											<li>
+												<h5>state: <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../interfaces/_uirouter_core_state_interface.transitionpromise.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_uirouter_core_state_interface.lazyloadresult.html" class="tsd-signature-type">LazyLoadResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L28">@uirouter/core/src/state/stateObject.ts:28</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name used to register the state</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="navigable" class="tsd-anchor"></a>
+					<h3>navigable</h3>
+					<div class="tsd-signature tsd-kind-icon">navigable<span class="tsd-signature-symbol">:</span> <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L62">@uirouter/core/src/state/stateObject.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The nearest parent <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a> which has a URL</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="onenter" class="tsd-anchor"></a>
+					<h3>on<wbr>Enter</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Enter<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_transition_interface.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L86">@uirouter/core/src/state/stateObject.ts:86</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#onenter">StateDeclaration.onEnter</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="onexit" class="tsd-anchor"></a>
+					<h3>on<wbr>Exit</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Exit<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_transition_interface.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L82">@uirouter/core/src/state/stateObject.ts:82</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#onexit">StateDeclaration.onExit</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="onretain" class="tsd-anchor"></a>
+					<h3>on<wbr>Retain</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Retain<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_transition_interface.transitionstatehookfn.html" class="tsd-signature-type">TransitionStateHookFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L84">@uirouter/core/src/state/stateObject.ts:84</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#onretain">StateDeclaration.onRetain</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="params" class="tsd-anchor"></a>
+					<h3>params</h3>
+					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L46">@uirouter/core/src/state/stateObject.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The parameters for the state, built from the URL and <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#params">StateDeclaration.params</a></p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_uirouter_core_params_param.param.html" class="tsd-signature-type">Param</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="parent" class="tsd-anchor"></a>
+					<h3>parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L25">@uirouter/core/src/state/stateObject.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The parent <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L65">@uirouter/core/src/state/stateObject.ts:65</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The parent <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a> objects from this state up to the root</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="redirectto" class="tsd-anchor"></a>
+					<h3>redirect<wbr>To</h3>
+					<div class="tsd-signature tsd-kind-icon">redirect<wbr>To<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>$transition$<span class="tsd-signature-symbol">: </span><a href="_uirouter_core_transition_transition.transition.html" class="tsd-signature-type">Transition</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_uirouter_core_state_targetstate.targetstate.html" class="tsd-signature-type">TargetState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L92">@uirouter/core/src/state/stateObject.ts:92</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#redirectto">StateDeclaration.redirectTo</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="resolvables" class="tsd-anchor"></a>
+					<h3>resolvables</h3>
+					<div class="tsd-signature tsd-kind-icon">resolvables<span class="tsd-signature-symbol">:</span> <a href="_uirouter_core_resolve_resolvable.resolvable.html" class="tsd-signature-type">Resolvable</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L37">@uirouter/core/src/state/stateObject.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of <a href="_uirouter_core_resolve_resolvable.resolvable.html">Resolvable</a> objects.  The internal representation of <a href="_uirouter_core_state_stateobject.stateobject.html#resolve">resolve</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="resolve" class="tsd-anchor"></a>
+					<h3>resolve</h3>
+					<div class="tsd-signature tsd-kind-icon">resolve<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L34">@uirouter/core/src/state/stateObject.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#resolve">StateDeclaration.resolve</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="resolvepolicy" class="tsd-anchor"></a>
+					<h3>resolve<wbr>Policy</h3>
+					<div class="tsd-signature tsd-kind-icon">resolve<wbr>Policy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L40">@uirouter/core/src/state/stateObject.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prototypally inherits from <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html#resolvepolicy">StateDeclaration.resolvePolicy</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="self" class="tsd-anchor"></a>
+					<h3>self</h3>
+					<div class="tsd-signature tsd-kind-icon">self<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L59">@uirouter/core/src/state/stateObject.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The original <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a> used to build this <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a>.
+							Note: <code>this</code> object also prototypally inherits from the <code>self</code> declaration object.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <a href="_uirouter_core_url_urlmatcher.urlmatcher.html" class="tsd-signature-type">UrlMatcher</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L43">@uirouter/core/src/state/stateObject.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A compiled URLMatcher which detects when the state&#39;s URL is matched</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-external">
+					<a name="views" class="tsd-anchor"></a>
+					<h3>views</h3>
+					<div class="tsd-signature tsd-kind-icon">views<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L53">@uirouter/core/src/state/stateObject.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The views for the state.
+								Note: <code>@uirouter/core</code> does not register a builder for views.
+							The framework specific code should register a <code>views</code> builder.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="../interfaces/_uirouter_core_state_interface._viewdeclaration.html" class="tsd-signature-type">_ViewDeclaration</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="fqn" class="tsd-anchor"></a>
+					<h3>fqn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">fqn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L157">@uirouter/core/src/state/stateObject.ts:157</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>this does not properly handle dot notation</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>Returns a dot-separated name of the state.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="is" class="tsd-anchor"></a>
+					<h3>is</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<span class="tsd-signature-symbol">(</span>ref<span class="tsd-signature-symbol">: </span><a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L149">@uirouter/core/src/state/stateObject.ts:149</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if the provided parameter is the same state.</p>
+								</div>
+								<p>Compares the identity of the state against the passed value, which is either an object
+									reference to the actual <code>State</code> instance, the original definition object passed to
+								<code>$stateProvider.state()</code>, or the fully-qualified name.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ref: <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html" class="tsd-signature-type">StateDeclaration</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Can be one of (a) a <code>State</code> instance, (b) an object that was passed
+										into <code>$stateProvider.state()</code>, (c) the fully-qualified name of a state as a string.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Returns <code>true</code> if <code>ref</code> matches the current <code>State</code> instance.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="parameter" class="tsd-anchor"></a>
+					<h3>parameter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">parameter<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_params_param.param.html" class="tsd-signature-type">Param</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L196">@uirouter/core/src/state/stateObject.ts:196</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a single <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#param">Param</a> that is owned by the state</p>
+								</div>
+								<p>If <code>opts.inherit</code> is true, it also searches the ancestor states` <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#param">Param</a>s.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the name of the <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#param">Param</a> to return</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> opts: <span class="tsd-signature-symbol">{ </span>inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_params_param.param.html" class="tsd-signature-type">Param</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="parameters" class="tsd-anchor"></a>
+					<h3>parameters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">parameters<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>matchingKeys<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_params_param.param.html" class="tsd-signature-type">Param</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L181">@uirouter/core/src/state/stateObject.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the state&#39;s <code>Param</code> objects</p>
+								</div>
+								<p>Gets the list of <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#param">Param</a> objects owned by the state.
+									If <code>opts.inherit</code> is true, it also includes the ancestor states&#39; <a href="_uirouter_core_url_urlmatcherfactory.urlmatcherfactory.html#param">Param</a> objects.
+								If <code>opts.matchingKeys</code> exists, returns only <code>Param</code>s whose <code>id</code> is a key on the <code>matchingKeys</code> object</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-symbol">{ </span>inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>matchingKeys<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> inherit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> matching<wbr>Keys<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_params_param.param.html" class="tsd-signature-type">Param</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="root" class="tsd-anchor"></a>
+					<h3>root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L168">@uirouter/core/src/state/stateObject.ts:168</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the root node of this state&#39;s tree.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
+							<p>The root of this state&#39;s tree.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-external">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L204">@uirouter/core/src/state/stateObject.ts:204</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="create" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>stateDecl<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">_StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L111">@uirouter/core/src/state/stateObject.ts:111</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a state object to put the private/internal implementation details onto.
+										The object&#39;s prototype chain looks like:
+									(Internal State Object) -&gt; (Copy of State.prototype) -&gt; (State Declaration object) -&gt; (State Declaration&#39;s prototype...)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateDecl: <a href="" class="tsd-signature-type">_StateDeclaration</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the user-supplied State Declaration</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-signature-type">StateObject</a></h4>
+							<p>an internal State object</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="isstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>State<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">obj</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">StateObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L131">@uirouter/core/src/state/stateObject.ts:131</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Predicate which returns true if the object is an internal <a href="_uirouter_core_state_stateobject.stateobject.html">StateObject</a> object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">obj</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">StateObject</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="isstateclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>State<wbr>Class</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>State<wbr>Class<span class="tsd-signature-symbol">(</span>stateDecl<span class="tsd-signature-symbol">: </span><a href="" class="tsd-signature-type">_StateDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">stateDecl</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L124">@uirouter/core/src/state/stateObject.ts:124</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Predicate which returns true if the object is an class with @State() decorator</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateDecl: <a href="" class="tsd-signature-type">_StateDeclaration</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">stateDecl</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-symbol">{ </span>constructor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+					<a name="isstatedeclaration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>State<wbr>Declaration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>State<wbr>Declaration<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">obj</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">StateDeclaration</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ui-router/core/blob/918f51f/src/state/stateObject.ts#L128">@uirouter/core/src/state/stateObject.ts:128</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Predicate which returns true if the object is a <a href="../interfaces/_uirouter_core_state_interface.statedeclaration.html">StateDeclaration</a> object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">obj</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">StateDeclaration</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label ">
+						<span></span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_core_.uirouterreact.html">UIRouter<wbr>React</a>
+					</li>
+					<li class="label ">
+						<span>Services</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_state_stateservice.stateservice.html">State<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_state_stateregistry.stateregistry.html">State<wbr>Registry</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_transition_transitionservice.transitionservice.html">Transition<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlservice.urlservice.html">Url<wbr>Service</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlconfig.urlconfig.html">Url<wbr>Config</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_url_urlrules.urlrules.html">Url<wbr>Rules</a>
+					</li>
+					<li class="label ">
+						<span>Interfaces</span>
+					</li>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-external">
+						<a href="../interfaces/_interface_.reactstatedeclaration.html">React<wbr>State<wbr>Declaration</a>
+					</li>
+					<li class="label ">
+						<span>Components</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_router.uirouter.html">UIRouter</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+						<a href="_components_uiview_.uiview.html">UIView</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_components_uisref_.html#uisref">UISref</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_components_uisrefactive_.html#uisrefactive">UISref<wbr>Active</a>
+					</li>
+					<li class="label ">
+						<span>React <wbr>Hooks</span>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_userouter_.html#userouter">use<wbr>Router</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesref_.html#usesref">use<wbr>Sref</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesrefactive_.html#usesrefactive">use<wbr>Sref<wbr>Active</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usesrefactiveexact_.html#usesrefactiveexact">use<wbr>Sref<wbr>Active<wbr>Exact</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usetransitionhook_.html#usetransitionhook">use<wbr>Transition<wbr>Hook</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_usecurrentstateandparams_.html#usecurrentstateandparams">use<wbr>Current<wbr>State<wbr>And<wbr>Params</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_useonstatechanged_.html#useonstatechanged">use<wbr>OnState<wbr>Changed</a>
+					</li>
+					<li class="current tsd-kind-function tsd-parent-kind-module tsd-is-external">
+						<a href="../modules/_hooks_useisactive_.html#useisactive">use<wbr>IsActive</a>
+					</li>
+					<li class="label ">
+						<span>Other</span>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_transition_transition.transition.html">Transition</a>
+					</li>
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_common_trace.trace.html">Trace</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module tsd-is-external">
+						<a href="_uirouter_core_state_stateobject.stateobject.html" class="tsd-kind-icon">State<wbr>Object</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#abstract" class="tsd-kind-icon">abstract</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#data" class="tsd-kind-icon">data</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#includes" class="tsd-kind-icon">includes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#lazyload" class="tsd-kind-icon">lazy<wbr>Load</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#navigable" class="tsd-kind-icon">navigable</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#onenter" class="tsd-kind-icon">on<wbr>Enter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#onexit" class="tsd-kind-icon">on<wbr>Exit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#onretain" class="tsd-kind-icon">on<wbr>Retain</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#params" class="tsd-kind-icon">params</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#parent" class="tsd-kind-icon">parent</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#redirectto" class="tsd-kind-icon">redirect<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#resolvables" class="tsd-kind-icon">resolvables</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#resolve" class="tsd-kind-icon">resolve</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#resolvepolicy" class="tsd-kind-icon">resolve<wbr>Policy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#self" class="tsd-kind-icon">self</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#views" class="tsd-kind-icon">views</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#fqn" class="tsd-kind-icon">fqn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#is" class="tsd-kind-icon">is</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#parameter" class="tsd-kind-icon">parameter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#parameters" class="tsd-kind-icon">parameters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#root" class="tsd-kind-icon">root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#create" class="tsd-kind-icon">create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#isstate" class="tsd-kind-icon">is<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#isstateclass" class="tsd-kind-icon">is<wbr>State<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static tsd-is-external">
+								<a href="_uirouter_core_state_stateobject.stateobject.html#isstatedeclaration" class="tsd-kind-icon">is<wbr>State<wbr>Declaration</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
