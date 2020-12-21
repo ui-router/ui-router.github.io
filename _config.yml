@@ -90,11 +90,15 @@ author:
 
 
 # Reading Files
+# Force include of files with up to 5 underscores in the filenames
 include:
   - .htaccess
   - _pages
   - "_*_.html"
   - "_*_.*.html"
+  - "_*_*_.*.html"
+  - "_*_*_*_.*.html"
+  - "_*_*_*_*_.*.html"
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
